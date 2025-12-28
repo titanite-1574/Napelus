@@ -1,0 +1,138 @@
+type: mech
+Name: Messer
+speed: 0.40
+rotateSpeed: 3
+description: Lunges at enemies with brute force
+health: 9200
+armor: 15
+hitSize: 17
+outlineColor: 3F3E44
+shownPlanets: [napelus]
+weapons: [
+ {
+name: messer-mini
+x: 7
+y: 0
+mirror: true
+layerOffset: 0
+shoot: {
+type: ShootPattern
+shots: 2
+shotDelay: 10
+}
+top: false
+outline: true
+rotate: true
+reload: 50
+under: false
+top: true
+recoil: 1
+shootSound: shootTank
+ejectEffect: none
+bullet: {
+    type: BasicBulletType,
+    speed: 6
+    lifetime: 30
+    damage: 30
+    width: 7
+    height: 10
+    frontColor: b2afb3
+    backColor: d5d2d6
+    shootEffect: "shootSmall"
+    smokeEffect: "shootSmallSmoke"
+    ammoMultiplier: 5
+    collidesTiles: true
+    hitEffect: pointHit
+    sprite: missile-large
+      trailChance: -1
+      trailInterval: 5
+      trailRotation: true
+      trailEffect: colorSpark
+      trailColor: 6697B0
+}
+}
+ {
+    name: super-heavy-blade
+    x: 15
+    y: 0
+    rotate: true
+    mirror: true
+    alternate: true
+    layerOffset: 0
+    rotateSpeed: 5
+    reload: 300
+rotationLimit: 20
+shootCone: 50
+shootSound: slash
+ top: false
+    recoil: -5
+    bullet: {
+shootEffect: {
+  type: ParticleEffect
+line: true
+    particles: 4
+    baseLength: 2
+length: -30
+    lifetime: 15
+lenFrom: 4
+lenTo: 0
+strokeFrom: 1.5
+strokeTo: 0
+    colorFrom: FFE0B2
+    colorTo: FFFDFC
+    cone: -30
+interp: circleOut
+sizeInterp: linear
+}
+smokeEffect: none
+    type: RailBulletType
+    damage: 1900
+  recoil: -15
+      buildingDamageMultiplier: 3
+    pierce: true
+    length: 40
+    width: 30
+    height: 50
+    lifetime: 1
+statusDuration: 100
+trailRotation: true
+pierceEffect: {
+    type: ParticleEffect
+line: true
+    particles: 4
+    baseLength: 0
+length: 20
+    lifetime: 30
+lenFrom: 3
+lenTo: 1
+strokeFrom: 1.6
+strokeTo: 0
+    colorFrom: FFE0B2
+    colorTo: FFFDFC
+    cone: 70
+interp: circleOut
+}
+pointEffect: {
+    type: ParticleEffect
+line: false
+    particles: 1
+    baseLength: 0
+length: 0
+    lifetime: 30
+sizeFrom: 4.5
+sizeTo: 0
+useRotation: true
+    colorFrom: FFE0B2
+    colorTo: FFFDFC
+    cone: 0
+offset: -90
+interp: circleOut
+useRotation: true
+sizeInterp: pow5Out
+}
+pointEffectSpace: 6
+    }
+  }
+]
+
+

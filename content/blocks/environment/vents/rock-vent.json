@@ -1,0 +1,43 @@
+name: Rocky Vent
+type: SteamVent
+blendGroup: rock
+parent: rock
+effect: ventSteam
+effectColor: 867e60
+effectSpacing: 25
+effect:{
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 195
+            sizeInterp: slope
+            length: 35
+            baseLength: 4
+            sizeFrom: 3
+            sizeTo: 5
+            colorFrom: 47443e80
+            colorTo: 47443e80
+            layer: 61.8
+            cone: 35
+            baseRotation: 27
+        }
+        {
+            type: ParticleEffect
+            lifetime: 180
+            sizeInterp: slope
+            length: 8
+            baseLength: 4
+            sizeFrom: 2
+            sizeTo: 4
+            colorFrom: 47443e80
+            colorTo: 47443e80
+            layer: 61.8
+            baseRotation: 27
+        }
+    ]
+}
+attributes: {
+   steam: 1
+   exlium: 0.5
+}

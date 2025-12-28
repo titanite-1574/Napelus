@@ -1,0 +1,18 @@
+type: BeamNode
+name: Laser Beam Node
+description: Distribute power in the form of laser. Doesn't deal damage. 
+health: 65
+fogRadius: 2
+range: 8
+size: 1
+squareSprite: false
+researchCost: [
+  silver/5
+]
+category: power
+research: 06a-vent-generator
+requirements: [
+  silver/2
+]
+laserColor1: FFFFFF
+laserColor2: 7EA1D0

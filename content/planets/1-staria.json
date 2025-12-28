@@ -1,0 +1,31 @@
+localizedName: Staria
+mesh: {
+    type: SunMesh
+    divisions: 3
+    octaves: 4
+    persistence: 0.6
+    scl: 1
+    pow: 1
+    mag: 0.5
+    colorScale: 1
+    colors: [
+        FFF1BC
+        FFF1BC
+        FFF1BC
+        FFF1BC
+        FFF1BC
+    ]
+}
+accessible: true
+radius: 3
+visible: true
+hasAtmosphere: false
+bloom: true
+orbitSpacing: 8
+solarSystem: 1-staria
+parent: sun
+orbitRadius: 12000
+drawOrbit: false
+tidalLock: true
+iconColor: ffe06f
+icon: commandRally

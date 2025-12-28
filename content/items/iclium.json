@@ -1,0 +1,6 @@
+name: Iclium
+color: 656462
+description: An icy material that is found on the walls of the icy biome. Used by melter to produce Liquid Iclium
+research: 08a-exulus 
+healthScaling: 0.9
+hardness: 3

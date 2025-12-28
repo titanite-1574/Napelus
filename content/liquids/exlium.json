@@ -1,0 +1,16 @@
+boilPoint: 0.5
+name: Exlium
+description: A liquid obtained by extracting it from vents. Used to power the wall bores and item production
+heatCapacity: -0.5
+shownPlanets: [napelus]
+color: 727296
+research: {
+  parent: 08a-exulus 
+  objectives: [
+    07d-exlium-pump 
+    {
+      type: OnComplete
+      preset: arrival
+    }
+  ]
+}

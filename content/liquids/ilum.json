@@ -1,0 +1,16 @@
+boilPoint: 0
+name: Ilum
+description: A liquid made from combining iclium and exlium. Used as turret coolant,item and unit production 
+heatCapacity: -0.9
+shownPlanets: [napelus]
+color: D6DDFF
+research: {
+  parent: 08a-exulus 
+  objectives: [
+    exlium 
+    {
+      type: OnComplete
+      preset: arrival
+    }
+  ]
+}

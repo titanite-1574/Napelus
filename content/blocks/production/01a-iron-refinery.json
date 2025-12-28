@@ -1,0 +1,73 @@
+{
+  "name" : Iron Refinery,
+  "description": Refines raw iron into iron plates.
+  "size": 3,
+  "type": "GenericCrafter",
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion"
+         suffix: -bottom
+      }
+      {
+        "type": "DrawCrucibleFlame",
+        "flameColor": "656462"
+        "flameRadiusScl": 20
+        "circleStroke": 3
+        "flameRad": 5
+      },
+      { 
+        "type": DrawDefault 
+      }
+      {
+        "type": "DrawRegion"
+         suffix: -top
+      },
+    ]
+  },
+  "hasPower": true,
+  "hasItems": true,
+  "itemCapacity": 10,
+  "craftTime": 120,
+  "craftEffect": {
+    "type": "ParticleEffect",
+    "line": true,
+    "particles": 0,
+    "lifetime": 50,
+    "length": 25,
+    "cone": -360,
+    "lenFrom": 5,
+    "lenTo": 0,
+    "colorFrom": "7A8CDC",
+    "colorTo": "FFFFFFF"
+  },
+  "updateEffect": "none",
+  "consumes": {
+    "power": 0.3,
+    "items": {
+      "items": [
+        "raw-iron/1"
+      ]
+    }
+  },
+  "requirements": [
+    "silver/50",
+  ],
+  "category": "crafting",
+  research: {
+    parent: "08a-exulus",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "arrival"
+        }
+    ]
+},
+  "researchCost": [
+    "silver/50"
+    "raw-iron/5"
+] 
+  "outputItem": "iron/4"
+    shownPlanets: [napelus]
+}

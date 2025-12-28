@@ -1,0 +1,44 @@
+type: ThermalGenerator
+description: Generates power from thermal vents
+size: 3
+name: Vent Generator
+health: 450
+fogRadius: 2
+attribute: steam
+displayEfficiencyScale: 0.11111111111
+displayEfficiency: false
+minEfficiency: 8
+powerProduction: 0.2222222220
+squareSprite: false
+category: power
+research: 08a-exulus 
+buildCostMultiplier: 2
+requirements: [
+  silver/50
+]
+research: {
+    parent: "08a-exulus",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "arrival"
+        }
+    ]
+},
+researchCost: [
+  silver/10
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawBlurSpin
+      suffix: -rotator
+      rotateSpeed: 10
+    }
+    {
+      type: DrawDefault
+    }
+  ]
+}
+group: liquids

@@ -1,0 +1,14 @@
+type: DirectionLiquidBridge
+name: Conduit Bridge 
+size: 1
+health: 65
+range: 4
+requirements: [
+  silver/5
+]
+category: liquid
+squareSprite: false
+research: 06a-liquid-pipe
+researchCost: [
+  silver/10
+]

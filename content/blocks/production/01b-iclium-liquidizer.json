@@ -1,0 +1,80 @@
+type: GenericCrafter
+size: 2
+name: Iclium Liquidizer
+description: combines Iclium with Exlium to produce a coolant
+// code by shipenfire
+health: 450
+craftTime: 60
+liquidCapacity: 60
+hasLiquids: true
+lightLiquid: ilum
+drawer: [
+  {
+    type: DrawRegion
+    suffix: -bottom
+  }
+  {
+    type: DrawLiquidTile
+    padding: 3
+    drawLiquid: exlium
+  }
+  {
+    type: DrawBubbles
+    color: 9B9BCC
+    sides: 10
+    recurrence: 3
+    spread: 5
+    radius: 1.5
+    amount: 24
+  }
+  {
+    type: DrawLiquidTile
+    padding: 3
+    drawLiquid: ilum
+  }
+  {
+    type: DrawBubbles
+    color: D6DDFF
+    sides: 10
+    recurrence: 3
+    spread: 5
+    radius: 1.5
+    amount: 12
+  }
+  {
+    type: DrawRegion
+  }
+]
+consumes: {
+  items: [
+  iclium/1
+  ]
+  liquids: [
+    exlium/0.3333333333333
+  ]
+  power: 0.5
+}
+outputLiquid: ilum/0.1666667677776666
+category: crafting
+requirements: [
+  silver/50
+  iron/55
+  magnesium/30
+]
+ambientSound: loopCultivator
+ambientSoundVolume: 0.085
+squareSprite: false
+research: {
+  parent: 01a-iron-refinery
+  objectives: [
+    {
+      type: OnSector
+      preset: arrival
+    }
+  ]
+}
+researchCost: [
+  silver/100
+  iron/100
+  magnesium/50
+]

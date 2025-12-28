@@ -1,0 +1,14 @@
+type: Router
+name: Silv Router
+description: Used to distribute items in 3 directions
+size: 1
+speed: 6
+health: 110
+itemCapacity: 4
+requirements: [
+  silver/1
+]
+squareSprite: false
+category: distribution
+research: 04a-sil-duct
+researchCostMultiplier: 0.1

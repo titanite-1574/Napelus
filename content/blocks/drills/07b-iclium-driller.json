@@ -1,0 +1,43 @@
+type: WallCrafter
+name: Iclium Driller
+description: Drills out iclium from icy walls 
+health: 250
+size: 2
+category: production
+drawers: [
+      {
+       type: DrawDefault 
+      }
+      {
+      type: DrawGlowRegion
+      suffix: -glow
+      blending: additive
+      glowIntensity: 0.5
+    }
+  ]
+research: {
+    parent: "07a-silver-drill",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "frozen-field"
+        }
+    ]
+},
+consumes: {
+  power: 0.166666666666
+}
+requirements: [
+  silver/50
+  iron/50
+]
+researchCost: [
+  silver/100
+  iron/90
+]
+drillTime: 95
+output: iclium
+attribute: icli
+ambientSound: drill
+ambientSoundVolume: 0.04
+fogRadius: 2

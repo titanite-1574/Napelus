@@ -1,0 +1,8 @@
+localizedName: Arrival 
+description: You arrived on a planet called Napelus. Begin your journey here
+planet: napelus
+sector: 2
+captureWave: 5
+research: 08a-exulus 
+difficulty: 1
+alwaysUnlocked: true

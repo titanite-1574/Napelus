@@ -1,0 +1,44 @@
+"name": "Kybus Drill",
+  "description": "A drill made to mine resourceson Napelus. Only mines tier 1 and tier 2 resources",
+  "type": "BurstDrill",
+  hasLiquids: false
+  "size": 2,
+  "itemCapacity": 10,
+  "tier": 2,
+  "drawMineItem": true,
+  drillTime: 300
+  "drawMineItem": true,
+  arrows: 0
+  rotateSpeed: 5
+  liquidBoostIntensity: 1
+  shownPlanets: [napelus]
+  drawer: {
+  type: DrawMulti
+  drawers: [
+         {
+      type: DrawRegion
+      suffix: -rotator
+      spinSprite: true
+      rotateSpeed: 10
+    }
+          {
+        "type": "DrawDefault"
+      },
+  ]
+}
+  requirements: [
+    silver/10
+  ]
+  "category": "production",
+research: {
+    parent: "08a-exulus",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "arrival"
+        }
+    ]
+},
+researchCost: [
+    silver/10
+  ]

@@ -1,0 +1,15 @@
+localizedName: Frozen Field 
+description: This sector contain traces of Magnesium. n// Research it and discover its technology.
+planet: napelus
+sector: 43
+captureWave: 10
+difficulty: 1
+research: {
+  parent: arrival 
+  objectives: [
+    {
+      type: SectorComplete
+      preset: arrival 
+    }
+  ]
+}

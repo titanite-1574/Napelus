@@ -1,0 +1,62 @@
+type: AttributeCrafter
+name: Exlium Pump
+description: Extracts exlium from thermal vents
+attribute: steam
+size: 3
+hasLiquids: true
+squareSprite: false
+outputLiquid: exlium/1
+displayEfficiencyScale: 1
+baseEfficiency: 0
+squareSprite: false
+minEfficiency: 9
+category: production
+consumes: {
+  power: 0.25
+}
+liquidCapacity: 180
+research: 07c-wall-bore 
+requirements: [
+  silver/50
+  iron/50
+]
+research: {
+    parent: "07c-wall-bore",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "frozen-field"
+        }
+    ]
+},
+researchCost: [
+  silver/100
+  iron/100
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: exlium
+      padding: 2
+    }
+    {
+      type: DrawRegion
+      suffix: -rotator
+      spinSprite: true
+      rotateSpeed: 5
+    }
+    {
+      type: DrawDefault
+    }
+  ]
+}
+buildCostMultiplier: 2
+ambientSound: elixir
+ambientSoundVolume: 0.06
+group: liquids

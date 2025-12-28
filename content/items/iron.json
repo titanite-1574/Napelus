@@ -1,0 +1,6 @@
+name: Iron
+color: 656462
+description: Processed raw iron. Can be used in construction, ammunition and unit production
+research: raw-iron
+healthScaling: 0.9
+hardness: 1

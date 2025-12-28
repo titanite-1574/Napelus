@@ -1,0 +1,5 @@
+type: StaticWall
+name: Magnesium Deposit 
+description: "Contains traces of Magnesium."
+variants: 2
+itemDrop: magnesium 

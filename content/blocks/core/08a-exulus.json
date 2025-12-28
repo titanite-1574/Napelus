@@ -1,0 +1,25 @@
+type: CoreBlock
+name: Exulus
+description: A core from Napelus capable of withstanding Napelus's harsh environment. Well armored and stores small ammount of items
+size: 3
+health: 5500
+armor: 5
+unitType: railux
+requirements: [
+ silver/500
+ iron/500
+]
+requiresCoreZone: true
+incinerateNonBuildable: true
+category: effect
+isFirstTier: true
+squareSprite: false
+alwaysUnlocked: true
+itemCapacity: 2000
+unitCapModifier: 20
+research: {
+  planet: napelus
+  root: true
+  name: Napelus
+  requiresUnlock: false
+}

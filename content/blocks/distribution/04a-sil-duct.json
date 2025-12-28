@@ -1,0 +1,16 @@
+type: Duct
+name: Silver Duct
+description: Transport item at high speed using magnetic forces. Made with durable silver
+category: distribution
+alwaysUnlocked: false
+research: 08a-exulus 
+researchCost: [
+  silver/2
+]
+speed: 5
+health: 45
+bridgeReplacement: 04d-sil-duct-bridge
+requirements: [
+  silver/1
+]
+junctionReplacement: 04c-sil-duct-junction

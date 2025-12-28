@@ -1,0 +1,116 @@
+localizedName: Napelus
+generator: "PlanetGenerator"
+
+hiddenItems: [
+    "copper"
+    "lead"
+    "scrap"
+    "graphite"
+    "coal"
+    "titanium"
+    "thorium"
+    "silicon"
+    "plastanium"
+    "phase-fabric"
+    "sand"
+    "surge-alloy"
+    "spore-pod"
+    "blast-compound"
+    "pyratite"
+    "metaglass"
+    "beryllium"
+    "oxide"
+    "tungsten"
+    "carbide"
+    "fissile-matter"
+    "dormant-cyst"
+]
+
+itemWhitelist: [
+]
+
+clearSectorOnLose: true
+allowLaunchSchematics: false
+allowLaunchLoadout: false
+
+allowWaveSimulation: true
+prebuildBase: true
+parent: 1-staria
+hasAtmosphere: true
+solarSystem: 1-staria
+orbitRadius: 60
+orbitTime: 9920
+alwaysUnlocked: true
+tidalLock: false
+accessible: true
+visible: true
+radius: 0.97
+minZoom: 0.40
+sectorSize: 2.22
+startSector: 2
+atmosphereRadIn: 0.001
+atmosphereRadOut: 0.30
+atmosphereColor: 7C7C7C
+iconColor: bad5cd     
+landCloudColor: 7e7e86
+icon: planet
+bloom: false
+allowLaunchToNumbered: false
+defaultCore: "08a-exulus"
+mesh: [
+ {
+  //yellow
+    type: NoiseMesh
+    seed: 1
+    divisions: 5.7
+    radius: 0.732
+    color1: C9C8CD
+    color2: 666259
+    octaves: 4.4
+    persistence: 0.9
+    scale: 0.42
+    mag: 3.1
+    coct: 4.5
+    cper: 4
+    cscl: 6.6
+    cthresh: 125
+  }
+  {
+  //yellow
+    type: NoiseMesh
+    seed: 19
+    divisions: 5.7
+    radius: 0.732
+    color1: E2E8FF
+    color2: A3A7B7
+    octaves: 4.4
+    persistence: 0.9
+    scale: 0.42
+    mag: 3.1
+    coct: 4.5
+    cper: 4
+    cscl: 6.6
+    cthresh: 125
+  }
+  {
+ //brown
+    type: NoiseMesh
+	bloom: false
+    seed: 125
+    color1: 7A77AF
+    color2: 7A77AF
+    divisions: 5.7
+    radius: 0.892
+    octaves: 3
+    persistence: 0.9
+    scale: 0.0001
+    mag: 1
+	coct: 1
+    cper: 1
+    cscl: 1
+	cthresh: 8
+ }
+]
+alwaysUnlocked: true
+cloudMesh: [
+]

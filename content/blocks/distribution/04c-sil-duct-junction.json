@@ -1,0 +1,13 @@
+type: Junction
+name: Silv Junction
+description: Allow for ducts to cross each other. 
+health: 65
+size: 1
+speed: 22
+requirements: [
+  silver/1
+]
+squareSprite: false
+category: distribution
+research: 04b-sil-duct-router
+researchCostMultiplier: 0.1

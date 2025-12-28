@@ -1,0 +1,16 @@
+type: Conduit
+name: Liquid Pipe
+description: Transports liquids
+category: liquid
+research: 08a-exulus 
+requirements: [
+  silver/1
+]
+health: 35
+leaks: true
+underBullets: true
+researchCostMultiplier: 0.1
+rotBridgeReplacement: 06b-liquid-bridge
+researchCost: [
+  silver/20
+]

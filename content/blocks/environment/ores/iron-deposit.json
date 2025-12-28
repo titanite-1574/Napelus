@@ -1,0 +1,6 @@
+type: OreBlock
+name: Raw Iron Deposit 
+itemDrop: raw-iron
+variants: 2
+mapColor: 656462
+tier: 2

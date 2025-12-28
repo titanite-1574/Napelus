@@ -1,0 +1,24 @@
+{
+  "name": "Silver Wall"
+  "description": A wall made from Silver. Durable
+  "type": "Wall",
+  "buildCostMultiplier": 0.1,
+  "buildTime": 700
+  "health": 784,
+  "size": 1,
+  "armor": 3,
+  "requirements": [
+    "silver/5"
+  ],
+  "research": 08a-exulus 
+ objectives: [
+        {
+            type: "OnSector",
+            preset: "arrival"
+        }
+    ]
+  researchCost: [
+  silver/15
+]
+  "category": defense
+}

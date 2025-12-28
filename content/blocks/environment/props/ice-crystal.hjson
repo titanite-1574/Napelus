@@ -1,0 +1,7 @@
+type: TallBlock
+name: Icy Crystal
+variants: 1
+clipSize: 96
+emitLight: false
+lightColor: 687CA3
+customShadow: true

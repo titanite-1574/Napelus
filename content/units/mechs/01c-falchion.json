@@ -1,0 +1,119 @@
+type: mech
+Name: Falchion
+speed: 0.4
+description: Both of its gun was replaced by two heavy blades. Lunges at enemies in an instant.  Equipped with 2 small mounted guns for support during reload
+health: 3500
+armor: 12
+hitSize: 15
+outlineColor: 3F3E44
+shownPlanets: [napelus]
+weapons: [
+ {
+    x: 5
+    y: -1
+    name: falchion-missile
+    reload: 250
+    mirror: true
+    rotate: true
+    shootSound: shootMissileLarge
+    "chargeSound": target-locked
+    "shootStatusDuration": 150,
+      "shootStatus": slow,
+      "shoot": {
+      type: shootSpread,
+    spread: 15,
+      "firstShotDelay": 150,
+      "shots": 5
+      "shotDelay": 10
+      },
+    bullet: {
+      instantDisappear: true
+      damage: 0
+      spawnUnit: smol-missile
+    }
+  }
+ {
+    name: heavy-blade
+    x: 12
+    y: 0
+    rotate: true
+    mirror: true
+    alternate: true
+    layerOffset: 0
+    rotateSpeed: 5
+    reload: 200
+rotationLimit: 20
+shootCone: 50
+shootSound: slash
+ top: false
+    recoil: -5
+    bullet: {
+shootEffect: {
+  type: ParticleEffect
+line: true
+    particles: 4
+    baseLength: 2
+length: -30
+    lifetime: 15
+lenFrom: 4
+lenTo: 0
+strokeFrom: 1.5
+strokeTo: 0
+    colorFrom: FFE0B2
+    colorTo: FFFDFC
+    cone: -30
+interp: circleOut
+sizeInterp: linear
+}
+smokeEffect: none
+    type: RailBulletType
+    damage: 550
+  recoil: -15
+      buildingDamageMultiplier: 3
+    pierce: true
+    length: 25
+    width: 10
+    height: 8
+    lifetime: 1
+statusDuration: 100
+trailRotation: true
+pierceEffect: {
+    type: ParticleEffect
+line: true
+    particles: 4
+    baseLength: 0
+length: 20
+    lifetime: 30
+lenFrom: 3
+lenTo: 1
+strokeFrom: 1.6
+strokeTo: 0
+    colorFrom: FFE0B2
+    colorTo: FFFDFC
+    cone: 70
+interp: circleOut
+}
+pointEffect: {
+    type: ParticleEffect
+line: false
+    particles: 1
+    baseLength: 0
+length: 0
+    lifetime: 30
+sizeFrom: 4.5
+sizeTo: 0
+useRotation: true
+    colorFrom: FFE0B2
+    colorTo: FFFDFC
+    cone: 0
+offset: -90
+interp: circleOut
+useRotation: true
+sizeInterp: pow5Out
+}
+pointEffectSpace: 6
+    }
+  }
+]
+
+

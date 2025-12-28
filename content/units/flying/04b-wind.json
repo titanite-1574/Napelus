@@ -1,0 +1,106 @@
+name: Wind
+type: flying
+useEngineElevation: false
+shadowElevation: 0.3
+engineOffset: 3
+engineSize: 3
+shownPlanets: [napelus]
+flying: true
+outlineColor: 251b21
+outlineRadius: 3
+engineColor: 8989D3
+alwaysUnlocked: true
+armor: 0.5
+accel: 0.05
+health: 1200
+hovering: false
+speed: 1.40
+hitSize: 11
+healColor: 3CC773
+drag: 0.03
+description: Shoots from both barrels dealing high damage. Can fly over terrain
+abilities: [
+  {
+    effect: {
+      type: ParticleEffect
+      y: -1
+      colorFrom: 8989D3
+      colorTo: 8989D3
+      lifetime: 25
+      particles: 1
+      cone: 360
+      length: 0
+      baseLength: 0
+      lightScl: 2.5
+      lightOpacity: 2
+      spin: 0
+      sizeFrom: 1.6
+      sizeTo: 0
+      offset: 0
+    }
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 0.00000001
+    y: -1
+    x: 0
+  }
+]
+weapons: [
+  {
+name: wind-gun
+x: 5
+y: 5
+mirror: true
+layerOffset: -1
+shoot: {
+type: ShootPattern
+shots: 2
+shotDelay: 10
+}
+top: false
+rotate: false
+reload: 50
+recoil: 1
+shootSound: shootTank
+ejectEffect: none
+bullet: {
+    type: BasicBulletType,
+    speed: 9
+    lifetime: 50
+    damage: 35
+    drag: 0.05
+    width: 7
+    weaveScale: 3
+        weaveMag: 3
+    pierce: true
+    pierceCap: 2
+    pierceBuilding: true
+    height: 10
+    frontColor: b2afb3
+    backColor: d5d2d6
+    shootEffect: "shootSmall"
+    smokeEffect: "shootSmallSmoke"
+    ammoMultiplier: 5
+    collidesTiles: true
+    hitEffect: pointHit
+    sprite: missile-large
+      trailLength: 5
+      trailColor: 8989D3
+      trailWidth: 2
+}
+}
+]
+research: {
+  parent: 04a-blow
+  requirements: [
+    silver/100
+    iron/100
+    magnesium/50
+  ]
+  objectives: [
+    {
+      type: SectorComplete
+      preset: frozen-field
+    }
+  ]
+}

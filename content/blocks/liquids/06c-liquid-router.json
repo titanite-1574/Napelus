@@ -1,0 +1,18 @@
+type: LiquidRouter
+name: Liquid Pipe Router
+description: Distributes inputted liquids to three outputs equally.
+size: 1
+solid: false
+underBullets: true
+health: 45
+liquidCapacity: 20
+category: liquid
+squareSprite: false
+research: 06a-liquid-pipe 
+requirements: [
+  silver/2
+]
+researchCostMultiplier: 0.1
+researchCost: [
+  silver/5
+]

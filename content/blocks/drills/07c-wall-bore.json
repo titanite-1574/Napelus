@@ -1,0 +1,44 @@
+name: Wall Bore
+description: Drills out ores from walls. Useful for mining magnesium from walls
+type: beamDrill
+health: 450
+range: 5
+tier: 3
+size: 2
+optionalBoostIntensity: 2.5
+drillTime: 180
+ambientSound: drill
+ambientSoundVolume: 0.08
+hasLiquids: true
+sparkColor: 7A8CDC
+consumes: {
+  liquid: exlium/0.04000000
+  power: 0.25
+  liquids: {
+    liquids: [
+      cryofluid/0.0416666666667
+    ]
+    optional: true
+    booster: true
+  }
+}
+buildCostMultiplier: 2
+category: production
+research: {
+    parent: "07a-silver-drill",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "frozen-field"
+        }
+    ]
+},
+researchCost: [
+  silver/20
+  iron/20
+]
+requirements: [
+  silver/30
+  iron/20
+]
+shownPlanets: [napelus]

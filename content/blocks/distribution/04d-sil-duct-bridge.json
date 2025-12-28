@@ -1,0 +1,14 @@
+type: DuctBridge
+name: Silv duct bridge 
+description: Used to bridge across terrain and blocks.
+health: 60
+size: 1
+requirements: [
+  silver/2
+] 
+category: distribution
+research: 04c-sil-duct-junction 
+squareSprite: false
+range: 5
+speed: 4.285714
+researchCostMultiplier: 0.1

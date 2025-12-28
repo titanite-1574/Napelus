@@ -1,0 +1,39 @@
+{
+  "type": "UnitFactory",
+  "name": Air Fabricator
+  "description": Fabricates <<hover>> units
+  "size": 3,
+  "configurable": false,
+  "fogRadius": 3,
+  "category": "units",
+  "consumes": {
+    "power": 2
+  },
+  "plans": [
+    {
+      "unit": "04a-blow",
+      "requirements": [
+        "silver/15",
+        "iron/20"
+      ],
+      "time": 2010
+    }
+  ],
+ research: {
+    parent: "08a-exulus",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "outpost"
+        }
+    ]
+}
+  "requirements": [
+    "silver/200",
+    "iron/230",
+  ]
+  "researchCost": [
+    "silver/200"
+    "iron/200"
+  ]
+}

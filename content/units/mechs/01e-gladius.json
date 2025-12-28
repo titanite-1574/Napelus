@@ -1,0 +1,133 @@
+type: mech
+Name: Gladius
+speed: 0.20
+rotateSpeed: 1
+description: Lunges at enemies with brute force
+health: 25000
+armor: 25
+hitSize: 40
+outlineColor: 3F3E44
+shownPlanets: [napelus]
+deathSound: mech-large-destroyed
+weapons: [
+{
+name: gladius-heavy-gun
+x: -20
+y: 0
+mirror: false
+layerOffset: 0
+shootY: 8
+rotate: true
+rotationLimit: 25
+shoot: {
+type: ShootPattern
+shots: 10
+shotDelay: 2
+}
+top: false
+rotate: false
+reload: 50
+recoil: 4
+shootSound: shootConquer
+ejectEffect: none
+bullet: {
+    type: BasicBulletType,
+    speed: 9
+    lifetime: 45
+    damage: 30
+    width: 10
+    height: 15
+    frontColor: b2afb3
+    backColor: d5d2d6
+    shootEffect: "shootSmall"
+    smokeEffect: "shootSmallSmoke"
+    ammoMultiplier: 5
+    collidesTiles: true
+    hitEffect: pointHit
+}
+}
+ {
+    name: ultra-heavy-blade
+    x: 20
+    y: 0
+    rotate: false
+    mirror: false 
+    alternate: true
+    layerOffset: 0
+    rotateSpeed: 5
+    reload: 200
+rotationLimit: 20
+shootCone: 50
+shootSound: slash
+ top: false
+    recoil: -5
+    bullet: {
+shootEffect: {
+  type: ParticleEffect
+line: true
+    particles: 4
+    baseLength: 2
+length: -30
+    lifetime: 15
+lenFrom: 4
+lenTo: 0
+strokeFrom: 1.5
+strokeTo: 0
+    colorFrom: FFE0B2
+    colorTo: FFFDFC
+    cone: -30
+interp: circleOut
+sizeInterp: linear
+}
+smokeEffect: none
+    type: RailBulletType
+    damage: 3000
+  recoil: -15
+      buildingDamageMultiplier: 4
+    pierce: true
+    length: 85
+    width: 30
+    height: 50
+    lifetime: 1
+statusDuration: 100
+trailRotation: true
+pierceEffect: {
+    type: ParticleEffect
+line: true
+    particles: 4
+    baseLength: 0
+length: 30
+    lifetime: 30
+lenFrom: 3
+lenTo: 1
+strokeFrom: 1.6
+strokeTo: 0
+    colorFrom: FFE0B2
+    colorTo: FFFDFC
+    cone: 70
+interp: circleOut
+}
+pointEffect: {
+    type: ParticleEffect
+line: false
+    particles: 1
+    baseLength: 0
+length: 0
+    lifetime: 30
+sizeFrom: 4.5
+sizeTo: 0
+useRotation: true
+    colorFrom: FFE0B2
+    colorTo: FFFDFC
+    cone: 0
+offset: -90
+interp: circleOut
+useRotation: true
+sizeInterp: pow5Out
+}
+pointEffectSpace: 6
+    }
+  }
+]
+
+

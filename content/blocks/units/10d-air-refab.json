@@ -1,0 +1,36 @@
+{
+  "name": "Air Refabricator"
+  "description": Refabricates hover units to T2 flying
+  "type": "Reconstructor",
+  "size": 3,
+  "constructTime": 2200,
+   consumes: {
+    power: 5
+    liquid: ilum/0.4
+    items: [
+        iron/35
+        teralite/25
+    ]
+}
+  "upgrades": [
+    [
+      "04a-blow",
+      "04b-wind"
+    ]
+  ],
+  "category": "units",
+research: {
+    parent: "10c-air-fabricator"
+    objectives: [
+        {
+            type: "OnSector"
+            preset: "outpost"
+        }
+      ]
+   }
+  "requirements": [
+    "silver/200",
+    "iron/200"
+    "teralite/100"
+  ]
+}

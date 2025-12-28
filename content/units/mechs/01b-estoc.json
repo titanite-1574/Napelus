@@ -1,0 +1,128 @@
+type: mech
+Name: Estoc
+speed: 0.7
+description: One of It's gun was replaced by a sharp blade. Lunges at enemy unit dealing pierce and large damage. Deals more damage to buildings
+health: 1560
+armor: 5
+hitSize: 11
+outlineColor: 3F3E44
+shownPlanets: [napelus]
+weapons: [
+{
+name: estoc-gun
+x: -8
+y: 2
+mirror: false
+layerOffset: 0
+shoot: {
+type: ShootPattern
+shots: 2
+shotDelay: 10
+}
+top: false
+layerOffset: 0
+rotate: false
+reload: 150
+recoil: 1
+shootSound: normalShoot
+ejectEffect: none
+bullet: {
+    type: BasicBulletType,
+    speed: 5
+    lifetime: 30
+    damage: 15
+    width: 7
+    height: 10
+    frontColor: b2afb3
+    backColor: d5d2d6
+    shootEffect: "shootSmall"
+    smokeEffect: "shootSmallSmoke"
+    ammoMultiplier: 5
+    collidesTiles: true
+    hitEffect: pointHit
+}
+}
+ {
+    name: estoc-blade
+    x: 7
+    y: 2
+    rotate: true
+    mirror: false
+    layerOffset: 0
+    rotateSpeed: 5
+    reload: 50
+rotationLimit: 20
+shootCone: 50
+shootSound: slash
+ top: false
+    recoil: -15
+    bullet: {
+shootEffect: {
+  type: ParticleEffect
+line: true
+    particles: 4
+    baseLength: 2
+length: -30
+    lifetime: 15
+lenFrom: 4
+lenTo: 0
+strokeFrom: 1.5
+strokeTo: 0
+    colorFrom: FFE0B2
+    colorTo: FFFDFC
+    cone: -30
+interp: circleOut
+sizeInterp: linear
+}
+smokeEffect: none
+    type: RailBulletType
+    damage: 120
+  recoil: -15
+      buildingDamageMultiplier: 2
+    pierce: true
+    length: 25
+    width: 7
+    height: 6
+    lifetime: 1
+statusDuration: 100
+trailRotation: true
+pierceEffect: {
+    type: ParticleEffect
+line: true
+    particles: 4
+    baseLength: 0
+length: 20
+    lifetime: 30
+lenFrom: 3
+lenTo: 1
+strokeFrom: 1.6
+strokeTo: 0
+    colorFrom: FFE0B2
+    colorTo: FFFDFC
+    cone: 70
+interp: circleOut
+}
+pointEffect: {
+    type: ParticleEffect
+line: false
+    particles: 1
+    baseLength: 0
+length: 0
+    lifetime: 30
+sizeFrom: 4.5
+sizeTo: 0
+useRotation: true
+    colorFrom: FFE0B2
+    colorTo: FFFDFC
+    cone: 0
+offset: -90
+interp: circleOut
+useRotation: true
+sizeInterp: pow5Out
+}
+pointEffectSpace: 6
+    }
+  }
+]
+
+

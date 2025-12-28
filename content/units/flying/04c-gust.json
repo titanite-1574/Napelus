@@ -1,0 +1,246 @@
+name: Gust
+type: flying
+useEngineElevation: false
+shadowElevation: 0.3
+engineOffset: 4
+engineSize: 4
+shownPlanets: [napelus]
+flying: true
+outlineColor: 251b21
+outlineRadius: 3
+engineColor: 8989D3
+alwaysUnlocked: false
+armor: 5
+circleTarget: true
+accel: 0.15
+health: 3402
+speed: 1.45
+hitSize: 20
+healColor: 3CC773
+autoDropBombs: true
+circleTargetRadius: 40
+createWreck: true
+drag: 0.03
+faceTarget: false
+description: Drops bombs while circling it's target. Boost forward every bomb drop
+targetFlag: [ turret, core ]
+abilities: [
+  {
+    effect: {
+      type: ParticleEffect
+      y: 0
+      colorFrom: 8989D3
+      colorTo: 8989D3
+      lifetime: 25
+      particles: 1
+      cone: 360
+      length: 0
+      baseLength: 0
+      lightScl: 2.5
+      lightOpacity: 2
+      spin: 0
+      sizeFrom: 1.6
+      sizeTo: 0
+      offset: 0
+    }
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 0.00000001
+    y: 0
+    x: -5
+  }
+  {
+  effect: {
+      type: ParticleEffect
+      y: 0
+      colorFrom: 8989D3
+      colorTo: 8989D3
+      lifetime: 25
+      particles: 1
+      cone: 360
+      length: 0
+      baseLength: 0
+      lightScl: 2.5
+      lightOpacity: 2
+      spin: 0
+      sizeFrom: 1.6
+      sizeTo: 0
+      offset: 0
+    }
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 0.00000001
+    y: 0
+    x: 5
+  }
+]
+weapons: [
+{
+  name: gust-weapon
+x: 0
+y: 0
+mirror: false
+layerOffset: 0.01
+shoot: {
+type: ShootAlternate 
+spread: 5
+shots: 2
+shotDelay: 10
+}
+top: true
+rotate: true
+reload: 50
+under: false
+top: true
+recoil: 1
+shootSound: shootTank
+ejectEffect: none
+recoils: 2
+    parts: [
+    {
+      type: RegionPart
+      suffix: -barrel-1
+      layerOffset: -0.00000001
+      mirror: false
+      "under": false,
+      progress: recoil
+      recoilIndex: 0
+      moveY: -2
+    }
+    {
+      type: RegionPart
+      suffix: -barrel-2
+      layerOffset: -0.00000001
+      mirror: false
+      under: true
+      progress: recoil
+      recoilIndex: 1
+      moveY: -2
+    }
+  ]
+bullet: {
+    type: BasicBulletType,
+    speed: 6
+    lifetime: 30
+    damage: 30
+    width: 7
+    height: 10
+    frontColor: 8989D3
+    backColor: 8989D3
+    shootEffect: "shootSmall"
+    smokeEffect: "shootSmallSmoke"
+    ammoMultiplier: 5
+    collidesTiles: true
+    hitEffect: pointHit
+    sprite: missile-large
+      trailChance: -1
+      trailInterval: 5
+      trailRotation: true
+      trailEffect: colorSpark
+      trailColor: 8989D3
+}
+}
+  {
+      "x": 0,
+      "y": -3,
+      "shootCone": 300,
+      "mirror": true,
+      "rotate": false,
+      "alternate": false,
+      "shoot": {
+        "shots": 3
+         ShotDelay: 10
+      },
+      "velocityRnd": 0.6,
+      "reload": 75,
+      "ignoreRotation": true,
+      "shootSound": "shootQuad",
+      "inaccuracy": 29,
+      "bullet": {
+        "damage": 50,
+        "recoil": -0.5,
+        "speed": -1,
+        "drag": 0.04,
+        "type": "basicBulletType",
+        "collidesAir": false,
+        "collides": false,
+        "status": "freezing",
+        "statusDuration": 100,
+        "shrinkY": 0.7,
+        "shrinkX": 0.7,
+        "trailColor": "8989D3",
+        "trailLength": 10,
+        "trailWidth": 2,
+        "despawnShake": 3,
+        "hitSound": "explosion",
+        "sprite": "large-bomb",
+        "splashDamage": 120,
+        "splashDamageRadius": 35,
+        "spin": 3,
+        "keepVelocity": false,
+        "shootEffect": "none",
+        "hitEffect": {
+          "type": "multiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "line": true,
+              "particles": 7,
+              "lifetime": 20,
+              "offset": 50,
+              "length": 65,
+              "cone": -360,
+              "lenFrom": 6,
+              "lenTo": 0,
+              "colorFrom": "8989D3",
+              "colorTo": "8989D3"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 1,
+              "sizeFrom": 25,
+              "sizeTo": 0,
+              "length": 0,
+              "lightColor": "8989D3",
+              "lifetime": 30,
+              "layer": 109,
+              "colorFrom": "8989D3",
+              "colorTo": "8989D3"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 1,
+              "sizeFrom": 10,
+              "sizeTo": 0,
+              "length": 0,
+              "lightColor": "8989D3",
+              "lifetime": 30,
+              "layer": 109,
+              "colorFrom": "8989D3",
+              "colorTo": "8989D3"
+            }
+          ]
+        },
+        "width": 20,
+        "height": 20,
+        "lifetime": 30,
+        "frontColor": "8989D3",
+        "mixColorTo": "8989D3",
+        "backColor": "8989D3"
+      }
+    }
+  ]
+research: {
+  parent: 04b-wind
+  requirements: [
+    silver/100
+    iron/100
+    magnesium/50
+  ]
+  objectives: [
+    {
+      type: SectorComplete
+      preset: frozen-field
+    }
+  ]
+}

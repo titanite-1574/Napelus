@@ -1,0 +1,6 @@
+name: Raw Iron
+color: 656462
+description: Found in iron deposits. Can't be used in anything until it's processed into iron
+research: silver
+healthScaling: 0.9
+hardness: 1

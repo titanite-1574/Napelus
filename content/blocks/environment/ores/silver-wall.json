@@ -1,0 +1,8 @@
+type: OreBlock
+name: Silver (wall)
+description: "Contains traces of silver."
+wallOre: true
+mineAble: true
+variants: 2
+itemDrop: silver 
+tier: 1

@@ -1,0 +1,14 @@
+localizedName: Outpost 
+description: This sector contain a small outpost from an enemy team. Research the Blade Mech Factory and take down this small base
+planet: napelus
+sector: 89
+difficulty: 2
+research: {
+  parent: frozen-field 
+  objectives: [
+    {
+      type: SectorComplete
+      preset: frozen-field 
+    }
+  ]
+}
