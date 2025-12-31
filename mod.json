@@ -1,9 +1,9 @@
 name: "nap"
 displayName: "Napelus."
-author: Titan
+author: GalvaTitanium
 description: "Adds.....i don't really know". Still in WIP
-version: "1.0"
-subtitle: "[#93e2ee[]] um"
+version: "0.1"
+subtitle: "[#93e2ee[]] earliest update "
 minGameVersion: "152.2"
 dependencies: [ ]
 hidden: false
