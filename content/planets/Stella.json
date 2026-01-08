@@ -1,0 +1,109 @@
+generator: "PlanetGenerator"
+localizedName: Tandirus
+description: A large tundra planet once named (Stella) where the Aralus originated. Once you were here but now it's in ruins.The Stelris infection has taken over,they fled the planet and arrived at Napelus,the second planet from Staria. Returning or landing here is extremely dangerous due to the mutated creatures and the infection.
+accessible: true
+visible: true
+alwaysUnlocked: true
+mesh: [
+    {
+    //cryobiome
+    type: NoiseMesh
+    planet: Stella
+    divisions: 5
+    seed: 95
+    radius: 1.120
+    color1: 748689
+    color2: 708281
+    octaves: 3
+    persistence: 1.1
+    mag: 1.6
+    scl: 5
+    }
+    {
+    //cryobiome
+    type: NoiseMesh
+    planet: Stella
+    divisions: 3
+    seed: 35
+    radius: 1.120
+    color1: 786AA1
+    color2: 9182BD
+    octaves: 1
+    persistence: 0.2
+    mag: 0.9
+    scl: 3
+    }
+    {
+    //stellastonebiome
+    type: NoiseMesh
+    planet: Stella
+    divisions: 5
+    seed: 52
+    radius: 1.100
+    color1: 495269
+    color2: 4D5157
+    octaves: 3
+    persistence: 1.1
+    }
+]
+cloudMesh: [
+   {
+   type: HexSkyMesh
+   planet: Stella
+   seed: 3
+   speed: 0.45
+   radius: 0.15
+   divisions: 5
+   color: 70828184
+   octaves: 3
+   persistence: 0.3
+   scl: 1
+   thresh: 0.45
+   }
+]
+radius: 1.2
+startSector: 0
+sectorSize: 3
+minZoom: 0.5
+
+orbitRadius: 30
+orbitOffset: 250
+orbitTime: 3000
+orbitSpacing: 3.5
+
+allowLaunchSchematics: false
+allowLaunchToNumbered: true
+allowLaunchLoadout: false
+allowSectorInvasion: false
+allowSelfSectorLaunch: true
+allowCampaignRules: true
+
+hasAtmosphere: true
+iconColor: 748689
+landCloudColor: 708281d4
+updateLighting: false
+bloom: false
+lighting: true
+
+clearSectorOnLose: true
+prebuildBase: true
+defaultCore: 08a-exulus 
+parent: 1-staria
+solarSystem: 1-staria
+tidalLock: false
+
+enemyBuildSpeedMultiplier: 0.7
+coreDestroyClear: true
+fog: true
+showSpawns: true
+rtsAI: true
+
+campaignRuleDefaults.fog: true
+campaignRuleDefaults.showSpawns: true
+campaignRuleDefaults.rtsAI: true
+
+launchCandidates: []
+itemWhitelist: [
+  "titanium",
+  "graphite"
+]

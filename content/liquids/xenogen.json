@@ -1,0 +1,7 @@
+name: Xenogen
+description: A gas that is extracted from the air just like nitrogen. Used in unit assembly and contruction 
+gas: true
+shownPlanets: [napelus]
+temperature: 0.25
+heatCapacity: 0.9
+color: AFB0D6

@@ -1,0 +1,12 @@
+{
+  "name": nitric fissurr
+  "type": "Floor",
+  "variants": 2
+  "wall": "snowy-wall"
+  emitLight: true
+lightRadius: 10
+lightColor: C8F1FF
+ attributes: {
+ nitrogen: 1
+ }
+}

@@ -1,0 +1,20 @@
+type: BeamNode
+name: Advance Laser Beam Node
+description: Distribute power in the form of laser. Capable of crossing wide river and terrain
+health: 95
+fogRadius: 2
+range: 11
+size: 1
+squareSprite: false
+researchCost: [
+  silver/50
+  amalgam/50
+]
+category: power
+research: 06b-laser-node
+requirements: [
+  silver/10
+  amalgam/5
+]
+laserColor1: FFFFFF
+laserColor2: 7EA1D0

@@ -20,7 +20,7 @@
     }
   ],
  research: {
-    parent: "08a-exulus",
+    parent: "10a-blade-fabricator",
     objectives: [
         {
             type: "OnSector",
@@ -31,9 +31,11 @@
   "requirements": [
     "silver/200",
     "iron/230",
+    "magnesium/120"
   ]
   "researchCost": [
     "silver/200"
     "iron/200"
+    "magnesium/200"
   ]
 }

@@ -1,0 +1,19 @@
+{
+  "name": "Large Iron Wall"
+  "type": "Wall",
+  "description": A larger wall with more health and more durable. Has a chance to defelct enemies projectiles
+   "buildCostMultiplier": 0.1,
+  "buildTime": 1100
+  chanceDeflect: 10
+  "health": 1650,
+  "size": 2,
+  "armor": 5,
+  "requirements": [
+    "iron/10"
+  ],
+  "research": 02c-iron-wall 
+  "category": defense
+  researchCost: [
+  iron/500
+]
+}

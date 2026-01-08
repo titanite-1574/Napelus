@@ -1,0 +1,207 @@
+name: Storm
+type: flying
+useEngineElevation: false
+shadowElevation: 0.3
+lowAltitude: true
+engineOffset: 15
+engineSize: 6
+shownPlanets: [napelus]
+flying: true
+outlineColor: 251b21
+outlineRadius: 3
+engineColor: BFBFEF
+alwaysUnlocked: false
+armor: 15
+accel: 0.5
+health: 9800
+rotateSpeed: 0.9
+speed: 0.80
+hitSize: 35
+healColor: 3CC773
+createWreck: true
+drag: 0.009
+faceTarget: true
+description: Armed with a large powerful railgun capable of reaching vast targets. Has 2 missile launcher
+targetFlag: [ turret, core ]
+ "engines": [
+  {
+    x: -16
+    y: -14
+    radius: 4
+    rotation: -135
+  }
+  {
+    x: 16
+    y: -14
+    radius: 4
+    rotation: -45
+  }
+]
+"abilities": [
+    {
+    type: ShieldArcAbility
+    radius: 50
+    angle: 180
+    width: 4
+    y: 2
+    cooldown: 200
+    regen: 1
+    max: 200
+  }
+  {
+    effect: {
+      type: ParticleEffect
+      y: 0
+      colorFrom: 8989D3
+      colorTo: 8989D3
+      lifetime: 25
+      particles: 1
+      cone: 360
+      length: 0
+      baseLength: 0
+      lightScl: 2.5
+      lightOpacity: 2
+      spin: 0
+      sizeFrom: 1.6
+      sizeTo: 0
+      offset: 0
+    }
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 0.00000001
+    y: 0
+    x: -18
+  }
+  {
+  effect: {
+      type: ParticleEffect
+      y: 0
+      colorFrom: 8989D3
+      colorTo: 8989D3
+      lifetime: 25
+      particles: 1
+      cone: 360
+      length: 0
+      baseLength: 0
+      lightScl: 2.5
+      lightOpacity: 2
+      spin: 0
+      sizeFrom: 1.6
+      sizeTo: 0
+      offset: 0
+    }
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 0.00000001
+    y: 0
+    x: 18
+  }
+]
+weapons: [
+ {
+    x: 15
+    y: -5
+    name: falchion-missile
+    reload: 50
+    mirror: true
+    rotate: true
+    shootSound: shootMissileLarge
+      "shoot": {
+      type: shootSpread,
+    spread: 3,
+      "shots": 2
+      "shotDelay": 10
+      },
+    bullet: {
+      instantDisappear: true
+      damage: 0
+      spawnUnit: storm-smol-missile
+    }
+  }
+{
+      "name": "storm-sniper",
+      "reload": 350,
+      "mirror": false,
+      "alternate": true
+      "shake": 5
+      "x": 0,
+      "y": 0,
+      "rotate": true,
+      "recoil": 5
+      "rotateSpeed": 1,
+      "shootSound": "railgun",
+      "bullet": {
+        "type": "ArtilleryBulletType",
+        "lightColor": "000083b8",
+        "lightOpacity": 0.7,
+        "collidesAir": true
+       "targetAir": true
+        "lightRadius": 40,
+        "despawnEffect": none
+        "trailEffect": none
+        trailEffect: shootSmokeTitan
+        trailColor: BFBFEF
+        trailChance: -2
+        trailParam: 4
+        trailInterval: 4
+        trailRotation: true
+        trailLength: 8
+        trailWidth: 4,
+        "hitSound": railHit
+      "despawnSound": railHit
+        "speed": 13
+        "shake": 10
+        "pierce": true,
+        "frontColor": "BFBFEF",
+        "backColor": "BFBFEF",
+        "pierce": true,
+        "pierceCap": 8,
+        "status": "electrified",
+        "statusDuration": 60,
+        "splashDamage": 355
+        "splashDamageRadius": 40
+        "width": 9,
+        "height": 5,
+        "lifetime": 55
+        fragOnHit: true
+      fragBullets: 20
+      fragRandomSpread: 360
+      fragLifeMin: 1
+      fragLifeMax: 1
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragSpread: 0
+      fragAngle: 0
+      fragOnAbsorb: true
+      fragBullet: {
+        type: BasicBulletType
+        width: 10
+        height: 10
+        sprite: missile-large
+        frontColor: BFBFEF
+        backColor: BFBFEF
+        trailColor: BFBFEF
+        trailWidth: 3
+        trailLength: 26
+        trailRotation: true
+        trailEffect: shootSmokeSquareSparse
+        trailInterval: 4
+        speed: 2
+        drag: 0.00005
+        lifetime: 150
+        pierceCap: 2
+        damage: 25
+        pierce: true
+         }
+       }
+    },
+  ]
+research: {
+  parent: 10o-airship-assem
+  objectives: [
+    {
+      type: SectorComplete
+      preset: frozen-field
+    }
+  ]
+}

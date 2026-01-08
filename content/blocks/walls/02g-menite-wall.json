@@ -1,0 +1,20 @@
+{
+  "name": "Menite Wall"
+  "type": "Wall",
+  "description": A wall made of menite.Explodes when destroyed sending fragment at random angle 
+   "buildCostMultiplier": 0.1,
+  "buildTime": 1100
+  chanceDeflect: 10
+  "health": 1000,
+  "size": 1,
+  "armor": 5,
+  "requirements": [
+    "menite/5"
+   "silver/5"
+  ],
+  "research": 02f-large-tera-wall 
+  "category": defense
+  researchCost: [
+  iron/500
+]
+}

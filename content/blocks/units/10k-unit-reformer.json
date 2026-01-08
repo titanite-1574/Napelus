@@ -1,21 +1,25 @@
 {
   "name": "Unit Reformer"
-  "description": upgrades any units to T3
+  "description": upgrades any units to T3. Requires Nitrogen
   "type": "Reconstructor",
   "size": 5,
   "constructTime": 2550,
    consumes: {
     power: 5
-    liquid: ilum/0.5
+    liquid: nitrogen/0.5
     items: [
-        magnesium/55
-        teralite/50
+        amalgam/70
+        teralite/90
     ]
 }
   "upgrades": [
     [
       "01b-estoc",
       "01c-falchion"
+    ],
+    [
+      "02b-shatter",
+      "02c-fracture"
     ],
     [
       "04b-wind",
@@ -27,6 +31,6 @@
     "silver/1200",
     "iron/1300"
     "teralite/1000"
-    "magnesium/1500"
+    "amalgam/1500"
   ]
 }

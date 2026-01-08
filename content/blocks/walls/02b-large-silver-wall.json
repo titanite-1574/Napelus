@@ -14,7 +14,7 @@
   "research": 02a-silver-wall 
   "category": defense
   researchCost: [
-  silver/1000
+  silver/300
   iron/500
 ]
 }

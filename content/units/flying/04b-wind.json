@@ -91,12 +91,7 @@ bullet: {
 }
 ]
 research: {
-  parent: 04a-blow
-  requirements: [
-    silver/100
-    iron/100
-    magnesium/50
-  ]
+  parent: 10d-air-refab
   objectives: [
     {
       type: SectorComplete

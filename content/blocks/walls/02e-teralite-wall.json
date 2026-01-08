@@ -1,0 +1,24 @@
+{
+  "name": "Teralite Wall"
+  "description": A wall made from Teralite. Durable and strong 
+  "type": "Wall",
+  "buildCostMultiplier": 0.1,
+  "buildTime": 710
+  "health": 950,
+  "size": 1,
+  "armor": 15,
+  "requirements": [
+    "teralite/5"
+  ],
+  "research": 02d-large-iron-wall 
+ objectives: [
+        {
+            type: "OnSector",
+            preset: "arrival"
+        }
+    ]
+  researchCost: [
+  teralite/15
+]
+  "category": defense
+}

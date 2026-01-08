@@ -1,0 +1,6 @@
+type: OreBlock
+name: Teralite Ore
+itemDrop: teralite
+variants: 2
+mapColor: 91DDED
+tier: 3

@@ -31,9 +31,11 @@
   "requirements": [
     "silver/200",
     "iron/230",
+    "magnesium/100"
   ]
   "researchCost": [
     "silver/200"
     "iron/200"
+    "magnesium/200"
   ]
 }

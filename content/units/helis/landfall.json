@@ -1,0 +1,148 @@
+type: payload
+payloadCapacity: 1000
+flying: true
+engineSize: 0
+controller: AttackAI
+lowAltitude: true
+name: "Landfall"
+description: "Shoots swerving bullets on one side and rockets on both side at nearby targets. Very fast."
+health: 3000
+hitSize: 20
+pickupUnits: true
+range: 135
+speed: 1.1
+strafePenalty: 1
+parts: [
+{
+suffix: -rotor2
+under: true
+moveRot: 360
+x: 0
+y: -10
+layer: -20
+progress: {
+type: time
+op: loop
+time: 15
+}
+}
+{
+suffix: -rotor
+under: true
+moveRot: 360
+x: 18
+y: 8
+layer: -20
+progress: {
+type: time
+op: loop
+time: 15
+}
+}
+{
+suffix: -rotor
+under: true
+moveRot: 360
+y: 8
+x: -18
+layer: -20
+progress: {
+type: time
+op: loop
+time: -15
+}
+}
+{
+ type: RegionPart 
+ suffix: -top
+ x: -18
+ y: 8
+ layer: -10
+ top: true
+}
+{
+type: RegionPart 
+ suffix: -top
+ y: 8
+ x: 18
+ layer: -10
+ top: true
+}
+{
+type: RegionPart 
+ suffix: -top
+ x: 0
+ y: -10
+ layer: -10
+ top: true
+}
+]
+weapons: [
+{
+    x: 10
+    y: 2
+    rotate: false
+    mirror: true
+    reload: 50
+    shootSound: shootTank
+    shoot: {
+    shots: 5
+    shotDelay: 10
+    }
+    bullet: {
+      type: BasicBulletType
+      width: 6
+      height: 10
+      weaveMag: 4
+      weaveScale: 4
+      lifetime: 45
+      speed: 3
+      damage: 30
+      trailWidth: 1.5
+      trailColor: 9A70C1
+      trailLength: 6
+      trailChance: -1
+    }
+  }
+{
+    "name": "mist-missile",
+    "reload": 200,
+    "controllable": true
+    "autoFind": true
+    "alternate": false
+    "mirror": true,
+    "rotationLimit": 180
+    "x": -5,
+    "y": 2,
+    "shootY": 0,
+    "recoil": 0.5,
+    "rotate": false,
+    "rotateSpeed": 0.9,
+    "targetAir": true,
+    "inaccuracy": 35
+shoot: {
+  shots: 10
+  shotDelay: 10
+}
+    shootSound: shootMissile
+    bullet: {
+    type: MissileBulletType
+    homingPower: 0.05
+      homingDelay: 10
+      homingRange: 240
+      speed: 10
+      lifetime: 40
+      pierceCap: 2
+        trailLength: 8
+        trailWidth: 4
+      damage: 50
+      width: 10
+      height: 10
+        frontColor: 9A70C1
+        backColor: 9A70C1
+      trailColor: 9A70C1
+      collidesGround: true
+      collidesAir: true
+    }
+  }
+]

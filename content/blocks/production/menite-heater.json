@@ -1,0 +1,33 @@
+type: HeatProducer
+name: Menite Heater
+description: Used Menite to produce a small ammount of heat
+size: 2
+heatOutput: 3
+health: 250
+craftTime: 120
+researchCostMultiplier: 0.5
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawHeatOutput
+    }
+  ]
+}
+consumes: {
+  items: [
+    menite/1
+  ]
+}
+ambientSound: loopHum
+ambientSoundVolume: 0.04
+category: crafting
+research: 01c-menite-infuser
+requirements: [
+  silver/30
+  teralite/20
+]
+group: heat

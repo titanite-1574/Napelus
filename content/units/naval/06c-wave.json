@@ -1,0 +1,127 @@
+type: naval
+name: Wave
+description: Fires bullets at enemies. Has a helicopter factory
+speed: 0.4
+health: 3500
+armor: 5
+aimDst: 10
+range: 90
+drag: 0.1
+accel: 0.8
+hitSize: 10
+rotateSpeed: 2.5
+trailLength: 15
+outlineColor: 575666
+abilities: [
+  {
+    type: UnitSpawnAbility
+    spawnTime: 1100
+    unit: splash
+    spawnX: 0
+    spawnY: -8
+  }
+]
+weapons: [
+{
+  name: wave-battlegun
+x: 0
+y: 4
+mirror: false
+layerOffset: 0.01
+rotateSpeed: 0.5
+shoot: {
+type: ShootAlternate 
+spread: 5
+shots: 2
+shotDelay: 0
+}
+top: true
+rotate: true
+reload: 100
+under: false
+top: true
+recoil: 1
+shootSound: shootConquer 
+ejectEffect: none
+    parts: [
+    {
+      type: RegionPart
+      suffix: -barrel
+      layerOffset: 0
+      mirror: false
+      "under": false,
+      progress: recoil
+      moveY: -2
+    }
+  ]
+bullet: {
+    type: BasicBulletType,
+    speed: 6
+    lifetime: 50
+    damage: 145
+    width: 10
+    height: 10
+    frontColor: 8989D3
+    backColor: 8989D3
+    shootEffect: "shootSmall"
+    smokeEffect: "shootSmallSmoke"
+    ammoMultiplier: 5
+    collidesTiles: true
+    hitEffect: pointHit
+      trailChance: -1
+      trailInterval: 5
+      trailRotation: true
+      trailEffect: colorSpark
+      trailColor: 8989D3
+}
+}
+{
+    name: wave-cannon
+    mirror: true
+    rotate: true
+    rotateSpeed: 1
+    baseRotation: -45
+    x: 10
+    y: -4
+    reload: 60
+    recoil: 1.25
+    shootSound: shootSmite
+    shoot: {
+    shots: 5
+    shotDelay: 10
+   }
+    bullet: {
+      type: BasicBulletType
+      sprite: missile-large
+      width: 5
+      splashDamageRadius: 20
+      splashDamage: 15
+      pierceCap: 1
+      lifetime: 30
+      damage: 50
+      speed: 3
+      smokeEffect: colorSpark
+      trailColor: 9A70C1
+      trailWidth: 1.5
+      trailLength: 5
+      backColor: 735491
+      frontColor: 9A70C1
+      hitColor: 9A70C1
+      despawnEffect: {
+        type: WaveEffect
+        rotWithParent: true
+        followParent: true
+        lifetime: 8
+        sizeFrom: 0
+        sizeTo: 15
+        colorFrom: 9A70C1
+        colorTo: feb380
+         }
+      }
+   }
+]
+research: 08a-exulus 
+researchCost: [
+    titanium/100
+    graphite/50
+  ]

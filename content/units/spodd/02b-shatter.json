@@ -1,0 +1,156 @@
+"outlineColor": "3F3E44",
+    outlineRadius: 3
+  "type": "legs",
+  "name": Shatter
+  "description": Equipped with a two autocannon and a artillery. Doesn't slow down when on water
+	"speed": 0.5
+  shownPlanets: [napelus]
+	"hitSize": 7,
+	"health": 1200,
+	"faceTarget": true,
+	"armor": 4,
+	"range": 120,
+	"targetAir": true,
+	"rotateSpeed": 3,
+           lockLegBase: true
+legExtension: -2
+legBaseOffset: 3
+legLength: 8
+legMaxLength: 1.1
+legMinLength: 0.2
+legSpeed: 0.2
+legGroupSize: 3
+legForwardScl: 1.05
+legLengthScl: 0.95
+legPhysicsLayer: false
+legStraightness: 0.3
+hovering: true
+groundLayer: 60
+"weapons": [
+{
+    "name": "break-weapon",
+    "reload": 100,
+    "mirror": false
+    "x": 0
+    "y": -2
+    "shootY": 2,
+    "recoil": 1,
+    "rotate": true,
+"shoot": {
+"type": "shootPattern",
+ "shots": 1,
+    "shotDelay": 5,
+}
+    shootSound: shootArtillery
+    bullet: {
+    type: ArtilleryBulletType 
+      speed: 4
+      lifetime: 50
+      damage: 90
+     splashDamageRadius: 10
+     splashDamage : 150
+      width: 6
+      height: 6
+        frontColor: A4E3E8
+        backColor: A4E3E8
+      trailLength: 10
+      trailWidth: 1
+      trailColor: A4E3E8
+      despawnHit: true
+      despawnEffect: none
+      hitEffect: [
+        {
+          type: ParticleEffect
+          particles: 6
+          line: true
+          lifetime: 25
+          length: 20
+          lenFrom: 5
+          lenTo: 0
+          strokeFrom: 2
+          strokeTo: 0
+          colorFrom: 03f8fc
+          colorTo: ffffff
+        }
+        {
+          type: WaveEffect
+          sizeFrom: 0
+          sizeTo: 15
+          lifetime: 20
+          strokeFrom: 3.5
+          strokeTo: 0
+          colorFrom: 03f8fc
+          colorTo: ffffff
+        }
+      ]
+    }
+    }
+		{
+    "name": "shatter-weapon",
+    "reload": 25
+    "mirror": true,
+    "x": 5,
+    "y": 0,
+    "shootY": 2,
+    "recoil": 1,
+    "rotate": true,
+"shoot": {
+"type": "shootPattern",
+ "shots": 1,
+    "shotDelay": 5,
+}
+    shootSound: shootCleroi
+    bullet: {
+    type: BasicBulletType
+      speed: 4
+      lifetime: 60
+      damage: 22
+      splashDamageRadius: 15
+      splashDamage: 35
+      trailLength: 10
+      trailWidth: 1
+      trailColor: A4E3E8
+      width: 6
+      height: 6
+        frontColor: A4E3E8
+        backColor: A4E3E8
+      despawnHit: true
+      despawnEffect: none
+      hitEffect: [
+        {
+          type: ParticleEffect
+          particles: 6
+          line: true
+          lifetime: 25
+          length: 20
+          lenFrom: 5
+          lenTo: 0
+          strokeFrom: 2
+          strokeTo: 0
+          colorFrom: 03f8fc
+          colorTo: ffffff
+        }
+        {
+          type: WaveEffect
+          sizeFrom: 0
+          sizeTo: 15
+          lifetime: 20
+          strokeFrom: 3.5
+          strokeTo: 0
+          colorFrom: 03f8fc
+          colorTo: ffffff
+        }
+      ]
+    }
+    }
+]
+research: {
+    parent: "08a-exulus",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "outpost"
+        }
+    ]
+}
+researchCostMultiplier: 1

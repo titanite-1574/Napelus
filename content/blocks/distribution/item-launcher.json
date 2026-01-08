@@ -1,0 +1,35 @@
+type: MassDriver
+name: Item Launcher
+description: Launches item to another launcher. Suitable for wide river or terrain crossing
+size: 3
+health: 650
+squareSprite: false
+itemCapacity: 80
+reload: 270
+range: 400
+consumes: {
+  power: 1.25
+}
+category: distribution
+requirements: [
+  silver/50
+  iron/100
+  teralite/50
+  magnesium/50
+]
+outlineColor: 2C2A36
+researchCost: [
+  silver/1200
+  iron/1000
+  teralite/1000
+  magnesium/50
+]
+research: {
+  parent: 04a-sil-duct
+  objectives: [
+    {
+      type: OnSector
+      preset: outpost
+    }
+  ]
+}

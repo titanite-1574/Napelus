@@ -1,0 +1,8 @@
+name: Menite
+color: E49992
+description: A flammable item used in heaters and ammunition 
+research: teralite
+healthScaling: 0.9
+hardness: 1
+flammability: 2.5
+explosiveness: 1

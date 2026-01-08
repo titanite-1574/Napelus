@@ -1,0 +1,75 @@
+{
+  "name" : Amalgam Forge,
+  "description": Fuse Teralite with Iron to produce Amalgam alloy
+  "size": 3,
+  "type": "HeatCrafter",
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion"
+         suffix: -bottom
+      }
+      {
+      type: DrawHeatInput
+      suffix: -heat
+    }
+    {
+      type: DrawCrucibleFlame
+      flameRad: 7.5
+      circleSpace: 0
+      particleSize: 6
+    }
+    {	
+        "type": "DrawPistons"
+        suffix: -piston1
+        sinMag: 1
+        sinScl: 15
+        sides: 4
+	      }
+      { 
+        "type": DrawDefault 
+      }
+    ]
+  },
+  "hasPower": true,
+  "hasItems": true,
+  "itemCapacity": 10,
+  "craftTime": 180,
+  heatRequirement: 6
+maxEfficiency: 4.5
+  "craftEffect": none
+  "updateEffect": "none",
+  "consumes": {
+    "power": 0.5,
+    "items": {
+      "items": [
+        "iron/1"
+        "teralite/1"
+      ]
+    }
+  },
+  "requirements": [
+    "silver/100",
+    "iron/110",
+    "magnesium/110"
+  ],
+  "category": "crafting",
+  research: {
+    parent: "01d-nitrogen-accumulator",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "outpost"
+        }
+    ]
+},
+  "researchCost": [
+    "silver/1000"
+    "iron/1200"
+    "magnesium/1200"
+    "teralite/1100"
+] 
+  "outputItem": "amalgam/1"
+    shownPlanets: [napelus]
+}

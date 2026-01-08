@@ -18,6 +18,7 @@ hovering: true
 speed: 1.45
 hitSize: 11
 healColor: 3CC773
+alwaysUnlocked: true
 canDrown: false
 drag: 0.03
 description: A hover unit capable of hovering over liquid bodies. Can't cross terrain
@@ -99,16 +100,11 @@ bullet: {
 }
 ]
 research: {
-  parent: 08a-exulus 
-  requirements: [
-    silver/100
-    iron/100
-    magnesium/50
-  ]
+  parent: 10c-air-fabricator,
   objectives: [
     {
       type: SectorComplete
-      preset: arrival
+      preset: outpost
     }
   ]
 }

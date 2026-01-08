@@ -1,0 +1,60 @@
+type: HeatCrafter
+name: Nitrogen Accumulator
+description: Extracts nitrogen from the air through powerful suction. Requires heat
+size: 3
+hasLiquids: true
+craftTime: 10
+liquidCapacity: 200
+health: 850
+category: crafting
+heatRequirement: 4
+maxEfficiency: 4
+research: 01c-menite-infuser
+researchCostMultiplier: 0.5
+requirements: [
+  silver/170
+  iron/115
+  teralite/80
+  magnesium/70
+]
+craftEffect: none
+"outputLiquid": "nitrogen/0.5"
+consumes: {
+  power: 2
+}
+drawer: {
+  type: DrawMulti
+  drawers: [
+             {
+    type: DrawRegion
+    suffix: -bottom
+  }
+  {
+    type: DrawLiquidTile
+    padding: 3
+    drawLiquid: nitrogen
+  }
+          {
+        "type": "DrawDefault"
+      },
+     {
+      type: DrawRegion
+      suffix: -rotor
+      spinSprite: true
+      rotateSpeed: 15
+    }
+     {
+      type: DrawRegion
+      suffix: -rotor
+      spinSprite: true
+      rotateSpeed: 10
+    }
+   {
+      type: DrawHeatInput
+      suffix: -heat
+    }
+  ]
+}
+ambientSound: smelter
+ambientSoundVolume: 0.6
+squareSprite: false

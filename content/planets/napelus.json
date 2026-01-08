@@ -57,6 +57,7 @@ icon: planet
 bloom: false
 allowLaunchToNumbered: false
 defaultCore: "08a-exulus"
+launchMusic: Naplaunch
 mesh: [
  {
   //yellow

@@ -1,0 +1,99 @@
+type: naval
+name: Stream
+description: Fires bullets at enemies. Equipped with a artillery 
+speed: 0.8
+health: 1200
+armor: 5
+aimDst: 10
+range: 90
+drag: 0.1
+accel: 0.8
+hitSize: 10
+rotateSpeed: 2.5
+trailLength: 15
+outlineColor: 575666
+weapons: [
+{
+    name: current-gun
+    mirror: true
+    rotate: true
+    rotateSpeed: 2
+    x: 5
+    y: -5
+    reload: 15
+    recoil: 1.25
+    shootSound: shootMerui
+    bullet: {
+      type: BasicBulletType
+      sprite: missile-large
+      width: 5
+      splashDamageRadius: 20
+      splashDamage: 15
+      pierceCap: 1
+      lifetime: 30
+      damage: 35
+      speed: 3
+      smokeEffect: colorSpark
+      trailColor: 9A70C1
+      trailWidth: 1.5
+      trailLength: 5
+      backColor: 735491
+      frontColor: 9A70C1
+      hitColor: 9A70C1
+      despawnEffect: {
+        type: WaveEffect
+        rotWithParent: true
+        followParent: true
+        lifetime: 8
+        sizeFrom: 0
+        sizeTo: 15
+        colorFrom: 9A70C1
+        colorTo: feb380
+         }
+      }
+   }
+{
+  name: stream-artillery
+    mirror: false
+    rotate: true
+    rotateSpeed: 0.9
+    x: 0
+    y: 2
+    reload: 120
+    recoil: 1.25
+    shootSound: shootMerui
+    bullet: {
+      type: ArtilleryBulletType
+      sprite: missile-large
+      width: 5
+      splashDamageRadius: 20
+      splashDamage: 40
+      pierceCap: 1
+      lifetime: 60
+      damage: 35
+      speed: 3
+      smokeEffect: colorSpark
+      trailColor: 9A70C1
+      trailWidth: 1.5
+      trailLength: 5
+      backColor: 735491
+      frontColor: 9A70C1
+      hitColor: 9A70C1
+      despawnEffect: {
+        type: WaveEffect
+        rotWithParent: true
+        followParent: true
+        lifetime: 8
+        sizeFrom: 0
+        sizeTo: 15
+        colorFrom: 9A70C1
+        colorTo: feb380
+         }
+      }
+   }
+]
+research: 08a-exulus 
+researchCost: [
+    titanium/100
+    graphite/50
+  ]

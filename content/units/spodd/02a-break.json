@@ -1,0 +1,100 @@
+"outlineColor": "3F3E44",
+    outlineRadius: 3
+  "type": "legs",
+  "name": Break
+  "description": A small spider unit capable to of moving over terrain and blocks
+	"speed": 0.8,
+  shownPlanets: [napelus]
+	"hitSize": 7,
+	"health": 665,
+	"faceTarget": true,
+	"armor": 1,
+	"range": 120,
+	"targetAir": true,
+	"rotateSpeed": 3,
+           legCount: 4
+lockLegBase: true
+legExtension: -2
+legBaseOffset: 0
+legLength: 6
+legMaxLength: 1.1
+legMinLength: 0.2
+legSpeed: 0.25
+legGroupSize: 3
+legForwardScl: 1.05
+legLengthScl: 0.95
+legPhysicsLayer: false
+legStraightness: 0.3
+hovering: true
+	"hovering": false,
+	"immunities": [
+		"freezing"
+	],
+"weapons": [
+		{
+    "name": "break-weapon",
+    "reload": 40,
+    "mirror": true,
+    "x": 5,
+    "y": 0,
+    "shootY": 2,
+    "recoil": 1,
+    "rotate": true,
+"shoot": {
+"type": "shootPattern",
+ "shots": 1,
+    "shotDelay": 5,
+}
+    shootSound: shootCleroi
+    bullet: {
+    type: BasicBulletType
+      speed: 4
+      lifetime: 60
+      damage: 10
+      width: 6
+      height: 6
+        frontColor: A4E3E8
+     trailLength: 10
+      trailWidth: 1
+      trailColor: A4E3E8
+        backColor: A4E3E8
+      despawnHit: true
+      despawnEffect: none
+      hitEffect: [
+        {
+          type: ParticleEffect
+          particles: 6
+          line: true
+          lifetime: 25
+          length: 20
+          lenFrom: 5
+          lenTo: 0
+          strokeFrom: 2
+          strokeTo: 0
+          colorFrom: 03f8fc
+          colorTo: ffffff
+        }
+        {
+          type: WaveEffect
+          sizeFrom: 0
+          sizeTo: 15
+          lifetime: 20
+          strokeFrom: 3.5
+          strokeTo: 0
+          colorFrom: 03f8fc
+          colorTo: ffffff
+        }
+      ]
+    }
+    }
+]
+research: {
+    parent: "08a-exulus",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "outpost"
+        }
+    ]
+}
+researchCostMultiplier: 1

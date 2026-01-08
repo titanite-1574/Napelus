@@ -1,0 +1,64 @@
+type: RegenProjector
+name: Nitro Regenerator
+description: Slowly repairs nearby allied blocks. Requires power and Nitrogen to function.
+size: 3
+range: 25
+baseColor: C8F1FF
+squareSprite: false
+effect: {
+  type: ParticleEffect
+  colorFrom: C8F1FF
+  colorTo: C8F1FF
+  particles: 3
+  line: true
+  length: 3
+  baseLength: 2
+  strokeFrom: 0.6
+  strokeTo: 1.6
+  lifetime: 90
+  cone: 360
+  interp: pow2
+  sizeInterp: pow2Out
+}
+consumes: {
+  power: 0.5
+ liquid: nitrogen/0.5
+}
+optionalUseTime: 180
+optionalMultiplier: 2
+healPercent: 0.0166667
+requirements: [
+  iron/60
+  silver/50
+  teralite/65
+]
+category: effect
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+    type: DrawLiquidTile
+    padding: 3
+    drawLiquid: nitrogen
+  }
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawPulseShape
+      square: false
+      color: C8F1FF
+      layer: 110
+    }
+  ]
+} 
+research: {
+  parent: 08a-exulus 
+  objectives: [
+    {
+      type: OnSector
+      preset: outpost
+    }
+  ]
+}
+researchCostMultiplier: 0.5

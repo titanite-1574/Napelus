@@ -1,0 +1,33 @@
+type: UnitAssembler
+name: Airship Assembler
+description: Assembles high tier Air units using blocks and unit. Higher tier require components and needs Xenogen to function 
+size: 5
+health: 1500
+category: units
+droneType: airship-assem-drone
+areaSize: 13
+"buildTime": 1500
+research: 10k-unit-reformer 
+requirements: [
+  silver/500
+  iron/650
+  amalgam/500
+  teralite/450
+]
+plans: [
+  {
+    type: AssemblerUnitPlan
+    unit: 04d-storm
+    requirements: [
+      nap-02d-large-iron-wall/2
+      nap-04a-blow/2
+    ]
+    time: 3300
+  }
+]
+squareSprite: false
+consumes: {
+  power: 5
+  liquid: xenogen/0.5
+}
+researchCostMultiplier: 0.5

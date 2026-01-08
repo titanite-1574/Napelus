@@ -91,10 +91,10 @@ drawer: {
     width: 16
     height: 16
     buildingDamageMultiplier: 0.5
-    hitColor: DBDBDB
-    backColor: DBDBDB
-    frontColor: DBDBDB
-    lightColor: DBDBDB
+    hitColor: 5973BA
+    backColor: 5973BA
+    frontColor: 5973BA
+    lightColor: 5973BA
     damage: 40
     speed: 7
     lifetime: 40
@@ -118,6 +118,8 @@ drawer: {
     trailInterval: 3
     drag: -0.0005
     trailRotation: true
+    status: burning
+    statusDuration: 50
     trailLength: 18
     trailWidth: 2.2
     trailEffect: colorSpark

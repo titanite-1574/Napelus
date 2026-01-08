@@ -1,0 +1,156 @@
+"outlineColor": "3F3E44",
+    outlineRadius: 3
+  "type": "legs",
+  "name": Fracture
+  "description": Equipped with 2 point defense and a double barrel cannon
+	"speed": 0.5
+  shownPlanets: [napelus]
+	"hitSize": 15,
+	"health": 3500,
+	"faceTarget": true,
+	"armor": 15,
+	"range": 120,
+	"targetAir": true,
+	"rotateSpeed": 2,
+legCount: 6
+lockLegBase: true
+legExtension: -3
+legBaseOffset: 3
+legLength: 15
+legMaxLength: 1.1
+legMinLength: 0.2
+legSpeed: 0.2
+legGroupSize: 3
+legForwardScl: 1.05
+legLengthScl: 0.95
+legPhysicsLayer: false
+legStraightness: 0.3
+hovering: true
+groundLayer: 60
+"weapons": [
+{
+    x: 5
+    y: -5
+    reload: 8
+    mirror: true
+    alternate: true
+    targetInterval: 9
+    targetSwitchInterval: 12
+    recoil: 0.5
+    name: debuff
+    shootY: 1
+    type: PointDefenseWeapon
+    bullet: {
+      type: BulletType
+      shootSound: shootSegment
+      shootEffect: sparkShoot
+      hitEffect: pointHit
+      maxRange: 100
+      damage: 40
+    }
+  }
+{
+name: fracture-weapon
+x: 0
+y: 0
+mirror: false
+layerOffset: 0.01
+rotateSpeed: 0.8
+shoot: {
+type: ShootAlternate 
+spread: 5
+shots: 4
+shotDelay: 10
+}
+top: true
+rotate: true
+reload: 100
+under: false
+top: true
+recoil: 1
+recoils: 2
+shootSound: shootConquer 
+ejectEffect: none
+    parts: [
+    {
+      type: RegionPart
+      suffix: -barrelL
+      layerOffset: 0
+      mirror: false
+      "under": false,
+      progress: recoil
+      moveY: -2
+      recoilIndex: 0
+    }
+    {
+      type: RegionPart
+      suffix: -barrelR
+      layerOffset: 0
+      mirror: false
+      "under": false,
+      progress: recoil
+      moveY: -2
+      recoilIndex: 1
+    }
+  ]
+bullet: {
+    type: BasicBulletType,
+    speed: 4
+      lifetime: 50
+      damage: 50
+     splashDamageRadius: 20
+     splashDamage : 90
+      width: 6
+      height: 6
+        frontColor: A4E3E8
+        backColor: A4E3E8
+      trailLength: 10
+      trailWidth: 1
+      trailColor: A4E3E8
+    shootEffect: "shootSmall"
+    smokeEffect: "shootSmallSmoke"
+    ammoMultiplier: 5
+    collidesTiles: true
+    hitEffect: pointHit
+   fragOnHit: true
+      fragBullets: 5
+      fragRandomSpread: 360
+      fragLifeMin: 1
+      fragLifeMax: 1
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragSpread: 90
+      fragAngle: 0
+      fragOnAbsorb: true
+      fragBullet: {
+        type: BasicBulletType
+        width: 10
+        height: 10
+        sprite: missile-large
+        frontColor: 6697B0
+        backColor: 446475
+        trailColor: 446475
+        trailWidth: 3
+        trailLength: 26
+        trailRotation: true
+        trailEffect: shootSmokeSquareSparse
+        trailInterval: 4
+        speed: 3
+        lifetime: 6
+        pierceCap: 2
+        damage: 35
+        pierce: true
+         }
+}
+}
+]
+research: {
+    parent: "08a-exulus",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "outpost"
+        }
+    ]
+}
+researchCostMultiplier: 1

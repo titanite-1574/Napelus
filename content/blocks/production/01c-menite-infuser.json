@@ -1,0 +1,89 @@
+{
+  "name" : Iron Refinery,
+  "description": Infuse Magnesium with silver to create Menite
+  "size": 3,
+  "type": "GenericCrafter",
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion"
+         suffix: -bottom
+      }
+      {
+     type: DrawFlame
+     suffix: -top
+     lightRadius: 0
+     lightAlpha: 0
+     lightSinScl: 0
+     lightSinMag: 0
+     flameRadius: 0
+     flameRadiusIn: 0
+     flameRadiusScl: 0
+     flameRadiusMag: 0
+     flameRadiusInMag: 0
+    }
+    {
+      "type": "DrawGlowRegion"
+        suffix: -heat
+        }
+    {
+      type: DrawCrucibleFlame
+      flameRad: 0.5
+      circleSpace: 0.5
+      particleSize: 1.2
+    }
+      { 
+        "type": DrawDefault 
+      }
+    ]
+  },
+  "hasPower": true,
+  "hasItems": true,
+  "itemCapacity": 10,
+  "craftTime": 120,
+  "craftEffect": {
+    "type": "ParticleEffect",
+    "line": true,
+    "particles": 0,
+    "lifetime": 50,
+    "length": 25,
+    "cone": -360,
+    "lenFrom": 5,
+    "lenTo": 0,
+    "colorFrom": "7A8CDC",
+    "colorTo": "FFFFFFF"
+  },
+  "updateEffect": "none",
+  "consumes": {
+    "power": 0.3,
+    "items": {
+      "items": [
+        "magnesium/2"
+        "silver/2"
+      ]
+    }
+  },
+  "requirements": [
+    "silver/50",
+    "iron/50",
+    "teralite/60"
+  ],
+  "category": "crafting",
+  research: {
+    parent: "0b-iclium-liquidizer",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "outpost"
+        }
+    ]
+},
+  "researchCost": [
+    "silver/500"
+    "iron/200"
+    "teralite/350"
+] 
+  "outputItem": "menite/2"
+    shownPlanets: [napelus]
+}

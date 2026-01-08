@@ -1,0 +1,83 @@
+generator: "PlanetGenerator"
+localizedName: Trace
+description: The moon of Stella which is still inhabited after the termination of the Stelris infection which is now on Stella.
+accessible: false
+visible: true
+alwaysUnlocked: true
+hidden: true
+mesh: [{
+    //cryobiome
+    type: NoiseMesh
+    planet: Stella
+    divisions: 5
+    seed: 95
+    radius: 0.5
+    color1: 4E5582
+    color2: 6878A5
+    octaves: 3
+    persistence: 1
+    mag: 0.5
+    scl: 1
+    }
+    {
+    //stellastonebiome
+    type: NoiseMesh
+    planet: Stella
+    divisions: 5
+    seed: 52
+    radius: 0.5
+    color1: 45397A
+    color2: 4E3E94
+    octaves: 3
+    persistence: 1.5
+    }
+  ]
+
+atmosphereColor: 6878A5
+allowCampaignRules: true
+allowLaunchLoadout: false
+allowLaunchSchematics: false
+allowLaunchToNumbered: false
+allowLegacyLaunchPads: false
+allowSectorInvasion: false
+allowSelfSectorLaunch: false
+allowWaveSimulation: false
+
+iconColor: 98c1f5
+atmosphereRadIn: 0.007
+atmosphereRadOut: 0.15
+landCloudColor: e2effc60
+hasAtmosphere: true
+bloom: false
+
+fog: true
+showSpawns: true
+campaignRuleDefaults.fog: true
+campaignRuleDefaults.showSpawns: true
+
+startSector: 0
+sectorSize: 1
+parent: Stella
+solarSystem: 1-staria
+tidalLock: true
+orbitRadius: 12
+orbitOffset: 10
+orbitTime: 100
+orbitSpacing: 1
+radius: 0.56
+totalradius: 2.2
+minZoom: 0.8
+
+prebuildBase: true
+clearSectorOnLose: true
+coreDestroyClear: true
+onlyDepositCore: true
+defaultCore: 08a-exulus 
+enemyBuildSpeedMultiplier: 0.2
+enemyCoreSpawnReplace: false
+updateLighting: false
+
+launchCandidates: []
+itemWhitelist: [
+  "titanium"
+]

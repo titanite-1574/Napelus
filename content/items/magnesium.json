@@ -1,6 +1,7 @@
 name: Magnesium 
 color: FFFFFF
-description: Another abundant resource that is found around Napelus,used in power production,unit production and construction 
+description: Another abundant resource that is found around Napelus,used in power production,unit production and construction. Not very flammable for heaters
 research: silver
 healthScaling: 0.9
 hardness: 3
+flammability: 0.1

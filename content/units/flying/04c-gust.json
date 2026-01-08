@@ -231,16 +231,11 @@ bullet: {
     }
   ]
 research: {
-  parent: 04b-wind
-  requirements: [
-    silver/100
-    iron/100
-    magnesium/50
-  ]
+  parent: 10k-unit-reformer 
   objectives: [
     {
       type: SectorComplete
-      preset: frozen-field
+      preset: outpost 
     }
   ]
 }

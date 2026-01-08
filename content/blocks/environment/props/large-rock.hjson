@@ -1,0 +1,6 @@
+type: TallBlock
+name: Large Rock
+variants: 1
+clipSize: 50
+emitLight: false
+customShadow: true

@@ -136,7 +136,7 @@ moveWhileCharging: false
     shrinkX: 0
     shrinkY: 0
     },
-    "iclium": {
+    "magnesium": {
       type: BasicBulletType
     width: 16
     height: 16
@@ -148,8 +148,6 @@ moveWhileCharging: false
     damage: 40
     speed: 10
     lifetime: 32.5
-    status: freezing
-    statusDuration: 200
     despawnEffect: [
     colorSpark,
     {
@@ -170,6 +168,8 @@ moveWhileCharging: false
     trailInterval: 3
     trailRotation: true
     trailLength: 18
+    status: burning
+    statusDuration: 200
     trailWidth: 2.2
     trailEffect: colorSpark
     shootEffect: shootSmokeTitan

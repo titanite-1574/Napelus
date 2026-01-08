@@ -1,0 +1,20 @@
+{
+  "name": "Large Teralite Wall"
+  "type": "Wall",
+  "description": A larger wall with more health and more durable. Has a chance to defelct enemies projectiles
+   "buildCostMultiplier": 0.1,
+  "buildTime": 1100
+  chanceDeflect: 10
+  "health": 2300,
+  "size": 2,
+  "armor": 5,
+  "requirements": [
+    "teralite/10"
+    "iron/5"
+  ],
+  "research": 02e-teralite-wall 
+  "category": defense
+  researchCost: [
+  teralite/500
+]
+}

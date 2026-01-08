@@ -1,0 +1,164 @@
+{
+  "type": "ItemTurret",
+  "name": Force,
+  "description": Shoots a piercing bullet at high speed
+  "researchCostMultiplier": 0.2,
+  "size": 3,
+  "health": 700,
+  "reload": 200,
+  "range": 190,
+  "inaccuracy": 0
+  "targetAir": true,
+  "recoil": 3,
+  "rotateSpeed": 2,
+  "shootSound": "shootTank",
+  coolantMultiplier: -1.9
+  "shootWarmupSpeed": 0.01,
+  "shootY": 2
+  minWarmup: 0.4
+moveWhileCharging: false
+    shoot: {
+  type: shootPattern
+  shots: 1
+  shotDelay: 10
+}
+  drawer: {
+    type: DrawTurret
+    basePrefix: reinforced-
+    parts: [
+        {
+            type: RegionPart
+            suffix: -wingL
+            heatProgress: warmup
+            progress: warmup
+            under: true
+            moveX: -4
+        }
+         {
+            type: RegionPart
+            suffix: -wingR
+            heatProgress: warmup
+            progress: warmup
+            under: true
+            moveX: 4
+        }
+        {
+            type: RegionPart
+            suffix: -arrow1
+            under: true
+            heatProgress: warmup
+            progress: warmup
+            outline: false
+            moveY: 0
+        }
+        {
+            type: RegionPart
+            suffix: -arrow2
+            under: true
+            heatProgress: warmup
+            progress: warmup
+            outline: false
+            moveY: 0
+        }
+    ]
+}
+  "ammoTypes": {
+    "teralite": {
+      type: BasicBulletType
+    width: 16
+    height: 16
+    buildingDamageMultiplier: 0.5
+    hitColor: DBDBDB
+    backColor: DBDBDB
+    frontColor: DBDBDB
+    lightColor: DBDBDB
+    damage: 200
+    speed: 20
+    lifetime: 15
+    despawnEffect: [
+    colorSpark,
+    {
+        type: WaveEffect
+        rotWithParent: true
+        followParent: true
+        lifetime: 12
+        sizeFrom: 0
+        sizeTo: 12
+        colorFrom: A3BBEB
+        colorTo: A3BBEB
+    }
+    ]
+    pierceCap: 7
+    pierce: true
+    pierceBuilding: true  
+    trailColor: E2E8FF
+    sprite: nap-spearhead
+    trailLength: 18
+    trailWidth: 2
+    shootEffect: shootSmokeTitan
+    drag: 0.05
+    shrinkX: 0
+    shrinkY: 0
+    },
+    "iron": {
+      type: BasicBulletType
+    width: 16
+    height: 16
+    buildingDamageMultiplier: 0.5
+    hitColor: CCCCCC
+    backColor: CCCCCC
+    frontColor: CCCCCC
+    lightColor: CCCCCC
+    damage: 150
+    speed: 15
+    lifetime: 20
+    despawnEffect: [
+    colorSpark,
+    {
+        type: WaveEffect
+        rotWithParent: true
+        followParent: true
+        lifetime: 12
+        sizeFrom: 0
+        sizeTo: 12
+        colorFrom: A3BBEB
+        colorTo: A3BBEB
+    }
+    ]
+    pierceCap: 10
+    pierce: true
+    pierceBuilding: true  
+    trailColor: CCCCCC
+    trailInterval: 3
+    trailRotation: true
+    sprite: nap-spearhead
+    trailLength: 18
+    trailWidth: 2
+    trailEffect: colorSpark
+    shootEffect: shootSmokeTitan
+    shrinkX: 0
+    shrinkY: 0
+    }
+  }
+  "requirements": [
+    "silver/120",
+    "iron/100",
+    "teralite/100"
+    "magnesium/50"
+  ],
+  "coolant": {
+    "type": "ConsumeLiquid",
+    "liquid": "ilum",
+    "amount": 0.4
+  },
+  "category": "turret",
+  research: {
+    parent: "09b-galius",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "outpost"
+        }
+    ]
+},
+}

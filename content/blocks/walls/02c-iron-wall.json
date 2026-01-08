@@ -1,0 +1,24 @@
+{
+  "name": "Silver Wall"
+  "description": A wall made from Iron. Durable and strong 
+  "type": "Wall",
+  "buildCostMultiplier": 0.1,
+  "buildTime": 710
+  "health": 850,
+  "size": 1,
+  "armor": 5,
+  "requirements": [
+    "iron/5"
+  ],
+  "research": 02b-large-silver-wall 
+ objectives: [
+        {
+            type: "OnSector",
+            preset: "arrival"
+        }
+    ]
+  researchCost: [
+  iron/15
+]
+  "category": defense
+}
