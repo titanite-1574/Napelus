@@ -1,0 +1,16 @@
+boilPoint: 0
+name: Natelite
+description: A liquid cold liquid found in the Teralite biome.Used in advance alloy production and power generation
+heatCapacity: -1
+shownPlanets: [napelus]
+color: B6E3EF
+research: {
+  parent: ilum 
+  objectives: [
+    exlium 
+    {
+      type: OnComplete
+      preset: outpost
+    }
+  ]
+}

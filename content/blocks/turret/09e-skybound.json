@@ -1,0 +1,180 @@
+{
+  "type": "ItemTurret",
+  "name": Skybound,
+  "description": Shoots a barage of flaks at aerial targets
+  "researchCostMultiplier": 0.2,
+  "size": 4,
+  "health": 950,
+  "reload": 50,
+  "range": 400,
+  "inaccuracy": 5
+  "targetAir": true,
+  "targetGround": false
+  "recoil": 1,
+  "collidesGround": false
+  "rotateSpeed": 2.5,
+  "shootSound": "shootDisperse",
+  "shootWarmupSpeed": 0.01,
+  minWarmup: 0.4
+moveWhileCharging: false
+    shoot: {
+  type: shootPattern
+  shots: 5
+  shotDelay: 5
+}
+  drawer: {
+  type: DrawTurret
+  basePrefix: skybound-
+    parts: [
+    {
+      type: RegionPart
+      suffix: -barrel
+      progress: recoil
+      heatProgress: recoil
+      moveY: -2
+      under: true
+      heatColor: 8DF9D1
+    }
+  ]
+}
+  "ammoTypes": {
+    "teralite": {
+      type: BasicBulletType
+    width: 16
+    height: 16
+    buildingDamageMultiplier: 0.5
+    hitColor: 91DDED
+    backColor: 91DDED
+    frontColor: 91DDED
+    lightColor: 91DDED
+    collidesGround: false
+    damage: 155
+    speed: 10
+    lifetime: 40
+    despawnEffect: [
+    colorSpark,
+    {
+        type: WaveEffect
+        rotWithParent: true
+        followParent: true
+        lifetime: 12
+        sizeFrom: 0
+        sizeTo: 12
+        colorFrom: 91DDED
+        colorTo: 91DDED
+    }
+    ]
+    pierceCap: 3
+    pierce: true
+    pierceBuilding: true  
+    trailColor: 91DDED
+    trailInterval: 3
+    trailRotation: true
+    trailLength: 18
+    trailWidth: 2.2
+    trailEffect: colorSpark
+    shootEffect: shootSmokeTitan
+    shrinkX: 0
+    shrinkY: 0
+    },
+    "silver": {
+      type: BasicBulletType
+    width: 16
+    height: 16
+    buildingDamageMultiplier: 0.5
+    hitColor: A3BBEB
+    backColor: A3BBEB
+    frontColor: A3BBEB
+    lightColor: A3BBEB
+    damage: 50
+    speed: 10
+    lifetime: 40
+    collidesGround: false
+    despawnEffect: [
+    colorSpark,
+    {
+        type: WaveEffect
+        rotWithParent: true
+        followParent: true
+        lifetime: 12
+        sizeFrom: 0
+        sizeTo: 12
+        colorFrom: A3BBEB
+        colorTo: A3BBEB
+    }
+    ]
+    pierceCap: 3
+    pierce: true
+    pierceBuilding: true  
+    trailColor: A3BBEB
+    trailInterval: 3
+    trailRotation: true
+    trailLength: 18
+    trailWidth: 2.2
+    trailEffect: colorSpark
+    shootEffect: shootSmokeTitan
+    shrinkX: 0
+    shrinkY: 0
+    },
+    "benite": {
+      type: BasicBulletType
+    width: 16
+    height: 16
+    buildingDamageMultiplier: 0.5
+    collidesGround: false
+    hitColor: A3EBD7
+    backColor: A3EBD7
+    frontColor: A3EBD7
+    lightColor: A3EBD7
+    damage: 200
+    speed: 15
+    lifetime: 40
+    despawnEffect: [
+    colorSpark,
+    {
+        type: WaveEffect
+        rotWithParent: true
+        followParent: true
+        lifetime: 12
+        sizeFrom: 0
+        sizeTo: 12
+        colorFrom: A3EBD7
+        colorTo: A3EBD7
+    }
+    ]
+    pierceCap: 3
+    pierce: true
+    pierceBuilding: true  
+    trailColor: A3EBD7
+    trailInterval: 3
+    trailRotation: true
+    trailLength: 18
+    trailWidth: 2.2
+    trailEffect: colorSpark
+    shootEffect: shootSmokeTitan
+    shrinkX: 0
+    shrinkY: 0
+    },
+  }
+  "requirements": [
+    "benite/150",
+    "silver/200",
+    "teralite/130",
+    "iron/120"
+  ],
+  "coolant": {
+    "type": "ConsumeLiquid",
+    "liquid": "ilum",
+    "amount": -1
+  },
+  "category": "turret",
+  research: {
+  parent: 09d-hammer
+  objectives: [
+    {
+      type: SectorComplete
+      preset: outpost
+    }
+  ]
+}
+}

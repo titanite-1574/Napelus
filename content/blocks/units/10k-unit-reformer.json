@@ -8,8 +8,8 @@
     power: 5
     liquid: nitrogen/0.5
     items: [
-        amalgam/70
-        teralite/90
+        iron/70
+        benite/90
     ]
 }
   "upgrades": [
@@ -25,12 +25,16 @@
       "04b-wind",
       "04c-gust"
     ],
+    [
+      "06b-stream",
+      "06c-wave"
+    ],
   ],
   "category": "units",
    "requirements": [
-    "silver/1200",
-    "iron/1300"
-    "teralite/1000"
-    "amalgam/1500"
+    "silver/120",
+    "iron/130"
+    "benite/100"
+    "magnesium/150"
   ]
 }

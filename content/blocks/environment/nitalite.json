@@ -1,0 +1,14 @@
+type: Floor
+name: Natalite
+speedMultiplier: 0.35
+variants: 0
+isLiquid: true
+liquidDrop: liquid-nitalite
+cacheLayer: tar
+supportsOverlay: true
+liquidMultiplier: 0.8333333333
+drownTime: 90
+emitLight: true
+lightRadius: 30
+lightColor: EBB2E2AA
+statusDuration: 180

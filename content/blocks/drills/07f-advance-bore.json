@@ -1,0 +1,48 @@
+name: Advance Wall Bore
+description: Drills out ores from walls. Can mine Benite and higher tier items
+type: beamDrill
+health: 600
+range: 8
+tier: 8
+size: 3
+optionalBoostIntensity: 2.5
+drillTime: 110
+ambientSound: drill
+ambientSoundVolume: 0.08
+hasLiquids: true
+sparkColor: 7A8CDC
+consumes: {
+  liquid: ilum/0.04000000
+  power: 0.25
+  liquids: {
+    liquids: [
+      xenogen/0.0416666666667
+    ]
+    optional: true
+    booster: true
+  }
+}
+buildCostMultiplier: 2
+category: production
+research: {
+    parent: "07c-wall-bore",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "frozen-field"
+        }
+    ]
+},
+researchCost: [
+  silver/1000
+  iron/1000
+  teralite/590
+  magnesium/900
+]
+requirements: [
+  silver/350
+  iron/350
+  teralite/200
+  magnesium/300
+]
+shownPlanets: [napelus]

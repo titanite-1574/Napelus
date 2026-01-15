@@ -7,7 +7,6 @@
   "tier": 2,
   "drawMineItem": true,
   drillTime: 300
-  "drawMineItem": true,
   arrows: 0
   rotateSpeed: 5
   liquidBoostIntensity: 1

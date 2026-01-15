@@ -1,0 +1,186 @@
+{
+  "type": "ItemTurret",
+  "name": Hammer,
+  "description": Shoots 2 powerful artillery rounds over far distance
+  "researchCostMultiplier": 0.2,
+  "size": 4,
+  "health": 960,
+  "reload": 300,
+  "range": 400,
+  "inaccuracy": 5
+  "targetAir": false,
+  "recoil": 3,
+  "rotateSpeed": 2,
+  "shootSound": "shootTank",
+  coolantMultiplier: -1.9
+  "shootWarmupSpeed": 0.01,
+  "shootY": 2
+  minWarmup: 0.4
+moveWhileCharging: false
+    shoot: {
+  type: shootPattern
+  shots: 2
+  shotDelay: 10
+}
+  drawer: {
+  type: DrawTurret
+  basePrefix: hammer-
+    parts: [
+        {
+            type: RegionPart
+            suffix: -wingL
+            heatProgress: warmup
+            progress: recoil
+            under: true
+            moveY: -4
+        }
+         {
+            type: RegionPart
+            suffix: -wingR
+            heatProgress: warmup
+            progress: recoil
+            under: true
+            moveY: -4
+        }
+    {
+      type: RegionPart
+      suffix: -barrel
+      progress: recoil
+      heatProgress: recoil
+      moveY: -3
+      under: true
+      heatColor: 8DF9D1
+    }
+  ]
+}
+  "ammoTypes": {
+    "benite": {
+      type: ArtilleryBulletType
+    damage: 200
+    splashDamage: 200
+    splashDamageRadius: 50
+    buildingDamageMultiplier: 0.25
+    lifetime: 800
+    backColor: AAE7D7
+    frontColor: AAE7D7
+    speed: 4
+    width: 18
+    height: 23
+    hitEffect: blastExplosion
+    hitShake: 5
+    collidesGround: true
+    collidesAir: false
+    collidesTiles: true
+    collides: true
+    ammoMultiplier: 1
+     "despawnEffect": [titanSmoke]
+      hitColor: AAE7D7
+      despawnColor: AAE7D7
+      "hitEffect": [titanSmoke]
+   fragOnHit: true
+      fragBullets: 10
+      fragRandomSpread: 360
+      fragLifeMin: 1
+      fragLifeMax: 1
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragSpread: 90
+      fragAngle: 0
+      fragOnAbsorb: true
+      fragBullet: {
+        type: BasicBulletType
+        width: 10
+        height: 10
+        sprite: missile-large
+        frontColor: 6697B0
+        backColor: 446475
+        trailColor: 446475
+        trailWidth: 3
+        trailLength: 26
+        trailRotation: true
+        trailEffect: shootSmokeSquareSparse
+        trailInterval: 4
+        speed: 3
+        drag: 0.0005
+        lifetime: 5
+        pierceCap: 2
+        damage: 35
+        pierce: true
+         }
+  }
+  "iron": {
+      type: ArtilleryBulletType
+    damage: 100
+    splashDamage: 158
+    splashDamageRadius: 50
+    buildingDamageMultiplier: 0.25
+    lifetime: 800
+    backColor: FFFFFF
+    frontColor: FFFFFF
+    speed: 4
+    width: 18
+    height: 23
+    hitEffect: blastExplosion
+    hitShake: 5
+    collidesGround: true
+    collidesAir: false
+    collidesTiles: true
+    collides: true
+    ammoMultiplier: 1
+     "despawnEffect": [titanSmoke]
+      hitColor: FFFFFF
+      despawnColor: FFFFFF
+      "hitEffect": [titanSmoke]
+   fragOnHit: true
+      fragBullets: 20
+      fragRandomSpread: 360
+      fragLifeMin: 1
+      fragLifeMax: 1
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragSpread: 90
+      fragAngle: 0
+      fragOnAbsorb: true
+      fragBullet: {
+        type: BasicBulletType
+        width: 10
+        height: 10
+        sprite: missile-large
+        frontColor: FFFFFF
+        backColor: FFFFFF
+        trailColor: FFFFFF
+        trailWidth: 3
+        trailLength: 26
+        trailRotation: true
+        trailEffect: shootSmokeSquareSparse
+        trailInterval: 4
+        speed: 3
+        drag: 0.0005
+        lifetime: 15
+        pierceCap: 2
+        damage: 45
+        pierce: true
+         }
+  }
+}
+  "requirements": [
+    "silver/150",
+    "teralite/120",
+    "benite/100"
+  ],
+  "coolant": {
+    "type": "ConsumeLiquid",
+    "liquid": "ilum",
+    "amount": 0.4
+  },
+  "category": "turret",
+  research: {
+    parent: "09c-force",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "outpost"
+        }
+    ]
+},
+}

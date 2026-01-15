@@ -1,0 +1,280 @@
+type: mech
+Name: Paladin
+speed: 0.20
+rotateSpeed: 1
+description: The final tier. Lunges at nearby target with no mercy dealing a ton of damage.
+health: 4550
+armor: 25
+hitSize: 40
+outlineColor: 3F3E44
+shownPlanets: [napelus]
+deathSound: mech-large-destroyed
+"abilities": [
+     {
+      "type": "EnergyFieldAbility",
+      "healEffect": {
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 7,
+        "lifetime": 20,
+        "offset": 50,
+        "length": 55,
+        "cone": -360,
+        "lenFrom": 6,
+        "lenTo": 0,
+        "colorFrom": "EFC47F",
+        "colorTo": "EFC47F"
+      },
+      "statusDuration": 300,
+      "status": "shocked",
+      "color": "EFC47F",
+      "maxTargets": 15,
+      "damage": 10,
+      "healPercent": 0.5,
+      "range": 150,
+      "y": 4,
+      "sectors": 5,
+      "rotateSpeed": 3,
+      "hitBuildings": true,
+      "sectorRad": 0.11,
+      "effectRadius": 5,
+      "reload": 19
+    }
+     {
+    type: RepairFieldAbility
+    ammount: 1
+    reload: 90
+    range: 70
+    healPercent: 0.5
+    sameTypeHealMultiplier: 3
+    }
+    {
+    type: SuppressionFieldAbility
+    reload: 600
+    range: 300
+    orbRadius: 6
+    orbSinScl: 7
+    y: 4
+    x: 0
+    color: EFC47F
+    particleColor: EFC47F
+    effectColor: EFC47F
+  }
+    {
+    type: ShieldArcAbility
+    radius: 50
+    angle: 360
+    width: 3
+    chanceDeflect: 5
+    y: 0
+    cooldown: 200
+    regen: 1
+    max: 1000
+    whenShooting: false
+   },
+ ]
+weapons: [
+{
+    "name": "nation-shooter",
+    "reload": 100,
+    "mirror": true,
+    "x": 10,
+    "y": 0,
+    "shootY": 2,
+    "recoil": 1,
+    "inaccuracy ": 20,
+    "targetGround": true
+    "targetAir ": false
+    "rotate": true,
+"shoot": {
+"type": "shootPattern",
+ "shots": 4,
+    "shotDelay": 5,
+}
+    shootSound: shootTank
+    bullet: {
+    type: BasicBulletType
+      speed: 5
+      lifetime: 40
+      collidesAir: true
+      damage: 85
+      width: 6
+      height: 6
+        frontColor: EFC47F
+        backColor: EFC47F
+      despawnHit: true
+      despawnEffect: none
+      trailColor: EFC47F
+      trailWidth: 1.5
+      trailLength: 5
+      hitEffect: [
+        {
+          type: ParticleEffect
+          particles: 6
+          line: true
+          lifetime: 25
+          length: 20
+          lenFrom: 5
+          lenTo: 0
+          strokeFrom: 2
+          strokeTo: 0
+          colorFrom: 95CDF1
+          colorTo: ffffff
+        }
+        {
+          type: WaveEffect
+          sizeFrom: 0
+          sizeTo: 15
+          lifetime: 20
+          strokeFrom: 3.5
+          strokeTo: 0
+          colorFrom: 95CDF1
+          colorTo: ffffff
+        }
+      ]
+    }
+  }
+{
+    name: paladin-blade
+    x: -27
+    y: 0
+    rotate: false
+    mirror: true
+    alternate: true
+    layerOffset: 0
+    rotateSpeed: 5
+    reload: 150
+rotationLimit: 20
+shootCone: 50
+shootSound: slash
+ top: false
+    recoil: -5
+shoot: {
+type: shootSpread 
+spread: 45
+shots: 5
+shotDelay: 0
+}
+    bullet: {
+shootEffect: {
+  type: ParticleEffect
+line: true
+    particles: 4
+    baseLength: 2
+length: -30
+    lifetime: 15
+lenFrom: 4
+lenTo: 0
+strokeFrom: 1.5
+strokeTo: 0
+    colorFrom: FFE0B2
+    colorTo: FFFDFC
+    cone: -30
+interp: circleOut
+sizeInterp: linear
+}
+smokeEffect: none
+    type: RailBulletType
+    damage: 5000
+  recoil: -30
+      buildingDamageMultiplier: 4
+    pierce: true
+    length: 85
+    width: 50
+    height: 50
+    lifetime: 1
+statusDuration: 100
+trailRotation: true
+pierceEffect: {
+    type: ParticleEffect
+line: true
+    particles: 4
+    baseLength: 0
+length: 30
+    lifetime: 30
+lenFrom: 3
+lenTo: 1
+strokeFrom: 1.6
+strokeTo: 0
+    colorFrom: FFE0B2
+    colorTo: FFFDFC
+    cone: 70
+interp: circleOut
+}
+pointEffect: {
+    type: ParticleEffect
+line: false
+    particles: 1
+    baseLength: 0
+length: 0
+    lifetime: 30
+sizeFrom: 4.5
+sizeTo: 0
+useRotation: true
+    colorFrom: FFE0B2
+    colorTo: FFFDFC
+    cone: 0
+offset: -90
+interp: circleOut
+useRotation: true
+sizeInterp: pow5Out
+}
+fragBullets: 2
+fragRandomSpread: 60
+fragBullet: {
+lifetime: 30
+type: ArtilleryBulletType
+damage: 9
+speed: 10
+splashDamage: 200
+    frontColor: EFC47F
+    backColor: EFC47F
+trailColor: EFC47F
+trailLength: 20
+trailWidth: 2
+splashDamageRadius: 50
+despawnEffect: none
+despawnHit: true
+hitEffect: {
+type: MultiEffect
+effects: [
+{
+type: ParticleEffect
+colorFrom: EFC47F
+colorTo: EFC47F
+sizeFrom: 3
+sizeTo: 0
+length: 23
+lifetime: 45
+particles: 4
+interp: pow10Out
+sizeInterp: linear
+}
+{
+type: ParticleEffect
+colorFrom: EFC47F
+colorTo: EFC47F
+sizeFrom: 2.2
+sizeTo: 0
+length: 20
+lifetime: 30
+particles: 4
+interp: circleOut
+sizeInterp: linear
+}
+{
+type: WaveEffect
+colorFrom: EFC47F
+colorTo: EFC47F
+sizeTo: 23
+lifetime: 30
+interp: pow5Out
+}
+  ]
+    }
+      }
+        }   
+          }
+            ]
+
+

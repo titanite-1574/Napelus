@@ -1,0 +1,41 @@
+{
+  "type": "UnitFactory",
+  "name": Naval Fabricator
+  "description": Fabricates <<naval>> units
+  "size": 3,
+  "configurable": false,
+  "fogRadius": 3,
+  "category": "units",
+  "consumes": {
+    "power": 2
+  },
+  "plans": [
+    {
+      "unit": "06a-current",
+      "requirements": [
+        "silver/15",
+        "iron/20"
+      ],
+      "time": 2010
+    }
+  ],
+ research: {
+    parent: "10a-blade-fabricator",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "outpost"
+        }
+    ]
+}
+  "requirements": [
+    "silver/200",
+    "iron/230",
+    "magnesium/120"
+  ]
+  "researchCost": [
+    "silver/200"
+    "iron/200"
+    "magnesium/200"
+  ]
+}

@@ -1,0 +1,33 @@
+type: HeatProducer
+name: Eletric Heater
+description: Uses a large ammount of power to produce large ammount of heat
+size: 2
+heatOutput: 5
+health: 250
+craftTime: 120
+researchCostMultiplier: 0.5
+hasPower: true
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawHeatOutput
+    }
+  ]
+}
+consumes: {
+  power: 3
+}
+ambientSound: loopHum
+ambientSoundVolume: 0.04
+category: crafting
+research: menite-heater
+requirements: [
+  silver/30
+  teralite/20
+  iron/60
+]
+group: heat

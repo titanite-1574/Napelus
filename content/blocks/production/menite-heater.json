@@ -1,6 +1,6 @@
 type: HeatProducer
 name: Menite Heater
-description: Used Menite to produce a small ammount of heat
+description: Uses Menite to produce a small ammount of heat
 size: 2
 heatOutput: 3
 health: 250

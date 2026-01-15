@@ -1,0 +1,6 @@
+type: OreBlock
+name: Raw Benite Ore
+itemDrop: benite
+variants: 2
+mapColor: FFFFFF
+tier: 5

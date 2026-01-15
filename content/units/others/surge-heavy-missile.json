@@ -1,0 +1,115 @@
+type: missile
+template: MissileUnitType
+speed: 5
+flying: true
+health: 500
+hitSize: 6
+rotateSpeed: 0.6
+controller: MissileAI
+lowAltitude: true
+lifetime: 100
+isEnemy: false
+allowedInPayloads: false
+playerControllable: false
+physics: false
+useUnitCap: false
+createWreck: false
+createScorch: false
+hidden: true
+engineOffset: 4
+engineSize: 2
+trailLength: 12
+trailScl: 1.1
+trailColor: D09FFF
+loopSound: missileTrail
+abilities: [
+  {
+  type: MoveEffectAbility
+  rotation: 180
+  y: -4
+ interval: 2
+  effect: {
+      type: ParticleEffect
+      particles: 1
+      colorFrom: D09FFF
+      colorTo: D09FFF
+      length: 2
+      lifetime: 50
+      sizeTo: 0
+      sizeFrom: 2
+      lightOpacity: 0.5
+      interp: pow3Out
+      }
+    }
+]
+missileAccelTime: 1
+targetAir: true
+despawnEffect: [
+				{
+				type: WaveEffect
+				rotWithParent: true
+				followParent: true
+				lifetime: 35
+				sizeFrom: 26
+				sizeTo: 28
+				strokeFrom: 6
+				strokeTo: 2
+                colorFrom: e5f9f180
+                colorTo: b3eed800
+				interp:pow3Out
+				}
+			]
+		            hitEffect: [
+				{
+				type: WaveEffect
+				rotWithParent: true
+				followParent: true
+				lifetime: 35
+				sizeFrom: 26
+				sizeTo: 28
+				strokeFrom: 6
+				strokeTo: 2
+                colorFrom: e5f9f180
+                colorTo: b3eed800
+				interp:pow3Out
+				}
+			]
+weapons: [{
+    name: missile-explode
+      shootCone: 360
+      shake: 50
+      shootOnDeath: true
+      controllable: true
+      shootSound: none
+        bullet: {
+          killShooter: true
+          fragOnHit: true
+      fragBullets: 5
+      fragRandomSpread: 45
+      fragLifeMin: 1
+      fragLifeMax: 1
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragSpread: 0
+      fragAngle: 0
+      fragOnAbsorb: true
+      fragBullet: {
+      instantDisappear: true
+      shake: 50
+      damage: 0
+      spawnUnit: surge-missile
+    }
+            hitEffect: {
+                type: ExplosionEffect
+                waveRad: 60
+                sparkRad: 30
+                smokeSize: 20
+                smokeRad: 25
+          }
+collidesAir: true
+type: ExplosionBulletType
+keepVelocity: false
+splashDamage: 300
+splashDamageRadius: 50
+  }
+}]

@@ -2,7 +2,7 @@ type: mech
 Name: Gladius
 speed: 0.20
 rotateSpeed: 1
-description: Lunges at enemies with brute force
+description: Lunges at enemies with brute force. Equipped with a cannon thay shoots barrage of bullets at nearby targets
 health: 25000
 armor: 25
 hitSize: 40

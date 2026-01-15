@@ -1,0 +1,7 @@
+name: Benite
+description: A radioactive material which emits small amounts of radiation. Can be found on the surface and used in multiple mid game buildings
+research: florixite 
+radioactivity: 0.1
+hardness: 5
+healthScaling: 0.10
+shownPlanets: [napelus]

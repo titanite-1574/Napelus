@@ -1,0 +1,97 @@
+type: naval
+name: Surge
+description: Fires a volley of powerful missile with shotguns as secondary weapon. Has an upgraded helicopter factory 
+speed: 0.4
+health: 9855
+armor: 25
+aimDst: 10
+range: 90
+drag: 0.1
+accel: 0.8
+hitSize: 25
+rotateSpeed: 2.5
+trailLength: 15
+outlineColor: 575666
+abilities: [
+  {
+    type: UnitSpawnAbility
+    spawnTime: 2000
+    unit: mist
+    spawnX: 0
+    spawnY: -8
+  }
+]
+weapons: [
+{
+    x: 0
+    y: 7
+    name: surge-lau
+    reload: 500
+    mirror: false
+    rotate: true
+    rotateSpeed: 0.5
+    shootSound: shootMissileLarge
+      "shoot": {
+      type: shootSpread,
+    spread: 15,
+      "firstShotDelay": 150,
+      "shots": 3
+      "shotDelay": 10
+      },
+    bullet: {
+      instantDisappear: true
+      damage: 0
+      spawnUnit: surge-missile
+    }
+  }
+{
+    name: wave-cannon
+    mirror: true
+    rotate: true
+    rotateSpeed: 1
+    baseRotation: -45
+    x: 10
+    y: 4
+    reload: 60
+    recoil: 1.25
+    shootSound: shootFuse
+    inaccuracy: 35
+    shoot: {
+    shots: 15
+    shotDelay: 0
+   }
+    bullet: {
+      type: BasicBulletType
+      sprite: missile-large
+      width: 5
+      splashDamageRadius: 20
+      splashDamage: 15
+      pierceCap: 1
+      lifetime: 30
+      damage: 50
+      speed: 3
+      smokeEffect: colorSpark
+      trailColor: 9A70C1
+      trailWidth: 1.5
+      trailLength: 5
+      backColor: 735491
+      frontColor: 9A70C1
+      hitColor: 9A70C1
+      despawnEffect: {
+        type: WaveEffect
+        rotWithParent: true
+        followParent: true
+        lifetime: 8
+        sizeFrom: 0
+        sizeTo: 15
+        colorFrom: 9A70C1
+        colorTo: feb380
+         }
+      }
+   }
+]
+research: 08a-exulus 
+researchCost: [
+    titanium/100
+    graphite/50
+  ]

@@ -1,9 +1,9 @@
 name: "nap"
 displayName: "Napelus."
 author: Titan
-description: "Update 0.2!"
+description: "A mindustry mod that adds a new planet with its own campaign, still WIP"
 version: "1.0"
-subtitle: "[#93e2ee[]] um"
+subtitle: "[#5C79E2[]] update 0.3 has arrived!!"
 minGameVersion: "152.2"
 dependencies: [ ]
 hidden: false

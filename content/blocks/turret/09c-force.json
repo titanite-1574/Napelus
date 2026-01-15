@@ -17,6 +17,9 @@
   "shootY": 2
   minWarmup: 0.4
 moveWhileCharging: false
+consumes: {
+  power: 1
+}
     shoot: {
   type: shootPattern
   shots: 1
@@ -32,7 +35,7 @@ moveWhileCharging: false
             heatProgress: warmup
             progress: warmup
             under: true
-            moveX: -4
+            moveY: -4
         }
          {
             type: RegionPart
@@ -40,7 +43,7 @@ moveWhileCharging: false
             heatProgress: warmup
             progress: warmup
             under: true
-            moveX: 4
+            moveY: -4
         }
         {
             type: RegionPart
@@ -72,9 +75,41 @@ moveWhileCharging: false
     backColor: DBDBDB
     frontColor: DBDBDB
     lightColor: DBDBDB
-    damage: 200
+    damage: 100
+    splashDamage: 50
+    splashDamageRadius: 50
     speed: 20
     lifetime: 15
+    fragOnHit: true
+      fragBullets: 10
+      fragRandomSpread: 360
+      fragLifeMin: 1
+      fragLifeMax: 1
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragSpread: 90
+      fragAngle: 0
+      fragOnAbsorb: true
+      fragBullet: {
+        type: BasicBulletType
+        width: 10
+        height: 10
+        sprite: missile-large
+        frontColor: 6697B0
+        backColor: 446475
+        trailColor: 446475
+        trailWidth: 3
+        trailLength: 26
+        trailRotation: true
+        trailEffect: shootSmokeSquareSparse
+        trailInterval: 4
+        speed: 3
+        drag: 0.0005
+        lifetime: 50
+        pierceCap: 2
+        damage: 25
+        pierce: true
+         }
     despawnEffect: [
     colorSpark,
     {
@@ -88,8 +123,7 @@ moveWhileCharging: false
         colorTo: A3BBEB
     }
     ]
-    pierceCap: 7
-    pierce: true
+    pierce: false
     pierceBuilding: true  
     trailColor: E2E8FF
     sprite: nap-spearhead
@@ -109,9 +143,38 @@ moveWhileCharging: false
     backColor: CCCCCC
     frontColor: CCCCCC
     lightColor: CCCCCC
-    damage: 150
+    damage: 70
     speed: 15
     lifetime: 20
+    fragOnHit: true
+      fragBullets: 20
+      fragRandomSpread: 360
+      fragLifeMin: 1
+      fragLifeMax: 1
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragSpread: 90
+      fragAngle: 0
+      fragOnAbsorb: true
+      fragBullet: {
+        type: BasicBulletType
+        width: 10
+        height: 10
+        sprite: missile-large
+        frontColor: 6697B0
+        backColor: 446475
+        trailColor: 446475
+        trailWidth: 3
+        trailLength: 26
+        trailRotation: true
+        trailEffect: shootSmokeSquareSparse
+        trailInterval: 4
+        speed: 5
+        lifetime: 5
+        pierceCap: 2
+        damage: 15
+        pierce: true
+         }
     despawnEffect: [
     colorSpark,
     {
@@ -126,7 +189,7 @@ moveWhileCharging: false
     }
     ]
     pierceCap: 10
-    pierce: true
+    pierce: false
     pierceBuilding: true  
     trailColor: CCCCCC
     trailInterval: 3

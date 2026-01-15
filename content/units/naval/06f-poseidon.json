@@ -1,0 +1,271 @@
+type: naval
+name: Poseidon
+description: Fires a volley of powerful missile with shotguns as secondary weapon. Has an upgraded helicopter factory 
+speed: 0.3
+health: 45000
+armor: 20
+aimDst: 10
+range: 90
+drag: 0.1
+accel: 0.8
+hitSize: 60
+rotateSpeed: 0.8
+trailLength: 30
+outlineColor: 575666
+abilities: [
+  {
+    type: UnitSpawnAbility
+    spawnTime: 3500
+    unit: landfall
+    spawnX: 17
+    spawnY: -25
+  }
+  {
+    type: UnitSpawnAbility
+    spawnTime: 3550
+    unit: 04c-gust
+    spawnX: 17
+    spawnY: 25
+  }
+  {
+    type: UnitSpawnAbility
+    spawnTime: 1100
+    unit: splash
+    spawnX: 13
+    spawnY: 0
+  }
+  {
+    type: UnitSpawnAbility
+    spawnTime: 1100
+    unit: splash
+    spawnX: 23
+    spawnY: 0
+  }
+]
+weapons: [
+{
+name: poseidon-heavy-cannon
+x: -25
+y: -25
+mirror: false
+layerOffset: 0.01
+rotateSpeed: 1
+shoot: {
+      barrels: [
+      -2, 12, 0,
+      -7, 14, 0 
+      2, 14, 0, 
+      7, 12, 0]
+      type: ShootBarrel
+      shots: 4
+      shotDelay: 6
+      }
+top: true
+rotate: true
+reload: 50
+under: false
+top: true
+recoil: 1
+shootSound: shootConquer 
+ejectEffect: none
+recoils: 4
+    parts: [
+    {
+      type: RegionPart
+      suffix: -barrel1
+      layerOffset: 0
+      mirror: false
+      "under": true
+      progress: recoil
+      moveY: -2
+      recoilIndex: 0
+    }
+    {
+      type: RegionPart
+      suffix: -barrel2
+      layerOffset: 0
+      mirror: false
+      "under": true
+      progress: recoil
+      moveY: -2
+      recoilIndex: 1
+    }
+    {
+      type: RegionPart
+      suffix: -barrel3
+      layerOffset: 0
+      mirror: false
+      "under": true
+      progress: recoil
+      moveY: -2
+      recoilIndex: 2
+    }
+    {
+      type: RegionPart
+      suffix: -barrel4
+      layerOffset: 0
+      mirror: false
+      "under": true
+      progress: recoil
+      moveY: -2
+      recoilIndex: 3
+    }
+  ]
+bullet: {
+    type: BasicBulletType,
+    speed: 6
+    lifetime: 60
+    damage: 200
+    width: 10
+    height: 10
+    frontColor: D3D8ED
+    backColor: D3D8ED
+    trailLength: 15
+      trailWidth: 2
+      trailColor: D3D8ED
+    shootEffect: "shootSmall"
+    smokeEffect: "shootSmallSmoke"
+    ammoMultiplier: 5
+    collidesTiles: true
+    hitEffect: pointHit
+}
+}
+{
+name: wave-battlegun
+x: -10
+y: 30
+mirror: false
+layerOffset: 0.01
+rotateSpeed: 1
+shoot: {
+type: ShootAlternate 
+spread: 5
+shots: 4
+shotDelay: 0
+}
+top: true
+rotate: true
+reload: 100
+under: false
+top: true
+recoil: 1
+shootSound: shootConquer 
+ejectEffect: none
+    parts: [
+    {
+      type: RegionPart
+      suffix: -barrel
+      layerOffset: 0
+      mirror: false
+      "under": false,
+      progress: recoil
+      moveY: -2
+    }
+  ]
+bullet: {
+    type: BasicBulletType,
+    speed: 6
+    lifetime: 50
+    damage: 145
+    width: 10
+    height: 10
+    frontColor: 8989D3
+    backColor: 8989D3
+    trailLength: 10
+      trailWidth: 1
+      trailColor: 8989D3
+    shootEffect: "shootSmall"
+    smokeEffect: "shootSmallSmoke"
+    ammoMultiplier: 5
+    collidesTiles: true
+    hitEffect: pointHit
+      trailChance: -1
+      trailInterval: 5
+      trailRotation: true
+      trailEffect: colorSpark
+      trailColor: 8989D3
+}
+}
+{
+name: wave-battlegun
+x: -5
+y: 10
+mirror: false
+layerOffset: 0.01
+rotateSpeed: 1
+shoot: {
+type: ShootAlternate 
+spread: 5
+shots: 2
+shotDelay: 0
+}
+top: true
+rotate: true
+reload: 100
+under: false
+top: true
+recoil: 1
+shootSound: shootConquer 
+ejectEffect: none
+    parts: [
+    {
+      type: RegionPart
+      suffix: -barrel
+      layerOffset: 0
+      mirror: false
+      "under": false,
+      progress: recoil
+      moveY: -2
+    }
+  ]
+bullet: {
+    type: BasicBulletType,
+    speed: 6
+    lifetime: 50
+    damage: 145
+    width: 10
+    height: 10
+    frontColor: 8989D3
+    backColor: 8989D3
+    trailLength: 10
+      trailWidth: 1
+      trailColor: 8989D3
+    shootEffect: "shootSmall"
+    smokeEffect: "shootSmallSmoke"
+    ammoMultiplier: 5
+    collidesTiles: true
+    hitEffect: pointHit
+      trailChance: -1
+      trailInterval: 5
+      trailRotation: true
+      trailEffect: colorSpark
+      trailColor: 8989D3
+}
+}
+{
+    x: -15
+    y: 5
+    name: upsurge-missile
+    reload: 500
+    mirror: false
+    rotate: true
+    rotateSpeed: 1
+    shootSound: shootMissileLarge
+      "shoot": {
+      type: shootSpread,
+    spread: 15,
+      "shots": 3
+      "shotDelay": 10
+      },
+    bullet: {
+      instantDisappear: true
+      damage: 0
+      spawnUnit: surge-heavy-missile
+    }
+  }
+]
+research: 08a-exulus 
+researchCost: [
+    titanium/100
+    graphite/50
+  ]

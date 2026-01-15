@@ -1,0 +1,36 @@
+{
+  "name": "Spider Refabricator"
+  "description": Refabricates spider units to T2 flying
+  "type": "Reconstructor",
+  "size": 3,
+  "constructTime": 2300,
+   consumes: {
+    power: 5
+    liquid: ilum/0.4
+    items: [
+        iron/35
+        teralite/25
+    ]
+}
+  "upgrades": [
+    [
+      "02a-break",
+      "02b-shatter"
+    ]
+  ],
+  "category": "units",
+research: {
+    parent: "10c-air-fabricator"
+    objectives: [
+        {
+            type: "OnSector"
+            preset: "outpost"
+        }
+      ]
+   }
+  "requirements": [
+    "silver/200",
+    "iron/200"
+    "teralite/100"
+  ]
+}

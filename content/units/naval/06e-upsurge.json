@@ -1,0 +1,163 @@
+type: naval
+name: Upsurge
+description: Fires a volley of powerful missile with shotguns as secondary weapon. Has an upgraded helicopter factory 
+speed: 0.4
+health: 25900
+armor: 20
+aimDst: 10
+range: 90
+drag: 0.1
+accel: 0.8
+hitSize: 40
+rotateSpeed: 2.5
+trailLength: 15
+outlineColor: 575666
+abilities: [
+  {
+    type: UnitSpawnAbility
+    spawnTime: 2000
+    unit: rain
+    spawnX: 0
+    spawnY: -8
+  }
+]
+weapons: [
+{
+name: wave-battlegun
+x: 15
+y: 4
+mirror: true
+layerOffset: 0.01
+rotateSpeed: 1
+shoot: {
+type: ShootAlternate 
+spread: 5
+shots: 4
+shotDelay: 0
+}
+top: true
+rotate: true
+reload: 100
+under: false
+top: true
+recoil: 1
+shootSound: shootConquer 
+ejectEffect: none
+    parts: [
+    {
+      type: RegionPart
+      suffix: -barrel
+      layerOffset: 0
+      mirror: false
+      "under": false,
+      progress: recoil
+      moveY: -2
+    }
+  ]
+bullet: {
+    type: BasicBulletType,
+    speed: 6
+    lifetime: 50
+    damage: 145
+    width: 10
+    height: 10
+    frontColor: 8989D3
+    backColor: 8989D3
+    trailLength: 10
+      trailWidth: 1
+      trailColor: 8989D3
+    shootEffect: "shootSmall"
+    smokeEffect: "shootSmallSmoke"
+    ammoMultiplier: 5
+    collidesTiles: true
+    hitEffect: pointHit
+      trailChance: -1
+      trailInterval: 5
+      trailRotation: true
+      trailEffect: colorSpark
+      trailColor: 8989D3
+}
+}
+{
+name: wave-battlegun
+x: 15
+y: -20
+mirror: true
+layerOffset: 0.01
+rotateSpeed: 1
+shoot: {
+type: ShootAlternate 
+spread: 5
+shots: 2
+shotDelay: 0
+}
+top: true
+rotate: true
+reload: 100
+under: false
+top: true
+recoil: 1
+shootSound: shootConquer 
+ejectEffect: none
+    parts: [
+    {
+      type: RegionPart
+      suffix: -barrel
+      layerOffset: 0
+      mirror: false
+      "under": false,
+      progress: recoil
+      moveY: -2
+    }
+  ]
+bullet: {
+    type: BasicBulletType,
+    speed: 6
+    lifetime: 50
+    damage: 145
+    width: 10
+    height: 10
+    frontColor: 8989D3
+    backColor: 8989D3
+    trailLength: 10
+      trailWidth: 1
+      trailColor: 8989D3
+    shootEffect: "shootSmall"
+    smokeEffect: "shootSmallSmoke"
+    ammoMultiplier: 5
+    collidesTiles: true
+    hitEffect: pointHit
+      trailChance: -1
+      trailInterval: 5
+      trailRotation: true
+      trailEffect: colorSpark
+      trailColor: 8989D3
+}
+}
+{
+    x: 0
+    y: 10
+    name: upsurge-missile
+    reload: 500
+    mirror: false
+    rotate: true
+    rotateSpeed: 1
+    shootSound: shootMissileLarge
+      "shoot": {
+      type: shootSpread,
+    spread: 15,
+      "shots": 1
+      "shotDelay": 10
+      },
+    bullet: {
+      instantDisappear: true
+      damage: 0
+      spawnUnit: surge-heavy-missile
+    }
+  }
+]
+research: 08a-exulus 
+researchCost: [
+    titanium/100
+    graphite/50
+  ]
