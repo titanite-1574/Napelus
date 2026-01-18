@@ -1,0 +1,84 @@
+    name: Valkyrie 
+    description: "Heals nearby buildings and units. Uses levitation."
+    flying: true
+	outlineColor: 21202a
+	type: tether
+	hitSize: 11
+	health: 350
+	range: 0
+	itemCapacity: 0
+	speed: 1
+	rotateShooting: false
+	accel: 0.04
+	drag: 0.02
+	defaultController: CargoAI
+    isEnemy: false
+    allowedInPayloads: false
+    logicControllable: false
+    playerControllable: false
+	engineY: -1
+ engineSize: 0
+	engineColor: 9FD0F0
+	trailColor: 9FD0F0
+	trailLength: 2
+	parts: [
+{
+    type: HoverPart
+    sides: 8
+    mirror: false
+    radius: 12.75
+    phase: 90
+    stroke: 2
+    layerOffset: -0.001
+    color: 9FD0F0
+  }
+{
+suffix: -spinner
+moveRot: 360
+layer: -20
+top: true
+progress: {
+type: time
+op: loop
+time: 50
+}
+}
+	 {
+type: ShapePart
+circle: false
+sides: 8
+hollow: true
+layer: 110
+color: 9FD0F0
+radius: 100
+  }
+]
+	    weapons: [
+{
+mirror: false
+x: 0
+y: 0
+noAttack: true
+shootSound: none
+shootCone: 45
+beamWidth: 0.75
+autoTarget: true
+targetUnits: true
+targetBuildings: true
+shootY: 0
+repairSpeed: 1
+fractionRepairSpeed: .008
+continuous: true
+rotate: false
+type: RepairBeamWeapon
+name: cull-b
+noAttack: true
+widthSinMag: .10
+reload: 0.002
+healColor: 9FD0F0
+laserColor: 9FD0F0
+bullet: {
+maxRange: 100
+}
+}
+]

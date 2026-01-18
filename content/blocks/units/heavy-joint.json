@@ -1,0 +1,11 @@
+type: Junction
+size: 3
+customShadow: true
+placeablePlayer: false
+requirements: [
+  silver/40
+  iron/30
+  amalgam/15
+]
+research: 10k-unit-reformer
+researchCostMultiplier: 1

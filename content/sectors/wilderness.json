@@ -1,0 +1,15 @@
+localizedName: Wilderness 
+description: A small sector with two chokeholds. Research the new material and fight of enemy waves. Signal have found T3 units here
+planet: napelus
+sector: 90
+captureWave: 20
+difficulty: 3
+research: {
+  parent: outpost 
+  objectives: [
+    {
+      type: SectorComplete
+      preset: outpost 
+    }
+  ]
+}

@@ -71,11 +71,11 @@
   ],
   "category": "crafting",
   research: {
-    parent: "0b-iclium-liquidizer",
+    parent: "01a-iron-refinery",
     objectives: [
         {
             type: "OnSector",
-            preset: "outpost"
+            preset: "wilderness"
         }
     ]
 },

@@ -1,0 +1,9 @@
+boilPoint: 5
+name: Nylin
+description: A liquid that is found all over Napelus. Very cold. Used in advance item productions.
+heatCapacity: -0.5
+shownPlanets: [napelus]
+color: EDF0FF
+research: {
+  parent: exlium 
+}

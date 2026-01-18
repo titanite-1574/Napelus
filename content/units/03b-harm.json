@@ -1,0 +1,154 @@
+type: tank
+hitSize: 15
+name: Harm
+description: Fires a barrage of artillery rounds at enemy targets
+singleTarget: false
+omniMovement: false
+faceTarget: false
+targetAir: true
+shownPlanets: [napelus]
+health: 1500
+armor: 5
+speed: 0.80
+rotateSpeed: 2
+itemCapacity: 0
+outlineColor: 26262F
+treadRects: [
+    {
+        x: -22,
+        y: -2,
+        width: 6,
+        height: 17
+    }
+    {
+        x: 16,
+        y: -3,
+        width: 6,
+        height: 18
+    }
+    {
+        x: -4,
+        y: -23,
+        width: 8,
+        height: 41
+    }
+]
+researchCostMultiplier: 1
+weapons: [
+{
+    "name": "harm-gun",
+    "reload": 40,
+    "mirror": true,
+    "x": 10,
+    "y": 5,
+    "shootY": 2,
+    "recoil": 1,
+    "rotate": true,
+    "rotateSpeed": 2.5
+"shoot": {
+"type": "shootPattern",
+ "shots": 1,
+    "shotDelay": 5,
+}
+    shootSound: shootStell
+    bullet: {
+    type: BasicBulletType
+      speed: 4
+      lifetime: 60
+      damage: 20
+      width: 6
+      height: 6
+        frontColor: E04545
+     trailLength: 10
+      trailWidth: 1
+      trailColor: F58B8B
+        backColor: F58B8B
+      despawnHit: true
+      despawnEffect: none
+      hitEffect: [
+        {
+          type: ParticleEffect
+          particles: 6
+          line: true
+          lifetime: 25
+          length: 20
+          lenFrom: 5
+          lenTo: 0
+          strokeFrom: 2
+          strokeTo: 0
+          colorFrom: E04545
+          colorTo: ffffff
+        }
+        {
+          type: WaveEffect
+          sizeFrom: 0
+          sizeTo: 15
+          lifetime: 20
+          strokeFrom: 3.5
+          strokeTo: 0
+          colorFrom: E04545
+          colorTo: ffffff
+        }
+      ]
+    }
+    }
+  {
+    "name": "harm-artil",
+    "reload": 150,
+    "mirror": false,
+    "x": 0,
+    "y": 2,
+    "shootY": 2,
+    "recoil": 1,
+    "rotate": true,
+    "rotateSpeed": 2
+"shoot": {
+"type": "shootPattern",
+ "shots": 5,
+    "shotDelay": 10
+}
+    shootSound: shootTank
+    bullet: {
+    type: ArtilleryBulletType 
+      speed: 2
+      lifetime: 60
+      damage: 45
+      splashDamageRadius: 20
+      splashDamage: 50
+      width: 10
+      height: 10
+        frontColor: E04545
+     trailLength: 10
+      trailWidth: 1
+      trailColor: F58B8B
+        backColor: F58B8B
+      despawnHit: true
+      despawnEffect: none
+      hitEffect: [
+        {
+          type: ParticleEffect
+          particles: 6
+          line: true
+          lifetime: 25
+          length: 20
+          lenFrom: 5
+          lenTo: 0
+          strokeFrom: 2
+          strokeTo: 0
+          colorFrom: E04545
+          colorTo: ffffff
+        }
+        {
+          type: WaveEffect
+          sizeFrom: 0
+          sizeTo: 15
+          lifetime: 20
+          strokeFrom: 3.5
+          strokeTo: 0
+          colorFrom: E04545
+          colorTo: ffffff
+        }
+      ]
+    }
+    }
+]

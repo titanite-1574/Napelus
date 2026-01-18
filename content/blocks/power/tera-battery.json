@@ -1,0 +1,32 @@
+type: Battery
+name: Tera Battery
+description: stores power for backups when power production is down or using high power turrets
+size: 2
+health: 250
+squareSprite: false
+fullLightColor: E0F9FF
+"buildTime": 100
+consumes: {
+  powerBuffered: 1500
+}
+requirements: [
+  silver/200
+  iron/150
+  teralite/100
+]
+category: power
+research: {
+  parent: 06b-laser-node
+  objectives: [
+    {
+      type: OnSector
+      preset: wilderness 
+    }
+  ]
+}
+researchCost: [
+  silver/200
+  iron/150
+  teralite/100
+]
+fogRadius: 1

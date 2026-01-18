@@ -52,7 +52,7 @@ bullet: {
 }
 ]
 research: {
-    parent: 05a-blade-fabricator
+    parent: 10a-blade-fabricator
 }
 researchCostMultiplier: 0
 alwaysUnlock: true

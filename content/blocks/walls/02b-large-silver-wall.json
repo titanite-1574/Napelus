@@ -3,18 +3,16 @@
   "type": "Wall",
   "description": A larger version with more health and more durable
    "buildCostMultiplier": 0.1,
-  "buildTime": 1100
+  "buildTime": 900
   "health": 1400,
   "size": 2,
   "armor": 5,
   "requirements": [
     "silver/10"
-    "iron/10"
   ],
   "research": 02a-silver-wall 
   "category": defense
   researchCost: [
   silver/300
-  iron/500
 ]
 }

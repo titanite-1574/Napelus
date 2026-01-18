@@ -4,7 +4,6 @@
   "description": A wall made of menite.Explodes when destroyed sending fragment at random angle 
    "buildCostMultiplier": 0.1,
   "buildTime": 1100
-  chanceDeflect: 10
   "health": 1000,
   "size": 1,
   "armor": 5,
@@ -15,6 +14,26 @@
   "research": 02f-large-tera-wall 
   "category": defense
   researchCost: [
-  iron/500
+  menite/500
+  silver/500
 ]
+destroyBullet: {
+  instantDisappear: true
+  damage: 0
+  speed: 0
+  fragBullets: 12
+  fragBullet: {
+    type: BasicBulletType
+    speed: 4
+    lifetime: 40
+    pierce: true
+    width: 6
+    height: 7
+    pierceCap: 1
+    homingPower: 0.1
+    damage: 65
+    mixColorFrom: de5750
+    mixColorTo: ff8167
+  }
+}
 }

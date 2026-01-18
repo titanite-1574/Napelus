@@ -103,8 +103,8 @@ research: {
   parent: 10c-air-fabricator,
   objectives: [
     {
-      type: SectorComplete
-      preset: outpost
+      type: Research
+      content: 10c-air-fabricator 
     }
   ]
 }

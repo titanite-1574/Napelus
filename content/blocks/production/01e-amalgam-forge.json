@@ -59,8 +59,8 @@ maxEfficiency: 4.5
     parent: "01d-nitrogen-accumulator",
     objectives: [
         {
-            type: "OnSector",
-            preset: "outpost"
+            type: "SectorComplete",
+            preset: "river-base"
         }
     ]
 },

@@ -1,0 +1,33 @@
+type: Constructor
+name: Block Fabricator 
+description: fabricates block for higher unit tier construction 
+size: 3
+health: 450
+buildTime: 800
+category: units
+requirements: [
+  silver/50
+  iron/30
+  teralite/35
+] 
+hasPower: true
+consumes: {
+  power: 1.5
+}
+buildSpeed: 1
+filter: [
+ 02b-large-silver-wall
+ 02d-large-iron-wall
+]
+research: {
+    parent: "unit-conveyer",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "outpost"
+        }
+    ]
+}
+squareSprite: false
+maxBlockSize: 2
+researchCostMultiplier: 0.5

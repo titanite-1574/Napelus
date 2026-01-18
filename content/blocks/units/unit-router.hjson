@@ -1,0 +1,18 @@
+type: PayloadRouter
+health: 450
+category: units
+research: {
+  parent: unit-conveyer 
+  objectives: [
+    {
+      type: OnSector
+      preset: outpost
+    }
+  ]
+}
+requirements: [
+  silver/50
+  iron/50
+]
+canOverdrive: false
+researchCostMultiplier: 0.5

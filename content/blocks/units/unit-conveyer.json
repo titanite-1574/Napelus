@@ -1,0 +1,21 @@
+type: PayloadConveyor
+name: Payload Track
+description: Transport payload and units
+health: 450
+category: units
+research: {
+  parent: 10a-blade-fabricator 
+  objectives: [
+    {
+      type: OnSector 
+      preset: outpost 
+    }
+  ]
+}
+requirements: [
+  silver/50
+  iron/30
+]
+canOverdrive: false
+payloadLimit: 4
+researchCostMultiplier: 0.5

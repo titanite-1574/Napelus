@@ -1,0 +1,76 @@
+type: ConsumeGenerator
+size: 3
+name: Menite Ignition Chamber
+description: Uses the flammability of Menite to produce power. Uses Ilum as coolant
+squareSprite: false
+hasLiquids: true
+liquidCapacity: 60
+canOverdrive: false
+itemDuration: 180
+baseExplosiveness: 3
+  "drawer": {
+  "type": "DrawMulti",
+        "drawers": [
+         {	
+        "type": "DrawDefault"
+	       }
+        {
+      type: DrawBlurSpin
+      suffix: -spinner
+      rotateSpeed: 20
+    }
+    ]
+    },
+consumes: {
+    "items": [
+    menite/1
+    ]
+    liquids: [
+      ilum/0.17
+    ]
+}
+generateEffectRange: 1
+effectChance: 0.05
+generateEffect: {
+    type: RadialEffect
+    layer: 118
+    rotationSpacing: 60
+    amount: 6
+    lengthOffset: 6
+    effect: {
+      particles: 1
+      length: 90
+      lifetime: 400
+      cone: 20
+      baseRotation: 32
+      useRotation: false 
+      sizeFrom: 0
+      sizeTo: 12
+      colorFrom: e0e0e066
+      colorTo: e0e0e000
+      sizeInterp: pow2Out
+      interp: pow2Out
+      layer: 111
+    }
+  }
+powerProduction: 10
+category: power
+requirements: [
+  silver/250
+  iron/245
+  teralite/200
+]
+research: {
+    parent: "06b-laser-node",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "snowy-river"
+        }
+    ]
+},
+researchCost: [
+  silver/550
+  iron/545
+  teralite/300
+]

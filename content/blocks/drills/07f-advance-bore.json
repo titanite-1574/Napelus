@@ -11,6 +11,7 @@ ambientSound: drill
 ambientSoundVolume: 0.08
 hasLiquids: true
 sparkColor: 7A8CDC
+"buildTime": 900
 consumes: {
   liquid: ilum/0.04000000
   power: 0.25
@@ -22,14 +23,14 @@ consumes: {
     booster: true
   }
 }
-buildCostMultiplier: 2
+buildCostMultiplier: 0.1
 category: production
 research: {
     parent: "07c-wall-bore",
     objectives: [
         {
             type: "OnSector",
-            preset: "frozen-field"
+            preset: "separated"
         }
     ]
 },
@@ -40,9 +41,9 @@ researchCost: [
   magnesium/900
 ]
 requirements: [
-  silver/350
-  iron/350
-  teralite/200
-  magnesium/300
+  silver/150
+  iron/150
+  teralite/70
+  magnesium/89
 ]
 shownPlanets: [napelus]

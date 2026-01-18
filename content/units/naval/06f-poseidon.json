@@ -131,6 +131,93 @@ bullet: {
 }
 }
 {
+name: poseidon-heavy-cannon
+x: -25
+y: 25
+mirror: false
+layerOffset: 0.01
+rotateSpeed: 1
+shoot: {
+      barrels: [
+      -2, 12, 0,
+      -7, 14, 0 
+      2, 14, 0, 
+      7, 12, 0]
+      type: ShootBarrel
+      shots: 4
+      shotDelay: 6
+      }
+top: true
+rotate: true
+reload: 50
+under: false
+top: true
+recoil: 1
+shootSound: shootConquer 
+ejectEffect: none
+recoils: 4
+    parts: [
+    {
+      type: RegionPart
+      suffix: -barrel1
+      layerOffset: 0
+      mirror: false
+      "under": true
+      progress: recoil
+      moveY: -2
+      recoilIndex: 0
+    }
+    {
+      type: RegionPart
+      suffix: -barrel2
+      layerOffset: 0
+      mirror: false
+      "under": true
+      progress: recoil
+      moveY: -2
+      recoilIndex: 1
+    }
+    {
+      type: RegionPart
+      suffix: -barrel3
+      layerOffset: 0
+      mirror: false
+      "under": true
+      progress: recoil
+      moveY: -2
+      recoilIndex: 2
+    }
+    {
+      type: RegionPart
+      suffix: -barrel4
+      layerOffset: 0
+      mirror: false
+      "under": true
+      progress: recoil
+      moveY: -2
+      recoilIndex: 3
+    }
+  ]
+bullet: {
+    type: BasicBulletType,
+    speed: 6
+    lifetime: 60
+    damage: 200
+    width: 10
+    height: 10
+    frontColor: D3D8ED
+    backColor: D3D8ED
+    trailLength: 15
+      trailWidth: 2
+      trailColor: D3D8ED
+    shootEffect: "shootSmall"
+    smokeEffect: "shootSmallSmoke"
+    ammoMultiplier: 5
+    collidesTiles: true
+    hitEffect: pointHit
+}
+}
+{
 name: wave-battlegun
 x: -10
 y: 30
@@ -264,7 +351,7 @@ bullet: {
     }
   }
 ]
-research: 08a-exulus 
+research: 10q-naval-assem 
 researchCost: [
     titanium/100
     graphite/50

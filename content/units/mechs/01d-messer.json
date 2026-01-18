@@ -134,5 +134,10 @@ pointEffectSpace: 6
     }
   }
 ]
+research: {
+    parent: 10l-mech-assembler
+}
+researchCostMultiplier: 0
+alwaysUnlock: true
 
 

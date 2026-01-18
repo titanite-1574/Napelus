@@ -1,0 +1,16 @@
+localizedName: Caverns 
+description: A large sector with a new ore that's widely used in the midgames. Research it's properties and techs. Detecting possible signal of T4 units here
+planet: napelus
+sector: 1
+captureWave: 30
+difficulty: 5
+research: {
+  parent: separated 
+  objectives: [
+  07f-advance-bore
+    {
+      type: SectorComplete
+      preset: separated 
+    }
+  ]
+}

@@ -11,7 +11,7 @@
   "targetAir": true,
   "recoil": 1,
   "rotateSpeed": 2,
-  "shootSound": "minigun-shot",
+  "shootSound": "shootSpectre",
   "shootWarmupSpeed": 0.01,
   coolantMultiplier: -1.9
   "shootY": 6
@@ -30,7 +30,7 @@ drawer: {
     {
       type: RegionPart
       suffix: -barrel-l
-      layerOffset: -0.00000001
+      layerOffset: -0.1
       mirror: false
       progress: recoil
       recoilIndex: 0
@@ -39,7 +39,7 @@ drawer: {
     {
       type: RegionPart
       suffix: -barrel-r
-      layerOffset: -0.00000001
+      layerOffset: -0.1
       mirror: false
       progress: recoil
       recoilIndex: 1

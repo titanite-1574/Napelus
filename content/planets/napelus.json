@@ -32,8 +32,13 @@ itemWhitelist: [
 clearSectorOnLose: true
 allowLaunchSchematics: false
 allowLaunchLoadout: false
-
+updateLighting: false
 allowWaveSimulation: true
+coreDestroyClear: true
+fog: true
+showSpawns: true
+campaignRuleDefaults.fog: true
+campaignRuleDefaults.showSpawns: true
 prebuildBase: true
 parent: 1-staria
 hasAtmosphere: true
@@ -49,13 +54,13 @@ minZoom: 0.40
 sectorSize: 2.22
 startSector: 2
 atmosphereRadIn: 0.001
-atmosphereRadOut: 0.30
+atmosphereRadOut: 0.45
 atmosphereColor: 7C7C7C
 iconColor: bad5cd     
 landCloudColor: 7e7e86
 icon: planet
 bloom: false
-allowLaunchToNumbered: false
+allowLaunchToNumbered: true
 defaultCore: "08a-exulus"
 launchMusic: Naplaunch
 mesh: [
@@ -64,7 +69,7 @@ mesh: [
     type: NoiseMesh
     seed: 1
     divisions: 5.7
-    radius: 0.732
+    radius: 0.730
     color1: C9C8CD
     color2: 666259
     octaves: 4.4
@@ -87,7 +92,7 @@ mesh: [
     octaves: 4.4
     persistence: 0.9
     scale: 0.42
-    mag: 3.1
+    mag: 2.5
     coct: 4.5
     cper: 4
     cscl: 6.6
@@ -97,21 +102,47 @@ mesh: [
  //brown
     type: NoiseMesh
 	bloom: false
-    seed: 125
-    color1: 7A77AF
-    color2: 7A77AF
+    seed: 5
+    color1: B6C1C6
+    color2: B6C1C6
     divisions: 5.7
     radius: 0.892
-    octaves: 3
-    persistence: 0.9
-    scale: 0.0001
-    mag: 1
-	coct: 1
+    octaves: 2
+    persistence: 0.5
+    scale: 0.00001
+    mag: 0.5
+	coct: 0.5
     cper: 1
     cscl: 1
-	cthresh: 8
+	cthresh: 3
  }
 ]
 alwaysUnlocked: true
 cloudMesh: [
+   {
+   type: HexSkyMesh
+   planet: Stella
+   seed: 5
+   speed: 1
+   radius: 0.10
+   divisions: 5
+   color: 70828184
+   octaves: 3
+   persistence: 0.3
+   scl: 1
+   thresh: 0.45
+   }
+   {
+   type: HexSkyMesh
+   planet: Stella
+   seed: 5
+   speed: -3
+   radius: 0.10
+   divisions: 6
+   color: 70828184
+   octaves: 3
+   persistence: 0.3
+   scl: 2
+   thresh: 0.45
+   }
 ]

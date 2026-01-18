@@ -1,0 +1,4 @@
+type: Prop
+name: Snowy Boulder
+variants: 2
+breakSound: rockBreak

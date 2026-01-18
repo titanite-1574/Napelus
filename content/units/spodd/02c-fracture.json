@@ -56,10 +56,11 @@ y: 0
 mirror: false
 layerOffset: 0.01
 rotateSpeed: 0.8
+inaccuracy: 0
 shoot: {
 type: ShootAlternate 
 spread: 5
-shots: 4
+shots: 2
 shotDelay: 10
 }
 top: true
@@ -99,7 +100,7 @@ bullet: {
       lifetime: 50
       damage: 50
      splashDamageRadius: 20
-     splashDamage : 90
+     splashDamage : 50
       width: 6
       height: 6
         frontColor: A4E3E8
@@ -138,14 +139,14 @@ bullet: {
         speed: 3
         lifetime: 6
         pierceCap: 2
-        damage: 35
+        damage: 5
         pierce: true
          }
 }
 }
 ]
 research: {
-    parent: "08a-exulus",
+    parent: "10k-unit-reformer",
     objectives: [
         {
             type: "OnSector",

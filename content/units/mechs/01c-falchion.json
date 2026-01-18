@@ -115,5 +115,10 @@ pointEffectSpace: 6
     }
   }
 ]
+research: {
+    parent: 10k-unit-reformer 
+}
+researchCostMultiplier: 0
+alwaysUnlock: true
 
 

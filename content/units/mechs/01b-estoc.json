@@ -124,5 +124,9 @@ pointEffectSpace: 6
     }
   }
 ]
-
+research: {
+    parent: 10b-blade-refabricator
+}
+researchCostMultiplier: 0
+alwaysUnlock: true
 

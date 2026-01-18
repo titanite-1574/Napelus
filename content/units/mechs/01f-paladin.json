@@ -3,7 +3,7 @@ Name: Paladin
 speed: 0.20
 rotateSpeed: 1
 description: The final tier. Lunges at nearby target with no mercy dealing a ton of damage.
-health: 4550
+health: 45500
 armor: 25
 hitSize: 40
 outlineColor: 3F3E44
@@ -276,5 +276,10 @@ interp: pow5Out
         }   
           }
             ]
+research: {
+    parent: 10l-mech-assembler
+}
+researchCostMultiplier: 0
+alwaysUnlock: true
 
 

@@ -1,0 +1,12 @@
+type: RainWeather
+color: D3D8ED
+liquid: nylin
+name: Rainfall
+padding: 20
+sizeMax: 40
+sizeMin: 25
+density: 300
+sound: thunderstorm 
+soundVol: 0.5
+yspeed: 5
+xspeed: 1

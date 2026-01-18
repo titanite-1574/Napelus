@@ -1,0 +1,16 @@
+localizedName: River Base 
+description: This sector contains two core and T2 units,research T2 unit Refabricators and take down this base
+planet: napelus
+sector: 27
+difficulty: 2
+research: {
+  parent: snowy-river 
+  objectives: [
+  10b-blade-refabricator
+  10h-naval-refab
+    {
+      type: SectorComplete
+      preset: snowy-river 
+    }
+  ]
+}

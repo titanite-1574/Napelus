@@ -56,7 +56,6 @@ moveWhileCharging: false
   "ammoTypes": {
     "benite": {
       type: ArtilleryBulletType
-    damage: 200
     splashDamage: 200
     splashDamageRadius: 50
     buildingDamageMultiplier: 0.25
@@ -72,6 +71,8 @@ moveWhileCharging: false
     collidesAir: false
     collidesTiles: true
     collides: true
+    status: benite-radiated
+    statusDuration: 350
     ammoMultiplier: 1
      "despawnEffect": [titanSmoke]
       hitColor: AAE7D7
@@ -110,14 +111,14 @@ moveWhileCharging: false
   }
   "iron": {
       type: ArtilleryBulletType
-    damage: 100
-    splashDamage: 158
+    damage: 0
+    splashDamage: 150
     splashDamageRadius: 50
     buildingDamageMultiplier: 0.25
     lifetime: 800
     backColor: FFFFFF
     frontColor: FFFFFF
-    speed: 4
+    speed: 5
     width: 18
     height: 23
     hitEffect: blastExplosion
@@ -135,7 +136,7 @@ moveWhileCharging: false
       fragBullets: 20
       fragRandomSpread: 360
       fragLifeMin: 1
-      fragLifeMax: 1
+      fragLifeMax: 3
       fragVelocityMin: 1
       fragVelocityMax: 1
       fragSpread: 90
@@ -158,7 +159,7 @@ moveWhileCharging: false
         drag: 0.0005
         lifetime: 15
         pierceCap: 2
-        damage: 45
+        damage: 25
         pierce: true
          }
   }
@@ -179,7 +180,7 @@ moveWhileCharging: false
     objectives: [
         {
             type: "OnSector",
-            preset: "outpost"
+            preset: "caverns"
         }
     ]
 },

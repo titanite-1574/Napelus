@@ -92,7 +92,9 @@ weapons: [
       }
    }
 ]
-research: 08a-exulus 
+research: 10h-naval-refab
+alwaysUnlock: true
+researchCostMultiplier: 0
 researchCost: [
     titanium/100
     graphite/50

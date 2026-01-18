@@ -1,0 +1,48 @@
+    "type": "UnitCargoLoader",
+    "name": "Healing Station",
+	"squareSprite": false,
+    "description": "Fabricate a small drone that heals anything nearby like units and buildings. Requires Nitrogen and Ilum",
+    "size": 3,
+    "health": 650,
+    "unitType": "valkyrie",
+    "itemCapacity": 0,
+    "separateItemCapacity": true,
+    "requirements": 
+    [
+		silver/400
+  iron/350
+  magnesium/330
+  benite/300
+	],
+    "category": "effect",
+    "hasItems": true,
+    "hasPower": false,
+    "hasLiquids": true,
+	consumes: {
+ power: 0.50
+  liquids: [
+  ilum/0.14
+  nitrogen/0.15
+	]
+}
+polyStroke: 1
+polyRadius: 10
+polySides: 8
+polyRotateSpeed: 0.5
+polyColor: 9FD0F0
+research: {
+  parent: "08a-exulus"
+  planet: napelus
+    "requirements": [
+	  silver/400
+  iron/350
+  magnesium/330
+  benite/300
+]
+objectives: [
+{
+type: SectorComplete
+preset: outpost
+  }
+ ]
+}

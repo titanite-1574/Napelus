@@ -48,7 +48,7 @@ moveWhileCharging: false
     frontColor: 91DDED
     lightColor: 91DDED
     collidesGround: false
-    damage: 155
+    damage: 80
     speed: 10
     lifetime: 40
     despawnEffect: [
@@ -126,7 +126,7 @@ moveWhileCharging: false
     backColor: A3EBD7
     frontColor: A3EBD7
     lightColor: A3EBD7
-    damage: 200
+    damage: 120
     speed: 15
     lifetime: 40
     despawnEffect: [
@@ -172,8 +172,8 @@ moveWhileCharging: false
   parent: 09d-hammer
   objectives: [
     {
-      type: SectorComplete
-      preset: outpost
+      type: OnSector 
+      preset: caverns
     }
   ]
 }

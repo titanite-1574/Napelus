@@ -112,7 +112,7 @@ weapons: [
     reload: 20
     shootY: 0
     shootCone: 15
-    beamWidth: 1
+    beamWidth: 0.5
     repairSpeed: 3.9
     fractionRepairSpeed: 0.06
     color: BECFD8

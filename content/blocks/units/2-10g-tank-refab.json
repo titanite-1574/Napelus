@@ -1,0 +1,41 @@
+{
+  "name": "Tank Refabricator"
+  "description": Refabricates tank units to T2
+  "type": "Reconstructor",
+  "size": 3,
+  "constructTime": 2400,
+   consumes: {
+    power: 5
+    liquid: ilum/0.15
+    items: [
+        iron/40
+        teralite/30
+    ]
+}
+  "upgrades": [
+    [
+      "03a-hurt",
+      "03b-harm"
+    ]
+  ],
+  "category": "units",
+research: {
+    parent: "10a-blade-fabricator"
+    objectives: [
+        {
+            type: "OnSector"
+            preset: "river-base"
+        }
+      ]
+   }
+  "requirements": [
+    "silver/200",
+    "iron/200"
+    "teralite/100"
+  ]
+  "researchCost": [
+    "silver/200"
+    "iron/200"
+    "teralite/200"
+  ]
+}

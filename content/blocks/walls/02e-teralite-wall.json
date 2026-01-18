@@ -1,6 +1,6 @@
 {
   "name": "Teralite Wall"
-  "description": A wall made from Teralite. Durable and strong 
+  "description": A wall made from Teralite. Durable and strong. Capable of absorbing lasers
   "type": "Wall",
   "buildCostMultiplier": 0.1,
   "buildTime": 710

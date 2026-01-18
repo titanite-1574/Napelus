@@ -143,15 +143,16 @@ consumes: {
     backColor: CCCCCC
     frontColor: CCCCCC
     lightColor: CCCCCC
-    damage: 70
+    damage: 65
     speed: 15
-    lifetime: 20
+    lifetime: 10
+    range: 500
     fragOnHit: true
       fragBullets: 20
       fragRandomSpread: 360
       fragLifeMin: 1
       fragLifeMax: 1
-      fragVelocityMin: 1
+      fragVelocityMin: 0
       fragVelocityMax: 1
       fragSpread: 90
       fragAngle: 0
@@ -170,9 +171,9 @@ consumes: {
         trailEffect: shootSmokeSquareSparse
         trailInterval: 4
         speed: 5
-        lifetime: 5
-        pierceCap: 2
-        damage: 15
+        lifetime: 10
+        pierceCap: 3
+        damage: 50
         pierce: true
          }
     despawnEffect: [
@@ -188,7 +189,7 @@ consumes: {
         colorTo: A3BBEB
     }
     ]
-    pierceCap: 10
+    pierceCap: 1
     pierce: false
     pierceBuilding: true  
     trailColor: CCCCCC

@@ -23,7 +23,7 @@
     parent: "10a-blade-fabricator",
     objectives: [
         {
-            type: "OnSector",
+            type: "SectorComplete",
             preset: "outpost"
         }
     ]

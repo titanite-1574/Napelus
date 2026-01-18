@@ -1,0 +1,15 @@
+localizedName: Snowy River 
+description: A river of Nylin was located here. This place is currently experiencing heavy rain and darkness. Research the Item Launcher to send the iron to the other side
+planet: napelus
+sector: 91
+captureWave: 20
+difficulty: 3
+research: {
+  parent: wilderness 
+  objectives: [
+    {
+      type: SectorComplete
+      preset: wilderness
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+type: CoreBlock
+name: Frontier
+description: A upgrade from Exulus. More armored and health. Unit builds and heals faster
+size: 4
+health: 8590
+armor: 5
+unitType: forward
+requirements: [
+ silver/1000
+ magnesium/500
+ iron/1100
+ benite/550
+]
+requiresCoreZone: true
+incinerateNonBuildable: true
+category: effect
+isFirstTier: true
+squareSprite: false
+alwaysUnlocked: false
+itemCapacity: 2000
+unitCapModifier: 20
+research: {
+  parent: 08a-exulus 
+  objectives: [
+    {
+      type: SectorComplete 
+      preset: outpost
+    }
+  ]
+}

@@ -120,7 +120,7 @@ bullet: {
       }
    }
 ]
-research: 08a-exulus 
+research: 10k-unit-reformer 
 researchCost: [
     titanium/100
     graphite/50

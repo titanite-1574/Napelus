@@ -1,0 +1,15 @@
+localizedName: Separated
+description:A small base was located here not far from River Base. Research T2 spider and air units and take down the base. This is the last early game sector.
+planet: napelus
+sector: 35
+captureWave: 20
+difficulty: 3
+research: {
+  parent: river-base 
+  objectives: [
+    {
+      type: SectorComplete
+      preset: river-base
+    }
+  ]
+}

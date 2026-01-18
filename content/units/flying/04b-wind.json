@@ -74,7 +74,7 @@ bullet: {
         weaveMag: 3
     pierce: true
     pierceCap: 2
-    pierceBuilding: true
+    pierceBuilding: false
     height: 10
     frontColor: b2afb3
     backColor: d5d2d6
@@ -94,8 +94,8 @@ research: {
   parent: 10d-air-refab
   objectives: [
     {
-      type: SectorComplete
-      preset: frozen-field
+      type: Research
+      content: 10d-air-refab 
     }
   ]
 }

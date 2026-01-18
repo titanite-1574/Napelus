@@ -24,6 +24,16 @@ plans: [
     ]
     time: 3300
   }
+  {
+    type: AssemblerUnitPlan
+    unit: 04e-thunder
+    requirements: [
+      nap-02d-large-iron-wall/4
+      nap-04b-wind/3
+      nap-charged-engine/2
+    ]
+    time: 4500
+  }
 ]
 squareSprite: false
 consumes: {

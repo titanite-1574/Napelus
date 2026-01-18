@@ -52,8 +52,10 @@ weapons: [
       }
    }
 ]
-research: 08a-exulus 
+research: 10g-naval-fab
+alwaysUnlock: true
+researchCostMultiplier: 0
 researchCost: [
-    titanium/100
-    graphite/50
+    silver/500
+    iron/500
   ]

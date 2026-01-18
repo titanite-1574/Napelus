@@ -6,7 +6,7 @@
   "constructTime": 2200,
    consumes: {
     power: 5
-    liquid: ilum/0.4
+    liquid: ilum/0.15
     items: [
         iron/35
         teralite/25
@@ -24,13 +24,18 @@ research: {
     objectives: [
         {
             type: "OnSector"
-            preset: "outpost"
+            preset: "separated"
         }
       ]
    }
   "requirements": [
     "silver/200",
-    "iron/200"
-    "teralite/100"
+    "iron/50"
+    "teralite/150"
+  ]
+  "researchCost": [
+    "silver/200"
+    "iron/100"
+    "teralite/250"
   ]
 }

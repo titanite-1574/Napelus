@@ -1,0 +1,34 @@
+type: ThermalGenerator
+name: Radiation Chamber Reactor
+description: Placed on the radioactive benite vents to generate high ammount of power
+size: 3
+attribute: radiation
+displayEfficiencyScale: 0.11111111111
+displayEfficiency: false
+minEfficiency: 8
+powerProduction: 0.5
+generateEffect: none
+effectChance: 0.05
+squareSprite: false
+category: power
+research: 06d-menite-ingition-gen
+drawer: [
+ {
+        "type": "DrawGlowRegion",
+        "suffix": "-glow",
+        "color": "84B6C9"
+      }
+{
+type: DrawDefault 
+}
+]
+requirements: [
+  silver/100
+  iron/100
+  magnesium /75
+  benite/50
+  teralite/100
+]
+ambientSound: hum
+ambientSoundVolume: 0.08
+researchCostMultiplier: 0.5

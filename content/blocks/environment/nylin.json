@@ -2,7 +2,7 @@ type: Floor
 name: Nylin Water
 speedMultiplier: 0.2
 variants: 3
-liquidDrop: water
+liquidDrop: nylin
 liquidMultiplier: 1.666666666
 isLiquid: true
 cacheLayer: water

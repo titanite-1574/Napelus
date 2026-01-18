@@ -145,7 +145,7 @@ groundLayer: 60
     }
 ]
 research: {
-    parent: "08a-exulus",
+    parent: "10f-spider-refa",
     objectives: [
         {
             type: "OnSector",

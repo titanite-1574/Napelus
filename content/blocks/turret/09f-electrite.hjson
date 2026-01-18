@@ -1,0 +1,55 @@
+type: PowerTurret
+size: 4
+name: Electrite
+description: Fires a burst of lightning at enemy targets
+health: 1000
+armor: 5
+reload: 120
+shoot: {
+  firstShotDelay: 10
+  shots: 15
+  shotDelay: 5
+}
+rotateSpeed: 1.35
+recoil: 2
+range: 230
+minWarmup: 0.4
+moveWhileCharging: false
+outlineColor: 2c2a36
+shootSound: shootLancer
+chargeSound: chargeSubsonic
+researchCost: [
+  silver/1000
+  iron/ 1100
+  magnesium/850
+  benite/600
+]
+shootType: {
+  type: LightningBulletType
+  hitSound: shootElectric
+  damage: 87
+  lightningLength: 27
+  lightningLengthRand: 7
+  lightningColor: C2A7E8
+  statusDuration: 145
+  chargeEffect: [lancerLaserCharge, lancerLaserChargeBegin
+  ]
+  buildingDamageMultiplier: 0.25
+}
+category: turret
+squareSprite: false
+research: 09e-skybound 
+requirements: [
+  silver/300
+  iron/ 450
+  magnesium/200
+  benite/300
+]
+consumes: {
+  power: 11
+}
+heatColor: C2A7E8
+drawer: {
+  type: DrawTurret
+  basePrefix: electrite-
+}

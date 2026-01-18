@@ -6,7 +6,7 @@
   "constructTime": 2300,
    consumes: {
     power: 5
-    liquid: ilum/0.4
+    liquid: ilum/0.15
     items: [
         iron/35
         teralite/25
@@ -20,11 +20,11 @@
   ],
   "category": "units",
 research: {
-    parent: "10c-air-fabricator"
+    parent: "10g-naval-fab"
     objectives: [
         {
             type: "OnSector"
-            preset: "outpost"
+            preset: "river-base"
         }
       ]
    }
@@ -32,5 +32,10 @@ research: {
     "silver/200",
     "iron/200"
     "teralite/100"
+  ]
+  "researchCost": [
+    "silver/200"
+    "iron/200"
+    "teralite/200"
   ]
 }

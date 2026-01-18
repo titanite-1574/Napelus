@@ -234,8 +234,8 @@ research: {
   parent: 10k-unit-reformer 
   objectives: [
     {
-      type: SectorComplete
-      preset: outpost 
+      type: Research
+      content: 10k-unit-reformer 
     }
   ]
 }

@@ -24,7 +24,7 @@
     objectives: [
         {
             type: "OnSector",
-            preset: "outpost"
+            preset: "river-base"
         }
     ]
 }

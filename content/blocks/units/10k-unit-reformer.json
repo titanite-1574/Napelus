@@ -37,4 +37,13 @@
     "benite/100"
     "magnesium/150"
   ]
+  research: {
+    parent: "10a-mech-fabricator"
+    objectives: [
+        {
+            type: "OnSector"
+            preset: "river-base"
+        }
+      ]
+   }
 }

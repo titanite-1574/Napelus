@@ -1,0 +1,126 @@
+name: Forward 
+description: Defender of the Frontier core. Ingored by multiple enemies and turrets
+controller: BuilderAI
+coreFleeRange: 500
+commands: [rebuild]
+coreUnitDock: true
+armor: 5
+health: 750
+speed: 4
+flying: true
+drag: 0.06
+accel: 0.12
+engineOffset: 4
+targetPriority: -2
+targetable: false
+hittable: false
+mineWalls: true
+hitSize: 7
+engineSize: 2
+engineColor: BECFD8
+buildSpeed: 1.4
+canHeal: true
+lowAltitude: false
+buildSpeed: 1.1
+mineSpeed: 6
+waveTrailY: -3.0
+trailColor: BECFD8
+trailLength: 12
+fogRadius: 0
+isEnemy: false
+mineTier: 2
+faceTarget: false
+abilities: [
+  {
+    effect: {
+      type: ParticleEffect
+      y: 0
+      colorFrom: BECFD8
+      colorTo: 3cc67292
+      lifetime: 30
+      particles: 5
+      cone: 360
+      length: 0
+      baseLength: 0
+      lightScl: 3
+      lightOpacity: 2
+      spin: 0
+      sizeFrom: 2
+      sizeTo: 0
+      offset: 0
+    }
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 0.00000001
+    y: -3
+    x: 5
+ }
+ {
+    effect: {
+      type: ParticleEffect
+      y: 0
+      colorFrom: BECFD8
+      colorTo: 3cc67292
+      lifetime: 30
+      particles: 5
+      cone: 360
+      length: 0
+      baseLength: 0
+      lightScl: 3
+      lightOpacity: 2
+      spin: 0
+      sizeFrom: 2
+      sizeTo: 0
+      offset: 0
+    }
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 0.00000001
+    y: -3
+    x: -5
+  }
+]
+mineItems: [titanium,graphite]
+commands: [move, mine, repair, rebuild, assist]
+buildSpeed: 0.5
+ "engines": [
+  {
+    x: -7
+    y: -5
+    radius: 2.5
+    rotation: -135
+  }
+  {
+    x: 7
+    y: -5
+    radius: 2.5
+    rotation: -45
+  }
+]
+weapons: [
+  {
+    name: beam
+   widthSinMag: 0.1
+    x: 0
+    y: 0
+    laserColor: BECFD8
+    mirror: false
+    type: RepairBeamWeapon
+    rotate: true
+    targetBuildings: true
+    targetUnits: false
+    autoTarget: false
+    controllable: true
+    reload: 20
+    shootY: 0
+    shootCone: 15
+    beamWidth: 1
+    repairSpeed: 3.9
+    fractionRepairSpeed: 0.06
+    color: BECFD8
+    bullet: {
+      type: BulletType
+      maxRange: 70
+      }
+    }
+]

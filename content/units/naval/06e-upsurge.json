@@ -156,7 +156,7 @@ bullet: {
     }
   }
 ]
-research: 08a-exulus 
+research: 10q-naval-assem 
 researchCost: [
     titanium/100
     graphite/50

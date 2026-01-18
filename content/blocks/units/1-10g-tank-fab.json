@@ -1,0 +1,41 @@
+{
+  "type": "UnitFactory",
+  "name": Tank Fabricator
+  "description": Fabricates <<tank>> units
+  "size": 3,
+  "configurable": false,
+  "fogRadius": 3,
+  "category": "units",
+  "consumes": {
+    "power": 2
+  },
+  "plans": [
+    {
+      "unit": "03a-hurt",
+      "requirements": [
+        "silver/20",
+        "iron/30"
+      ],
+      "time": 2150
+    }
+  ],
+ research: {
+    parent: "08a-exulus",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "outpost"
+        }
+    ]
+}
+  "requirements": [
+    "silver/200",
+    "iron/230",
+    "magnesium/100"
+  ]
+  "researchCost": [
+    "silver/200"
+    "iron/200"
+    "magnesium/200"
+  ]
+}

@@ -1,0 +1,18 @@
+type: UnitAssemblerModule
+name: Assembly Upgrader Module
+size: 3
+health: 1000
+category: units
+research: 10o-airship-assem 
+requirements: [
+  silver/800
+  iron/700
+  teralite/750
+  benite/780
+  
+]
+consumes: {
+  power: 4
+}
+tier: 1
+researchCostMultiplier: 0.5

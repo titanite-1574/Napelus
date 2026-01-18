@@ -89,7 +89,7 @@ hovering: true
     }
 ]
 research: {
-    parent: "08a-exulus",
+    parent: "10e-spider-fab",
     objectives: [
         {
             type: "OnSector",
