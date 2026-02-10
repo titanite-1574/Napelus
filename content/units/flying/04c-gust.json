@@ -2,7 +2,7 @@ name: Gust
 type: flying
 useEngineElevation: false
 shadowElevation: 0.3
-engineOffset: 4
+engineOffset: 13.5
 engineSize: 4
 shownPlanets: [napelus]
 flying: true
@@ -11,20 +11,46 @@ outlineRadius: 3
 engineColor: 8989D3
 alwaysUnlocked: false
 armor: 5
-circleTarget: true
+circleTarget: false
 accel: 0.15
 health: 3402
 speed: 1.45
 hitSize: 20
 healColor: 3CC773
-autoDropBombs: true
+autoDropBombs: false
 circleTargetRadius: 40
 createWreck: true
 drag: 0.03
-faceTarget: false
+faceTarget: true
 description: Drops bombs while circling it's target. Boost forward every bomb drop
 targetFlag: [ turret, core ]
+"engines": [
+  {
+    x: -9
+    y: -10
+    radius: 2
+    rotation: -135
+  }
+  {
+    x: 9
+    y: -10
+    radius: 2
+    rotation: -45
+  }
+]
 abilities: [
+{
+    type: SuppressionFieldAbility
+    reload: 600
+    range: 300
+    orbRadius: 6
+    orbSinScl: 7
+    y: 0
+    x: 0
+    color: 8989D3
+    particleColor: 8989D3
+    effectColor: 8989D3
+  }
   {
     effect: {
       type: ParticleEffect
@@ -75,161 +101,75 @@ abilities: [
   }
 ]
 weapons: [
-{
-  name: gust-weapon
-x: 0
-y: 0
-mirror: false
-layerOffset: 0.01
-shoot: {
-type: ShootAlternate 
-spread: 5
-shots: 2
-shotDelay: 10
-}
-top: true
-rotate: true
-reload: 50
-under: false
-top: true
-recoil: 1
-shootSound: shootTank
-ejectEffect: none
-recoils: 2
-    parts: [
-    {
-      type: RegionPart
-      suffix: -barrel-1
-      layerOffset: -0.00000001
-      mirror: false
-      "under": false,
-      progress: recoil
-      recoilIndex: 0
-      moveY: -2
-    }
-    {
-      type: RegionPart
-      suffix: -barrel-2
-      layerOffset: -0.00000001
-      mirror: false
-      under: true
-      progress: recoil
-      recoilIndex: 1
-      moveY: -2
-    }
-  ]
-bullet: {
-    type: BasicBulletType,
-    speed: 6
-    lifetime: 30
-    damage: 30
-    width: 7
-    height: 10
-    frontColor: 8989D3
-    backColor: 8989D3
-    shootEffect: "shootSmall"
-    smokeEffect: "shootSmallSmoke"
-    ammoMultiplier: 5
-    collidesTiles: true
-    hitEffect: pointHit
-    sprite: missile-large
-      trailChance: -1
-      trailInterval: 5
-      trailRotation: true
-      trailEffect: colorSpark
-      trailColor: 8989D3
-}
-}
   {
-      "x": 0,
-      "y": -3,
-      "shootCone": 300,
-      "mirror": true,
-      "rotate": false,
-      "alternate": false,
-      "shoot": {
-        "shots": 3
-         ShotDelay: 10
-      },
-      "velocityRnd": 0.6,
-      "reload": 75,
-      "ignoreRotation": true,
-      "shootSound": "shootQuad",
-      "inaccuracy": 29,
-      "bullet": {
-        "damage": 50,
-        "recoil": -0.5,
-        "speed": -1,
-        "drag": 0.04,
-        "type": "basicBulletType",
-        "collidesAir": false,
-        "collides": false,
-        "status": "freezing",
-        "statusDuration": 100,
-        "shrinkY": 0.7,
-        "shrinkX": 0.7,
-        "trailColor": "8989D3",
-        "trailLength": 10,
-        "trailWidth": 2,
-        "despawnShake": 3,
-        "hitSound": "explosion",
-        "sprite": "large-bomb",
-        "splashDamage": 120,
-        "splashDamageRadius": 35,
-        "spin": 3,
-        "keepVelocity": false,
-        "shootEffect": "none",
-        "hitEffect": {
-          "type": "multiEffect",
-          "effects": [
-            {
-              "type": "ParticleEffect",
-              "line": true,
-              "particles": 7,
-              "lifetime": 20,
-              "offset": 50,
-              "length": 65,
-              "cone": -360,
-              "lenFrom": 6,
-              "lenTo": 0,
-              "colorFrom": "8989D3",
-              "colorTo": "8989D3"
-            },
-            {
-              "type": "ParticleEffect",
-              "particles": 1,
-              "sizeFrom": 25,
-              "sizeTo": 0,
-              "length": 0,
-              "lightColor": "8989D3",
-              "lifetime": 30,
-              "layer": 109,
-              "colorFrom": "8989D3",
-              "colorTo": "8989D3"
-            },
-            {
-              "type": "ParticleEffect",
-              "particles": 1,
-              "sizeFrom": 10,
-              "sizeTo": 0,
-              "length": 0,
-              "lightColor": "8989D3",
-              "lifetime": 30,
-              "layer": 109,
-              "colorFrom": "8989D3",
-              "colorTo": "8989D3"
-            }
-          ]
-        },
-        "width": 20,
-        "height": 20,
-        "lifetime": 30,
-        "frontColor": "8989D3",
-        "mixColorTo": "8989D3",
-        "backColor": "8989D3"
+    x: 0
+    y: 1
+    reload: 150
+    rotate: false
+    mirror: false
+    minWarmup: 0.55
+    inaccuracy: 0
+    shootY: -1
+    shoot: {
+      type: ShootPattern
+      shots: 1
+      shotDelay: 0
+    }
+    shootStatus: slow
+    shootStatusDuration: 0.8
+    shootSound: explosionObviate
+    bullet: {
+    type: BasicBulletType
+      damage: 35
+      recoil: 0.4
+      width: 10
+      height: 15
+      hitSize: 6
+      shake: 20
+      speed: 7
+      shootEffect: shootTitan
+      smokeEffect: shootSmokeTitan
+      weaveMag: 4
+      weaveScale: 4
+      lifetime: 26
+      pierce: false
+      pierceCap: 2
+      pierceBuilding: false
+      despawnSound: explosionArtilleryShock
+      hitColor: 8989D3
+      trailColor: 8989D3
+      backColor: 8989D3
+      frontColor: 8989D3
+      trailLength: 10
+      trailWidth: 3
+      fragBullets: 5
+      fragOnHit: true
+      fragBullet: {
+        type: BasicBulletType
+      damage: 15
+      recoil: 0.4
+      width: 10
+      height: 15
+      hitSize: 6
+      shake: 20
+      speed: 7
+      shootEffect: shootTitan
+      smokeEffect: shootSmokeTitan
+      lifetime: 26
+      pierce: false
+      pierceCap: 2
+      pierceBuilding: false
+      despawnSound: explosionArtilleryShock
+      hitColor: 8989D3
+      trailColor: 8989D3
+      backColor: 8989D3
+      frontColor: 8989D3
+      trailLength: 10
+      trailWidth: 3
       }
     }
-  ]
+  }
+]
 research: {
   parent: 10k-unit-reformer 
   objectives: [

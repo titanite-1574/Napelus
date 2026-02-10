@@ -56,7 +56,7 @@ moveWhileCharging: false
   "ammoTypes": {
     "benite": {
       type: ArtilleryBulletType
-    splashDamage: 200
+    splashDamage: 250
     splashDamageRadius: 50
     buildingDamageMultiplier: 0.25
     lifetime: 800
@@ -75,8 +75,8 @@ moveWhileCharging: false
     statusDuration: 350
     ammoMultiplier: 1
      "despawnEffect": [titanSmoke]
-      hitColor: AAE7D7
-      despawnColor: AAE7D7
+      hitColor: 9ed7c99f
+      despawnColor: 9ed7c99f
       "hitEffect": [titanSmoke]
    fragOnHit: true
       fragBullets: 10
@@ -112,7 +112,7 @@ moveWhileCharging: false
   "iron": {
       type: ArtilleryBulletType
     damage: 0
-    splashDamage: 150
+    splashDamage: 450
     splashDamageRadius: 50
     buildingDamageMultiplier: 0.25
     lifetime: 800
@@ -129,8 +129,8 @@ moveWhileCharging: false
     collides: true
     ammoMultiplier: 1
      "despawnEffect": [titanSmoke]
-      hitColor: FFFFFF
-      despawnColor: FFFFFF
+      hitColor: cccccca0
+      despawnColor: cccccca0
       "hitEffect": [titanSmoke]
    fragOnHit: true
       fragBullets: 20
@@ -159,7 +159,7 @@ moveWhileCharging: false
         drag: 0.0005
         lifetime: 15
         pierceCap: 2
-        damage: 25
+        damage: 35
         pierce: true
          }
   }

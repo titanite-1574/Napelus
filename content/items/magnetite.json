@@ -1,0 +1,7 @@
+name: Magnetite 
+color: 8365D6
+description: A magnetic rock found on walls of Napelus. Used it railguns and advance unit and buildings 
+research: benite
+healthScaling: 0.9
+hardness: 4
+flammability: 0

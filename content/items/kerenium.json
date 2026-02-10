@@ -1,0 +1,7 @@
+name: Kerenium
+description: Diffused benite. Use in ammuminion,reactors and advance buildings
+research: benite 
+radioactivity: 0.1
+hardness: 5
+healthScaling: 0.10
+shownPlanets: [napelus]

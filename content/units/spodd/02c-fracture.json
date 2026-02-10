@@ -11,7 +11,7 @@
 	"armor": 15,
 	"range": 120,
 	"targetAir": true,
-	"rotateSpeed": 2,
+	"rotateSpeed": 0.7,
 legCount: 6
 lockLegBase: true
 legExtension: -3
@@ -28,6 +28,71 @@ legStraightness: 0.3
 hovering: true
 groundLayer: 60
 "weapons": [
+{
+    "name": "fracture-smol",
+    "reload": 50,
+    "mirror": true,
+    "x": 8,
+    "y": -2,
+    "shootY": 2,
+    "recoil": 1,
+    "alternate": false
+    "rotationLimit": 90
+    "baseRotation": -90
+    "inaccuracy ": 20,
+    "targetGround": true
+    "targetAir": false
+    "layerOffset": -0.00001
+    "rotateSpeed": 2
+    "rotate": true,
+"shoot": {
+"type": "shootPattern",
+ "shots": 2,
+    "shotDelay": 10,
+}
+    shootSound: shootTank
+    bullet: {
+    type: BasicBulletType
+      speed: 6
+      lifetime: 40
+      collidesAir: true
+      damage: 35
+      width: 6
+      height: 6
+        frontColor: A4E3E8
+        backColor: A4E3E8
+      despawnHit: true
+      despawnEffect: none
+      trailColor: A4E3E8
+      trailWidth: 1.5
+      trailLength: 5
+      hitEffect: [
+        {
+          type: ParticleEffect
+          particles: 6
+          line: true
+          lifetime: 25
+          length: 20
+          lenFrom: 5
+          lenTo: 0
+          strokeFrom: 2
+          strokeTo: 0
+          colorFrom: A4E3E8
+          colorTo: ffffff
+        }
+        {
+          type: WaveEffect
+          sizeFrom: 0
+          sizeTo: 15
+          lifetime: 20
+          strokeFrom: 3.5
+          strokeTo: 0
+          colorFrom: A4E3E8
+          colorTo: ffffff
+        }
+      ]
+    }
+  }
 {
     x: 5
     y: -5

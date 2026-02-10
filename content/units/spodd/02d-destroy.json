@@ -1,0 +1,297 @@
+"outlineColor": "3F3E44",
+    outlineRadius: 3
+  "type": "legs",
+  "name": Destroy
+  "description": Equipped with a large laser and two mounted cannons. Has 2 hidden guns
+	"speed": 0.3
+  shownPlanets: [napelus]
+	"hitSize": 25,
+	"health": 9000,
+	"faceTarget": true,
+	"armor": 25,
+	"range": 120,
+	"targetAir": true,
+	"rotateSpeed": 1.5,
+legCount: 6
+lockLegBase: true
+legExtension: -3
+legBaseOffset: 3
+legLength: 25
+legMaxLength: 1
+legMinLength: 0.3
+legSpeed: 0.2
+legGroupSize: 3
+legForwardScl: 1.05
+legLengthScl: 0.95
+legPhysicsLayer: false
+legStraightness: 0.5
+hovering: true
+groundLayer: 60
+forceMultiTarget: true
+abilities: [
+{
+      "type": "EnergyFieldAbility",
+      "healEffect": {
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 7,
+        "lifetime": 20,
+        "offset": 50,
+        "length": 55,
+        "cone": -360,
+        "lenFrom": 6,
+        "lenTo": 0,
+        "colorFrom": "A4E3E8",
+        "colorTo": "D0F0F3"
+      },
+      "statusDuration": 300,
+      "status": "shocked",
+      "color": "A4E3E8",
+      "maxTargets": 15,
+      "damage": 100,
+      "healPercent": 0.5,
+      "range": 150,
+      "y": -10,
+      "sectors": 4,
+      "rotateSpeed": 1,
+      "hitBuildings": true,
+      "sectorRad": 0.11,
+      "effectRadius": 5,
+      "reload": 100
+    }
+]
+"weapons": [
+{
+    "name": "fracture-smol",
+    "reload": 50,
+    "mirror": true,
+    "x": 18,
+    "y": -1,
+    "shootY": 2,
+    "recoil": 1,
+    "alternate": false
+    "rotationLimit": 90
+    "baseRotation": -90
+    "inaccuracy ": 20,
+    "targetGround": true
+    "targetAir": false
+    "layerOffset": -0.00001
+    "rotateSpeed": 2
+    "rotate": true,
+"shoot": {
+"type": "shootPattern",
+ "shots": 3,
+    "shotDelay": 10,
+}
+    shootSound: shootTank
+    bullet: {
+    type: BasicBulletType
+      speed: 6
+      lifetime: 40
+      collidesAir: true
+      damage: 35
+      width: 6
+      height: 6
+        frontColor: A4E3E8
+        backColor: A4E3E8
+      despawnHit: true
+      despawnEffect: none
+      trailColor: A4E3E8
+      trailWidth: 1.5
+      trailLength: 5
+      hitEffect: [
+        {
+          type: ParticleEffect
+          particles: 6
+          line: true
+          lifetime: 25
+          length: 20
+          lenFrom: 5
+          lenTo: 0
+          strokeFrom: 2
+          strokeTo: 0
+          colorFrom: A4E3E8
+          colorTo: ffffff
+        }
+        {
+          type: WaveEffect
+          sizeFrom: 0
+          sizeTo: 15
+          lifetime: 20
+          strokeFrom: 3.5
+          strokeTo: 0
+          colorFrom: A4E3E8
+          colorTo: ffffff
+        }
+      ]
+    }
+  }
+{
+    "name": "fracture-smol",
+    "reload": 50,
+    "mirror": true,
+    "x": 15,
+    "y": 8,
+    "shootY": 2,
+    "recoil": 1,
+    "alternate": false
+    "rotationLimit": 120
+    "baseRotation": -90
+    "inaccuracy ": 20,
+    "targetGround": true
+    "targetAir": false
+    "layerOffset": -0.00001
+    "rotateSpeed": 2
+    "rotate": true,
+"shoot": {
+"type": "shootPattern",
+ "shots": 3,
+    "shotDelay": 10,
+}
+    shootSound: shootTank
+    bullet: {
+    type: BasicBulletType
+      speed: 6
+      lifetime: 40
+      collidesAir: true
+      damage: 35
+      width: 6
+      height: 6
+        frontColor: A4E3E8
+        backColor: A4E3E8
+      despawnHit: true
+      despawnEffect: none
+      trailColor: A4E3E8
+      trailWidth: 1.5
+      trailLength: 5
+      hitEffect: [
+        {
+          type: ParticleEffect
+          particles: 6
+          line: true
+          lifetime: 25
+          length: 20
+          lenFrom: 5
+          lenTo: 0
+          strokeFrom: 2
+          strokeTo: 0
+          colorFrom: A4E3E8
+          colorTo: ffffff
+        }
+        {
+          type: WaveEffect
+          sizeFrom: 0
+          sizeTo: 15
+          lifetime: 20
+          strokeFrom: 3.5
+          strokeTo: 0
+          colorFrom: A4E3E8
+          colorTo: ffffff
+        }
+      ]
+    }
+  }
+{
+    x:  15
+    y: -5
+    reload: 10
+    mirror: true
+    alternate: true
+    targetInterval: 9
+    targetSwitchInterval: 12
+    recoil: 0.5
+    name: destroy-point
+    shootY: 1
+    type: PointDefenseWeapon
+    bullet: {
+      type: BulletType
+      shootSound: shootSegment
+      shootEffect: sparkShoot
+      hitEffect: pointHit
+      maxRange: 150
+      damage: 55
+    }
+  }
+{
+    "name": "lasir",
+    "reload": 750,
+    "mirror": false,
+    "x": 0,
+    "y": 0
+    "shootY": 15,
+    "recoil": 0,
+    "inaccuracy ": 20,
+    "targetGround": true
+    "targetAir": true
+    "layerOffset": 0.00001
+    "rotateSpeed": 2
+    "cooldownTime": 300,
+    "rotate": false
+parts: [
+{
+type: ShapePart
+circle: true
+y: 15
+radius: 0
+radiusTo: 8
+colorFrom: 8AA3F3
+colorTo: A4E3E8
+progress: charge
+under: false
+layer: 110
+  }
+]
+"shoot": {
+"type": "shootPattern",
+ "shots": 2,
+    "shotDelay": 15,
+"firstShotDelay": 150
+}
+    shootSound: oblivion-shoot
+    shootStatus: slow
+    shootStatusDuration: 150
+     "chargeEffect": {
+          "followParent": true,
+          "rotWithParent": true,
+          "type": "multiEffect",
+          "lifetime": 150,
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "offset": 100,
+              "sizeFrom": 7,
+              "sizeTo": 3.5,
+              "length": 60,
+              "baseLength": -60,
+              "interp": "pow3In",
+              "sizeInterp": "pow5Out",
+              "lifetime": 150,
+              "colorFrom": "A4E3E8",
+              "colorTo": "D0F0F3"
+            },
+       ]
+   }
+    bullet: {
+    type: LaserBulletType
+      color: [A4E3E8,D0F0F3,FFFFFF]
+      length: 100
+      width: 100
+      damage: 900
+      shake: 20
+      knockback: 50
+      impact: true
+      unitDamageMultiplier: 2
+  }
+}
+]
+research: {
+    parent: "10k-unit-reformer",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "outpost"
+        }
+    ]
+}
+researchCostMultiplier: 1

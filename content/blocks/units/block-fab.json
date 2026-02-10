@@ -18,6 +18,7 @@ buildSpeed: 1
 filter: [
  02b-large-silver-wall
  02d-large-iron-wall
+ 02j-large-be-wall
 ]
 research: {
     parent: "unit-conveyer",

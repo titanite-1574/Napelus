@@ -1,0 +1,131 @@
+type: ItemTurret
+name: Skyhook
+size: 5
+reload: 750
+health: 6850
+range: 2000
+category: turret
+rotateSpeed: 0.9
+accurateDelay: false
+shootCone: 1
+shootSound: shootMissileLarge
+targetAir: false
+basePrefix: -base
+    "shootWarmupSpeed": 0.01,
+    "minWarmup": 0.9,
+consumes: {
+    power: 3.5
+}
+shoot: {
+  type: ShootBarrel
+  shots: 1
+  barrels: [
+    0, 0, 0
+  ]
+}
+ammoPerShot: 5
+ammoTypes: {
+  iron: {
+    ammoMultiplier: 1
+    displayAmmoMultiplier: false
+    spawnUnit: missile1
+  }
+}
+drawer:{
+ type: DrawTurret
+ parts: [
+{
+      type: RegionPart
+      suffix: -body
+      progress: warmup
+      moveY: 0
+      under: true
+    }
+{
+    type: RegionPart
+    suffix: -missile
+    progress: reload
+    colorTo: 00000000
+    color: ffffff
+    outline: false
+    under: true
+    mirror: false
+    layerOffset: 0.01
+    y: 0
+}
+         {
+         "type": "RegionPart",
+          "suffix": "-partl",
+         "mirror": false,
+         outline: false
+        "progress": {
+          "type": "warmup",
+          "op": "blend",
+          "other": "heat",
+          "amount": 0.5
+          }
+          "outlineLayerOffset": 0.001,
+         "moveX": -5,
+             layerOffset: 1
+         }
+         {
+         "type": "RegionPart",
+          "suffix": "-partr",
+         "mirror":false,
+         outline: false
+        "progress": {
+          "type": "warmup",
+          "op": "blend",
+          "other": "heat",
+          "amount": 0.5
+          }
+          "outlineLayerOffset": 0.001,
+         "moveX": 5,
+             layerOffset: 1
+         }
+  ]
+}
+    "shootEffect": {
+        "type": "MultiEffect",
+        "effects": [
+            {
+              type: ParticleEffect
+              particles: 30
+              lifetime: 100
+              length: 30
+              sizeFrom: 3
+              sizeTo: 0
+              colorFrom: 8a94a6
+              colorTo: 6e7a8f
+              strokeFrom: 10
+              strokeTo: 1.5
+              interp: pow3Out
+              spin: 5
+              cone : 60
+              sizeInterp: pow2In
+            }
+        ]
+    }
+requirements: [
+    silver/500
+    iron/550
+    teralite/300
+    amalgam/200
+    benite/200
+]
+researchCost: [
+    silver/1000
+    iron/1500
+    teralite/1300
+    amalgam/1200
+    benite/1200
+  ]
+research: {
+    parent: "09b-galius"
+    objectives: [
+        {
+            type: "SectorComplete"
+            preset: "caverns"
+        }
+    ]
+}

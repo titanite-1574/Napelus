@@ -37,22 +37,18 @@ drawer: {
           {
         "type": "DrawDefault"
       },
-     {
-      type: DrawRegion
-      suffix: -rotor
-      spinSprite: true
-      rotateSpeed: 15
-    }
-     {
-      type: DrawRegion
-      suffix: -rotor
-      spinSprite: true
-      rotateSpeed: 10
-    }
    {
       type: DrawHeatInput
       suffix: -heat
     }
+    {
+        "type": "DrawCrucibleFlame",
+        "flameColor": "656462"
+        "flameRadiusScl": 0
+        "circleStroke": 0
+        "flameRad": 0
+        "particleRad": 10
+      },
   ]
 }
 ambientSound: smelter

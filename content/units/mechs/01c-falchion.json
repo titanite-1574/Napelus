@@ -1,45 +1,57 @@
 type: mech
 Name: Falchion
 speed: 0.4
-description: Both of its gun was replaced by two heavy blades. Lunges at enemies in an instant.  Equipped with 2 small mounted guns for support during reload
+description: Has two separate weapons. A blade for close range and a artillery for long range that spawns a <<Keris>> unit on hit or despawn. The unit dies when fired at a solid block
 health: 3500
 armor: 12
 hitSize: 15
 outlineColor: 3F3E44
 shownPlanets: [napelus]
 weapons: [
- {
-    x: 5
-    y: -1
-    name: falchion-missile
-    reload: 250
-    mirror: true
-    rotate: true
-    shootSound: shootMissileLarge
-    "chargeSound": target-locked
-    "shootStatusDuration": 150,
-      "shootStatus": slow,
-      "shoot": {
-      type: shootSpread,
-    spread: 15,
-      "firstShotDelay": 150,
-      "shots": 5
-      "shotDelay": 10
-      },
-    bullet: {
-      instantDisappear: true
-      damage: 0
-      spawnUnit: smol-missile
-    }
-  }
+{
+name: fal-gun
+x: 12
+y: 0
+mirror: false
+shoot: {
+type: ShootPattern
+shots: 1
+shotDelay: 10
+}
+top: false
+layerOffset: -0.00001
+rotate: false
+reload: 600
+shootY: 2
+recoil: 3
+shootSound: shootArtillery 
+ejectEffect: none
+bullet: {
+    type: ArtilleryBulletType,
+    speed: 3
+    lifetime: 30
+    splashDamage: 75
+    splashDamageRadius: 50
+    width: 15
+    height: 10
+    frontColor: b2afb3
+    backColor: d5d2d6
+    despawnUnit: nap-01a-keris
+    shootEffect: "shootSmall"
+    smokeEffect: "shootSmallSmoke"
+    ammoMultiplier: 5
+    collidesTiles: true
+    hitEffect: pointHit
+}
+}
  {
     name: heavy-blade
-    x: 12
+    x: -12
     y: 0
     rotate: true
-    mirror: true
+    mirror: false
     alternate: true
-    layerOffset: 0
+    layerOffset: -0.00001
     rotateSpeed: 5
     reload: 200
 rotationLimit: 20
@@ -67,7 +79,7 @@ sizeInterp: linear
 }
 smokeEffect: none
     type: RailBulletType
-    damage: 550
+    damage: 875
   recoil: -15
       buildingDamageMultiplier: 3
     pierce: true

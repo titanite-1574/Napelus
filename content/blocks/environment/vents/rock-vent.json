@@ -3,7 +3,7 @@ type: SteamVent
 blendGroup: rock
 parent: rock
 effect: ventSteam
-effectColor: 867e60
+effectColor: 5f5f5fb2
 effectSpacing: 25
 effect:{
     type: MultiEffect
@@ -16,8 +16,8 @@ effect:{
             baseLength: 4
             sizeFrom: 3
             sizeTo: 5
-            colorFrom: 47443e80
-            colorTo: 47443e80
+            colorFrom: 5f5f5fb2
+            colorTo: 5f5f5fb2
             layer: 61.8
             cone: 35
             baseRotation: 27
@@ -30,8 +30,8 @@ effect:{
             baseLength: 4
             sizeFrom: 2
             sizeTo: 4
-            colorFrom: 47443e80
-            colorTo: 47443e80
+            colorFrom: 5f5f5fb2
+            colorTo: 5f5f5fb2
             layer: 61.8
             baseRotation: 27
         }

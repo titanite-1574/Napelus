@@ -28,11 +28,11 @@ plans: [
     type: AssemblerUnitPlan
     unit: 01e-gladius
     requirements: [
-      nap-02d-large-iron-wall/4
+      nap-02j-large-be-wall/4
       nap-01b-estoc/3
       nap-heavy-joint/2
     ]
-    time: 3300
+    time: 4500
   }
 ]
 squareSprite: false

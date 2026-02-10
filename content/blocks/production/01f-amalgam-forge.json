@@ -1,0 +1,121 @@
+{
+  "name" : Amalgam Forge,
+  "description": Fuse Teralite and Iron with high heat to form the Amalgam alloy
+  "size": 4,
+  "type": "HeatCrafter",
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion"
+         suffix: -bottom
+      }
+      {
+      type: DrawHeatInput
+      suffix: -heat
+    }
+    {
+    type: DrawLiquidTile
+    padding: 5
+    drawLiquid: ilum
+  }
+    {
+      type: DrawCrucibleFlame
+      flameRad: 9
+      circleSpace: 0
+      particleSize: 4
+      particleRad: 16.5
+      particles: 50
+    }
+      { 
+        "type": DrawDefault 
+      }
+     {
+      type: DrawGlowRegion
+      suffix: -glow
+      color: c68f57
+    }
+    ]
+  },
+  "hasPower": true,
+  "hasItems": true,
+  "itemCapacity": 10,
+  "craftTime": 350,
+  heatRequirement: 6
+maxEfficiency: 4.5
+  craftEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: RadialEffect
+      amount: 4
+      rotationSpacing: 90
+      rotationOffset: 90
+      lengthOffset: 5
+      effect: surgeCruciSmoke
+    }
+    {
+      type: RadialEffect
+      amount: 4
+      rotationSpacing: 90
+      rotationOffset: 90
+      lengthOffset: 5
+      effect: surgeCruciSmoke
+    }
+    {
+      type: RadialEffect
+      amount: 4
+      rotationSpacing: 90
+      rotationOffset: 90
+      lengthOffset: 5
+      effect: surgeCruciSmoke
+    }
+    {
+      type: RadialEffect
+      amount: 4
+      rotationSpacing: 90
+      rotationOffset: 90
+      lengthOffset: 5
+      effect: surgeCruciSmoke
+    }
+  ]
+}
+  "updateEffect": "none",
+  "consumes": {
+    "power": 0.5,
+    "liquids": [
+     ilum/0.20
+    ]
+    "items": {
+      "items": [
+        "iron/4"
+        "teralite/4"
+      ]
+    }
+  },
+  "requirements": [
+    "silver/100",
+    "iron/110",
+    "magnesium/110"
+    "kerenium/100"
+  ],
+  "category": "crafting",
+  research: {
+    parent: "01d-nitrogen-accumulator",
+    objectives: [
+        {
+            type: "SectorComplete",
+            preset: "caverns"
+        }
+    ]
+},
+  "researchCost": [
+    "silver/1000"
+    "iron/1200"
+    "magnesium/1200"
+    "teralite/1100"
+    "kerenium/1000"
+] 
+  "outputItem": "amalgam/4"
+    shownPlanets: [napelus]
+}

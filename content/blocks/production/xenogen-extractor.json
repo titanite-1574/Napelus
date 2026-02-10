@@ -1,0 +1,49 @@
+type: GenericCrafter 
+name: Xenogen Extractor
+description: Extracts Xenogen from the atmosphere 
+size: 2
+hasLiquids: true
+craftTime: 10
+liquidCapacity: 200
+health: 500
+category: crafting
+research: 01d-nitrogen-accumulator 
+researchCostMultiplier: 0.5
+requirements: [
+  silver/500
+  iron/500
+  amalgam/100
+]
+craftEffect: none
+"outputLiquid": "xenogen/0.5"
+consumes: {
+  power: 1
+}
+drawer: {
+  type: DrawMulti
+  drawers: [
+             {
+    type: DrawRegion
+    suffix: -bottom
+  }
+  {
+    type: DrawLiquidTile
+    padding: 3
+    drawLiquid: xenogen
+  }
+          {
+        "type": "DrawDefault"
+      },
+    {
+        "type": "DrawCrucibleFlame",
+        "flameColor": "656462"
+        "flameRadiusScl": 0
+        "circleStroke": 0
+        "flameRad": 0
+        "particleRad": 10
+      },
+  ]
+}
+ambientSound: smelter
+ambientSoundVolume: 0.6
+squareSprite: false

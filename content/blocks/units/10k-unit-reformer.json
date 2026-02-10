@@ -29,6 +29,10 @@
       "06b-stream",
       "06c-wave"
     ],
+     [
+      "03b-harm",
+      "03c-pain"
+    ],
   ],
   "category": "units",
    "requirements": [

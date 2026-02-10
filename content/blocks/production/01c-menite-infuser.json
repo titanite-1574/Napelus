@@ -80,9 +80,9 @@
     ]
 },
   "researchCost": [
-    "silver/500"
-    "iron/200"
-    "teralite/350"
+    "silver/5000"
+    "iron/2000"
+    "teralite/3500"
 ] 
   "outputItem": "menite/2"
     shownPlanets: [napelus]

@@ -1,0 +1,20 @@
+{
+  "name": "Benite Wall"
+  "type": "Wall",
+  "description": A wall made of Benite. Durable
+   "buildCostMultiplier": 0.1,
+  "buildTime": 750
+  "health": 1100,
+  "size": 1,
+  "armor": 10,
+  "requirements": [
+    "benite/10",
+    "iron/5"
+  ],
+  "research": 02h-large-me-wall 
+  "category": defense
+  researchCost: [
+  benite/50
+  iron/50
+]
+}

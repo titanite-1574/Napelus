@@ -5,7 +5,7 @@ health: 600
 range: 8
 tier: 8
 size: 3
-optionalBoostIntensity: 2.5
+optionalBoostIntensity: 1.7
 drillTime: 110
 ambientSound: drill
 ambientSoundVolume: 0.08

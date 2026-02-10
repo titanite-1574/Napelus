@@ -3,7 +3,7 @@ type: hover
 hovering: true
 hoverable: true
 useEngineElevation: false
-shadowElevation: 0.3
+shadowElevation: 0.1
 engineOffset: -1.75
 engineSize: 0
 shownPlanets: [napelus]

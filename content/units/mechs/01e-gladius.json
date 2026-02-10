@@ -11,32 +11,39 @@ shownPlanets: [napelus]
 deathSound: mech-large-destroyed
 weapons: [
 {
-name: gladius-heavy-gun
-x: -20
+name: gladius-gun
+x: 25
 y: 0
 mirror: false
-layerOffset: 0
+layerOffset: -0.0001
 shootY: 8
-rotate: true
+rotate: false
+inaccuracy: 25
 rotationLimit: 25
 shoot: {
 type: ShootPattern
-shots: 10
-shotDelay: 2
+shots: 3
+shotDelay: 15
 }
 top: false
 rotate: false
-reload: 50
+reload: 900
 recoil: 4
+shootX: 8
 shootSound: shootConquer
 ejectEffect: none
 bullet: {
-    type: BasicBulletType,
-    speed: 9
-    lifetime: 45
-    damage: 30
-    width: 10
-    height: 15
+    type: ArtilleryBulletType,
+    speed: 4
+    lifetime: 90
+    splashDamage: 150
+    splashDamageRadius: 50
+    hitEffect: [scatheExplosion]
+    despawnEffect: [scatheExplosion]
+    width: 20
+    height: 20
+    hitShake: 50
+    despawnShake: 50
     frontColor: b2afb3
     backColor: d5d2d6
     shootEffect: "shootSmall"
@@ -44,16 +51,17 @@ bullet: {
     ammoMultiplier: 5
     collidesTiles: true
     hitEffect: pointHit
+    despawnUnit: nap-01b-estoc
 }
 }
  {
     name: ultra-heavy-blade
-    x: 20
+    x: -25
     y: 0
     rotate: false
     mirror: false 
     alternate: true
-    layerOffset: 0
+    layerOffset: -0.0001
     rotateSpeed: 5
     reload: 200
 rotationLimit: 20

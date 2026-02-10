@@ -4,7 +4,7 @@
   "description": A larger wall with more health and more durable. Explodes when destroyed sending fragment at random angles
    "buildCostMultiplier": 0.1,
   "buildTime": 1100
-  "health": 3300,
+  "health": 2300,
   "size": 2,
   "armor": 5,
   "requirements": [

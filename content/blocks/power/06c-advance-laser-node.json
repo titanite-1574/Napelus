@@ -8,13 +8,13 @@ size: 1
 squareSprite: false
 researchCost: [
   silver/50
-  amalgam/50
+  teralite/50
 ]
 category: power
 research: 06b-laser-node
 requirements: [
   silver/10
-  amalgam/5
+  teralite/5
 ]
 laserColor1: FFFFFF
 laserColor2: 7EA1D0

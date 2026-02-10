@@ -2,8 +2,8 @@ name: Storm
 type: flying
 useEngineElevation: false
 shadowElevation: 0.3
-lowAltitude: true
-engineOffset: 15
+lowAltitude: false
+engineOffset: 20
 engineSize: 6
 shownPlanets: [napelus]
 flying: true
@@ -11,7 +11,7 @@ outlineColor: 251b21
 outlineRadius: 3
 engineColor: BFBFEF
 alwaysUnlocked: false
-armor: 15
+armor: 20
 accel: 0.5
 health: 9800
 rotateSpeed: 0.9
@@ -25,19 +25,31 @@ description: Armed with a large powerful railgun capable of reaching vast target
 targetFlag: [ turret, core ]
  "engines": [
   {
-    x: -16
-    y: -14
+    x: -13
+    y: -13
     radius: 4
     rotation: -135
   }
   {
-    x: 16
-    y: -14
+    x: 13
+    y: -13
     radius: 4
     rotation: -45
   }
 ]
 "abilities": [
+{
+    type: SuppressionFieldAbility
+    reload: 600
+    range: 300
+    orbRadius: 6
+    orbSinScl: 7
+    y: 0
+    x: 0
+    color: 8989D3
+    particleColor: 8989D3
+    effectColor: 8989D3
+  }
     {
     type: ShieldArcAbility
     radius: 50
@@ -98,36 +110,15 @@ targetFlag: [ turret, core ]
   }
 ]
 weapons: [
- {
-    x: 15
-    y: -5
-    name: falchion-missile
-    reload: 50
-    mirror: true
-    rotate: true
-    shootSound: shootMissileLarge
-      "shoot": {
-      type: shootSpread,
-    spread: 3,
-      "shots": 2
-      "shotDelay": 10
-      },
-    bullet: {
-      instantDisappear: true
-      damage: 0
-      spawnUnit: storm-smol-missile
-    }
-  }
 {
       "name": "storm-sniper",
       "reload": 350,
       "mirror": false,
       "alternate": true
-      "shake": 5
+      "shake": 10
       "x": 0,
       "y": 0,
-      "rotate": true,
-      "recoil": 5
+      "rotate": false,
       "rotateSpeed": 1,
       "shootSound": "railgun",
       "bullet": {
@@ -147,10 +138,12 @@ weapons: [
         trailRotation: true
         trailLength: 8
         trailWidth: 4,
+        "recoil": 2
         "hitSound": railHit
       "despawnSound": railHit
         "speed": 13
-        "shake": 10
+        "hitShake": 10
+        "despawnShake": 10
         "pierce": true,
         "frontColor": "BFBFEF",
         "backColor": "BFBFEF",
@@ -165,37 +158,66 @@ weapons: [
         "lifetime": 55
         fragOnHit: true
       fragBullets: 20
-      fragRandomSpread: 360
-      fragLifeMin: 1
-      fragLifeMax: 1
-      fragVelocityMin: 1
-      fragVelocityMax: 1
-      fragSpread: 0
-      fragAngle: 0
       fragOnAbsorb: true
-      fragBullet: {
-        type: BasicBulletType
-        width: 10
-        height: 10
-        sprite: missile-large
-        frontColor: BFBFEF
-        backColor: BFBFEF
-        trailColor: BFBFEF
-        trailWidth: 3
-        trailLength: 26
-        trailRotation: true
-        trailEffect: shootSmokeSquareSparse
-        trailInterval: 4
-        speed: 2
-        drag: 0.00005
-        lifetime: 150
-        pierceCap: 2
-        damage: 25
-        pierce: true
-         }
-       }
-    },
-  ]
+      fragBullet: { 
+    type: ArtilleryBulletType
+    collidesTiles: false
+    collidesAir: true
+    despawnShake: 0
+    absorbable: false
+    hittable: false
+    height: 1
+    width: 1
+	trailEffect: none
+	backColor: ffffff00
+	frontColor: ffffff00
+
+    buildingDamageMultiplier: 1.5
+
+    splashDamageRadius: 75
+    lightOpacity: 0.5
+    splashDamage: 90
+    splashDamageRadius: 20
+    lightRadius: 30
+    lifetime: 10
+    damage: 20
+    speed: 3
+	pierceCap: 300
+	pierceArmor: false
+	
+	suppressionEffectChance: 1
+	
+    smokeEffect: none
+	despawnEffect: [
+ {
+                "type": "WaveEffect",
+                "colorFrom": "FFFFFF",
+                "colorTo": "000000",
+                "sizeFrom": 1,
+                "sizeTo": 20,
+                "lifetime": 50
+            }
+ ]
+	despawnSound: explosionArtilleryShock
+	hitSound: explosionArtilleryShock
+	hitEffect: [
+ {
+                "type": "WaveEffect",
+                "colorFrom": "FFFFFF",
+                "colorTo": "000000",
+                "sizeFrom": 1,
+                "sizeTo": 20,
+                "lifetime": 50
+            }
+ ]
+	fragOnHit: true
+	fragBullets: 1
+    fragLifeMin: 0.01
+	fragLifeMax: 0.26
+	     	}
+     }
+   }
+ ]
 research: {
   parent: 10o-airship-assem
   objectives: [

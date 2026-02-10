@@ -9,7 +9,7 @@ requirements: [
   iron/700
   teralite/750
   benite/780
-  
+  magnetite/100
 ]
 consumes: {
   power: 4

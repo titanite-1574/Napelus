@@ -5,7 +5,7 @@
    "buildCostMultiplier": 0.1,
   "buildTime": 1110
   absorbLasers: true
-  "health": 2300,
+  "health": 2000,
   "size": 2,
   "armor": 5,
   "requirements": [

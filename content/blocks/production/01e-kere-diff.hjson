@@ -1,0 +1,81 @@
+type: GenericCrafter 
+size: 3
+liquidCapacity: 60
+hasLiquids: true
+health: 600
+category: crafting
+research: {
+  parent: menite-heater 
+  objectives: [
+    {
+      type: OnSector
+      preset: caverns
+    }
+  ]
+}
+itemCapacity: 30
+researchCost: [
+  silver/2000
+  iron/2000
+  teralite/2000
+  benite/1000
+]
+requirements: [
+  silver/200
+  iron/200
+  teralite/200
+  benite/100
+]
+craftTime: 240
+outputItems: [
+  kerenium/2
+]
+consumes: {
+  items: [
+    benite/2
+  ]
+  liquids: [
+    ilum/0.25
+    liquid-nitalite/0.25
+  ]
+  power: 8
+}
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidRegion
+      drawLiquid: ilum
+      suffix: -liquid2
+    }
+    {
+      type: DrawLiquidRegion
+      drawLiquid: liquid-nitalite
+      suffix: -liquid1
+    }
+    {
+     type: DrawCrucibleFlame
+     particleRad: 12
+    }
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawHeatInput
+      suffix: -heat
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -glow
+      color: c68f57
+    }
+  ]
+}
+fogRadius: 4
+ambientSound: loopSmelter
+ambientSoundVolume: 0.14
+squareSprite: false

@@ -13,17 +13,14 @@
       {
         "type": "DrawCrucibleFlame",
         "flameColor": "656462"
-        "flameRadiusScl": 20
-        "circleStroke": 3
-        "flameRad": 5
+        "flameRadiusScl": 1
+        "circleStroke": 0
+        "flameRad": 10
+        "particleRad": 10
       },
       { 
         "type": DrawDefault 
       }
-      {
-        "type": "DrawRegion"
-         suffix: -top
-      },
     ]
   },
   "hasPower": true,

@@ -94,7 +94,7 @@ consumes: {
         type: BasicBulletType
         width: 10
         height: 10
-        sprite: missile-large
+        sprite: nap-spearhead
         frontColor: 6697B0
         backColor: 446475
         trailColor: 446475
@@ -161,7 +161,7 @@ consumes: {
         type: BasicBulletType
         width: 10
         height: 10
-        sprite: missile-large
+        sprite: nap-spearhead
         frontColor: 6697B0
         backColor: 446475
         trailColor: 446475
