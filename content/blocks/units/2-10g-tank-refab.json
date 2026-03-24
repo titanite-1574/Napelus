@@ -20,7 +20,7 @@
   ],
   "category": "units",
 research: {
-    parent: "10a-blade-fabricator"
+    parent: "1-10g-tank-fab"
     objectives: [
         {
             type: "OnSector"
