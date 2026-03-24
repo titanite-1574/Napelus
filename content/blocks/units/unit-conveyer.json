@@ -3,6 +3,7 @@ name: Payload Track
 description: Transport payload and units
 health: 450
 category: units
+moveTime: 70
 research: {
   parent: 10a-blade-fabricator 
   objectives: [

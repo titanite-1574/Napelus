@@ -1,0 +1,52 @@
+type: UnitAssembler
+name: Spider Assembler
+description: Assembles high tier Spider units using blocks and unit. Higher tier require components and needs Xenogen to function 
+size: 5
+health: 1500
+category: units
+droneType: airship-assem-drone
+areaSize: 18
+"buildTime": 1500
+research: 10k-unit-reformer 
+requirements: [
+  silver/500
+  iron/650
+  amalgam/250
+  teralite/450
+]
+plans: [
+  {
+    type: AssemblerUnitPlan
+    unit: 02d-destroy
+    requirements: [
+      nap-02j-large-be-wall/4
+      nap-02a-break/2
+    ]
+    time: 3300
+  }
+  {
+    type: AssemblerUnitPlan
+    unit: 02e-annihalate
+    requirements: [
+      nap-02j-large-be-wall/4
+      nap-02b-shatter/4
+    ]
+    time: 5000
+  }
+  {
+    type: AssemblerUnitPlan
+    unit: 06f-poseidon 
+    requirements: [
+      nap-02f-large-tera-wall/7
+      nap-02b-large-silver-wall/2
+      nap-06c-wave/3
+    ]
+    time: 10000
+  }
+]
+squareSprite: false
+consumes: {
+  power: 5
+  liquid: xenogen/0.5
+}
+researchCostMultiplier: 0.5

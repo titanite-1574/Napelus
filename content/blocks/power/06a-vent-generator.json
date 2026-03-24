@@ -8,6 +8,7 @@ attribute: steam
 displayEfficiencyScale: 0.11111111111
 displayEfficiency: false
 minEfficiency: 8
+shownPlanets: [napelus,Stella]
 powerProduction: 0.2222222220
 squareSprite: false
 category: power

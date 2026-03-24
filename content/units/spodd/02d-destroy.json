@@ -192,27 +192,6 @@ abilities: [
     }
   }
 {
-    x:  15
-    y: -5
-    reload: 10
-    mirror: true
-    alternate: true
-    targetInterval: 9
-    targetSwitchInterval: 12
-    recoil: 0.5
-    name: destroy-point
-    shootY: 1
-    type: PointDefenseWeapon
-    bullet: {
-      type: BulletType
-      shootSound: shootSegment
-      shootEffect: sparkShoot
-      hitEffect: pointHit
-      maxRange: 150
-      damage: 55
-    }
-  }
-{
     "name": "lasir",
     "reload": 750,
     "mirror": false,

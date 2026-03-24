@@ -1,6 +1,7 @@
 type: PayloadRouter
 health: 450
 category: units
+moveTime: 70
 research: {
   parent: unit-conveyer 
   objectives: [

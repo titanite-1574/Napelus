@@ -5,3 +5,4 @@ research: silver
 healthScaling: 0.9
 hardness: 3
 flammability: 0.1
+shownPlanets: [napelus,Stella]

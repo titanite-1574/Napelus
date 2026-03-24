@@ -1,0 +1,253 @@
+{
+  name: Conflict
+  description : Equipped with two mount guns and a electric ball launcher in front
+  shownPlanets: [Stella]
+    "research": {
+    "parent": "10k-unit-reformer",
+  },
+  "type": "flying",
+  "lowAltitude": true,
+  "speed": 0.8,
+  "accel": 0.5,
+  "drag": 0.05,
+  "flying": true,
+  "health": 1550,
+  "hitSize": 15.5,
+  "armor": 6,
+  "itemCapacity": 0,
+  "outlineColor": "595959",
+  "engineOffset": 8,
+  "engineSize": 2,
+  "engineColor": "8AA3F4",
+  "rotateSpeed": 3
+  "engines": [
+  {
+    x: -9
+    y: -7
+    radius: 2.5
+    rotation: -135
+  }
+  {
+    x: 9
+    y: -7
+    radius: 2.5
+    rotation: -45
+  }
+]
+  "faceTarget": true,
+      "weapons": [
+    {
+      "name": "dispute-cannon",
+      "shootCone": 15,
+      "mirror": false,
+      "alternate": true,
+      "top": false,
+      "layerOffset": 0.001,
+      "rotate": false,
+      "rotateSpeed": 3,
+      "x": 0,
+      "y": 0,
+      "shootY": 2,
+      "reload": 200,
+      "recoil": 0.5
+      "shootSound": "shootLancer",
+      "shootStatusDuration": 90,
+      "shoot": {
+      "firstShotDelay": 100,
+      },
+        "bullet": {
+        "type": "BasicBulletType",
+        "sprite": "a-new-hope-dis-point",
+        fragOnHit: true
+      fragBullets: 5
+      fragRandomSpread: 360
+      fragLifeMin: 1
+      fragLifeMax: 1
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragSpread: 90
+      fragAngle: 0
+      fragOnAbsorb: true
+      fragBullet: {
+        type: BasicBulletType
+        width: 10
+        height: 10
+        sprite: a-new-hope-dis-point 
+        frontColor: 6697B0
+        backColor: 446475
+        trailColor: 446475
+        trailWidth: 3
+        trailLength: 26
+        trailRotation: true
+        trailEffect: shootSmokeSquareSparse
+        trailInterval: 4
+        speed: 3
+        lifetime: 25
+        pierceCap: 5
+        damage: 155
+        splashDamageRadius: 5
+        splashDamage: 40
+        pierce: true
+         }
+       "chargeEffect": {
+          "followParent": true,
+          "rotWithParent": true,
+          "type": "multiEffect",
+          "lifetime": 100,
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "offset": 100,
+              "sizeFrom": 7,
+              "sizeTo": 3.5,
+              "length": 60,
+              "baseLength": -60,
+              "interp": "pow3In",
+              "sizeInterp": "pow5Out",
+              "lifetime": 100,
+              "colorFrom": "6b7adc8e",
+              "colorTo": "6a7adc4b"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "offset": 100,
+              "sizeFrom": 7,
+              "sizeTo": 3.5,
+              "length": 70,
+              "baseLength": -70,
+              "interp": "pow3In",
+              "sizeInterp": "pow5Out",
+              "lifetime": 90,
+              "colorFrom": "6b7adc8e",
+              "colorTo": "6a7adc4b"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "offset": 100,
+              "sizeFrom": 7,
+              "sizeTo": 3.5,
+              "length": 80,
+              "baseLength": -80,
+              "interp": "pow3In",
+              "sizeInterp": "pow5Out",
+              "lifetime": 80,
+              "colorFrom": "6b7adc8e",
+              "colorTo": "6a7adc4b"
+            },
+          ]
+        },
+        shootEffect: {
+              type: ParticleEffect
+              particles: 25
+              lifetime: 60
+              length: 20
+              sizeFrom: 5
+              sizeTo: 1
+              colorFrom: 9daeff00
+              colorTo: 9daeff
+              strokeFrom: 3
+              strokeTo: 1.5
+              interp: pow3Out
+              spin: 5
+              sizeInterp: pow2In
+              region: a-new-hope-charge-star
+            }
+        "despawnEffect": {
+          "type": "ParticleEffect",
+          "line": true,
+          "particles": 40,
+          "lifetime": 20,
+          "offset": 10,
+          "length": 35,
+          "cone": -360,
+          "lenFrom": 5,
+          "lenTo": 0,
+          "colorFrom": "7A8CDC",
+          "colorTo": "FFFFFF"
+        },
+        "hitEffect": {
+          "type": "ParticleEffect",
+          "line": true,
+          "particles": 50,
+          "lifetime": 20,
+          "offset": 10,
+          "length": 35,
+          "cone": -360,
+          "lenFrom": 5,
+          "lenTo": 0,
+          "colorFrom": "7A8CDC",
+          "colorTo": "FFFFFF"
+        },
+        "damage": 200,
+        "height": 20,
+        "width": 20,
+        "speed": 11,
+        "recoil": 0.5,
+        "frontColor": "FFFFFF",
+        "backColor": "FFFFFF",
+        "lifetime": 30
+      }
+    }
+        {
+      "name": "dispute-mount",
+      "shootCone": 15,
+      "mirror": true,
+      "alternate": true,
+      "top": false,
+      "layerOffset": 0.001,
+      "rotate": true,
+      "rotateSpeed": 5,
+      "x": -6,
+      "y": -2,
+      "shootY": 2,
+      "reload": 20,
+      "recoil": 0.5
+      "shootSound": "gun",
+      "inaccuracy": 5
+      "shoot": {
+      "type": "shootPattern",
+      "shots": 2,
+      "shotDelay": 0,
+}
+        "bullet": {
+        "type": "BasicBulletType",
+        "despawnEffect": {
+          "type": "ParticleEffect",
+          "line": true,
+          "particles": 40,
+          "lifetime": 20,
+          "offset": 10,
+          "length": 35,
+          "cone": -360,
+          "lenFrom": 5,
+          "lenTo": 0,
+          "colorFrom": "8AA3F4",
+          "colorTo": "FFFFFF"
+        },
+        "hitEffect": {
+          "type": "ParticleEffect",
+          "line": true,
+          "particles": 10,
+          "lifetime": 20,
+          "offset": 10,
+          "length": 35,
+          "cone": -360,
+          "lenFrom": 5,
+          "lenTo": 0,
+          "colorFrom": "8AA3F4",
+          "colorTo": "FFFFFF"
+        },
+        "damage": 10,
+        "height": 5,
+        "width": 5,
+        "speed": 4,
+        "frontColor": "8AA3F4",
+        "backColor": "FFFFFF",
+        "lifetime": 50
+      }
+    }
+  ]
+}

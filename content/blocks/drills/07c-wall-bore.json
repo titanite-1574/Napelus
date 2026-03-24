@@ -41,4 +41,4 @@ requirements: [
   silver/30
   iron/20
 ]
-shownPlanets: [napelus]
+shownPlanets: [napelus,Stella]

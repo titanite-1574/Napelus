@@ -11,7 +11,7 @@ research: 10k-unit-reformer
 requirements: [
   silver/500
   iron/650
-  amalgam/500
+  amalgam/150
   teralite/450
 ]
 plans: [

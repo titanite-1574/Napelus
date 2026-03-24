@@ -4,4 +4,4 @@ research: silver
 radioactivity: 0.1
 hardness: 5
 healthScaling: 0.10
-shownPlanets: [napelus]
+shownPlanets: [napelus,Stella]

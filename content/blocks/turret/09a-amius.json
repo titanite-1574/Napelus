@@ -17,6 +17,7 @@
   "shootY": 2
   minWarmup: 0.4
 moveWhileCharging: false
+  shownPlanets: [napelus,Stella]
     shoot: {
   type: shootPattern
   shots: 3

@@ -66,5 +66,5 @@
     "raw-iron/5"
 ] 
   "outputItem": "iron/4"
-    shownPlanets: [napelus]
+    shownPlanets: [napelus,Stella]
 }

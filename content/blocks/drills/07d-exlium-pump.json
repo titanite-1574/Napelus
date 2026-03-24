@@ -11,6 +11,7 @@ baseEfficiency: 0
 squareSprite: false
 minEfficiency: 9
 category: production
+shownPlanets: [napelus,Stella]
 consumes: {
   power: 0.25
 }

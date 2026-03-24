@@ -1,0 +1,183 @@
+type: legs
+name: Annihilate
+description: Burns anything in it's path until nothing is left behind.
+legCount: 6
+legExtension: -11
+legBaseOffset: 6
+legLength: 55
+legLengthScl: 0.75
+legSpeed: 0.2
+legMoveSpace: 1
+legSplashDamage: 150
+legSplashRange: 60
+legPairOffset: 3
+legContinousMove: true
+lockLegBase: true
+legGroupSize: 3
+stepShake: 2.5
+research: 02d-destroy 
+researchCostMultiplier: 3
+drownTimeMultiplier: 1.5
+hovering: true
+groundLayer: 60
+health: 25500
+armor: 27
+allowLegStep: true
+speed: 0.45
+hitSize: 35
+drag: 0.07
+itemCapacity: 60
+outlineColor: 26262F
+rotateSpeed: 1.2
+stepSound: walkerStep
+stepSoundVolume: 1.1
+stepSoundPitch: 0.9
+abilities: [
+{
+      "type": "EnergyFieldAbility",
+      "healEffect": {
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 7,
+        "lifetime": 20,
+        "offset": 50,
+        "length": 55,
+        "cone": -360,
+        "lenFrom": 6,
+        "lenTo": 0,
+        "colorFrom": "A4E3E8",
+        "colorTo": "D0F0F3"
+      },
+      "statusDuration": 300,
+      "status": "shocked",
+      "color": "A4E3E8",
+      "maxTargets": 15,
+      "damage": 100,
+      "healPercent": 0.5,
+      "range": 150,
+      "y": -10,
+      "sectors": 4,
+      "rotateSpeed": 1,
+      "hitBuildings": true,
+      "sectorRad": 0.11,
+      "effectRadius": 5,
+      "reload": 100
+    }
+]
+"weapons": [
+{
+    "name": "annihalate-lasir",
+    "reload": 750,
+    "mirror": false,
+    "x": 0,
+    "y": 0
+    "shootY": 5,
+    "recoil": 0,
+    "inaccuracy ": 20,
+    "targetGround": true
+    "targetAir": true
+    "top": true
+    "layerOffset": 1
+    "rotateSpeed": 2
+    "cooldownTime": 300,
+    "continuous": true
+    "alwaysContinuous": true
+    "rotate": true
+    "chargeSound": energy-charge
+    "shotDelay": 150
+parts: [
+{
+type: ShapePart
+circle: true
+y: 10
+radius: 0
+radiusTo: 5
+colorFrom: 8AA3F3
+colorTo: B4C2ED
+progress: charge
+under: true
+layer: 110
+  }
+{
+top: true
+type: RegionPart
+moveRot: 20
+mirror: true
+moveX: -1
+suffix: -arm
+moves: [
+   {
+    type: PartMove,
+    progress: recoil,
+    rot: -6
+   }
+   ]
+   progress: warmup
+   }
+   ]
+    shootSound: shootSublimate 
+    shootStatus: slow
+    shootStatusDuration: 150
+     "chargeEffect": {
+          "followParent": true,
+          "rotWithParent": true,
+          "type": "multiEffect",
+          "lifetime": 150,
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "offset": 100,
+              "sizeFrom": 7,
+              "sizeTo": 3.5,
+              "length": 60,
+              "baseLength": -60,
+              "interp": "pow3In",
+              "sizeInterp": "pow5Out",
+              "lifetime": 150,
+              "colorFrom": "A4E3E8",
+              "colorTo": "D0F0F3"
+            },
+       ]
+   }
+    bullet: {
+    type: ContinuousLaserBulletType
+  length: 190
+  damage: 50
+  width: 10
+  incendChance: 50
+  incendAmount: 0
+  incendSpread: 0
+  continuous: true
+  colors: [A4E3E8, 726081, 8E789F, AC98BB, CCBCD9
+  ]
+  intervalBullets: 5
+  bulletInterval: 15
+  intervalRandomSpread: 0
+  knockback: 2
+  pierceCap: 2
+  pierceBuilding: false
+  intervalBullet: {
+    type: LightningBulletType
+    despawnSound: shockBulletSyntax
+    damage: 35
+    lightningLength: 17
+    lightningLengthRand: 4
+    lightningColor: ffffff
+    status: shocked
+    statusDuration: 55
+    buildingDamageMultiplier: 0.4
+    }
+  }
+}
+]
+research: {
+    parent: "10k-unit-reformer",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "outpost"
+        }
+    ]
+}
+researchCostMultiplier: 1

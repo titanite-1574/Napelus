@@ -14,3 +14,4 @@ requirements: [
   silver/1
 ]
 junctionReplacement: 04c-sil-duct-junction
+shownPlanets: [napelus,Stella]

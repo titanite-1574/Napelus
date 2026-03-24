@@ -12,3 +12,4 @@ squareSprite: false
 range: 5
 speed: 4.285714
 researchCostMultiplier: 0.1
+shownPlanets: [napelus,Stella]

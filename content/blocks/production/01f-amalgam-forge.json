@@ -40,6 +40,7 @@
   "hasPower": true,
   "hasItems": true,
   "itemCapacity": 10,
+  "buildTime": 600
   "craftTime": 350,
   heatRequirement: 6
 maxEfficiency: 4.5

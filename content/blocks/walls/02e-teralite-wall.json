@@ -7,6 +7,7 @@
   "health": 900,
   "size": 1,
   "armor": 15,
+  shownPlanets: [napelus,Stella]
   "requirements": [
     "teralite/5"
   ],

@@ -18,7 +18,7 @@ trailLength: 18
 missileAccelTime: 50
 lowAltitude: true
 fogRadius: 6
-health: 300
+health: 9000
 allowedInPayloads: false
 useUnitCap: false
 playerControllable: false

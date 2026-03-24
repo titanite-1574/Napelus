@@ -1,0 +1,78 @@
+{
+  "name" : Heavy Iron Refinery,
+  "description": A better refinery,refines more iron plates. Needs Menite to function.
+  "size": 4,
+  "type": "GenericCrafter",
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion"
+         suffix: -bottom
+      }
+      {
+        "type": "DrawCrucibleFlame",
+        "flameColor": "656462"
+        "flameRadiusScl": 1
+        "circleStroke": 0
+        "flameRad": 13
+        particleSize: 4
+      particleRad: 16.5
+      particles: 50
+      },
+      { 
+        "type": DrawDefault 
+      }
+    ]
+  },
+  "hasPower": true,
+  "hasItems": true,
+  "itemCapacity": 16,
+  "craftTime": 130,
+  "craftEffect": {
+    "type": "ParticleEffect",
+    "line": true,
+    "particles": 0,
+    "lifetime": 50,
+    "length": 25,
+    "cone": -360,
+    "lenFrom": 5,
+    "lenTo": 0,
+    "colorFrom": "7A8CDC",
+    "colorTo": "FFFFFFF"
+  },
+  "updateEffect": "none",
+  "consumes": {
+    "power": 4,
+    "items": {
+      "items": [
+        "raw-iron/5"
+        "menite/1"
+      ]
+    }
+  },
+  "requirements": [
+    "silver/500",
+    "iron/450"
+    "magnesium/300"
+    "teralite/300"
+  ],
+  "category": "crafting",
+  research: {
+    parent: "01a-iron-refinery",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "caverns"
+        }
+    ]
+},
+  "researchCost": [
+    "silver/1200"
+    "iron/1000"
+    "magnesium/1100"
+    "teralite/1000"
+] 
+  "outputItem": "iron/8"
+    shownPlanets: [napelus]
+}

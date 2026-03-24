@@ -1,0 +1,160 @@
+{
+  name: Battle
+  description : A tier 2 unit that shoots out electric arrows at enemies 
+  shownPlanets: [Stella]
+    research: {
+    parent: "08a-exulus",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "caverns"
+        }
+    ]
+}
+  "type": "flying",
+  "lowAltitude": true,
+  "speed": 1.40,
+  "accel": 0.1,
+  "drag": 0.05,
+  "flying": true,
+  "health": 1250,
+  "hitSize": 13,
+  "armor": 3,
+  "itemCapacity": 0,
+  "outlineColor": "595959",
+  "engineOffset": 9,
+  "engineColor": "7A8CDC",
+  "engineSize": 0
+  "waveTrailY": -3.0
+  "trailColor": 7A8CDC
+  "trailLength": 5
+  "faceTarget": true,
+  "engines": [
+  {
+    x: -8
+    y: -8
+    radius: 4
+    rotation: -135
+  }
+  {
+    x: 8
+    y: -8
+    radius: 4
+    rotation: -45
+  }
+]
+  deathExplosionEffect: [
+    {
+        type: ExplosionEffect
+        waveRad: 16
+        waveLife: 8
+        waveColor: ffffff
+        waveStroke: 2.5
+        sparks: 6
+        sparkLen: 4.5
+        sparkStroke: 2.5
+        sparkColor: ffe18f
+        sparkRad: 20
+        smokes: 10
+    }
+  ]
+    "weapons": [
+    {
+      "name": "conflict-weapon",
+      "shootCone": 15,
+      "mirror": true,
+      "alternate": true,
+      "top": false,
+      "layerOffset": 0,
+      "rotate": false,
+      "rotateSpeed": 3,
+      "x": 0,
+      "y": 0,
+      "shootY": 2,
+      "reload": 90,
+      "recoil": 2
+      "shootSound": "explosionObviate",
+      "inaccuracy": 3
+      "rotationLimit": 15
+      "shoot": {
+      "type": "shootPattern",
+      "shots": 1,
+      "shotDelay": 5,
+}
+        "bullet": {
+        "type": "BasicBulletType",
+        "damage": 50,
+        "recoil": 0.2,
+        "height": 5,
+        "width": 8,
+        "speed": 12,
+        "drag": 0.09
+        "frontColor": "8AA3F4",
+        "backColor": "FFFFFF",
+        "lifetime": 80
+        trailLength: 5
+        trailWidth: 3
+        trailChance: -1
+      trailInterval: 5
+      trailEffect: shootSmokeTitan
+      trailColor: 6697B0
+      trailParam: 4
+      trailRotation: true
+      "homingRange": 60,
+        "homingPower": 0.0845
+        sprite: missile-large
+        fragOnHit: true
+        fragOnAbsorb: true
+        fragBullet: {
+        "type": "BasicBulletType",
+        "damage": 15.5,
+        "recoil": 0.2,
+        "height": 5,
+        "width": 8,
+        "speed": 5,
+        "drag": 0.01
+        "frontColor": "8AA3F4",
+        "backColor": "FFFFFF",
+        "lifetime": 80
+        trailLength: 5
+        trailWidth: 3
+        trailChance: -1
+      trailInterval: 5
+      trailEffect: shootSmokeTitan
+      trailColor: 6697B0
+      trailParam: 4
+      trailRotation: true
+      "homingRange": 110
+        "homingPower": 0.0845
+        sprite: missile-large
+     }
+        "despawnEffect": {
+          "type": "ParticleEffect",
+          "line": true,
+          "particles": 40,
+          "lifetime": 20,
+          "offset": 10,
+          "length": 35,
+          "cone": -360,
+          "lenFrom": 5,
+          "lenTo": 0,
+          "colorFrom": "8AA3F4",
+          "colorTo": "FFFFFF"
+        },
+        "hitEffect": {
+          "type": "ParticleEffect",
+          "line": true,
+          "particles": 50,
+          "lifetime": 20,
+          "offset": 10,
+          "length": 35,
+          "cone": -360,
+          "lenFrom": 5,
+          "lenTo": 0,
+          "colorFrom": "8AA3F4",
+          "colorTo": "FFFFFF"
+        },
+      }
+    }
+  ]
+}

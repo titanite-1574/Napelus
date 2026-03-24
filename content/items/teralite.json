@@ -4,3 +4,4 @@ description: A tough resource used into contruction,ammunition and units
 research: silver
 healthScaling: 0.9
 hardness: 4
+shownPlanets: [napelus,Stella]

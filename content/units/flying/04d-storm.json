@@ -111,6 +111,86 @@ targetFlag: [ turret, core ]
 ]
 weapons: [
 {
+name: storm-backup
+x: 20
+y: -2
+rotationLimit: 90
+baseRotation: -90
+mirror: true
+layerOffset: -0.0001
+shoot: {
+type: ShootPattern
+shots: 3
+shotDelay: 10
+}
+top: true
+alternate: false
+rotate: true
+reload: 50
+recoil: 1
+shootSound: shootTank
+ejectEffect: none
+bullet: {
+    type: BasicBulletType,
+    speed: 6
+    lifetime: 30
+    damage: 15
+    width: 7
+    height: 10
+    frontColor: b2afb3
+    backColor: d5d2d6
+    shootEffect: "shootSmall"
+    smokeEffect: "shootSmallSmoke"
+    ammoMultiplier: 5
+    collidesTiles: true
+    hitEffect: pointHit
+    sprite: missile-large
+      trailLength: 5
+      trailColor: 8989D3
+      trailWidth: 2
+}
+}
+{
+name: storm-backup
+x: 18
+y: 10
+rotationLimit: 90
+baseRotation: -90
+mirror: true
+layerOffset: -0.0001
+shoot: {
+type: ShootPattern
+shots: 3
+shotDelay: 10
+}
+top: true
+alternate: false
+rotate: true
+reload: 50
+recoil: 1
+shootSound: shootTank
+ejectEffect: none
+bullet: {
+    type: BasicBulletType,
+    speed: 6
+    lifetime: 30
+    damage: 15
+    width: 7
+    height: 10
+    frontColor: b2afb3
+    backColor: d5d2d6
+    shootEffect: "shootSmall"
+    smokeEffect: "shootSmallSmoke"
+    ammoMultiplier: 5
+    collidesTiles: true
+    hitEffect: pointHit
+    sprite: missile-large
+      trailLength: 5
+      trailColor: 8989D3
+      trailWidth: 2
+}
+}
+{
       "name": "storm-sniper",
       "reload": 350,
       "mirror": false,
@@ -122,7 +202,7 @@ weapons: [
       "rotateSpeed": 1,
       "shootSound": "railgun",
       "bullet": {
-        "type": "ArtilleryBulletType",
+        "type": "BasicBulletType",
         "lightColor": "000083b8",
         "lightOpacity": 0.7,
         "collidesAir": true
@@ -144,12 +224,12 @@ weapons: [
         "speed": 13
         "hitShake": 10
         "despawnShake": 10
-        "pierce": true,
+        "pierce": false,
         "frontColor": "BFBFEF",
         "backColor": "BFBFEF",
-        "pierce": true,
-        "pierceCap": 8,
-        "status": "electrified",
+        "pierce": false,
+        "pierceCap": 1,
+        "status": "disarmed",
         "statusDuration": 60,
         "splashDamage": 355
         "splashDamageRadius": 40

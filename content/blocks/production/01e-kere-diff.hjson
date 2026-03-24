@@ -1,9 +1,11 @@
 type: GenericCrafter 
 size: 3
+name: Kerenium Diffuser
 liquidCapacity: 60
 hasLiquids: true
 health: 600
 category: crafting
+"buildTime": 340
 research: {
   parent: menite-heater 
   objectives: [

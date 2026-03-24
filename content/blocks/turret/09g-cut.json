@@ -1,0 +1,243 @@
+{
+  "type": "ItemTurret",
+  "name": Cut,
+  "description": Pierce through multiple enemies with its blade dealing massive damage.
+  "researchCostMultiplier": 0.2,
+  "size": 4,
+  "health": 1000,
+  "reload": 200,
+  "range": 90,
+  "inaccuracy": 0
+  "targetAir": true,
+  "recoil": -6,
+  "rotateSpeed": 2,
+  "shootSound": "shootTank",
+  coolantMultiplier: -2
+  "shootWarmupSpeed": 0.01,
+  "shootY": 4
+moveWhileCharging: false
+consumes: {
+  power: 1
+}
+    shoot: {
+  type: shootPattern
+  shots: 1
+  shotDelay: 10
+}
+  drawer: {
+    type: DrawTurret
+    basePrefix: cut-
+  parts: [
+  {
+            type: RegionPart
+            suffix: -blade
+            heatProgress: warmup
+            progress: recoil
+            under: true
+            moveY: 7
+        }
+    ]
+}
+  "ammoTypes": {
+    "teralite": {
+    type: RailBulletType
+    damage: 1200
+  recoil: -15
+      buildingDamageMultiplier: 3
+    pierce: true
+    length: 90
+    width: 30
+    height: 60
+    lifetime: 1
+statusDuration: 100
+trailRotation: true
+pierceEffect: {
+    type: ParticleEffect
+line: true
+    particles: 4
+    baseLength: 0
+length: 50
+    lifetime: 30
+lenFrom: 3
+lenTo: 1
+strokeFrom: 1.6
+strokeTo: 0
+    colorFrom: FF4A4A
+    colorTo: FF4A4A
+    cone: 70
+interp: circleOut
+}
+pointEffect: {
+    type: ParticleEffect
+line: false
+    particles: 1
+    baseLength: 0
+length: 0
+    lifetime: 30
+sizeFrom: 4.5
+sizeTo: 0
+useRotation: true
+    colorFrom: FF4A4A
+    colorTo: FF4A4A
+    cone: 0
+offset: -90
+interp: circleOut
+useRotation: true
+sizeInterp: pow5Out
+}
+pointEffectSpace: 6
+bulletInterval: 8
+      intervalRandomSpread: 0
+      intervalBullets: 2
+      intervalSpread: 35
+      intervalBullet: {
+        type: BasicBulletType
+        frontColor: FF4A4A
+        backColor: FF4A4A
+        speed: 2.5
+        drag: 0.01
+        lifetime: 30
+        splashDamage: 25
+        splashDamageRadius: 15
+        width: 6
+        height: 6
+        trailChance: -1
+        trailColor: FF4A4A
+        trailLength: 7
+        trailWidth: 2
+        weaveScale: 2
+        weaveMag: 3
+        pierceBuilding: true
+        despawnSound: explosion
+        despawnEffect: {
+          type: ExplosionEffect
+          lifetime: 15
+          waveStroke: 2.5
+          waveColor: FF4A4A
+          sparkColor: FF4A4A
+          trailColor: FF4A4A
+          smokeColor: FF4A4A
+          waveRad: 8
+          smokesSize: 3
+          smokes: 2
+          smokeSizeBase: 0
+          sparks: 2
+          sparkRad: 10
+          sparkLen: 2
+          sparkStroke: 1
+        }
+      }
+    }
+      "iron": {
+    type: RailBulletType
+    damage: 1500
+  recoil: -15
+      buildingDamageMultiplier: 3
+    pierce: true
+    length: 90
+    width: 30
+    height: 60
+    lifetime: 1
+statusDuration: 100
+trailRotation: true
+pierceEffect: {
+    type: ParticleEffect
+line: true
+    particles: 4
+    baseLength: 0
+length: 50
+    lifetime: 30
+lenFrom: 3
+lenTo: 1
+strokeFrom: 1.6
+strokeTo: 0
+    colorFrom: 976D6D
+    colorTo: 976D6D
+    cone: 70
+interp: circleOut
+}
+pointEffect: {
+    type: ParticleEffect
+line: false
+    particles: 1
+    baseLength: 0
+length: 0
+    lifetime: 30
+sizeFrom: 4.5
+sizeTo: 0
+useRotation: true
+    colorFrom: 976D6D
+    colorTo: 976D6D
+    cone: 0
+offset: -90
+interp: circleOut
+useRotation: true
+sizeInterp: pow5Out
+}
+pointEffectSpace: 6
+bulletInterval: 8
+      intervalRandomSpread: 0
+      intervalBullets: 4
+      intervalSpread: 35
+      intervalBullet: {
+        type: BasicBulletType
+        frontColor: 976D6D
+        backColor: 976D6D
+        speed: 2.9
+        drag: 0.09
+        lifetime: 70
+        splashDamage: 40
+        splashDamageRadius: 15
+        width: 6
+        height: 6
+        trailChance: -1
+        trailColor: 976D6D
+        trailLength: 7
+        trailWidth: 2
+        weaveScale: 2
+        weaveMag: 3
+        pierceBuilding: true
+        despawnSound: explosion
+        despawnEffect: {
+          type: ExplosionEffect
+          lifetime: 15
+          waveStroke: 2.5
+          waveColor: 976D6D
+          sparkColor: 976D6D
+          trailColor: 976D6D
+          smokeColor: 976D6D
+          waveRad: 8
+          smokesSize: 3
+          smokes: 2
+          smokeSizeBase: 0
+          sparks: 2
+          sparkRad: 10
+          sparkLen: 2
+          sparkStroke: 1
+        }
+      }
+    }
+  }
+  "requirements": [
+    "silver/130",
+    "iron/170",
+    "teralite/120"
+    "magnesium/90"
+    "kerenium/50"
+  ],
+  "coolant": {
+    "type": "ConsumeLiquid",
+    "liquid": "ilum",
+    "amount": 0.4
+  },
+  "category": "turret",
+  research: {
+    parent: "09b-galius",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "outpost"
+          } 
+      ]
+   },
+}

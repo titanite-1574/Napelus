@@ -4,13 +4,13 @@
   hasLiquids: false
   "size": 2,
   "itemCapacity": 10,
-  "tier": 2,
+  "tier": 3,
   "drawMineItem": true,
   drillTime: 300
   arrows: 0
   rotateSpeed: 5
   liquidBoostIntensity: 1
-  shownPlanets: [napelus]
+  shownPlanets: [napelus,Stella]
   drawer: {
   type: DrawMulti
   drawers: [

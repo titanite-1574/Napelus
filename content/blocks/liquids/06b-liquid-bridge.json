@@ -12,3 +12,4 @@ research: 06a-liquid-pipe
 researchCost: [
   silver/10
 ]
+shownPlanets: [napelus,Stella]

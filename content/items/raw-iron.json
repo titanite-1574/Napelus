@@ -4,3 +4,4 @@ description: Found in iron deposits. Can't be used in anything until it's proces
 research: silver
 healthScaling: 0.9
 hardness: 1
+shownPlanets: [napelus,Stella]

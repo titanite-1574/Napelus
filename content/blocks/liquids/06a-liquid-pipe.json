@@ -14,3 +14,4 @@ rotBridgeReplacement: 06b-liquid-bridge
 researchCost: [
   silver/20
 ]
+shownPlanets: [napelus,Stella]

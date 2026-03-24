@@ -8,6 +8,7 @@
   "health": 1650,
   "size": 2,
   "armor": 5,
+  shownPlanets: [napelus,Stella]
   "requirements": [
     "iron/10"
   ],

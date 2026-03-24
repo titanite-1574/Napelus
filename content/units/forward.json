@@ -18,10 +18,9 @@ mineWalls: true
 hitSize: 7
 engineSize: 2
 engineColor: BECFD8
-buildSpeed: 1.4
+buildSpeed: 15
 canHeal: true
 lowAltitude: false
-buildSpeed: 1.1
 mineSpeed: 6
 waveTrailY: -3.0
 trailColor: BECFD8

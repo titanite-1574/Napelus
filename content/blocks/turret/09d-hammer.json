@@ -17,6 +17,7 @@
   "shootY": 2
   minWarmup: 0.4
 moveWhileCharging: false
+  shownPlanets: [napelus,Stella]
     shoot: {
   type: shootPattern
   shots: 2
@@ -74,10 +75,10 @@ moveWhileCharging: false
     status: benite-radiated
     statusDuration: 350
     ammoMultiplier: 1
-     "despawnEffect": [titanSmoke]
+     "despawnEffect": [scatheExplosion]
       hitColor: 9ed7c99f
       despawnColor: 9ed7c99f
-      "hitEffect": [titanSmoke]
+      "hitEffect": [scatheExplosion]
    fragOnHit: true
       fragBullets: 10
       fragRandomSpread: 360
@@ -109,6 +110,55 @@ moveWhileCharging: false
         pierce: true
          }
   }
+  "teralite": {
+      type: ArtilleryBulletType
+    splashDamage: 300
+    splashDamageRadius: 45
+    buildingDamageMultiplier: 0.25
+    lifetime: 850
+    backColor: AAE7D7
+    frontColor: AAE7D7
+    speed: 4
+    width: 18
+    height: 23
+    hitEffect: blastExplosion
+    hitShake: 5
+    collidesGround: true
+    collidesAir: false
+    collidesTiles: true
+    collides: true
+    rangeChange: 172
+    status: shocked
+    statusDuration: 350
+    ammoMultiplier: 1
+     "despawnEffect": [scatheExplosion]
+      hitColor: A4E3E8
+      despawnColor: A4E3E8
+      "hitEffect": [scatheExplosion]
+   fragOnHit: true
+      fragBullets: 10
+      fragOnAbsorb: true
+      fragBullet: {
+        type: BasicBulletType
+        width: 10
+        height: 10
+        sprite: missile-large
+        frontColor: A4E3E8
+        backColor: A4E3E8
+        trailColor: A4E3E8
+        trailWidth: 5
+        trailLength: 35
+        trailRotation: true
+        trailEffect: shootSmokeSquareSparse
+        trailInterval: 4
+        speed: 3
+        drag: 0.0005
+        lifetime: 5
+        pierceCap: 2
+        damage: 35
+        pierce: true
+         }
+  }
   "iron": {
       type: ArtilleryBulletType
     damage: 0
@@ -128,10 +178,10 @@ moveWhileCharging: false
     collidesTiles: true
     collides: true
     ammoMultiplier: 1
-     "despawnEffect": [titanSmoke]
+     "despawnEffect": [scatheExplosion]
       hitColor: cccccca0
       despawnColor: cccccca0
-      "hitEffect": [titanSmoke]
+      "hitEffect": [scatheExplosion]
    fragOnHit: true
       fragBullets: 20
       fragRandomSpread: 360

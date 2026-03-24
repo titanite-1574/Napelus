@@ -4,3 +4,4 @@ description: Processed raw iron. Can be used in construction, ammunition and uni
 research: raw-iron
 healthScaling: 0.9
 hardness: 1
+shownPlanets: [napelus,Stella]

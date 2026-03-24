@@ -4,3 +4,4 @@ description: A abundant resource that is found around Napelus,on walls and groun
 research: 08a-exulus
 healthScaling: 0.9
 hardness: 1
+shownPlanets: [napelus,Stella]

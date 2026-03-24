@@ -1,0 +1,219 @@
+{
+  name: Dispute 
+  description : Fires a orb which turns instantly to it's target even if the unit is facing the opposite way,it stills find it due to it's high homing power. Has two mounted cannon which split into 2 orbs on impact. The 5 orbs deals massive damage from the main orb. Disarms the enemy in process
+  details: what are those over the horizons,they are not Storms.......they are something else...a flying ship originated frok Tandrius and Trace. Dealing with this giant is very challenging.
+  shownPlanets: [Stella]
+    "research": {
+    "parent": "01c-conflict",
+  },
+  "type": "flying",
+  "lowAltitude": true,
+  "speed": 0.5,
+  "accel": 0.5,
+  "drag": 0.005,
+  "flying": true,
+  "health": 9890,
+  "hitSize": 20,
+  "armor": 6,
+  "itemCapacity": 0,
+  "outlineColor": "595959",
+  "engineOffset": 15,
+  "engineSize": 5,
+  "engineColor": "8AA3F4",
+  "rotateSpeed": 0.9,
+  "engines": [
+  {
+    x: -15
+    y: -14
+    radius: 3
+    rotation: -135
+  }
+  {
+    x: -10
+    y: -17
+    radius: 4
+    rotation: -90
+  }
+  {
+    x: 10
+    y: -17
+    radius: 5
+    rotation: -90
+  }
+  {
+    x: 15
+    y: -14
+    radius: 3
+    rotation: -45
+  }
+]
+  "faceTarget": true,
+      "weapons": [
+  {
+    x: 10
+    y: 0
+    rotate: true
+    rotateSpeed: 3
+    mirror: true
+    reload: 65
+    shootSound: shoot
+    name: dispution-gun
+    bullet: {
+      type: BasicBulletType
+      width: 6
+      height: 10
+      weaveMag: 4
+      weaveScale: 4
+      lifetime: 45
+      drag: 0.09
+      speed: 25
+      damage: 90
+      trailWidth: 1.5
+      trailColor: d9dcbc
+      trailLength: 6
+      trailChance: -1
+      homingRange: 50
+      homingPower: 1
+      fragBullets: 2
+      fragOnHit: true
+      fragOnAbsorb: true
+      fragBullet: {
+      "type": "BasicBulletType",
+        "damage": 50,
+        "recoil": 0.2,
+        "height": 5,
+        "width": 8,
+        "speed": 12,
+        "drag": 0.09
+        "frontColor": "8AA3F4",
+        "backColor": "FFFFFF",
+        "lifetime": 25
+        trailLength: 5
+        trailWidth: 3
+        trailChance: -1
+      trailInterval: 10
+      trailEffect: shootSmokeTitan
+      trailColor: 6697B0
+      trailParam: 6
+      trailRotation: true
+      "homingRange": 60,
+        "homingPower": 0.0845
+        sprite: missile-large
+       }
+    }
+  }
+  {
+      "name": "dispute-cannon",
+      "mirror": false,
+      "alternate": true,
+      "top": false,
+      "layerOffset": 1
+      "shake": 2
+      "x": 0,
+      "y": 0,
+      "shootY": 2,
+      "reload": 1000,
+      "recoil": 1
+      "shootSound": "railgun",
+      "shootStatusDuration": 130,
+      "shootStatus": unmoving,
+      "chargeSound": chargeup
+      "shoot": {
+      "firstShotDelay": 130,
+      },
+        "bullet": {
+        "type": "BasicBulletType",
+        "damage": 300
+        "splashDamage": 800,
+        "splashDamageRadius": 20
+        "recoil": 1,
+        "height": 5,
+        "width": 8,
+        "speed": 30,
+        "drag": 0.09
+        "frontColor": "8AA3F4",
+        "backColor": "FFFFFF",
+        "lifetime": 120
+        trailLength: 15
+        trailWidth: 10
+        trailChance: -1
+      trailInterval: 5
+      trailEffect: shootSmokeTitan
+      trailColor: 6697B0
+      trailParam: 4
+      trailRotation: true
+      despawnSound: plasmaBoomAlt
+      hitSound: plasmaBoomAlt
+      "homingRange": 60,
+        "homingPower": 0.5
+        sprite: missile-large
+        fragOnHit: true
+        fragOnAbsorb: true
+        fragBullets: 5
+        fragBullet: {
+        "type": "BasicBulletType",
+        "splashDamage": 350,
+        "splashDamageRadius": 30
+        "despawnEffect": [scatheExplosion]
+        "hitEffect": [scatheExplosion]
+        "hitColor": 8AA3F4
+        "hitShake": 20
+        "recoil": 0.2,
+        "height": 5,
+        "width": 8,
+        "speed": 5,
+        "drag": 0.01
+        "frontColor": "8AA3F4",
+        "backColor": "FFFFFF",
+        "lifetime": 80
+        trailLength: 5
+        trailWidth: 3
+        trailChance: -1
+      trailInterval: 5
+      trailEffect: shootSmokeTitan
+      trailColor: 6697B0
+      trailParam: 4
+      trailRotation: true
+      status: disarmed 
+      statusDuration: 120
+      "homingRange": 110
+        "homingPower": 0.0845
+        sprite: missile-large
+     }
+     parts: [
+{
+type: ShapePart
+circle: true
+y: 0
+radius: 5
+radiusTo: 15
+colorFrom: 8AA3F3
+colorTo: A4E3E8
+under: false
+layer: 110
+  }
+]
+        "despawnEffect": {
+          type: WaveEffect
+          strokeFrom: 10
+          strokeTo: 10
+          sizeTo: 200
+          sizeFrom: 200
+          colorFrom: 8AA3F4
+          colorTo: 8aa3f400
+          lifetime: 100
+        },
+        "hitEffect": {
+          type: WaveEffect
+          strokeFrom: 10
+          strokeTo: 10
+          sizeTo: 200
+          sizeFrom: 200
+          colorFrom: 8AA3F4
+          colorTo: 8aa3f400
+          lifetime: 300
+        },
+      }
+    }
+  ]
+}

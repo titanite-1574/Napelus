@@ -1,0 +1,34 @@
+type: Constructor
+name: Components Fabricator 
+description: fabricates components for T5-6 unit assembly 
+size: 3
+health: 550
+buildTime: 900
+category: units
+requirements: [
+  silver/50
+  iron/30
+  teralite/35
+] 
+hasPower: true
+consumes: {
+  power: 1.5
+  liquid: xenogen/0.15
+}
+buildSpeed: 1
+filter: [
+ charged-engine
+ heavy-joint
+]
+research: {
+    parent: "block-fab",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "outpost"
+        }
+    ]
+}
+squareSprite: false
+maxBlockSize: 3
+researchCostMultiplier: 0.5

@@ -1,0 +1,78 @@
+{
+  name: Fight
+  description : A fast flying unit with a singular gun. Strong in groups,weak alone
+    research: {
+  parent: 08a-exulus 
+  shownPlanets: [Stella]
+  alwaysUnlocked: true
+  }
+  "type": "flying",
+  "lowAltitude": true,
+  "speed": 3.5,
+  "accel": 0.1,
+  "drag": 0.02,
+  "flying": true,
+  "health": 300,
+  "hitSize": 12,
+  "armor": 1,
+  "itemCapacity": 0,
+  "outlineColor": "575666",
+  "engineOffset": 4,
+  "engineColor": "4477BA",
+  "faceTarget": true,
+  "weapons": [
+    {
+      "name": "weapon",
+      "shootCone": 15,
+      "mirror": false,
+      "alternate": false,
+      "layerOffset": 0.001
+      "recoil": 0.1
+      "x": 0,
+      "y": 0,
+      "shootY": 3,
+      "reload": 15, 
+      "shootSound": "gun",
+      "bullet": {
+        "type": "basicBulletType",
+        "despawnEffect": {
+          "type": "ParticleEffect",
+          "line": true,
+          "particles": 5,
+          "lifetime": 20,
+          "offset": 10,
+          "length": 35,
+          "cone": -360,
+          "lenFrom": 5,
+          "lenTo": 0,
+          "colorFrom": "4477BA",
+          "colorTo": "FFFFFF",
+        },
+        "hitEffect": {
+          "type": "ParticleEffect",
+          "line": true,
+          "particles": 5,
+          "lifetime": 20,
+          "offset": 10,
+          "length": 35,
+          "cone": -360,
+          "lenFrom": 5,
+          "lenTo": 0,
+          "colorFrom": "4477BA",
+          "colorTo": "FFFFFF"
+        },
+        "damage": 10,
+        "height": 2,
+        "width": 5,
+        "sprite": missile-large
+        "speed": 4,
+        "trailWidth": 2
+        "trailLength": 3
+        "trailColor": FFFFFF
+        "frontColor": "FFFFFF",
+        "backColor": "FFFFFF",
+        "lifetime": 50
+      }
+    }
+  ]
+}

@@ -3,6 +3,7 @@ name: Force Bore
 description: Drills out ores from the ground using explosive force
 size: 3
 health: 650
+shownPlanets: [napelus,Stella]
 category: production
 research: {
   parent: 07a-silver-drill 

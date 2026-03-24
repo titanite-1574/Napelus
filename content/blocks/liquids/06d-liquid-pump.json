@@ -11,6 +11,7 @@ requirements: [
 ]
 pumpAmount: 0.12
 researchCostMultiplier: 0.5
+shownPlanets: [napelus,Stella]
 consumes: {
   power: 0.8
 }

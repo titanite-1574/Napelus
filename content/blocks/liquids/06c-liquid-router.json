@@ -16,3 +16,4 @@ researchCostMultiplier: 0.1
 researchCost: [
   silver/5
 ]
+shownPlanets: [napelus,Stella]

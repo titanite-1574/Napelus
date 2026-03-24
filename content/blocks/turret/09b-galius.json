@@ -17,6 +17,7 @@
   "shootY": 6
   minWarmup: 0.4
 moveWhileCharging: false
+  shownPlanets: [napelus,Stella]
     shoot: {
   type: ShootAlternate 
   spread: 7

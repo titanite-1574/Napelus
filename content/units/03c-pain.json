@@ -16,56 +16,39 @@ outlineColor: 26262F
 crushDamage: 5
 treadRects: [
     {
-        x: -22,
-        y: -2,
-        width: 6,
-        height: 17
+        x: 8,
+        y: -65,
+        width: 33,
+        height: 131
     }
     {
-        x: 16,
-        y: -3,
-        width: 6,
-        height: 18
-    }
-    {
-        x: -4,
-        y: -23,
-        width: 8,
-        height: 41
+        x: -41,
+        y: -65,
+        width: 33,
+        height: 131
     }
 ]
 researchCostMultiplier: 1
-parts: [
-        {
-            type: RegionPart
-            suffix: -support
-            heatProgress: recoil
-            progress: recoil
-            under: true
-            moveX: -2
-            mirror: true
-       }
-     ]
 weapons: [
   {
-      "name": "pain-laser",
+      "name": "bunsen",
       "x": 0,
       "y": 0,
       "ejectEffect": "none",
       "rotate": true,
       "mirror": false,
       "rotateSpeed": 2
-      "shake": 1,
+      "shake": 5,
       "shootCone": 20,
+      "shootY": 5
       "cooldownTime": 500,
       "recoil": 5
       "shootSound": "shootSublimate",
       "alwaysContinuous": true,
-      "shootStatus": slow
-      "shootStatusDuration": 60
       "continuous": true,
       "bullet": {
         "type": "ContinuousFlameBulletType",
+        "shake": 5
         "colors": [
           "E04545",
           "FFFFFF"
