@@ -42,11 +42,11 @@
     "magnesium/150"
   ]
   research: {
-    parent: "10a-mech-fabricator"
+    parent: "10a-blade-fabricator"
     objectives: [
         {
             type: "OnSector"
-            preset: "river-base"
+            preset: "caverns"
         }
       ]
    }

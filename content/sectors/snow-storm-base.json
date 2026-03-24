@@ -1,0 +1,15 @@
+localizedName: Snow Storm Base
+description: This sector is currently in heavy snow storm. T3 are needed to inflitrate the bases weakpoint
+planet: napelus
+sector:45
+difficulty: 4
+research: {
+  parent: caverns
+  objectives: [
+  10k-unit-reformer
+    {
+      type: SectorComplete
+      preset: caverns 
+    }
+  ]
+}
