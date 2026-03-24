@@ -14,15 +14,6 @@ rotateSpeed: 2
 itemCapacity: 0
 outlineColor: 26262F
 crushDamage: 5
-research: {
-    parent: "10k-unit-reformer",
-    objectives: [
-        {
-            type: "OnSector",
-            preset: "snow-storm-base"
-        }
-    ]
-}
 treadRects: [
     {
         x: 8,
@@ -90,3 +81,12 @@ weapons: [
       }
     },
 ]
+research: {
+    parent: "10k-unit-reformer",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "snow-storm-base"
+        }
+    ]
+}
