@@ -265,7 +265,7 @@ layer: 110
 }
 ]
 research: {
-    parent: "10k-unit-reformer",
+    parent: "10r-spider-assem",
     objectives: [
         {
             type: "OnSector",

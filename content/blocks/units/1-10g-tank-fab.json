@@ -20,7 +20,7 @@
     }
   ],
  research: {
-    parent: "08a-exulus",
+    parent: "10a-blade-fabricator",
     objectives: [
         {
             type: "OnSector",

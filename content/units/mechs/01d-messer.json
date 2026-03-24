@@ -31,7 +31,7 @@ recoil: 10
         speed: 30
         lifetime: 10
         splashDamageRadius: 100
-      splashDamage: 450
+      splashDamage: 850
         despawnSound: railHit
         backColor: ffffff
         frontColor: ffffff
