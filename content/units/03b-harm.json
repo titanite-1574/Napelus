@@ -13,6 +13,15 @@ speed: 0.80
 rotateSpeed: 2
 itemCapacity: 0
 outlineColor: 26262F
+research: {
+    parent: "2-10g-tank-refab",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "snow-storm-base"
+        }
+    ]
+}
 treadRects: [
     {
         x: -35.5,

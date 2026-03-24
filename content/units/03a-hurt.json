@@ -13,6 +13,15 @@ speed: 1
 rotateSpeed: 2.2
 itemCapacity: 0
 outlineColor: 26262F
+research: {
+    parent: "1-10g-tank-fab",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "outpost"
+        }
+    ]
+}
 treadRects: [
     {
         x: -27,
