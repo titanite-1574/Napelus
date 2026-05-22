@@ -1,6 +1,7 @@
 name: Storm
 type: flying
 useEngineElevation: false
+databaseTag: hover
 shadowElevation: 0.3
 lowAltitude: false
 engineOffset: 20

@@ -1,0 +1,6 @@
+{
+  "name": Winterfrost Rock
+  "type": "Floor",
+  "variants": 2,
+  "wall": "winterfrost-wall"
+}

@@ -1,7 +1,8 @@
 type: tank
 hitSize: 25
 name: Pain
-description: Fires a laser that burns anything in its way
+databaseTag: tank
+description: Fires a laser that burns anything in its way to ashes. 
 singleTarget: false
 omniMovement: false
 faceTarget: false

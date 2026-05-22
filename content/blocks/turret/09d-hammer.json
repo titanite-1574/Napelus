@@ -7,21 +7,21 @@
   "health": 960,
   "reload": 300,
   "range": 400,
-  "inaccuracy": 5
+  "inaccuracy": 15
   "targetAir": false,
   "recoil": 3,
   "rotateSpeed": 2,
   "shootSound": "shootTank",
   coolantMultiplier: -1.9
   "shootWarmupSpeed": 0.01,
-  "shootY": 2
+  "shootY": 5
   minWarmup: 0.4
 moveWhileCharging: false
   shownPlanets: [napelus,Stella]
     shoot: {
   type: shootPattern
   shots: 2
-  shotDelay: 10
+  shotDelay: 20
 }
   drawer: {
   type: DrawTurret
@@ -57,16 +57,19 @@ moveWhileCharging: false
   "ammoTypes": {
     "benite": {
       type: ArtilleryBulletType
-    splashDamage: 250
-    splashDamageRadius: 50
+    splashDamage: 540
+    splashDamageRadius: 80
     buildingDamageMultiplier: 0.25
     lifetime: 800
     backColor: AAE7D7
     frontColor: AAE7D7
-    speed: 4
+    trailWidth: 5
+    trailLength: 10
+    trailColor: AAE7D7
+    speed: 3
     width: 18
     height: 23
-    hitEffect: blastExplosion
+    hitEffect: titanExplosion
     hitShake: 5
     collidesGround: true
     collidesAir: false
@@ -75,11 +78,12 @@ moveWhileCharging: false
     status: benite-radiated
     statusDuration: 350
     ammoMultiplier: 1
-     "despawnEffect": [scatheExplosion]
+     "despawnEffect": [titanExplosion, titanSmoke]
       hitColor: 9ed7c99f
       despawnColor: 9ed7c99f
-      "hitEffect": [scatheExplosion]
+      "hitEffect": [titanExplosion, titanSmoke]
    fragOnHit: true
+      hitSound: explosionTitan
       fragBullets: 10
       fragRandomSpread: 360
       fragLifeMin: 1
@@ -166,22 +170,26 @@ moveWhileCharging: false
     splashDamageRadius: 50
     buildingDamageMultiplier: 0.25
     lifetime: 800
-    backColor: FFFFFF
-    frontColor: FFFFFF
-    speed: 5
+    rangeChange: 80
+    backColor: 8A8A8A
+    frontColor: 8A8A8A
+    speed: 2.5
     width: 18
     height: 23
-    hitEffect: blastExplosion
+    trailWidth: 5
+    trailLength: 10
+    trailColor: 8A8A8A
+    hitEffect: titanExplosion
     hitShake: 5
     collidesGround: true
     collidesAir: false
     collidesTiles: true
     collides: true
     ammoMultiplier: 1
-     "despawnEffect": [scatheExplosion]
-      hitColor: cccccca0
-      despawnColor: cccccca0
-      "hitEffect": [scatheExplosion]
+     "despawnEffect": [titanExplosion]
+      hitColor: 8A8A8A
+      despawnColor: 8A8A8A
+      "hitEffect": [titanExplosion]
    fragOnHit: true
       fragBullets: 20
       fragRandomSpread: 360
@@ -197,18 +205,15 @@ moveWhileCharging: false
         width: 10
         height: 10
         sprite: missile-large
-        frontColor: FFFFFF
+        frontColor: 8A8A8A
         backColor: FFFFFF
-        trailColor: FFFFFF
-        trailWidth: 3
-        trailLength: 26
-        trailRotation: true
-        trailEffect: shootSmokeSquareSparse
-        trailInterval: 4
-        speed: 3
-        drag: 0.0005
+        trailColor: 8A8A8A
+        trailWidth: 2
+        trailLength: 5
+        speed: 5
+        drag: 0.05
         lifetime: 15
-        pierceCap: 2
+        pierceCap: 5
         damage: 35
         pierce: true
          }

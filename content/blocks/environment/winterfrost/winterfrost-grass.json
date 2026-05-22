@@ -1,0 +1,6 @@
+{
+  "name": Winterfrost grass
+  "type": "Floor",
+  "variants": 2,
+  "wall": "winterfrost-wall"
+}

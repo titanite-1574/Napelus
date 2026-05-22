@@ -2,6 +2,7 @@ name: Gust
 type: flying
 useEngineElevation: false
 shadowElevation: 0.3
+databaseTag: hover
 engineOffset: 13.5
 engineSize: 4
 shownPlanets: [napelus]

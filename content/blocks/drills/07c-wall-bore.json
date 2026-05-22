@@ -16,7 +16,7 @@ consumes: {
   power: 0.25
   liquids: {
     liquids: [
-      cryofluid/0.0416666666667
+      ilum/0.0416666666667
     ]
     optional: true
     booster: true

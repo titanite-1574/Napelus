@@ -2,6 +2,7 @@ name: Wind
 type: flying
 useEngineElevation: false
 shadowElevation: 0.3
+databaseTag: hover
 engineOffset: 3
 engineSize: 3
 shownPlanets: [napelus]

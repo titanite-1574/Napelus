@@ -1,5 +1,6 @@
 name: Blow
 type: hover
+databaseTag: hover
 hovering: true
 hoverable: true
 useEngineElevation: false

@@ -1,6 +1,6 @@
 type: naval
 name: Upsurge
-description: Fires a volley of powerful missile with shotguns as secondary weapon. Has an upgraded helicopter factory 
+description: Armed with cannons on each side. Doesn't do much except it's missile does abnormal amount of damage. 
 speed: 0.4
 health: 25900
 armor: 20

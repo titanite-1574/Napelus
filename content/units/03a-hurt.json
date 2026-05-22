@@ -1,6 +1,7 @@
 type: tank
 hitSize: 9
 name: Hurt
+databaseTag: tank
 description: A small tank capable of moving at high speed and through small pathways
 singleTarget: false
 omniMovement: false

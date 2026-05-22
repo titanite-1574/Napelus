@@ -1,0 +1,6 @@
+{
+  "name": Dark Snow
+  "type": "Floor",
+  "variants": 2,
+  "wall": "snowy-wall"
+}

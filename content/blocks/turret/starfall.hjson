@@ -1,0 +1,290 @@
+type: ItemTurret
+name: Starfall
+description: ...
+size: 5
+reload: 900
+shootSound: railgun
+outlineColor: 42413e
+drawer: {
+  type: DrawTurret
+  basePrefix: skyfall
+  parts: [
+         {
+            type: RegionPart
+            suffix: -rails
+            under: false
+        }
+        {
+      type: ShapePart
+      y: -13.5
+      radius: 6.5
+      stroke: 0
+      strokeTo: 1
+      layer: 110
+      circle: true
+      hollow: true
+      color: BCBCFF
+    }
+    {
+      type: ShapePart
+      y: -13.5
+      radius: 10
+      stroke: 0
+      strokeTo: 1.
+      layer: 110
+      circle: true
+      hollow: true
+      color: BCBCFF
+    }
+     {
+      type: ShapePart
+      y: -13.5
+      radius: 4
+      stroke: 0
+      strokeTo: 1.5
+      layer: 110
+      circle: true
+      hollow: false
+      color: BCBCFF
+    }
+    {
+      type: HaloPart
+      layer: 110
+      color: BCBCFF 
+      y: -13.5
+      haloRotateSpeed: 2
+      sides: 5
+      haloRadius: 10
+      radius: 4.5
+      hollow: false
+      tri: true
+      triLength: 0
+      triLengthTo: 14
+     }
+     {
+     type: HaloPart
+     layer: 110
+     color: BCBCFF 
+     y: -13.5
+     haloRotateSpeed: 1.5
+     sides: 1
+     haloRadius: 5
+     radius: 4
+     hollow: false
+     tri: true
+     triLength: 0
+     triLengthTo: 5
+        }
+     {
+     type: HaloPart
+     layer: 110
+     color: BCBCFF 
+     y: -13.5
+     haloRotateSpeed: 1.5
+     sides: 1
+     haloRadius: 10
+     radius: 8
+     hollow: false
+     tri: true
+     triLength: 0
+     triLengthTo: 10
+        }
+    ]
+}
+shake: 50
+recoil: 5
+rotateSpeed: 0.5
+shootCone: 10
+category: turret
+research: 03c-07-subtile
+squareSprite: false
+researchCostMultiplier: 0.5
+range: 2000
+requirements: [
+  silver/500
+  iron/550
+  teralite/640
+  kerenium/500
+  magnetite/500
+  amalgam/650
+]
+consumes: {
+  liquid: nitrogen/0.5
+  power: 30
+}
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.8
+}
+cooldownTime: 800
+chargeSound: short-laser-charge
+shoot: {
+  firstShotDelay: 200
+}
+shootEffect: shootTitan
+smokeEffect: shootSmokeTitan
+coolantMultiplier: 0.5
+ammoTypes: {
+  "magnetite": {
+      type: BasicBulletType
+    width: 16
+    height: 16
+    buildingDamageMultiplier: 0.5
+    hitColor: 8365D6
+    backColor: 8365D6
+    frontColor: 8365D6
+    lightColor: 8365D6
+    damage: 965
+    splashDamage: 3500
+    splashDamageRadius: 145
+    speed: 45
+    lifetime: 600
+    homingPower: 4
+    pierce: false
+     pierceCap: 5
+    despawnEffect: [
+    scatheExplosion,
+    titanExplosion,
+ {
+                "type": "WaveEffect",
+                "colorFrom": "8365D6",
+                "colorTo": "000000",
+                "sizeFrom": 1,
+                "sizeTo": 900,
+                "radius": 15
+                "lifetime": 900
+            }
+ ]
+    hitEffect: [
+    scatheExplosion,
+    titanExplosion,
+ {
+                "type": "WaveEffect",
+                "colorFrom": "8365D6",
+                "colorTo": "000000",
+                "sizeFrom": 1,
+                "sizeTo": 900,
+                "radius": 15
+                "lifetime": 900
+            }
+ ]
+    intervalBullet: {
+    type: LightningBulletType
+    despawnSound: shockBulletSyntax
+    damage: 35
+    lightningLength: 17
+    lightningLengthRand: 4
+    lightningColor: ffffff
+    status: shocked
+    statusDuration: 55
+    buildingDamageMultiplier: 0.4
+    }
+    intervalBullets: 10
+    bulletInterval: 5
+    parts: [
+    {
+      type: HaloPart
+      layer: 110
+      color: BCBCFF 
+      y: 0
+      haloRotateSpeed: 5
+      sides: 5
+      haloRadius: 0
+      radius: 10
+      hollow: true
+      tri: true
+      triLength: 15
+      triLengthTo: 15
+     }
+    ]
+    fragOnHit: true
+      fragBullets: 3
+      fragRandomSpread: 360
+      fragLifeMin: 1
+      fragLifeMax: 1
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragSpread: 90
+      fragAngle: 0
+      fragOnDespawn: false
+      fragBullet: {
+        type: BasicBulletType
+    width: 16
+    height: 16
+    buildingDamageMultiplier: 0.5
+    hitColor: 8365D6
+    backColor: 8365D6
+    frontColor: 8365D6
+    lightColor: 8365D6
+    damage: 540
+    weaveMag: 4
+      weaveScale: 4
+    splashDamage: 1000
+    splashDamageRadius: 145
+    speed: 5
+    lifetime: 150
+    homingPower: 4
+    pierce: true
+     pierceCap: 5
+    despawnEffect: [
+    scatheExplosion,
+    titanExplosion,
+ {
+                "type": "WaveEffect",
+                "colorFrom": "8365D6",
+                "colorTo": "000000",
+                "sizeFrom": 1,
+                "sizeTo": 900,
+                "radius": 15
+                "lifetime": 200
+            }
+ ]
+    hitEffect: [
+    scatheExplosion,
+    titanExplosion,
+ {
+                "type": "WaveEffect",
+                "colorFrom": "8365D6",
+                "colorTo": "000000",
+                "sizeFrom": 1,
+                "sizeTo": 900,
+                "radius": 15
+                "lifetime": 200
+            }
+ ]
+    intervalBullet: {
+    type: LightningBulletType
+    despawnSound: shockBulletSyntax
+    damage: 35
+    lightningLength: 17
+    lightningLengthRand: 4
+    lightningColor: ffffff
+    status: shocked
+    statusDuration: 55
+    buildingDamageMultiplier: 0.4
+    }
+    intervalBullets: 10
+    bulletInterval: 5
+    drag: 0.5
+    parts: [
+    {
+      type: HaloPart
+      layer: 110
+      color: BCBCFF 
+      y: 0
+      haloRotateSpeed: 5
+      sides: 5
+      haloRadius: 0
+      radius: 50
+      hollow: false
+      tri: true
+      triLength: 15
+      triLengthTo: 15
+         }
+      ]
+    }
+  }
+}
+rotate: true

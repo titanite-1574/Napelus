@@ -1,7 +1,8 @@
 type: tank
 hitSize: 15
 name: Harm
-description: Fires a barrage of artillery rounds at enemy targets
+databaseTag: tank
+description: Fires a barrage of artillery rounds at enemy targets.Has secondary guns for ground and air
 singleTarget: false
 omniMovement: false
 faceTarget: false

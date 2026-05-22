@@ -1,6 +1,7 @@
 name: Thunderstorm
 type: flying
 useEngineElevation: false
+databaseTag: hover
 shadowElevation: 0.3
 lowAltitude: true
 engineOffset: 15

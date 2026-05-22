@@ -1,6 +1,6 @@
 type: naval
 name: Poseidon
-description: Fires a volley of powerful missile with shotguns as secondary weapon. Has an upgraded helicopter factory 
+description: A large aircraft carrier with a purpose of providing air support. Fires a volley of powerful missiles and bulllets. Produces T3 air, T1 helis and T4 heli
 speed: 0.3
 health: 45000
 armor: 20
