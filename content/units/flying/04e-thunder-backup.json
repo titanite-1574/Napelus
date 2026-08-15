@@ -1,0 +1,561 @@
+name: Thunderstorm
+type: flying
+useEngineElevation: false
+databaseTag: hover
+shadowElevation: 0.3
+lowAltitude: true
+engineOffset: 15
+engineSize: 6
+shownPlanets: [napelus]
+flying: true
+outlineColor: 251b21
+outlineRadius: 3
+engineColor: BFBFEF
+alwaysUnlocked: false
+armor: 25
+accel: 0.5
+health: 25000
+rotateSpeed: 0.8
+speed: 0.50
+hitSize: 35
+healColor: 3CC773
+createWreck: true
+drag: 0.009
+faceTarget: true
+description: Armed with a large powerful railgun capable of reaching vast targets. Has 2 90° missile launcher and 2 backup guns
+targetFlag: [ turret, core ]
+ "engines": [
+  {
+    x: -19
+    y: -12
+    radius: 4
+    rotation: -135
+  }
+  {
+    x: 19
+    y: -12
+    radius: 4
+    rotation: -45
+  }
+]
+"abilities": [
+    {
+      "type": "EnergyFieldAbility",
+      "healEffect": {
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 7,
+        "lifetime": 20,
+        "offset": 50,
+        "length": 55,
+        "cone": -360,
+        "lenFrom": 6,
+        "lenTo": 0,
+        "colorFrom": "A4E3E8",
+        "colorTo": "D0F0F3"
+      },
+      "statusDuration": 300,
+      "status": "shocked",
+      "color": "A4E3E8",
+      "maxTargets": 15,
+      "damage": 100,
+      "healPercent": 0.5,
+      "range": 100,
+      "y": 0,
+      "sectors": 4,
+      "rotateSpeed": 1,
+      "hitBuildings": true,
+      "sectorRad": 0.11,
+      "effectRadius": 5,
+      "reload": 100
+    }
+    {
+      "type": "EnergyFieldAbility",
+      "healEffect": {
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 7,
+        "lifetime": 20,
+        "offset": 50,
+        "length": 55,
+        "cone": -360,
+        "lenFrom": 6,
+        "lenTo": 0,
+        "colorFrom": "A4E3E8",
+        "colorTo": "D0F0F3"
+      },
+      "statusDuration": 300,
+      "status": "shocked",
+      "color": "A4E3E8",
+      "maxTargets": 15,
+      "damage": 200,
+      "healPercent": 0.5,
+      "range": 50,
+      "y": 0,
+      "sectors": 4,
+      "rotateSpeed": 1,
+      "hitBuildings": true,
+      "sectorRad": 0.11,
+      "effectRadius": 5,
+      "reload": 15
+      buildingDamageMultiplier: 0.1
+    }
+    {
+    type: SuppressionFieldAbility
+    reload: 600
+    range: 300
+    orbRadius: 6
+    orbSinScl: 7
+    y: 5
+    x: 0
+    color: 8989D3
+    particleColor: 8989D3
+    effectColor: 8989D3
+  }
+    {
+    type: ShieldArcAbility
+    radius: 50
+    angle: 370
+    width: 4
+    y: 0
+    cooldown: 200
+    regen: 1
+    max: 1000
+   whenShooting: false
+  }
+  {
+    type: ShieldArcAbility
+    radius: 100
+    angle: 370
+    width: 4
+    y: 0
+    cooldown: 200
+    regen: 1
+    max: 1000
+   whenShooting: false
+  }
+  {
+    effect: {
+      type: ParticleEffect
+      y: 0
+      colorFrom: 8989D3
+      colorTo: 8989D3
+      lifetime: 25
+      particles: 1
+      cone: 360
+      length: 0
+      baseLength: 0
+      lightScl: 2.5
+      lightOpacity: 2
+      spin: 0
+      sizeFrom: 1.6
+      sizeTo: 0
+      offset: 0
+    }
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 0.00000001
+    y: 0
+    x: -18
+  }
+  {
+  effect: {
+      type: ParticleEffect
+      y: 0
+      colorFrom: 8989D3
+      colorTo: 8989D3
+      lifetime: 25
+      particles: 1
+      cone: 360
+      length: 0
+      baseLength: 0
+      lightScl: 2.5
+      lightOpacity: 2
+      spin: 0
+      sizeFrom: 1.6
+      sizeTo: 0
+      offset: 0
+    }
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 0.00000001
+    y: 0
+    x: 18
+  }
+]
+weapons: [
+{
+name: hyperion-kinetic
+x: 14
+y: -8
+mirror: true
+layerOffset: 0.01
+rotateSpeed: 0.8
+inaccuracy: 0
+shoot: {
+type: ShootAlternate 
+spread: 5
+shots: 6
+shotDelay: 5
+}
+top: true
+rotate: true
+reload: 100
+under: false
+top: true
+recoil: 1
+recoils: 2
+shootSound: shootConquer 
+ejectEffect: none
+    parts: [
+    {
+      type: RegionPart
+      suffix: -barrel
+      layerOffset: 0
+      mirror: false
+      "under": false,
+      progress: recoil
+      moveY: -2
+      recoilIndex: 0
+      mirror: true
+    }
+  ]
+bullet: {
+    type: BasicBulletType,
+    speed: 5
+      lifetime: 85
+      damage: 95
+     splashDamageRadius: 20
+     splashDamage : 85
+      width: 6
+      height: 6
+        frontColor: b2afb3
+        backColor: b2afb3
+      trailLength: 10
+      trailWidth: 1
+      trailColor: b2afb3
+    shootEffect: "shootSmall"
+    smokeEffect: "shootSmallSmoke"
+    ammoMultiplier: 5
+    weaveScale: 4
+    weaveMag: 5
+    collidesTiles: true
+    hitEffect: pointHit 
+     bulletInterval: 45
+      intervalRandomSpread: 360
+      intervalBullets: 2
+      intervalSpread: 0
+    intervalBullet: {
+        type: BasicBulletType
+        frontColor: b2afb3
+        backColor: b2afb3
+        speed: 2.5
+        drag: 0.01
+        lifetime: 35
+        damage: 25
+        splashDamage: 20
+        splashDamageRadius: 16
+        width: 6
+        height: 6
+        trailChance: -1
+        trailColor: b2afb3
+        trailLength: 7
+        trailWidth: 2
+        weaveScale: 2
+        weaveMag: 3
+        pierceArmor: false
+        pierceBuilding: true
+        despawnSound: explosion
+        "homingRange": 200
+        "homingPower": 0.07
+      }
+   fragOnHit: true
+      fragBullets: 15
+      fragRandomSpread: 360
+      fragLifeMin: 1
+      fragLifeMax: 1
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragSpread: 90
+      fragAngle: 0
+      fragOnAbsorb: true
+      fragBullet: {
+        type: BasicBulletType
+        width: 10
+        height: 10
+        sprite: missile-large
+        frontColor: b2afb3
+        backColor: b2afb3
+        trailColor: b2afb3
+        trailWidth: 3
+        trailLength: 26
+        trailRotation: true
+        trailEffect: shootSmokeSquareSparse
+        trailInterval: 4
+        speed: 3
+        lifetime: 6
+        pierceCap: 2
+        damage: 35
+        pierce: true
+         }
+   }
+}
+{
+name: thunder-missiles
+x: 23
+y: 7
+mirror: true
+rotationLimit: 90
+baseRotation: -45
+layerOffset: -1
+shoot: {
+type: ShootSpread
+spread: 15
+shots: 5
+shotDelay: 5
+}
+top: false
+rotate: true
+alternate: false
+rotateSpeed: 2
+reload: 200
+recoil: 1
+shootSound: shootMissileLarge
+ejectEffect: none
+bullet: {
+      instantDisappear: true
+      damage: 0
+      spawnUnit: storm-smol-missile
+    }
+}
+{
+shootY: 10
+name: hyperion
+x: 0
+y: 0
+recoil: 0
+mirror: false
+reload: 900
+parts: [
+{
+type: ShapePart
+circle: true
+y: 10
+radius: 0
+radiusTo: 15
+colorFrom: 8AA3F3
+colorTo: B4C2ED
+progress: charge
+under: true
+layer: 110
+  }
+    {
+    type: RegionPart,
+    suffix: -mandible
+    top: false
+    under: true
+    mirror: true,
+    moveRot: 10,
+    moveX: -2
+    moves: [
+   {
+    type: PartMove,
+    progress: recoil,
+    rot: 15
+   }
+   ]
+ }
+]
+shootSound: holostarImpact 
+shoot: {
+  firstShotDelay: 100
+    }
+shootStatusDuration: 100
+shootStatus: slow
+bullet: {
+  type: ArtilleryBulletType
+  damage: 950
+  splashDamage: 1100
+  splashDamageRadius: 45
+  drag: 0.001
+  speed: 1
+  lifetime: 450
+  trailWidth: 10
+  trailLenght: 13 
+  hitSound: explosionNavanax
+  despawnSound: explosionNavanax
+  shootEffect: {
+    type: MultiEffect
+    effects: [
+{
+type: WaveEffect
+sizeTo: 150
+strokeFrom: 6
+colorTo: b2afb3
+lifetime: 25
+layer: 110
+  }
+      {
+type: ParticleEffect
+particles: 12
+sizeFrom: 10
+length: 120
+layer: 110
+cone: 5
+offsetX: 0
+colorTo: b2afb3
+colorFrom: b2afb3
+  }
+      {
+type: ParticleEffect
+particles: 12
+sizeFrom: 10
+length: 120
+layer: 110
+cone: 5
+offsetX: 5
+colorTo: b2afb3
+colorFrom: b2afb3
+  }
+      {
+type: ParticleEffect
+particles: 12
+sizeFrom: 10
+length: 120
+cone: 5
+layer: 110
+offsetX: -5
+colorTo: b2afb3
+colorFrom: b2afb3
+  }
+      {
+type: ParticleEffect
+particles: 12
+layer: 110
+sizeFrom: 10
+length: 120
+cone: 5
+offsetX: 10
+colorTo: b2afb3
+colorFrom: b2afb3
+  }
+      {
+type: ParticleEffect
+particles: 12
+sizeFrom: 10
+layer: 110
+length: 120
+cone: 5
+offsetX: -10
+colorTo: b2afb3
+colorFrom: b2afb3
+  }
+      {
+type: ParticleEffect
+particles: 12
+sizeFrom: 10
+layer: 110
+length: 120
+cone: 5
+offsetX: 15
+colorTo: b2afb3
+colorFrom: b2afb3
+  }
+      {
+type: ParticleEffect
+particles: 12
+sizeFrom: 10
+length: 120
+cone: 5
+offsetX: -15
+colorTo: b2afb3
+layer: 110
+colorFrom: b2afb3
+  }
+      {
+type: ParticleEffect
+particles: 12
+sizeFrom: 10
+length: 120
+cone: 5
+offsetX: 20
+layer: 110
+colorTo: 8AA3F3
+colorFrom: B4C2ED
+  }
+      {
+type: ParticleEffect
+particles: 12
+layer: 110
+sizeFrom: 10
+length: 120
+cone: 5
+offsetX: -20
+colorTo: b2afb3
+colorFrom: b2afb3
+  }
+]
+  }
+  hitEffect: none
+  despawnEffect: {
+    type: WaveEffect
+    lifetime: 150
+    interp: pow10Out
+    colorFrom: b2afb3
+    colorTo: b2afb3
+    layer: 110
+    strokeFrom: 8
+    strokeTo: 0
+      }
+  bulletInterval: 1
+  intervalBullets: 5
+  smokeEffect: none
+  intervalBullet: {
+    type: LightningBulletType
+    damage: 35
+    lightningLength: 10
+    lightningColor: b2afb3
+    length: 8
+    stroke: 5
+    status: unmoving
+    statusDuration: 240
+    lightColor: 8AA3F3
+    hitEffect: hitLancer
+    lifetime: 15
+    lightningType: {
+        type: LightningBulletType
+        status: electrified
+        lightningLength: 5
+        damage: 15
+        lightningColor: f890ff
+        hitEffect: hitLancer
+        despawnSound: spark
+          }
+  }
+    pierceCap: 5
+    pierce: true
+    pierceBuilding: false
+    collidesAir: true
+    hitSize: 55
+    sprite: none
+    parts: [{
+type: ShapePart
+circle: true
+y: 0
+radius: 15
+colorFrom: B4C2ED
+colorTo: 8AA3F3
+  }
+      ]
+      }
+      }
+  ]
+research: {
+  parent: 10o-airship-assem
+  objectives: [
+    {
+      type: SectorComplete
+      preset: frozen-field
+    }
+  ]
+}

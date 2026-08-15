@@ -13,7 +13,7 @@
     {
       "unit": "04a-blow",
       "requirements": [
-        "silver/15",
+        "magnesium/15",
         "iron/20"
       ],
       "time": 2010

@@ -1,0 +1,582 @@
+type: mech
+Name: Odachi
+speed: 0.20
+rotateSpeed: 1
+description: The greatest almighty creation of Aralus
+health: 45500
+armor: 25
+hitSize: 40
+outlineColor: 3F3E44
+shownPlanets: [napelus]
+deathSound: mech-large-destroyed
+"abilities": [
+     {
+      "type": "EnergyFieldAbility",
+      "healEffect": {
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 7,
+        "lifetime": 20,
+        "offset": 50,
+        "length": 55,
+        "cone": -360,
+        "lenFrom": 6,
+        "lenTo": 0,
+        "colorFrom": "EFC47F",
+        "colorTo": "EFC47F"
+      },
+      "statusDuration": 300,
+      "status": "shocked",
+      "color": "EFC47F",
+      "maxTargets": 15,
+      "damage": 10,
+      "healPercent": 0.5,
+      "range": 150,
+      "y": 4,
+      "sectors": 5,
+      "rotateSpeed": 3,
+      "hitBuildings": true,
+      "sectorRad": 0.11,
+      "effectRadius": 5,
+      "reload": 19
+    }
+     {
+    type: RepairFieldAbility
+    ammount: 1
+    reload: 90
+    range: 70
+    healPercent: 0.5
+    sameTypeHealMultiplier: 3
+    }
+    {
+    type: SuppressionFieldAbility
+    reload: 600
+    range: 300
+    orbRadius: 6
+    orbSinScl: 7
+    y: 4
+    x: 0
+    color: EFC47F
+    particleColor: EFC47F
+    effectColor: EFC47F
+  }
+ ]
+weapons: [
+{
+name: heavy-kinetic-oda
+x: 35
+y: 0
+mirror: true
+layerOffset: 0.01
+rotateSpeed: 0.8
+inaccuracy: 0
+shoot: {
+type: ShootAlternate 
+spread: 5
+shots: 6
+shotDelay: 10
+}
+top: true
+rotate: true
+reload: 100
+under: false
+top: true
+recoil: 1
+recoils: 2
+shootSound: shootConquer 
+ejectEffect: none
+    parts: [
+    {
+      type: RegionPart
+      suffix: -barrelL
+      layerOffset: 0
+      mirror: false
+      "under": false,
+      progress: recoil
+      moveY: -2
+      recoilIndex: 0
+    }
+    {
+      type: RegionPart
+      suffix: -barrelR
+      layerOffset: 0
+      mirror: false
+      "under": false,
+      progress: recoil
+      moveY: -2
+      recoilIndex: 1
+    }
+  ]
+bullet: {
+    type: BasicBulletType,
+    speed: 5
+      lifetime: 50
+      damage: 200
+     splashDamageRadius: 20
+     splashDamage : 145
+      width: 6
+      height: 6
+        frontColor: EFC47F
+        backColor: EFC47F
+      trailLength: 10
+      trailWidth: 1
+      trailColor: EFC47F
+    shootEffect: "shootSmall"
+    smokeEffect: "shootSmallSmoke"
+    ammoMultiplier: 5
+    collidesTiles: true
+    hitEffect: pointHit
+   fragOnHit: true
+      fragBullets: 15
+      fragRandomSpread: 360
+      fragLifeMin: 1
+      fragLifeMax: 1
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragSpread: 90
+      fragAngle: 0
+      fragOnAbsorb: true
+      fragBullet: {
+        type: BasicBulletType
+        width: 10
+        height: 10
+        sprite: missile-large
+        frontColor: EFC47F
+        backColor: EFC47F
+        trailColor: EFC47F
+        trailWidth: 3
+        trailLength: 26
+        trailRotation: true
+        trailEffect: shootSmokeSquareSparse
+        trailInterval: 4
+        speed: 3
+        lifetime: 6
+        pierceCap: 2
+        damage: 35
+        pierce: true
+         }
+   }
+}
+{
+name: heavy-kinetic-oda
+x: 25
+y: -10
+mirror: true
+layerOffset: 0.01
+rotateSpeed: 0.8
+inaccuracy: 0
+shoot: {
+type: ShootAlternate 
+spread: 5
+shots: 6
+shotDelay: 10
+}
+top: true
+rotate: true
+reload: 100
+under: false
+top: true
+recoil: 1
+recoils: 2
+shootSound: shootConquer 
+ejectEffect: none
+    parts: [
+    {
+      type: RegionPart
+      suffix: -barrelL
+      layerOffset: 0
+      mirror: false
+      "under": false,
+      progress: recoil
+      moveY: -2
+      recoilIndex: 0
+    }
+    {
+      type: RegionPart
+      suffix: -barrelR
+      layerOffset: 0
+      mirror: false
+      "under": false,
+      progress: recoil
+      moveY: -2
+      recoilIndex: 1
+    }
+  ]
+bullet: {
+    type: BasicBulletType,
+    speed: 5
+      lifetime: 50
+      damage: 200
+     splashDamageRadius: 20
+     splashDamage : 145
+      width: 6
+      height: 6
+        frontColor: EFC47F
+        backColor: EFC47F
+      trailLength: 10
+      trailWidth: 1
+      trailColor: EFC47F
+    shootEffect: "shootSmall"
+    smokeEffect: "shootSmallSmoke"
+    ammoMultiplier: 5
+    collidesTiles: true
+    hitEffect: pointHit
+   fragOnHit: true
+      fragBullets: 15
+      fragRandomSpread: 360
+      fragLifeMin: 1
+      fragLifeMax: 1
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragSpread: 90
+      fragAngle: 0
+      fragOnAbsorb: true
+      fragBullet: {
+        type: BasicBulletType
+        width: 10
+        height: 10
+        sprite: missile-large
+        frontColor: EFC47F
+        backColor: EFC47F
+        trailColor: EFC47F
+        trailWidth: 3
+        trailLength: 26
+        trailRotation: true
+        trailEffect: shootSmokeSquareSparse
+        trailInterval: 4
+        speed: 3
+        lifetime: 6
+        pierceCap: 2
+        damage: 35
+        pierce: true
+         }
+   }
+}
+{
+    x: 25
+    y: 0
+    reload: 8
+    mirror: true
+    alternate: true
+    targetInterval: 9
+    targetSwitchInterval: 12
+    recoil: 0.5
+    name: debuff
+    shootY: 1
+    type: PointDefenseWeapon
+    bullet: {
+      type: BulletType
+      shootSound: shootSegment
+      shootEffect: sparkShoot
+      hitEffect: pointHit
+      maxRange: 100
+      damage: 40
+    }
+  }
+{
+    x: 5
+    y: -5
+    reload: 8
+    mirror: true
+    alternate: true
+    targetInterval: 9
+    targetSwitchInterval: 12
+    recoil: 0.5
+    name: debuff
+    shootY: 1
+    type: PointDefenseWeapon
+    bullet: {
+      type: BulletType
+      shootSound: shootSegment
+      shootEffect: sparkShoot
+      hitEffect: pointHit
+      maxRange: 100
+      damage: 40
+    }
+  }
+{
+    name: body-lunge
+    x: 0
+    y: 0
+    rotate: true
+    mirror: false
+    alternate: true
+    layerOffset: -0.001
+    rotateSpeed: 5
+    reload: 1000
+rotationLimit: 20
+shootCone: 50
+shootSound: slash
+shoot: {
+type: ShootSpread
+shots: 8
+shotDelay: 0
+spread: 15
+}
+ top: false
+    recoil: -5
+    bullet: {
+shootEffect: {
+  type: ParticleEffect
+line: true
+    particles: 4
+    baseLength: 2
+length: -30
+    lifetime: 15
+lenFrom: 4
+lenTo: 0
+strokeFrom: 1.5
+strokeTo: 0
+    colorFrom: FFE0B2
+    colorTo: FFFDFC
+    cone: -30
+interp: circleOut
+sizeInterp: linear
+}
+smokeEffect: none
+    type: RailBulletType
+    damage: 500
+  recoil: -5
+      buildingDamageMultiplier: 3
+    pierce: true
+    length: 100
+    width: 30
+    height: 50
+    lifetime: 1
+statusDuration: 100
+trailRotation: true
+pierceEffect: {
+    type: ParticleEffect
+line: true
+    particles: 4
+    baseLength: 0
+length: 20
+    lifetime: 30
+lenFrom: 3
+lenTo: 1
+strokeFrom: 1.6
+strokeTo: 0
+    colorFrom: FFE0B2
+    colorTo: FFFDFC
+    cone: 70
+interp: circleOut
+}
+pointEffect: {
+    type: ParticleEffect
+line: false
+    particles: 1
+    baseLength: 0
+length: 0
+    lifetime: 30
+sizeFrom: 4.5
+sizeTo: 0
+useRotation: true
+    colorFrom: FFE0B2
+    colorTo: FFFDFC
+    cone: 0
+offset: -90
+interp: circleOut
+useRotation: true
+sizeInterp: pow5Out
+}
+pointEffectSpace: 6
+    }
+  }
+{
+      top: false
+      y: 0
+      x: 0
+      name: shockwave
+      recoil: 0.4
+      shootCone: 45
+        reload: 250
+        rotate: false
+        mirror: false
+        alternate: true
+        shootWarmup: 35
+        parts: [
+    {
+    type: RegionPart,
+    suffix: -mandible
+    top: false
+    under: true
+    mirror: true,
+    moveRot: 10,
+    moveX: -5
+    moves: [
+   {
+    type: PartMove,
+    progress: recoil,
+    rot: -25
+    moveX: 15
+   }
+   ]
+   progress: warmup
+   }
+ ]
+        shoot: {
+          shots: 1
+          shotDelay: 10
+        }
+        shootSound: energy-blade-launch
+        bullet: {
+          type: ArtilleryBulletType
+      splashDamage: 350
+      splashDamageRadius: 45
+      sprite: missile-large
+      recoil: 5
+      width: 10
+      height: 25
+      hitSize: 10
+      shake: 20
+      speed: 20
+      shootEffect: shootTitan
+      smokeEffect: shootSmokeTitan
+      weaveMag: 2
+      weaveScale: 4
+      lifetime: 135
+      pierce: false
+      pierceCap: 5
+      pierceBuilding: false
+      despawnSound: explosionReactor2
+      hitSound: explosionReactorNeoplasm
+      hitColor: EFC47F
+      trailColor: EFC47F
+      backColor: EFC47F
+      frontColor: EFC47F
+      trailLength: 10
+      trailWidth: 3
+      fragBullets": 5,
+      "homingRange": 200,
+        "homingPower": 0.07,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "speed": 5,
+        "trailColor": "EFC47F",
+        "trailParam": 10,
+        "trailLength": 10,
+         sprite: missile-large
+        "trailWidth": 3,
+        "buildingDamageMultiplier": 0.3,
+        "lifetime": 60,
+        "damage": 35,
+        "homingRange": 200,
+        "homingPower": 0.07,
+        "height": 12,
+        "width": 10,
+        "hitEffect": "thoriumShoot",
+        "despawnEffect": "thoriumShoot",
+        "pierce": true,
+        "frontColor": "EFC47F",
+        "backColor": "EFC47F"
+        }
+      }
+    }
+{
+    "name": "superior-railgun",
+    "reload": 1450,
+    "mirror": false,
+    "x": -39,
+    "y": 0
+    "shootY": 25,
+    shake: 50
+    "recoil": 0,
+    "layerOffset": 1,
+    "inaccuracy ": 20,
+    "targetGround": true
+    "targetAir": true
+    "layerOffset": 0.00001
+    "rotateSpeed": 2
+    "cooldownTime": 600,
+    "rotate": false
+parts: [
+{
+type: ShapePart
+circle: true
+y: 25
+radius: 0
+radiusTo: 15
+colorFrom: EFC47F
+colorTo: EFC47F
+progress: charge
+under: false
+layer: 110
+  }
+]
+"shoot": {
+"type": "shootPattern",
+ "shots": 3,
+    "shotDelay": 15,
+"firstShotDelay": 150
+}
+    shootSound: oblivion-shoot
+    shootStatus: fast
+    shootStatusDuration: 150
+     "chargeEffect": {
+          "followParent": true,
+          "rotWithParent": true,
+          "type": "multiEffect",
+          "lifetime": 150,
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "offset": 100,
+              "sizeFrom": 7,
+              "sizeTo": 3.5,
+              "length": 60,
+              "baseLength": -60,
+              "interp": "pow3In",
+              "sizeInterp": "pow5Out",
+              "lifetime": 150,
+              "colorFrom": "A4E3E8",
+              "colorTo": "D0F0F3"
+            },
+       ]
+   }
+    bullet: {
+    type: LaserBulletType
+      color: [EFC47F,FFFFFF]
+      length: 200
+      width: 45
+      damage: 2000
+      knockback: 100
+      impact: true
+      unitDamageMultiplier: 2
+  }
+}
+{
+    name: missile-blade-laucher
+    x: 39
+    y: 0
+    rotate: false
+    mirror: false
+    alternate: true
+    layerOffset: 0
+    rotateSpeed: 5
+    reload: 900
+rotationLimit: 20
+shootCone: 50
+shootSound: shootMissleLarge
+ top: false
+    recoil: 3
+shoot: {
+type: shootSpread 
+spread: 5
+shots: 6
+shotDelay: 45
+}
+bullet: {
+      instantDisappear: true
+      damage: 0
+      spawnUnit: blade-missiles
+    }
+}
+            ]
+research: {
+    parent: 10l-mech-assembler
+}
+researchCostMultiplier: 0
+alwaysUnlock: true
+
+
