@@ -16,6 +16,21 @@
       suffix: -heat
     } 
     {
+      type: DrawLiquidRegion
+      drawLiquid: hydrogen
+      suffix: -liquid2
+    }
+    {
+      type: DrawLiquidRegion
+      drawLiquid: nitrogen
+      suffix: -liquid1
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: ilum
+      padding: 3
+    }
+    {
       type: DrawCrucibleFlame
       flameRad: 4
       circleSpace: 5
@@ -35,10 +50,11 @@
   },
   "hasPower": true,
   "hasItems": true,
+   hasLiquids: true
   "itemCapacity": 15,
   "craftTime": 455,
-  heatRequirement: 30
-maxEfficiency: 2
+  heatRequirement: 20
+maxEfficiency: 4
   craftEffect: {
   type: MultiEffect
   effects: [
@@ -46,7 +62,7 @@ maxEfficiency: 2
       type: RadialEffect
       amount: 4
       rotationSpacing: 90
-      rotationOffset: 45
+      rotationOffset: 0
       lengthOffset: 8
       effect: surgeCruciSmoke
     }
@@ -54,7 +70,7 @@ maxEfficiency: 2
       type: RadialEffect
       amount: 4
       rotationSpacing: 90
-      rotationOffset: 45
+      rotationOffset: 0
       lengthOffset: 8
       effect: surgeCruciSmoke
     }
@@ -62,16 +78,16 @@ maxEfficiency: 2
       type: RadialEffect
       amount: 4
       rotationSpacing: 90
-      rotationOffset: 45
-      lengthOffset: 8
+      rotationOffset: 0
+      lengthOffset: 0
       effect: surgeCruciSmoke
     }
     {
       type: RadialEffect
       amount: 4
       rotationSpacing: 90
-      rotationOffset: 45
-      lengthOffset: 8
+      rotationOffset: 0
+      lengthOffset: 0
       effect: surgeCruciSmoke
     }
   ]
