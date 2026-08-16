@@ -3,7 +3,7 @@ name: Hyperion Payload Launcher
 description: Launches payloads to another connected hyperion payload Launcher.
 consumes: {
   liquids: [
-    hydrogen/1.5
+    hydrogen/0.1
   ]
   power: 1
 }
