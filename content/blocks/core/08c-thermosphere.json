@@ -2,7 +2,7 @@ type: CoreBlock
 size: 5
 health: 12000
 armor: 15
-unitType: forward
+unitType: valkyrie
 requirements: [
  steel/1100
  amalgam/2500

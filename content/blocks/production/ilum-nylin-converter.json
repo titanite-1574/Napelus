@@ -1,0 +1,81 @@
+type: HeatCrafter
+size: 3
+craftTime: 15
+liquidCapacity: 250
+hasLiquids: true
+lightLiquid: ilum
+drawer: [
+  {
+    type: DrawRegion
+    suffix: -bottom
+  }
+  {
+    type: DrawLiquidTile
+    padding: 2
+    drawLiquid: exlium
+  }
+  {
+    type: DrawBubbles
+    color: 9B9BCC
+    sides: 10
+    recurrence: 3
+    spread: 5
+    radius: 1.5
+    amount: 24
+  }
+  {
+    type: DrawLiquidTile
+    padding: 2
+    drawLiquid: ilum
+  }
+  {
+    type: DrawBubbles
+    color: D6DDFF
+    sides: 10
+    recurrence: 3
+    spread: 5
+    radius: 1.5
+    amount: 12
+  }
+  {
+      type: DrawRegion
+      suffix: -mixer
+      spinSprite: true
+      rotateSpeed: 4
+    }
+  {
+    type: DrawRegion
+  }
+]
+consumes: {
+  liquids: [
+    ilum/1
+  ]
+  power: 1.5
+}
+outputLiquid: nylin/1
+category: crafting
+requirements: [
+  iron/150
+  kerenium/75
+  magnesium/100
+  benite/45
+]
+ambientSound: loopCultivator
+ambientSoundVolume: 0.085
+squareSprite: false
+research: {
+  parent: 01b-iclium-synthesizer
+  objectives: [
+    {
+      type: OnSector
+      preset: river-base
+    }
+  ]
+}
+researchCost: [
+  iron/550
+  kerenium/450
+  magnesium/650
+  benite/750
+]

@@ -1,23 +1,33 @@
-    name: Valkyrie 
-    description: "Heals nearby buildings and units. Uses levitation."
+    name: Atmosphere 
+    description: "The guardian of Thermosphere.Uses the ability of levitation to move around.Can now heal units,mine and build faster."
     flying: true
 	outlineColor: 21202a
-	type: tether
+	type: flying
 	hitSize: 11
 	health: 350
 	range: 0
-	itemCapacity: 0
+	itemCapacity: 100
 	speed: 1
 	rotateShooting: false
 	accel: 0.04
 	drag: 0.02
-	defaultController: CargoAI
+    controller: BuilderAI
+    coreFleeRange: 500
+commands: [move, mine, repair, rebuild, assist]
+buildSpeed: 3.5
+mineSpeed: 16
+coreUnitDock: true
     isEnemy: false
-    allowedInPayloads: false
-    logicControllable: false
-    playerControllable: false
 	engineY: -1
+targetPriority: -2
+targetable: false
+hittable: false
+mineWalls: true
+fogRadius: 0
  engineSize: 0
+mineTier: 2
+accel: 0.12
+faceTarget: false
 	engineColor: 9FD0F0
 	trailColor: 9FD0F0
 	trailLength: 2
@@ -29,29 +39,20 @@
     radius: 12.75
     phase: 90
     stroke: 2
-    layerOffset: -0.001
+    layerOffset: -0.01
     color: 9FD0F0
   }
 {
 suffix: -spinner
 moveRot: 360
-layer: -20
+layerOffset: -0.01
 top: true
 progress: {
 type: time
 op: loop
-time: 50
+time: 100
 }
 }
-	 {
-type: ShapePart
-circle: false
-sides: 8
-hollow: true
-layer: 110
-color: 9FD0F0
-radius: 100
-  }
 ]
 	    weapons: [
 {
@@ -66,8 +67,8 @@ autoTarget: true
 targetUnits: true
 targetBuildings: true
 shootY: 0
-repairSpeed: 1
-fractionRepairSpeed: .008
+repairSpeed: 1.5
+fractionRepairSpeed: 0.008
 continuous: true
 rotate: false
 type: RepairBeamWeapon
