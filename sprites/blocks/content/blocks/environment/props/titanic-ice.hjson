@@ -1,7 +1,0 @@
-type: TallBlock
-name: Tall Ice Crystal
-variants: 1
-clipSize: 96
-emitLight: false
-lightColor: 8BCEEA
-costumShadow: true

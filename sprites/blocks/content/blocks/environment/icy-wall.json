@@ -1,7 +1,0 @@
-"type": "StaticWall",
-"name": Icy Wall
-"itemDrop": "iclium",
-"variants": 2,
-attributes: {
-  icli: 1
-}

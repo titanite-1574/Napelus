@@ -1,7 +1,0 @@
-type: OreBlock
-name: Raw Benite Ore
-itemDrop: benite
-variants: 2
-mapColor: FFFFFF
-wallOre: true
-tier: 5
