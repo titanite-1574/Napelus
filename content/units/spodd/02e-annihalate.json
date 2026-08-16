@@ -42,83 +42,21 @@ stepSoundPitch: 0.9
     spawnY: -25
   }
     {
-    type: ShieldArcAbility
-    radius: 35
-    angle: 180
-    width: 10
-    y: 2
-    cooldown: 500
-    regen: 1
-    max: 3000
-  }
-  {
-    type: ShieldArcAbility
-    radius: 50
-    angle: 360
-    width: 10
-    y: 2
-    cooldown: 500
-    regen: 1
-    max: 2000
-  }
-    {
-    type: SuppressionFieldAbility
-    reload: 600
-    range: 300
-    orbRadius: 6
-    orbSinScl: 7
-    y: -5
-    x: 0
-    color: 8989D3
-    particleColor: 8989D3
-    effectColor: 8989D3
-  }
-    {
       "type": "StatusFieldAbility",
-      "activeEffect": {
-        "type": "MultiEffect",
-        "effects": [
-          {
-            "type": "ParticleEffect",
-            "line": true,
-            "particles": 4,
-            "lifetime": 20,
-            "length": 50,
-            "cone": -360,
-            "strokeFrom": 2,
-            "strokeTo": 0,
-            "lenFrom": 6,
-            "lenTo": 0,
-            "colorFrom": "A9D8FFFF",
-            "colorTo": "66B1FFFF"
-          },
-          {
-            "type": "ParticleEffect",
-            "lifetime": 20,
-            "length": 0,
-            "sizeFrom": 8,
-            "sizeTo": 0,
-            "particles": 1,
-            "colorFrom": "FFFFFFF",
-            "colorTo": "FFFFFFF",
-            "region": "particle"
-          }
-        ]
-      },
-      "effect": "overdrive",
+      "effect": "fast",
       "range": 165,
-      "reload": 1,
-      "effectY": -10
-      "duration": 5
+      "reload": 345,
+      "effectY": 0
+      "duration": 300
     }
   ]
 "weapons": [
 {
-    "name": "destroy-explod",
+    "name": "anni-guns",
     "reload": 70,
     "mirror": true,
-    "x": -5.5,
-    "y": -20,
+    "x": 15,
+    "y": -5,
     "shootY": 2,
     "recoil": 1,
     "rotate": true,
@@ -200,11 +138,11 @@ stepSoundPitch: 0.9
     }
     }
 {
-    "name": "destroy-explod",
+    "name": "anni-guns",
     "reload": 70,
     "mirror": true,
-    "x": -14.5,
-    "y": 15,
+    "x": 9,
+    "y": 22,
     "shootY": 2,
     "recoil": 1,
     "rotate": true,
@@ -286,17 +224,103 @@ stepSoundPitch: 0.9
     }
     }
 {
-name: annihilate-artillery
-x: 15
-y: 0
-mirror: true
+    "name": "anni-guns",
+    "reload": 70,
+    "mirror": true,
+    "x": 16,
+    "y": 12,
+    "shootY": 2,
+    "recoil": 1,
+    "rotate": true,
+    "rotateSpeed": 2
+"shoot": {
+"type": "shootPattern",
+ "shots": 3,
+    "shotDelay": 5,
+}
+    shootSound: shootCleroi
+    bullet: {
+    type: BasicBulletType
+      speed: 4
+      lifetime: 60
+      damage: 55
+      width: 6
+      height: 6
+        frontColor: A4E3E8
+     trailLength: 10
+      trailWidth: 1
+      trailColor: A4E3E8
+        backColor: A4E3E8
+      fragOnHit: true
+      fragBullets: 2
+      fragRandomSpread: 360
+      fragLifeMin: 1
+      fragLifeMax: 1
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragSpread: 90
+      fragAngle: 0
+      fragOnAbsorb: true
+      fragBullet: {
+        type: BasicBulletType
+        width: 10
+        height: 10
+        sprite: missile-large
+        frontColor: 6697B0
+        backColor: 446475
+        trailColor: 446475
+        trailWidth: 3
+        trailLength: 26
+        trailRotation: true
+        trailEffect: shootSmokeSquareSparse
+        trailInterval: 4
+        speed: 3
+        lifetime: 6
+        pierceCap: 2
+        damage: 15
+        pierce: true
+         }
+      despawnHit: true
+      despawnEffect: none
+      hitEffect: [
+        {
+          type: ParticleEffect
+          particles: 6
+          line: true
+          lifetime: 25
+          length: 20
+          lenFrom: 5
+          lenTo: 0
+          strokeFrom: 2
+          strokeTo: 0
+          colorFrom: 03f8fc
+          colorTo: ffffff
+        }
+        {
+          type: WaveEffect
+          sizeFrom: 0
+          sizeTo: 15
+          lifetime: 20
+          strokeFrom: 3.5
+          strokeTo: 0
+          colorFrom: 03f8fc
+          colorTo: ffffff
+        }
+      ]
+    }
+    }
+{
+name: annihalate-foreshadow
+x: 0
+y: -12
+mirror: false
 layerOffset: 0.01
 rotateSpeed: 0.5
 inaccuracy: 5
 shoot: {
 type: ShootAlternate 
 spread: 0
-shots: 2
+shots: 5
 shotDelay: 2
 }
 top: true
@@ -305,19 +329,8 @@ reload: 500
 under: false
 top: true
 recoil: 1
-shootSound: shootCollaris
+shootSound: shootForeshadow
 ejectEffect: none
-    parts: [
-    {
-      type: RegionPart
-      suffix: -barrel
-      layerOffset: 0
-      mirror: false
-      "under": false,
-      progress: recoil
-      moveY: -2
-    }
-  ]
 bullet: {
     type: BasicBulletType
       speed: 4
@@ -335,18 +348,21 @@ bullet: {
       despawnEffect: none
       pierce: true
       peirceCap: 10
-      canCollide: false
+      targetGround: true
+      targetAir: true
+      collideGround: false
+      collideAir: false
       bulletInterval: 15
       intervalRandomSpread: 0
       intervalBullets: 6
       intervalSpread: 45
       intervalBullet: {
-        type: BasicBulletType
+        type: ArtillleryBulletType
         frontColor: A4E3E8
         backColor: A4E3E8
         speed: 0
         drag: 0.01
-        lifetime: 35
+        lifetime: 145
         damage: 120
         splashDamage: 25
         splashDamageRadius: 16
@@ -371,8 +387,8 @@ bullet: {
         speed: 15
         drag: 0.01
         lifetime: 3
-        damage: 55
-        splashDamage: 55
+        damage: 35
+        splashDamage: 10
         splashDamageRadius: 16
         width: 6
         height: 6
