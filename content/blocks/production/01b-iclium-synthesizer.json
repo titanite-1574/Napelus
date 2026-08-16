@@ -50,7 +50,7 @@ drawer: [
 ]
 consumes: {
   items: [
-  iclium/4
+  iclium/2
   silver/1
   ]
   liquids: [
