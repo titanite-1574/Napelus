@@ -1,0 +1,50 @@
+type: WallCrafter
+name: Iclium Crusher
+description: Crushes iclium out from ice walls. Require nylin to function
+health: 850
+size: 3
+category: production
+drawers: [
+      {
+       type: DrawDefault 
+      }
+      {
+      type: DrawGlowRegion
+      suffix: -glow
+      blending: additive
+      glowIntensity: 0.5
+    }
+  ]
+research: {
+    parent: "07b-iclium-driller",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "frozen-field"
+        }
+    ]
+},
+consumes: {
+  liquids: [
+  nylin/0.1
+  ]
+  power: 1
+}
+requirements: [
+  silver/85
+  iron/75
+  amalgam/55
+  benite/45
+]
+researchCost: [
+  silver/2500
+  iron/2000
+  amalgam/1450
+  benite/1200
+]
+drillTime: 55
+output: iclium
+attribute: icli
+ambientSound: drill
+ambientSoundVolume: 0.04
+fogRadius: 3
