@@ -15,6 +15,7 @@ rotateSpeed: 1
 itemCapacity: 0
 outlineColor: 26262F
 crushDamage: 0.7
+rotateMoveFirst: true
 research: {
     parent: "1-10g-tank-fab",
     objectives: [
@@ -359,12 +360,12 @@ weapons: [
     }
     }
   {
-      "name": "dispute-cannon",
+      "name": "cannon-ball",
       "mirror": false,
       "alternate": true,
       "top": false,
       "layerOffset": 1
-      "shake": 5
+      "shake": 35
       "x": 0,
       "y": 0,
       "shootY": 0,
@@ -400,7 +401,7 @@ layer: 110
     type: BasicBulletType
       speed: 8
       lifetime: 65
-      damage: 500
+      damage: 789
       splashDamage: 355
         splashDamageRadius: 85
       hitSize: 25

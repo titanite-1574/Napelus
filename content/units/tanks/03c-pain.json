@@ -14,7 +14,7 @@ speed: 0.70
 rotateSpeed: 2
 itemCapacity: 0
 outlineColor: 26262F
-crushDamage: 5
+rotateMoveFirst: true
 treadRects: [
     {
         x: 8,

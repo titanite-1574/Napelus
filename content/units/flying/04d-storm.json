@@ -251,7 +251,7 @@ bullet: {
   splashDamageRadius: 85
   drag: 0.001
   speed: 5
-  lifetime: 155
+  lifetime: 55
   shootEffect: {
     type: MultiEffect
     effects: [

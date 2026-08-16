@@ -113,7 +113,7 @@ weapons: [
     shootY: -1
     shoot: {
       type: ShootPattern
-      shots: 1
+      shots: 5
       shotDelay: 0
     }
     shootStatus: slow
@@ -121,7 +121,7 @@ weapons: [
     shootSound: explosionObviate
     bullet: {
     type: BasicBulletType
-      damage: 35
+      damage: 65
       recoil: 0.4
       width: 10
       height: 15
@@ -130,8 +130,6 @@ weapons: [
       speed: 7
       shootEffect: shootTitan
       smokeEffect: shootSmokeTitan
-      weaveMag: 4
-      weaveScale: 4
       lifetime: 26
       pierce: false
       pierceCap: 2
@@ -147,16 +145,18 @@ weapons: [
       fragOnHit: true
       fragBullet: {
         type: BasicBulletType
-      damage: 15
+      damage: 10
       recoil: 0.4
       width: 10
       height: 15
       hitSize: 6
-      shake: 20
-      speed: 7
+      shake: 1
+      speed: 1
+      "homingRange": 200
+        "homingPower": 0.07
       shootEffect: shootTitan
       smokeEffect: shootSmokeTitan
-      lifetime: 26
+      lifetime: 10
       pierce: false
       pierceCap: 2
       pierceBuilding: false

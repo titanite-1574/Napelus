@@ -15,6 +15,7 @@ rotateSpeed: 1
 itemCapacity: 0
 outlineColor: 26262F
 crushDamage: 0.5
+rotateMoveFirst: true
 research: {
     parent: "1-10g-tank-fab",
     objectives: [

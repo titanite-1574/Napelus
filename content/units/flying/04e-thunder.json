@@ -311,7 +311,7 @@ layerOffset: -1
 shoot: {
 type: ShootSpread
 spread: 15
-shots: 5
+shots: 3
 shotDelay: 5
 }
 top: false
@@ -374,12 +374,12 @@ shootStatusDuration: 100
 shootStatus: slow
 bullet: {
   type: EmpBulletType
-  damage: 950
-  splashDamage: 1100
+  damage: 355
+  splashDamage: 750
   splashDamageRadius: 45
   drag: 0.001
   speed: 1
-  lifetime: 450
+  lifetime: 145
   trailWidth: 10
   trailLenght: 13 
   hitSound: explosionNavanax
@@ -512,7 +512,7 @@ colorFrom: b2afb3
   smokeEffect: none
   intervalBullet: {
     type: LightningBulletType
-    damage: 5
+    damage: 1
     lightningLength: 10
     lightningColor: b2afb3
     length: 8

@@ -305,7 +305,7 @@ reload: 500
 under: false
 top: true
 recoil: 1
-shootSound: shootConquer 
+shootSound: shootCollaris
 ejectEffect: none
     parts: [
     {
@@ -323,20 +323,19 @@ bullet: {
       speed: 4
       lifetime: 75
       sprite: missile-large
-      damage: 865
+      damage: 0
       width: 13
       height: 13
         frontColor: A4E3E8
      trailLength: 10
-      trailWidth: 1
+      trailWidth: 5
       trailColor: A4E3E8
         backColor: A4E3E8
       despawnHit: true
       despawnEffect: none
       pierce: true
       peirceCap: 10
-      weaveMag: 7
-      weaveScale: 3.5
+      canCollide: false
       bulletInterval: 15
       intervalRandomSpread: 0
       intervalBullets: 6

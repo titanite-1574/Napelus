@@ -1,8 +1,8 @@
 type: tank
 hitSize: 55
-name: Torment
+name: Misery
 databaseTag: tank
-description: HELL
+description: Supper misery forever
 singleTarget: false
 omniMovement: false
 faceTarget: false
@@ -15,6 +15,7 @@ rotateSpeed: 0.5
 itemCapacity: 0
 outlineColor: 26262F
 crushDamage: 0.9
+rotateMoveFirst: true
 research: {
     parent: "1-10g-tank-fab",
     objectives: [
@@ -118,6 +119,7 @@ layer: 110
       width: 15
       drag: 0.02
       height: 20
+      canCollide: false
       sprite: missile-large
         frontColor: E04545
      trailLength: 8
@@ -137,7 +139,7 @@ layer: 110
       intervalBullets: 1
       intervalSpread: 45
       intervalBullet: {
-        type: BasicBulletType
+        type: ArtilleryBulletType
         frontColor: F58B8B
         backColor: F58B8B
         speed: 0
