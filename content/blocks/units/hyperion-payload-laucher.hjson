@@ -2,7 +2,9 @@ type: PayloadMassDriver
 name: Hyperion Payload Launcher
 description: Launches payloads to another connected hyperion payload Launcher.
 consumes: {
-  liquid: hydrogen
+  liquids: [
+    hydrogen/1.5
+  ]
   power: 1
 }
 category: units
