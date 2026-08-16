@@ -13,6 +13,11 @@ drawer: {
     type: DrawRegion
     suffix: -bottom
   }
+  {
+    type: DrawLiquidTile
+    padding: 3
+    drawLiquid: gamma-ray
+  }
     {
       type: DrawDefault
     }
