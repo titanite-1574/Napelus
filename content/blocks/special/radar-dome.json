@@ -1,0 +1,29 @@
+type: Radar
+name: Fog Radar Dome
+description: Uncovers Fog in a specific radius
+size: 2
+health: 450
+squareSprite: false
+requirements: [
+  iron/5
+  silver/5
+]
+consumes: {
+  power: 1.25
+}
+category: effect
+outlineColor: 2C2A36
+fogRadius: 40
+research: {
+  parent: nitro-regenerator
+  objectives: [
+    {
+      type: OnSector
+      preset: arrival 
+    }
+  ]
+}
+researchCost: [
+  iron/25
+  silver/15
+]
