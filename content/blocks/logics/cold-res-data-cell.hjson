@@ -1,0 +1,11 @@
+type: MemoryBlock
+memoryCapacity: 64
+category: logic
+research: cold-res-log
+requirements: [
+  teralite/45
+  iron/55
+]
+size: 2
+health: 400
+researchCostMultiplier: 0.5

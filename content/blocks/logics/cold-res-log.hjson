@@ -1,0 +1,11 @@
+type: MessageBlock
+size: 1
+health: 65
+requirements: [
+  teralite/3
+]
+category: logic
+research: cold-res-switch
+researchCost: [
+  teralite/35
+]

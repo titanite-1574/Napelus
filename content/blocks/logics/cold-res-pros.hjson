@@ -1,0 +1,12 @@
+type: LogicBlock
+category: logic
+requirements: [
+  iron/15
+  teralite/15
+  silver/15
+]
+instructionsPerTick: 10
+size: 2
+health: 600
+researchCostMultiplier: 0.5
+range: 200

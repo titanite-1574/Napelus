@@ -1,0 +1,13 @@
+type: SwitchBlock
+size: 1
+health: 65
+category: logic
+research: cold-res-pros
+requirements: [
+  teralite/5
+  iron/5
+]
+researchCost: [
+  teralite/50
+  iron/50
+]

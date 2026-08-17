@@ -1,0 +1,14 @@
+type: LogicBlock
+category: logic
+research: cold-res-pros
+requirements: [
+  iron/35
+  teralite/55
+  kerenium/55
+  carbide/25
+]
+instructionsPerTick: 20
+size: 3
+health: 1750
+researchCostMultiplier: 1
+range: 425

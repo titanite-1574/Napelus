@@ -1,0 +1,12 @@
+type: LogicDisplay
+size: 2
+health: 600
+displaySize: 58
+category: logic
+research: cold-res-log
+requirements: [
+  iron/45
+  silver/55
+  magnesium/35
+]
+researchCostMultiplier: 0.1

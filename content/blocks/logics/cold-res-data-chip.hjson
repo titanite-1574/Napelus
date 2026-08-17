@@ -1,0 +1,14 @@
+type: MemoryBlock
+memoryCapacity: 2048
+category: logic
+research: cold-res-data-cell
+requirements: [
+  teralite/100
+  iron/125
+  benite/55
+  kerenium/65
+  carbide/45
+]
+size: 4
+health: 1250
+researchCostMultiplier: 1
