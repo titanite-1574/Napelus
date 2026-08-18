@@ -1,6 +1,6 @@
 type: PayloadMassDriver
 name: Hyperion Payload Launcher
-description: Launches payloads to another connected hyperion payload Launcher.
+description: Launches payloads to another connected hyperion payload Launcher. Requires hydrogen for propulsion
 consumes: {
   liquids: [
   hydrogen/0.1
@@ -12,7 +12,6 @@ research: unit-router
 requirements: [
   iron/500
   teralite/80
-  kerenium/135
   magnesium/100
 ]
 reload: 120
