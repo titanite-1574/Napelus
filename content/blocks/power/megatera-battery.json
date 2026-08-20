@@ -1,0 +1,35 @@
+type: Battery
+name: Megatera Battery
+description: The mother of all battery
+size: 3
+health: 2450
+squareSprite: false
+fullLightColor: E0F9FF
+consumes: {
+  powerBuffered: 10000
+}
+requirements: [
+  silver/255
+  iron/350
+  teralite/255
+  amalgam/50
+  kerenium/100
+]
+category: power
+research: {
+  parent: tera-battery
+  objectives: [
+    {
+      type: OnSector
+      preset: wilderness 
+    }
+  ]
+}
+researchCost: [
+  silver/2055
+  iron/3050
+  teralite/2055
+  amalgam/500
+  kerenium/1000
+]
+fogRadius: 1

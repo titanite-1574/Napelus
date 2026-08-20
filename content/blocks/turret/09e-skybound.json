@@ -86,7 +86,7 @@ moveWhileCharging: false
     backColor: A3BBEB
     frontColor: A3BBEB
     lightColor: A3BBEB
-    damage: 50
+    damage: 100
     speed: 10
     lifetime: 40
     collidesGround: false
@@ -140,6 +140,86 @@ moveWhileCharging: false
         sizeTo: 12
         colorFrom: A3EBD7
         colorTo: A3EBD7
+    }
+    ]
+    pierceCap: 3
+    pierce: true
+    pierceBuilding: true  
+    trailColor: A3EBD7
+    trailInterval: 3
+    trailRotation: true
+    trailLength: 18
+    trailWidth: 2.2
+    trailEffect: colorSpark
+    shootEffect: shootSmokeTitan
+    shrinkX: 0
+    shrinkY: 0
+    },
+    "kerenium": {
+      type: BasicBulletType
+    width: 16
+    height: 16
+    buildingDamageMultiplier: 0.5
+    reloadMultiplier: 0.5
+    collidesGround: false
+    hitColor: 9FE4CA
+    backColor: 9FE4CA
+    frontColor: 9FE4CA
+    lightColor: 9FE4CA
+    damage: 275
+    speed: 15
+    lifetime: 40
+    despawnEffect: [
+    colorSpark,
+    {
+        type: WaveEffect
+        rotWithParent: true
+        followParent: true
+        lifetime: 12
+        sizeFrom: 0
+        sizeTo: 12
+        colorFrom: A3EBD7
+        colorTo: A3EBD7
+    }
+    ]
+    pierceCap: 3
+    pierce: true
+    pierceBuilding: true  
+    trailColor: A3EBD7
+    trailInterval: 3
+    trailRotation: true
+    trailLength: 18
+    trailWidth: 2.2
+    trailEffect: colorSpark
+    shootEffect: shootSmokeTitan
+    shrinkX: 0
+    shrinkY: 0
+    },
+    "carbide": {
+      type: BasicBulletType
+    width: 16
+    height: 16
+    buildingDamageMultiplier: 0.5
+    reloadMultiplier: 0.1
+    collidesGround: false
+    hitColor: 8761B2
+    backColor: 8761B2
+    frontColor: 8761B2
+    lightColor: 8761B2
+    damage: 450
+    speed: 15
+    lifetime: 40
+    despawnEffect: [
+    colorSpark,
+    {
+        type: WaveEffect
+        rotWithParent: true
+        followParent: true
+        lifetime: 12
+        sizeFrom: 0
+        sizeTo: 12
+        colorFrom: 8761B2
+        colorTo: 8761B2
     }
     ]
     pierceCap: 3
