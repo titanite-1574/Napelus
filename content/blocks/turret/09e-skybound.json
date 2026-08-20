@@ -185,7 +185,7 @@ moveWhileCharging: false
     pierceCap: 3
     pierce: true
     pierceBuilding: true  
-    trailColor: A3EBD7
+    trailColor: 9FE4CA
     trailInterval: 3
     trailRotation: true
     trailLength: 18
@@ -200,7 +200,7 @@ moveWhileCharging: false
     width: 16
     height: 16
     buildingDamageMultiplier: 0.5
-    reloadMultiplier: 0.1
+    reloadMultiplier: 0.35
     collidesGround: false
     hitColor: 8761B2
     backColor: 8761B2
@@ -225,7 +225,7 @@ moveWhileCharging: false
     pierceCap: 3
     pierce: true
     pierceBuilding: true  
-    trailColor: A3EBD7
+    trailColor: 8761B2
     trailInterval: 3
     trailRotation: true
     trailLength: 18
