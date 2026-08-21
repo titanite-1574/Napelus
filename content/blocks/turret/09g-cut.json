@@ -12,7 +12,7 @@
   "recoil": -6,
   "rotateSpeed": 2,
   "shootSound": "shootTank",
-  coolantMultiplier: -2
+  coolantMultiplier: 2
   "shootWarmupSpeed": 0.01,
   "shootY": 4
 moveWhileCharging: false
@@ -127,6 +127,147 @@ bulletInterval: 8
           sparkLen: 2
           sparkStroke: 1
         }
+      }
+    }
+    "amalgam": {
+    type: RailBulletType
+    damage: 2500
+  recoil: -15
+      buildingDamageMultiplier: 3
+    pierce: true
+    length: 125
+    width: 30
+    height: 60
+    lifetime: 1
+    status: nap-slashed
+statusDuration: 35
+trailRotation: true
+pierceEffect: {
+    type: ParticleEffect
+line: true
+    particles: 4
+    baseLength: 0
+length: 50
+    lifetime: 30
+lenFrom: 3
+lenTo: 1
+strokeFrom: 1.6
+strokeTo: 0
+    colorFrom: BFA66B
+    colorTo: BFA66B
+    cone: 70
+interp: circleOut
+}
+pointEffect: {
+    type: ParticleEffect
+line: false
+    particles: 1
+    baseLength: 0
+length: 0
+    lifetime: 30
+sizeFrom: 4.5
+sizeTo: 0
+useRotation: true
+    colorFrom: BFA66B
+    colorTo: BFA66B
+    cone: 0
+offset: -90
+interp: circleOut
+useRotation: true
+sizeInterp: pow5Out
+}
+pointEffectSpace: 6
+bulletInterval: 8
+      intervalRandomSpread: 0
+      intervalBullets: 2
+      intervalSpread: 35
+      intervalBullet: {
+        type: BasicBulletType
+        frontColor: BFA66B
+        backColor: BFA66B
+        speed: 2.5
+        drag: 0.01
+        lifetime: 65
+        splashDamage: 45
+        splashDamageRadius: 15
+        width: 6
+        height: 6
+        trailChance: -1
+        trailColor: BFA66B
+        trailLength: 7
+        trailWidth: 2
+        weaveScale: 2
+        weaveMag: 3
+        pierceBuilding: true
+        despawnSound: explosion
+        despawnEffect: {
+          type: ExplosionEffect
+          lifetime: 15
+          waveStroke: 2.5
+          waveColor: BFA66B
+          sparkColor: BFA66B
+          trailColor: BFA66B
+          smokeColor: BFA66B
+          waveRad: 8
+          smokesSize: 3
+          smokes: 2
+          smokeSizeBase: 0
+          sparks: 2
+          sparkRad: 10
+          sparkLen: 2
+          sparkStroke: 1
+        }
+      }
+    } 
+    "magnetite": {
+    type: RailBulletType
+    damage: 5500
+  recoil: -15
+      buildingDamageMultiplier: 3
+    reloadMultiplier: 0.5
+    pierce: true
+    length: 100
+    width: 30
+    height: 60
+    lifetime: 1
+    status: nap-slashed
+statusDuration: 35
+trailRotation: true
+pierceEffect: {
+    type: ParticleEffect
+line: true
+    particles: 4
+    baseLength: 0
+length: 50
+    lifetime: 30
+lenFrom: 3
+lenTo: 1
+strokeFrom: 1.6
+strokeTo: 0
+    colorFrom: BFA66B
+    colorTo: BFA66B
+    cone: 70
+interp: circleOut
+}
+pointEffect: {
+    type: ParticleEffect
+line: false
+    particles: 1
+    baseLength: 0
+length: 0
+    lifetime: 30
+sizeFrom: 4.5
+sizeTo: 0
+useRotation: true
+    colorFrom: BFA66B
+    colorTo: BFA66B
+    cone: 0
+offset: -90
+interp: circleOut
+useRotation: true
+sizeInterp: pow5Out
+}
+pointEffectSpace: 6
       }
     }
       "iron": {

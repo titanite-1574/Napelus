@@ -87,6 +87,70 @@ drawer: {
     shrinkX: 0
     shrinkY: 0
     },
+    "amalgam": {
+      type: BasicBulletType
+    width: 16
+    height: 16
+    buildingDamageMultiplier: 0.5
+    hitColor: BFA66B
+    backColor: BFA66B
+    frontColor: BFA66B
+    lightColor: BFA66B
+    damage: 65
+    speed: 20
+    lifetime: 9
+    despawnEffect: [
+    colorSpark,
+    {
+        type: WaveEffect
+        rotWithParent: true
+        followParent: true
+        lifetime: 12
+        sizeFrom: 0
+        sizeTo: 12
+        colorFrom: BFA66B
+        colorTo: BFA66B
+    }
+    ]
+    pierceCap: 5
+    pierce: true
+    pierceBuilding: true  
+    trailColor: BFA66B
+    trailInterval: 3
+    trailRotation: true
+    trailLength: 18
+    trailWidth: 2.2
+    trailEffect: colorSpark
+    shootEffect: shootSmokeTitan
+    shrinkX: 0
+    shrinkY: 0
+    fragOnHit: true
+      fragBullets: 2
+      fragRandomSpread: 360
+      fragLifeMin: 1
+      fragLifeMax: 1
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragSpread: 90
+      fragAngle: 0
+      fragOnAbsorb: true
+      fragBullet: {
+        type: BasicBulletType
+        width: 10
+        height: 10
+        sprite: missile
+        frontColor: BFA66B
+        backColor: BFA66B
+        trailColor: BFA66B
+        collideAir: true
+        speed: 1
+        damage: 5
+        trailWidth: 3
+        trailLength: 26
+        trailRotation: true
+        trailEffect: shootSmokeSquareSparse
+      }
+    }
     "magnesium": {
       type: BasicBulletType
     width: 16

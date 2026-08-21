@@ -316,6 +316,76 @@ consumes: {
     shrinkX: 0
     shrinkY: 0
     }
+    "carbide": {
+      type: BasicBulletType
+    width: 16
+    height: 16
+    buildingDamageMultiplier: 0.5
+    hitColor: 8761B2
+    backColor: 8761B2
+    frontColor: 8761B2
+    lightColor: 8761B2
+    reloadMultiplier: 0.5
+    damage: 150
+    speed: 15
+    lifetime: 10
+    range: 500
+    fragOnHit: true
+      fragBullets: 20
+      fragRandomSpread: 360
+      fragLifeMin: 1
+      fragLifeMax: 1
+      fragVelocityMin: 0
+      fragVelocityMax: 1
+      fragSpread: 90
+      fragAngle: 0
+      fragOnAbsorb: true
+      fragBullet: {
+        type: BasicBulletType
+        width: 10
+        height: 10
+        sprite: nap-spearhead
+        frontColor: 8761B2
+        backColor: 8761B2
+        trailColor: 8761B2
+        trailWidth: 3
+        trailLength: 26
+        trailRotation: true
+        trailEffect: shootSmokeSquareSparse
+        trailInterval: 4
+        speed: 5
+        lifetime: 10
+        pierceCap: 3
+        damage: 65
+        pierce: true
+         }
+    despawnEffect: [
+    colorSpark,
+    {
+        type: WaveEffect
+        rotWithParent: true
+        followParent: true
+        lifetime: 12
+        sizeFrom: 0
+        sizeTo: 12
+        colorFrom: A3BBEB
+        colorTo: A3BBEB
+    }
+    ]
+    pierceCap: 1
+    pierce: false
+    pierceBuilding: true  
+    trailColor: 8761B2
+    trailInterval: 3
+    trailRotation: true
+    sprite: nap-spearhead
+    trailLength: 18
+    trailWidth: 2
+    trailEffect: colorSpark
+    shootEffect: shootSmokeTitan
+    shrinkX: 0
+    shrinkY: 0
+    }
   }
   "requirements": [
     "silver/120",
