@@ -10,7 +10,7 @@
   arrows: 0
   rotateSpeed: 5
   optionalBoostIntensity: 2
-  shownPlanets: [napelus,Stella]
+  shownPlanets: [napelus]
   consumes: {
   liquids: {
     liquids: [

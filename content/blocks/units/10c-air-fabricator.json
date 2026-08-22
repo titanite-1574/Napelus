@@ -24,7 +24,7 @@
     objectives: [
         {
             type: "SectorComplete",
-            preset: "outpost"
+            preset: "frozen-field"
         }
     ]
 }

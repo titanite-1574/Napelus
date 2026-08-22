@@ -22,7 +22,7 @@
     objectives: [
         {
             type: "OnSector",
-            preset: "outpost"
+            preset: "frozen-field"
         }
     ]
 }

@@ -404,7 +404,7 @@ consumes: {
     objectives: [
         {
             type: "OnSector",
-            preset: "outpost"
+            preset: "snowy-river"
         }
     ]
 },
