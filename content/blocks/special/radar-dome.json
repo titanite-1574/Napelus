@@ -15,7 +15,7 @@ category: effect
 outlineColor: 2C2A36
 fogRadius: 40
 research: {
-  parent: nitro-regenerator
+  parent: 08a-exulus
   objectives: [
     {
       type: OnSector
