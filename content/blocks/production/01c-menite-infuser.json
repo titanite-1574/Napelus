@@ -1,5 +1,5 @@
 {
-  "name" : Iron Refinery,
+  "name" : Menite Infuser,
   "description": Infuse Magnesium with silver to create Menite
   "size": 3,
   squareSprite: false
@@ -76,7 +76,7 @@
     objectives: [
         {
             type: "OnSector",
-            preset: "wilderness"
+            preset: "snowy-river"
         }
     ]
 },

@@ -68,7 +68,7 @@ maxEfficiency: 4
     objectives: [
         {
             type: "OnSector",
-            preset: "wilderness"
+            preset: "caverns"
         }
     ]
 },
