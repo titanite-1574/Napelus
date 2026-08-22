@@ -1,34 +1,5 @@
 localizedName: Napelus
 generator: "PlanetGenerator"
-
-hiddenItems: [
-    "copper"
-    "lead"
-    "scrap"
-    "graphite"
-    "coal"
-    "titanium"
-    "thorium"
-    "silicon"
-    "plastanium"
-    "phase-fabric"
-    "sand"
-    "surge-alloy"
-    "spore-pod"
-    "blast-compound"
-    "pyratite"
-    "metaglass"
-    "beryllium"
-    "oxide"
-    "tungsten"
-    "carbide"
-    "fissile-matter"
-    "dormant-cyst"
-]
-
-itemWhitelist: [
-]
-
 clearSectorOnLose: true
 allowCampaignRules: true
 allowLaunchLoadout: false
@@ -38,14 +9,12 @@ allowLegacyLaunchPads: false
 allowSectorInvasion: false
 allowSelfSectorLaunch: false
 updateLighting: false
-allowWaveSimulation: true
 rules: {
  fog: true
  staticFog: true
  coreDestroyClear: true
  onlyDepositCore: true
 }
-
 campaignRuleDefaults: {
  fog: true
  hideSpawns: false
@@ -129,7 +98,6 @@ mesh: [
 	cthresh: 3
  }
 ]
-alwaysUnlocked: true
 cloudMesh: [
    {
    type: HexSkyMesh
