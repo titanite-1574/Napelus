@@ -3,19 +3,19 @@
   description : An unidentified hovercraft located in Snowy river,could be an experimental unit the Aralus are testing
   "type": "hover",
   "lowAltitude": true,
-  "speed": 1.8,
-  "accel": 0.09,
-  "drag": 0.0455,
+  "speed": 1,
+  "accel": 0.05,
+  "drag": 0.04555,
   "flying": false,
-  "health": 1255,
-  "hitSize": 15,
-  "armor": 10,
+  "health": 3450,
+  "hitSize": 20,
+  "armor": 15,
   useEngineElevation: false
-  "itemCapacity": 20,
+  "itemCapacity": 35,
   "outlineColor": "575666",
-   engineSize: 2
+   engineSize: 4.5
    flying: false
-  "engineOffset": 9,
+  "engineOffset": 13,
    hoverable: true
   "engineColor": "FF8A15",
   "faceTarget": true,
@@ -25,116 +25,195 @@ canBoost: true
 "engines": [
   {
     x: -11
-    y: -3
-    radius: 4
+    y: -5
+    radius: 3
     rotation: -135
   }
   {
     x: 11
-    y: -3
-    radius: 4
+    y: -5
+    radius: 3
     rotation: -45
   }
 ]
   "weapons": [
    {
-      "name": "light-spear",
-      "y": 0,
-      "x": 0,
-      "shootCone": 25,
-      "alternate": true,
-      "mirror": true,
-      "top": true,
-      "rotate": false,
-      "rotateSpeed": 0.9,
-      "reload": 400,
-      "recoil": 0.5,
-      "shootY": 0,
-      "inaccuracy": 10,
-       shootStatus: slow
-       statusDuration: 15
-      "shoot": {
-        "type": "shootPattern",
-        "shots": 1,
-        "shotDelay": 5
-      },
-      "shootSound": "shootMissile",
-      "bullet": {
-        "keepVelocity": false,
-        "sprite": "tin-spear-bullet",
-        "type": "MissileBulletType",
-        "hitEffect": "titanExplosion",
-        "despawnEffect": "titanExplosion",
-        "shootEffect": "shootBig",
-        "damage": 135,
-         recoil: 10
-        "speed": 8,
-        "lifetime": 75,
-        "homingPower": 0.5,
-        "homingRange": 100,
-        "frontColor": "FFEEOO",
-        "backColor": "FFFFFF",
-        trailColor: FFEE00
-        "trailEffect": "none",
-        "trailLength": 10,
-        "trailWidth": 2.5,
-        "weaveScale": 2,
-        "weaveMag": 5,
-        "height": 22,
-        "width": 22,
-        "splashDamageRadius": 50,
-        "splashDamage": 55
-      }
-    },
+    "name": "spear-machine",
+    "reload": 10,
+    "mirror": true,
+    "x": 9,
+    "y": 2,
+    "shootY": 2,
+    "recoil": 1,
+    "rotate": true,
+    "rotateSpeed": 2
+"shoot": {
+"type": "shootPattern",
+ "shots": 1,
+    "shotDelay": 5,
+}
+    shootSound: shootCleroi
+    bullet: {
+    type: BasicBulletType
+      speed: 4
+      lifetime: 60
+      damage: 35
+      width: 6
+      height: 6
+        frontColor: FFC387
+     trailLength: 10
+      trailWidth: 1
+      trailColor: FFC387
+        backColor: FFC387
+      despawnHit: true
+      despawnEffect: none
+      hitEffect: [
+        {
+          type: ParticleEffect
+          particles: 6
+          line: true
+          lifetime: 25
+          length: 20
+          lenFrom: 5
+          lenTo: 0
+          strokeFrom: 2
+          strokeTo: 0
+          colorFrom: FF8A15
+          colorTo: CC6E10
+        }
+        {
+          type: WaveEffect
+          sizeFrom: 0
+          sizeTo: 15
+          lifetime: 20
+          strokeFrom: 3.5
+          strokeTo: 0
+          colorFrom: FF8A15
+          colorTo: CC6E10
+        }
+      ]
+    }
+    }
+   {
+    x: 0
+    y: -6
+    reload: 60
+    rotate: true
+    rotateSpeed: 0.75
+    mirror: false
+    alternate: true
+    shootSound: shootLaserBeam
+    shootSoundVolume: 0.2
+    shake: 1
+    shootY: -3.5
+    recoil: 2
+    name: spear-blaster
+    parentizeEffects: true
+    bullet: {
+      layer: 116
+      type: LaserBulletType
+      colors: [
+        FFC387,
+        ffffff
+      ]
+      damage: 95
+      sideAngle: 45
+      sideLength: 35
+      sideWidth: 1
+      pierce: true
+      pierceBuilding: true
+    }
+  }
+   {
+    name: spear
+    x: 0
+    y: 0
+    rotate: false
+    mirror: false
+    layerOffset: -0.01
+    rotateSpeed: 5
+    reload: 550
+rotationLimit: 20
+shootCone: 50
+shootSound: slash
+ top: false
+    recoil: -2
+parts: [
     {
-      "name": "edge-missile-battery",
-      "y": -2,
-      "x": 0,
-      "shootCone": 25,
-      "alternate": true,
-      "mirror": true,
-      "top": true,
-      "rotate": true,
-      "rotateSpeed": 0.9,
-      "reload": 200,
-      "recoil": 0.5,
-      "shootY": 8,
-      "inaccuracy": 10,
-      "xRand": 5,
-       shootStatus: slow
-       statusDuration: 15
-      "shoot": {
-        "type": "shootPattern",
-        "shots": 5,
-        "shotDelay": 5
-      },
-      "shootSound": "shootMissile",
-      "velocityRnd": 0.8,
-      "bullet": {
-        "keepVelocity": false,
-        "sprite": "missile-large",
-        "type": "MissileBulletType",
-        "hitEffect": "explosion",
-        "despawnEffect": "explosion",
-        "shootEffect": "shootBig",
-        "damage": 50,
-        "speed": 8,
-        "lifetime": 50,
-        "homingPower": 1,
-        "homingRange": 100,
-        "frontColor": "FFC387",
-        "backColor": "FFC387",
-        trailColor: FFC387
-        "trailEffect": "none",
-        "trailLength": 10,
-        "trailWidth": 2.5,
-        "weaveScale": 2,
-        "weaveMag": 5,
-        "height": 22,
-        "width": 8,
-        "splashDamageRadius": 50,
-        "splashDamage": 15
-      }
-    },
+      type: RegionPart
+      suffix: -spear
+      layerOffset: 0
+      mirror: false
+      "under": false,
+      progress: warmup
+      moveY: 4
+    }
+  ]
+    bullet: {
+shootEffect: {
+  type: ParticleEffect
+line: true
+    particles: 4
+    baseLength: 2
+length: -30
+    lifetime: 15
+lenFrom: 4
+lenTo: 0
+strokeFrom: 1.5
+strokeTo: 0
+    colorFrom: FFE0B2
+    colorTo: FFFDFC
+    cone: -30
+interp: circleOut
+sizeInterp: linear
+}
+smokeEffect: none
+    type: RailBulletType
+    damage: 450
+  recoil: -8
+      buildingDamageMultiplier: 2
+    pierce: true
+    length: 145
+    width: 7
+    height: 6
+    lifetime: 1
+trailRotation: true
+pierceEffect: {
+    type: ParticleEffect
+line: true
+    particles: 4
+    baseLength: 0
+length: 20
+    lifetime: 30
+lenFrom: 3
+lenTo: 1
+strokeFrom: 1.6
+strokeTo: 0
+    colorFrom: FFE0B2
+    colorTo: FFFDFC
+    cone: 70
+interp: circleOut
+}
+pointEffect: {
+    type: ParticleEffect
+line: false
+    particles: 1
+    baseLength: 0
+length: 0
+    lifetime: 30
+sizeFrom: 4.5
+sizeTo: 0
+useRotation: true
+    colorFrom: FFE0B2
+    colorTo: FFFDFC
+    cone: 0
+offset: -90
+interp: circleOut
+useRotation: true
+sizeInterp: pow5Out
+}
+pointEffectSpace: 6
+    }
+  }
   ]
 }
