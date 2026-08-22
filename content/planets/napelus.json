@@ -126,3 +126,18 @@ cloudMesh: [
    thresh: 0.45
    }
 ]
+itemWhitelist: [
+  silver
+  raw-iron
+  iron
+  magnesium
+  teralite
+  benite
+  kerenium
+  amalgam
+  carbide
+  magnetite
+  steel
+  carbon
+  tatrotriolite-crystal
+]
