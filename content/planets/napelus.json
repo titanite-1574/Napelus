@@ -126,6 +126,7 @@ cloudMesh: [
    thresh: 0.45
    }
 ]
+launchCandidates: []
 itemWhitelist: [
   silver
   raw-iron
