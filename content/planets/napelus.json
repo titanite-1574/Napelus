@@ -24,18 +24,22 @@ bloom: false
 allowLaunchToNumbered: true
 defaultCore: "08a-exulus"
 launchMusic: Naplaunch
+
 rules: {
 fog: true
 staticFog: true
 coreDestroyClear: true
 onlyDepositCore: true
 }
+
 campaignRulesDefaults: {
 fog: true
 hideSpawn: false
 rtsAI: true
 }
+
 allowLaunchLoadout: false
+allowCampaignRules: true
 allowLaunchSchematics: false
 clearSectorOnLose: true
 allowWaves: true
