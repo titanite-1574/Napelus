@@ -1,6 +1,5 @@
 localizedName: Napelus
 generator: "PlanetGenerator"
-clearSectorOnLose: true
 prebuildBase: true
 parent: 1-staria
 hasAtmosphere: true
@@ -25,12 +24,10 @@ bloom: false
 allowLaunchToNumbered: true
 defaultCore: "08a-exulus"
 launchMusic: Naplaunch
-allowCampaignRules: true
 allowLaunchLoadout: false
 allowLaunchSchematics: false
-allowLegacyLaunchPads: false
-allowSectorInvasion: false
-allowSelfSectorLaunch: false
+clearSectorOnLose: true
+
 mesh: [
  {
   //yellow
