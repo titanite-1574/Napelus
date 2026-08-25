@@ -45,15 +45,27 @@ top: true
 recoil: 1
 shootSound: shootConquer 
 ejectEffect: none
+recoils: 2
     parts: [
     {
       type: RegionPart
-      suffix: -barrel
+      suffix: -barrelL
       layerOffset: 0
       mirror: false
       "under": false,
       progress: recoil
       moveY: -2
+      recoilIndex: 0
+    }
+    {
+      type: RegionPart
+      suffix: -barrelL
+      layerOffset: 0
+      mirror: false
+      "under": false,
+      progress: recoil
+      moveY: -2
+      recoilIndex: 1
     }
   ]
 bullet: {
