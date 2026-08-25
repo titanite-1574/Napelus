@@ -50,7 +50,7 @@ recoils: 2
     {
       type: RegionPart
       suffix: -barrelL
-      layerOffset: 0
+      layerOffset: -0.01
       mirror: false
       "under": false,
       progress: recoil
@@ -59,8 +59,8 @@ recoils: 2
     }
     {
       type: RegionPart
-      suffix: -barrelL
-      layerOffset: 0
+      suffix: -barrelR
+      layerOffset: -0.01
       mirror: false
       "under": false,
       progress: recoil
