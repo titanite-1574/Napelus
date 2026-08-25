@@ -53,7 +53,7 @@ recoils: 2
       suffix: -barrelL
       layerOffset: -0.01
       mirror: false
-      "under": false,
+      "under": true,
       progress: recoil
       moveY: -2
       recoilIndex: 0
@@ -63,7 +63,7 @@ recoils: 2
       suffix: -barrelR
       layerOffset: -0.01
       mirror: false
-      "under": false,
+      "under": true,
       progress: recoil
       moveY: -2
       recoilIndex: 1
