@@ -32,7 +32,8 @@ rotateSpeed: 1
 shoot: {
       barrels: [
       -4, 12, 0,
-      4, 12, 0 ]
+      4, 12, 0 
+      ]
       type: ShootBarrel
       shots: 4
       shotDelay: 6
