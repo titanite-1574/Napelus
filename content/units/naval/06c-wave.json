@@ -25,16 +25,18 @@ weapons: [
 {
   name: wave-battlegun
 x: 0
-y: 4
+y: -2
 mirror: false
 layerOffset: 0.01
-rotateSpeed: 0.5
+rotateSpeed: 1
 shoot: {
-type: ShootAlternate 
-spread: 5
-shots: 2
-shotDelay: 0
-}
+      barrels: [
+      -4, 12, 0,
+      4, 12, 0 ]
+      type: ShootBarrel
+      shots: 4
+      shotDelay: 6
+      }
 top: true
 rotate: true
 reload: 100
@@ -79,10 +81,10 @@ bullet: {
     name: wave-cannon
     mirror: true
     rotate: true
-    rotateSpeed: 1
+    rotateSpeed: 3
     baseRotation: -45
-    x: 10
-    y: -4
+    x: -9
+    y: 1
     reload: 60
     recoil: 1.25
     shootSound: shootSmite
