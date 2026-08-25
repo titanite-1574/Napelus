@@ -15,7 +15,7 @@ outlineColor: 575666
 abilities: [
   {
     type: UnitSpawnAbility
-    spawnTime: 1100
+    spawnTime: 1850
     unit: splash
     spawnX: 0
     spawnY: -8
@@ -135,7 +135,3 @@ bullet: {
    }
 ]
 research: 10k-unit-reformer 
-researchCost: [
-    titanium/100
-    graphite/50
-  ]
