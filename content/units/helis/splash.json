@@ -9,6 +9,7 @@ health: 875
 hitSize: 9
 range: 135
 speed: 2
+drag: 0.02
 strafePenalty: 1
 loopSound: heli
 loopSoundVolume: 0.2
