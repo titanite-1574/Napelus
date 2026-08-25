@@ -36,7 +36,7 @@ shoot: {
       ]
       type: ShootBarrel
       shots: 4
-      shotDelay: 6
+      shotDelay: 5
       }
 top: true
 rotate: true
