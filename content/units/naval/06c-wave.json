@@ -73,9 +73,12 @@ bullet: {
     type: BasicBulletType,
     speed: 6
     lifetime: 50
-    damage: 145
+    damage: 100
     width: 10
     height: 10
+    trailColor: 9A70C1
+      trailWidth: 1.5
+      trailLength: 5
     frontColor: 8989D3
     backColor: 8989D3
     shootEffect: "shootSmall"
