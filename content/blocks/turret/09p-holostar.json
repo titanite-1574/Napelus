@@ -83,6 +83,7 @@ consumes: {
     trailWidth: 5
     trailLength: 10
     trailColor: CFA3C8
+    sprite: nap-end-times
     hitEffect: titanExplosion
     hitShake: 5
     collidesGround: true
