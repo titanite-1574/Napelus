@@ -5,17 +5,20 @@ controller: AttackAI
 lowAltitude: true
 name: "Mist"
 description: "Shoots swerving bullets on one side and rockets on both side at nearby targets. Very fast."
-health: 1200
+health: 2500
 hitSize: 11
 range: 135
 speed: 1.8
 strafePenalty: 1
+loopSound: heli
+loopSoundVolume: 0.4
 parts: [
 {
 suffix: -rotor
 under: true
 moveRot: 360
 layer: -20
+outline: false
 progress: {
 type: time
 op: loop
