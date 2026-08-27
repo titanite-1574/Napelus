@@ -1,7 +1,7 @@
 {
   "type": "ItemTurret",
   "name": Holostar,
-  "description": Fires a material compressed star at enemies. Explodes after a period of time depends on material used
+  "description": Fires a material compressed star at enemies. Explodes after a period of time or on contact  depends on material used
   "researchCostMultiplier": 0.2,
   heatRequirement: 15
 maxHeatEfficiency: 2
@@ -78,13 +78,14 @@ consumes: {
     status: melting
   statusDuration: 155
     speed: 4
-    width: 8
-    height: 23
+    width: 45
+    height: 45
     trailWidth: 5
     trailLength: 10
     trailColor: CFA3C8
     sprite: nap-end-times
     hitEffect: titanExplosion
+    spin: 5
     hitShake: 5
     collidesGround: true
     collidesAir: true
@@ -98,7 +99,7 @@ consumes: {
       "hitEffect": [titanExplosion]
    fragOnHit: true
       fragLifeMin: 0.1
-      fragBullets: 10
+      fragBullets: 25
       collidesAir: false
       buildingDamageMultiplier: 0.25
       fragBullet: {
