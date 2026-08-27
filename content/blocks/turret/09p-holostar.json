@@ -8,7 +8,7 @@ maxHeatEfficiency: 2
   "size": 6,
   "health": 6500,
   "reload": 990,
-  "range": 400,
+  "range": 300,
   "inaccuracy": 0
   "targetAir": true,
   "recoil": 3,
@@ -72,7 +72,7 @@ consumes: {
     splashDamage: 1200
     splashDamageRadius: 50
     buildingDamageMultiplier: 0.25
-    lifetime: 800
+    lifetime: 450
     backColor: CFA3C8
     frontColor: CFA3C8
     status: melting
