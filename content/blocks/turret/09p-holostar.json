@@ -70,7 +70,7 @@ consumes: {
       type: ArtilleryBulletType
     damage: 855
     splashDamage: 1200
-    splashDamageRadius: 50
+    splashDamageRadius: 75
     buildingDamageMultiplier: 0.25
     lifetime: 450
     backColor: CFA3C8
@@ -129,6 +129,83 @@ consumes: {
         despawnShake: 10
         lightRadius: 30
         lightOpacity: 0.65
+      }
+  }
+  "magnetite": {
+      type: ArtilleryBulletType
+    damage: 450
+    splashDamage: 900
+    splashDamageRadius: 65
+    buildingDamageMultiplier: 0.25
+    lifetime: 450
+    backColor: 8365D6
+    frontColor: 8365D6
+    status: disarmed
+  statusDuration: 25
+    speed: 7
+    width: 45
+    height: 45
+    trailWidth: 5
+    trailLength: 10
+    trailColor: 8365D6
+    sprite: nap-end-times
+    hitEffect: titanExplosion
+    spin: 5
+    hitShake: 5
+    collidesGround: true
+    collidesAir: true
+    collidesTiles: true
+    collides: true
+    drag: 0.03
+    ammoMultiplier: 1
+     "despawnEffect": [titanExplosion]
+      hitColor: 8365D6
+      despawnColor: CFA3C8
+      "hitEffect": [titanExplosion]
+   fragOnHit: true
+      fragLifeMin: 0.1
+      fragBullets: 25
+      collidesAir: false
+      buildingDamageMultiplier: 0.25
+      fragBullet: {
+        type: BasicBulletType
+        frontColor: CFA3C8
+        backColor: CFA3C8
+        speed: 2.5
+        drag: 0.01
+        lifetime: 35
+        damage: 55
+        splashDamage: 20
+        splashDamageRadius: 16
+        width: 6
+        height: 6
+        trailChance: -1
+        trailColor: CFA3C8
+        trailLength: 7
+        trailWidth: 2
+        weaveScale: 2
+        weaveMag: 3
+        pierceArmor: false
+        pierceBuilding: true
+        despawnSound: explosion
+        "homingRange": 200
+        "homingPower": 0.09
+        despawnEffect: {
+          type: ExplosionEffect
+          lifetime: 15
+          waveStroke: 2.5
+          waveColor: F58B8B
+          sparkColor: F58B8B
+          smokeColor: F58B8B
+          waveRad: 8
+          smokeSize: 3
+          smokes: 2
+          smokeSizeBase: 0
+          sparks: 2
+          sparkRad: 10
+          sparkLen: 2
+          sparkStroke: 1
+        }
       }
   }
 }
