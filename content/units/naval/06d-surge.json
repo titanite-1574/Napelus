@@ -15,7 +15,7 @@ outlineColor: 575666
 abilities: [
   {
     type: UnitSpawnAbility
-    spawnTime: 2000
+    spawnTime: 3450
     unit: mist
     spawnX: 0
     spawnY: -8
@@ -24,7 +24,7 @@ abilities: [
 weapons: [
 {
     x: 0
-    y: 7
+    y: 0
     name: surge-lau
     reload: 500
     mirror: false
@@ -33,10 +33,10 @@ weapons: [
     shootSound: shootMissileLarge
       "shoot": {
       type: shootSpread,
-    spread: 15,
+    spread: 0,
       "firstShotDelay": 150,
       "shots": 3
-      "shotDelay": 10
+      "shotDelay": 35
       },
     bullet: {
       instantDisappear: true
@@ -48,7 +48,7 @@ weapons: [
     name: wave-cannon
     mirror: true
     rotate: true
-    rotateSpeed: 1
+    rotateSpeed: 2
     baseRotation: -45
     x: 10
     y: 4

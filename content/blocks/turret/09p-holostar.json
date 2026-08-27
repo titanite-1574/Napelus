@@ -1,0 +1,154 @@
+{
+  "type": "ItemTurret",
+  "name": Holostar,
+  "description": Fires a material compressed star at enemies. Explodes after a period of time depends on material used
+  "researchCostMultiplier": 0.2,
+  heatRequirement: 15
+maxHeatEfficiency: 2
+  "size": 6,
+  "health": 6500,
+  "reload": 990,
+  "range": 400,
+  "inaccuracy": 0
+  "targetAir": true,
+  "recoil": 3,
+  "rotateSpeed": 0.7,
+  "shootSound": "shootConquer",
+  coolantMultiplier: 1.5
+  "shootWarmupSpeed": 0.01,
+  "shootY": 10
+  minWarmup: 0.5
+moveWhileCharging: false
+consumes: {
+  power: 8
+}
+  shownPlanets: [napelus]
+    shoot: {
+  type: shootPattern
+  shots: 1
+  shotDelay: 20
+}
+  drawer: {
+  type: DrawTurret
+  basePrefix: hammer-
+    parts: [
+     {
+      type: RegionPart
+      suffix: -armL
+      mirror: false
+      progress: warmup
+      heatProgress: warmup
+      moveX: -2
+      under: true
+      heatColor: 8DF9D1
+    }
+    {
+      type: RegionPart
+      suffix: -armR
+      mirror: false
+      progress: warmup
+      heatProgress: warmup
+      moveX: 2
+      under: true
+      heatColor: 8DF9D1
+    }
+    {
+      type: RegionPart
+      suffix: -support
+      mirror: false
+      progress: warmup
+      heatProgress: warmup
+      under: true
+      top: false
+      heatColor: 8DF9D1
+      layerOffset: -0.00001
+    }
+  ]
+}
+  "ammoTypes": {
+  "carbide": {
+      type: ArtilleryBulletType
+    damage: 855
+    splashDamage: 1200
+    splashDamageRadius: 50
+    buildingDamageMultiplier: 0.25
+    lifetime: 800
+    backColor: CFA3C8
+    frontColor: CFA3C8
+    status: melting
+  statusDuration: 155
+    speed: 4
+    width: 8
+    height: 23
+    trailWidth: 5
+    trailLength: 10
+    trailColor: CFA3C8
+    hitEffect: titanExplosion
+    hitShake: 5
+    collidesGround: true
+    collidesAir: true
+    collidesTiles: true
+    collides: true
+    drag: 0.3
+    ammoMultiplier: 1
+     "despawnEffect": [titanExplosion]
+      hitColor: CFA3C8
+      despawnColor: CFA3C8
+      "hitEffect": [titanExplosion]
+   fragOnHit: true
+      fragLifeMin: 0.1
+      fragBullets: 10
+      collidesAir: false
+      buildingDamageMultiplier: 0.25
+      fragBullet: {
+        type: ArtilleryBulletType
+        buildingDamageMultiplier: 0.25
+        drag: 0.02
+        hitEffect: massiveExplosion
+        despawnEffect: scatheSlash
+        damage: 35
+        status: shocked
+        knockback: 1
+        lifetime: 80
+        width: 18
+        height: 18
+        collidesTiles: true
+        collidesAir: true
+        status: melting
+  statusDuration: 155
+        splashDamage: 120
+        splashDamageRadius: 30
+        backColor: CFA3C8
+        trailColor: CFA3C8
+        hitColor: CFA3C8
+        lightColor: CFA3C8
+        frontColor: CFA3C8
+        smokeEffect: shootBigSmoke2
+        despawnShake: 10
+        lightRadius: 30
+        lightOpacity: 0.65
+      }
+  }
+}
+  "requirements": [
+    "iron/355",
+    "teralite/120",
+    "kerenium/150"
+    "amalgam/65"
+  ],
+  "coolant": {
+    "type": "ConsumeLiquid",
+    "liquid": "ilum",
+    "amount": 0.333333
+  },
+  "category": "turret",
+  research: {
+    parent: "09c-force",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "caverns"
+        }
+    ]
+},
+}
