@@ -132,6 +132,70 @@ consumes: {
         lightOpacity: 0.65
       }
   }
+  "tatrotriolite": {
+      type: ArtilleryBulletType
+    damage: 355
+    splashDamage: 500
+    splashDamageRadius: 125
+    buildingDamageMultiplier: 0.25
+    lifetime: 450
+    backColor: B4E2FF
+    frontColor: B4E2FF
+    status: unmoving
+  statusDuration: 155
+    speed: 6
+    width: 45
+    height: 45
+    trailWidth: 5
+    trailLength: 10
+    trailColor: B4E2FF
+    sprite: nap-end-times
+    hitEffect: titanExplosion
+    spin: 5
+    hitShake: 5
+    collidesGround: true
+    collidesAir: true
+    collidesTiles: true
+    collides: true
+    drag: 0.03
+    ammoMultiplier: 1
+     "despawnEffect": [titanExplosion]
+      hitColor: B4E2FF
+      despawnColor: CFA3C8
+      "hitEffect": [titanExplosion]
+   fragOnHit: true
+      fragLifeMin: 0.1
+      fragBullets: 55
+      collidesAir: false
+      buildingDamageMultiplier: 0.25
+      fragBullet: {
+        type: ArtilleryBulletType
+        buildingDamageMultiplier: 0.25
+        drag: 0.02
+        hitEffect: massiveExplosion
+        despawnEffect: scatheSlash
+        damage: 50
+        status: freezing
+        statusDuration:155
+        knockback: 1
+        lifetime: 80
+        width: 18
+        height: 18
+        collidesTiles: true
+        collidesAir: true
+        splashDamage: 50
+        splashDamageRadius: 30
+        backColor: B4E2FF
+        trailColor: B4E2FF
+        hitColor: B4E2FF
+        lightColor: B4E2FF
+        frontColor: B4E2FF
+        smokeEffect: shootBigSmoke2
+        despawnShake: 10
+        lightRadius: 30
+        lightOpacity: 0.65
+      }
+  }
   "magnetite": {
       type: ArtilleryBulletType
     damage: 450
