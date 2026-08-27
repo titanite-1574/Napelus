@@ -89,7 +89,7 @@ consumes: {
     collidesAir: true
     collidesTiles: true
     collides: true
-    drag: 0.3
+    drag: 0.03
     ammoMultiplier: 1
      "despawnEffect": [titanExplosion]
       hitColor: CFA3C8
