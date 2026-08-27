@@ -132,7 +132,7 @@ consumes: {
         lightOpacity: 0.65
       }
   }
-  "tatrotriolite": {
+  "tatrotriolite-crystal": {
       type: ArtilleryBulletType
     damage: 355
     splashDamage: 500
