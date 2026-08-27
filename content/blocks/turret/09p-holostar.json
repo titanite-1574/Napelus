@@ -3,11 +3,9 @@
   "name": Holostar,
   "description": Fires a material compressed star at enemies. Explodes after a period of time or on contact  depends on material used
   "researchCostMultiplier": 0.2,
-  heatRequirement: 15
-maxHeatEfficiency: 2
   "size": 6,
   "health": 6500,
-  "reload": 990,
+  "reload": 1100,
   "range": 300,
   "inaccuracy": 0
   "targetAir": true,
@@ -20,7 +18,10 @@ maxHeatEfficiency: 2
   minWarmup: 0.5
 moveWhileCharging: false
 consumes: {
-  power: 8
+  liquids: [
+  xenogen/1.5
+  ]
+  power: 65
 }
   shownPlanets: [napelus]
     shoot: {
@@ -194,9 +195,9 @@ consumes: {
           type: ExplosionEffect
           lifetime: 15
           waveStroke: 2.5
-          waveColor: F58B8B
-          sparkColor: F58B8B
-          smokeColor: F58B8B
+          waveColor: CFA3C8
+          sparkColor: CFA3C8
+          smokeColor: CFA3C8
           waveRad: 8
           smokeSize: 3
           smokes: 2
@@ -210,10 +211,11 @@ consumes: {
   }
 }
   "requirements": [
-    "iron/355",
-    "teralite/120",
-    "kerenium/150"
-    "amalgam/65"
+   kerenium/350
+    steel/655
+  magnetite/335
+  amalgam/250
+  tatrotriolite-crystal/455
   ],
   "coolant": {
     "type": "ConsumeLiquid",
