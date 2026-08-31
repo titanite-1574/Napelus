@@ -68,7 +68,7 @@ consumes: {
 }
   "ammoTypes": {
   "carbide": {
-      type: ArtilleryBulletType
+      type: ExplosiveBulletType
     damage: 855
     splashDamage: 1200
     splashDamageRadius: 75
@@ -133,7 +133,7 @@ consumes: {
       }
   }
   "tatrotriolite-crystal": {
-      type: ArtilleryBulletType
+      type: ExplosiveBulletType
     damage: 355
     splashDamage: 500
     splashDamageRadius: 125
@@ -197,7 +197,7 @@ consumes: {
       }
   }
   "magnetite": {
-      type: ArtilleryBulletType
+      type: ExplosiveBulletType
     damage: 450
     splashDamage: 900
     splashDamageRadius: 65
