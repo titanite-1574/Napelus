@@ -95,22 +95,73 @@ consumes: {
     drag: 0.03
     ammoMultiplier: 1
      "despawnEffect": [titanExplosion]
-      hitColor: CFA3C8
-      despawnColor: CFA3C8
-      "hitEffect": [titanExplosion]
+      hitColor: ffffff8a
+      despawnColor: ffffff8a
+      "hitEffect": {
+          "type": "multiEffect",
+          "effects": [
+           {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "line": false
+              "length": 35,
+              "baseLength": 35,
+              "lifetime": 120,
+              "lightColor": "ffffff8a",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "FFFFFF",
+              "colorTo": "aae7d78b",
+              "sizeFrom": 10,
+              "sizeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "line": false
+              "length": 35,
+              "baseLength": 50
+              "lifetime": 120,
+              "lightColor": "ffffff8a",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "FFFFFF",
+              "colorTo": "ffffff8a",
+              "sizeFrom": 10,
+              "sizeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 35,
+              "line": false
+              "length": 75,
+              "baseLength": 50
+              "lifetime": 120,
+              "lightColor": "ffffff8a",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "FFFFFF",
+              "colorTo": "ffffff8a,
+              "sizeFrom": 10,
+              "sizeTo": 0
+            },
+         ]
+      }
    fragOnHit: true
       fragLifeMin: 0.1
       fragBullets: 25
       collidesAir: false
       buildingDamageMultiplier: 0.25
       fragBullet: {
-        type: ArtilleryBulletType
+        type: ExplosiveBulletType
         buildingDamageMultiplier: 0.25
         drag: 0.02
         hitEffect: massiveExplosion
         despawnEffect: scatheSlash
-        damage: 35
-        status: shocked
+        damage: 350
         knockback: 1
         lifetime: 80
         width: 18
@@ -160,21 +211,73 @@ consumes: {
     drag: 0.03
     ammoMultiplier: 1
      "despawnEffect": [titanExplosion]
-      hitColor: B4E2FF
-      despawnColor: CFA3C8
-      "hitEffect": [titanExplosion]
+      hitColor: ffffff8a
+      despawnColor: ffffff8a
+      "hitEffect": {
+          "type": "multiEffect",
+          "effects": [
+           {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "line": false
+              "length": 35,
+              "baseLength": 35,
+              "lifetime": 120,
+              "lightColor": "ffffff8a",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "FFFFFF",
+              "colorTo": "aae7d78b",
+              "sizeFrom": 10,
+              "sizeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "line": false
+              "length": 35,
+              "baseLength": 50
+              "lifetime": 120,
+              "lightColor": "ffffff8a",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "FFFFFF",
+              "colorTo": "ffffff8a",
+              "sizeFrom": 10,
+              "sizeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 35,
+              "line": false
+              "length": 75,
+              "baseLength": 50
+              "lifetime": 120,
+              "lightColor": "ffffff8a",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "FFFFFF",
+              "colorTo": "ffffff8a,
+              "sizeFrom": 10,
+              "sizeTo": 0
+            },
+         ]
+      }
    fragOnHit: true
       fragLifeMin: 0.1
       fragBullets: 55
       collidesAir: false
       buildingDamageMultiplier: 0.25
       fragBullet: {
-        type: ArtilleryBulletType
+        type: ExplosiveBulletType
         buildingDamageMultiplier: 0.25
         drag: 0.02
         hitEffect: massiveExplosion
         despawnEffect: scatheSlash
-        damage: 50
+        damage: 350
         status: freezing
         statusDuration:155
         knockback: 1
@@ -224,9 +327,61 @@ consumes: {
     drag: 0.03
     ammoMultiplier: 1
      "despawnEffect": [titanExplosion]
-      hitColor: 8365D6
-      despawnColor: CFA3C8
-      "hitEffect": [titanExplosion]
+      hitColor: ffffff8a
+      despawnColor: ffffff8a
+      "hitEffect": {
+          "type": "multiEffect",
+          "effects": [
+           {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "line": false
+              "length": 35,
+              "baseLength": 35,
+              "lifetime": 120,
+              "lightColor": "ffffff8a",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "FFFFFF",
+              "colorTo": "aae7d78b",
+              "sizeFrom": 10,
+              "sizeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "line": false
+              "length": 35,
+              "baseLength": 50
+              "lifetime": 120,
+              "lightColor": "ffffff8a",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "FFFFFF",
+              "colorTo": "ffffff8a",
+              "sizeFrom": 10,
+              "sizeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 35,
+              "line": false
+              "length": 75,
+              "baseLength": 50
+              "lifetime": 120,
+              "lightColor": "ffffff8a",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "FFFFFF",
+              "colorTo": "ffffff8a,
+              "sizeFrom": 10,
+              "sizeTo": 0
+            },
+         ]
+      }
    fragOnHit: true
       fragLifeMin: 0.1
       fragBullets: 25
@@ -239,7 +394,7 @@ consumes: {
         speed: 2.5
         drag: 0.01
         lifetime: 35
-        damage: 55
+        damage: 455
         splashDamage: 20
         splashDamageRadius: 16
         width: 6
