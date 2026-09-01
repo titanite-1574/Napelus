@@ -97,7 +97,6 @@ weapons: [
         "backColor": "9A70C1"
       }
     }
-  ]
   {
     name: raining-machinegun
     x: 4.5
