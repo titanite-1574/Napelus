@@ -3,7 +3,7 @@ payloadCapacity: 850
 flying: true
 engineSize: 0
 controller: AttackAI
-lowAltitude: true
+lowAltitude: false
 name: "Rain"
 description: "Shoots a barrage of swerving bullets at nearby target. Capable of carrying units and blocks."
 health: 3500
@@ -19,6 +19,7 @@ suffix: -rotor
 under: true
 moveRot: 360
 layer: -20
+outline: false
 progress: {
 type: time
 op: loop
@@ -41,7 +42,7 @@ weapons: [
       "mirror": true,
       "rotate": false,
       "alternate": true,
-      baseRotation: -90
+      baseRotation: -180
       layerOffset: -0.01
       "shoot": {
         "shots": 2
@@ -105,6 +106,7 @@ weapons: [
     mirror: true
     reload: 50
     shootSound: shootTank
+    layerOffset: -0.01
     shoot: {
     shots: 5
     shotDelay: 10
@@ -131,6 +133,7 @@ weapons: [
     rotate: false
     mirror: true
     reload: 50
+    layerOffset: -0.01
     shootSound: shootTank
     shoot: {
     shots: 5
