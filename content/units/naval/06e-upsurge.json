@@ -1,5 +1,5 @@
 type: naval
-name: Upsurge
+name: Riptide
 description: Armed with cannons on each side. Doesn't do much except it's missile does abnormal amount of damage. 
 speed: 0.4
 health: 25900
@@ -15,7 +15,7 @@ outlineColor: 575666
 abilities: [
   {
     type: UnitSpawnAbility
-    spawnTime: 2000
+    spawnTime: 4500
     unit: rain
     spawnX: 0
     spawnY: -8
