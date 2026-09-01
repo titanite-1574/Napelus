@@ -6,12 +6,13 @@ controller: AttackAI
 lowAltitude: true
 name: "Rain"
 description: "Shoots a barrage of swerving bullets at nearby target. Capable of carrying units and blocks."
-health: 2000
+health: 3500
 hitSize: 20
 pickupUnits: true
 range: 135
 speed: 1.5
 strafePenalty: 1
+circleTarget: true
 parts: [
 {
 suffix: -rotor
@@ -33,8 +34,74 @@ time: -20
 ]
 weapons: [
   {
-    x: 5
-    y: 0
+      name: rain-bomber
+      "x": 6,
+      "y": -6,
+      "shootCone": 300,
+      "mirror": true,
+      "rotate": false,
+      "alternate": true,
+      baseRotation: -90
+      layerOffset: -0.01
+      "shoot": {
+        "shots": 2
+      },
+      "velocityRnd": 0.6,
+      "reload": 75,
+      "ignoreRotation": true,
+      "shootSound": "plamsadrop",
+      "inaccuracy": 29,
+      "bullet": {
+        "damage": 45,
+        "speed": -1.5,
+        "drag": 0.04,
+        "type": "basicBulletType",
+        "collidesAir": false,
+        "collides": false,
+        "shrinkY": 0.7,
+        "shrinkX": 0.7,
+        "trailColor": "9A70C1",
+        "trailLength": 10,
+        "trailWidth": 2,
+        "despawnShake": 3,
+        "hitSound": "plasmaboom",
+        "sprite": "nap-end-times",
+        "splashDamage": 50,
+        "splashDamageRadius": 35,
+        "spin": 3,
+        "keepVelocity": false,
+        "shootEffect": "none",
+        "hitEffect": {
+          "type": "multiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "line": true,
+              "particles": 7,
+              "lifetime": 20,
+              "offset": 50,
+              "length": 65,
+              "cone": -360,
+              "lenFrom": 6,
+              "lenTo": 0,
+              "colorFrom": "9A70C1",
+              "colorTo": "9A70C1"
+            },
+          ]
+        },
+        "width": 37,
+        "height": 37,
+        "lifetime": 30,
+        "frontColor": "9A70C1",
+        "mixColorTo": "9A70C1",
+        "backColor": "9A70C1"
+      }
+    }
+  ]
+  {
+    name: raining-machinegun
+    x: 4.5
+    y: 18
     rotate: false
     mirror: true
     reload: 50
@@ -59,11 +126,11 @@ weapons: [
     }
   }
 {
-    x: -5
-    y: 0
+    name: raining-machinegun
+    x: 10
+    y: 12
     rotate: false
     mirror: true
-    baseRotation: 180
     reload: 50
     shootSound: shootTank
     shoot: {
@@ -78,7 +145,7 @@ weapons: [
       weaveScale: 4
       lifetime: 45
       speed: 3
-      damage: 55
+      damage: 30
       trailWidth: 1.5
       trailColor: 9A70C1
       trailLength: 6
