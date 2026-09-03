@@ -28,6 +28,7 @@ weapons: [
     rotate: true
     rotateSpeed: 2
     x: -24
+    y: -19
     reload: 35
     recoil: 1.25
     shootSound: shootMerui
