@@ -238,9 +238,10 @@ bullet: {
     x: 17
     y: -3
     name: arcus-missile-battery
-    reload: 1000
+    reload: 500
     mirror: true
     rotate: true
+    alternate: false
     rotateSpeed: 1
     shootSound: shootMissileLarge
       "shoot": {
