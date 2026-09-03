@@ -2,11 +2,11 @@ type: naval
 name: Riptide
 description: Ruler of the iclium ocean 
 speed: 0.4
-health: 25900
-armor: 20
+health: 26500
+armor: 35
 aimDst: 10
 range: 90
-drag: 0.1
+drag: 0.03
 accel: 0.8
 hitSize: 40
 rotateSpeed: 2.5
