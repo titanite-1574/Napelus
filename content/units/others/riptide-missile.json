@@ -22,6 +22,7 @@ trailLength: 12
 trailScl: 1.1
 trailColor: D09FFF
 loopSound: missileTrail
+missileAccelTime: 50
 abilities: [
   {
   type: MoveEffectAbility
@@ -94,10 +95,44 @@ weapons: [{
       fragAngle: 0
       fragOnAbsorb: true
       fragBullet: {
-      instantDisappear: true
-      shake: 50
-      damage: 0
-      spawnUnit: surge-missile
+      type: BasicBulletType
+      speed: 4
+      lifetime: 60
+      damage: 125
+      width: 6
+      height: 6
+        frontColor: FFC387
+     trailLength: 10
+      trailWidth: 1
+      trailColor: FFC387
+        backColor: FFC387
+      despawnHit: true
+      despawnEffect: none
+      hitEffect: [
+        {
+          type: ParticleEffect
+          particles: 6
+          line: true
+          lifetime: 25
+          length: 20
+          lenFrom: 5
+          lenTo: 0
+          strokeFrom: 2
+          strokeTo: 0
+          colorFrom: FF8A15
+          colorTo: CC6E10
+        }
+        {
+          type: WaveEffect
+          sizeFrom: 0
+          sizeTo: 15
+          lifetime: 20
+          strokeFrom: 3.5
+          strokeTo: 0
+          colorFrom: FF8A15
+          colorTo: CC6E10
+        }
+      ]
     }
             hitEffect: {
                 type: ExplosionEffect
@@ -109,7 +144,7 @@ weapons: [{
 collidesAir: true
 type: ExplosionBulletType
 keepVelocity: false
-splashDamage: 300
+splashDamage: 250
 splashDamageRadius: 50
   }
 }]

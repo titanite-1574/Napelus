@@ -347,7 +347,7 @@ bullet: {
     bullet: {
       instantDisappear: true
       damage: 0
-      spawnUnit: surge-heavy-missile
+      spawnUnit: riptide-missile
     }
   }
 ]

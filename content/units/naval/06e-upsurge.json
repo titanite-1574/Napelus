@@ -1,6 +1,6 @@
 type: naval
 name: Riptide
-description: Armed with cannons on each side. Doesn't do much except it's missile does abnormal amount of damage. 
+description: Ruler of the iclium ocean 
 speed: 0.4
 health: 25900
 armor: 20
@@ -23,136 +23,235 @@ abilities: [
 ]
 weapons: [
 {
-name: wave-battlegun
-x: 15
-y: 4
-mirror: true
+    name: whirl-autogun
+    mirror: true
+    rotate: true
+    rotateSpeed: 2
+    x: -24
+    reload: 35
+    recoil: 1.25
+    shootSound: shootMerui
+    bullet: {
+      type: BasicBulletType
+      sprite: missile-large
+      width: 5
+      splashDamageRadius: 20
+      splashDamage: 15
+      pierceCap: 1
+      lifetime: 30
+      damage: 85
+      speed: 3
+      smokeEffect: colorSpark
+      trailColor: E3EBFB
+      trailWidth: 1.5
+      trailLength: 5
+      backColor: E3EBFB
+      hitColor: E3EBFB
+      despawnEffect: {
+        type: WaveEffect
+        rotWithParent: true
+        followParent: true
+        lifetime: 8
+        sizeFrom: 0
+        sizeTo: 15
+        colorFrom: ffffff
+        colorTo: feb380
+         }
+      }
+   }
+{
+    name: whirl-autogun
+    mirror: true
+    rotate: true
+    rotateSpeed: 2
+    x: -20
+    y: 11
+    reload: 35
+    recoil: 1.25
+    shootSound: shootMerui
+    bullet: {
+      type: BasicBulletType
+      sprite: missile-large
+      width: 5
+      splashDamageRadius: 20
+      splashDamage: 15
+      pierceCap: 1
+      lifetime: 30
+      damage: 85
+      speed: 3
+      smokeEffect: colorSpark
+      trailColor: E3EBFB
+      trailWidth: 1.5
+      trailLength: 5
+      backColor: E3EBFB
+      hitColor: E3EBFB
+      despawnEffect: {
+        type: WaveEffect
+        rotWithParent: true
+        followParent: true
+        lifetime: 8
+        sizeFrom: 0
+        sizeTo: 15
+        colorFrom: ffffff
+        colorTo: feb380
+         }
+      }
+   }
+{
+    name: whirl-autogun
+    mirror: true
+    rotate: true
+    rotateSpeed: 2
+    x: -16
+    y: 26
+    reload: 35
+    recoil: 1.25
+    shootSound: shootMerui
+    bullet: {
+      type: BasicBulletType
+      sprite: missile-large
+      width: 5
+      splashDamageRadius: 20
+      splashDamage: 15
+      pierceCap: 1
+      lifetime: 30
+      damage: 85
+      speed: 3
+      smokeEffect: colorSpark
+      trailColor: E3EBFB
+      trailWidth: 1.5
+      trailLength: 5
+      backColor: E3EBFB
+      hitColor: E3EBFB
+      despawnEffect: {
+        type: WaveEffect
+        rotWithParent: true
+        followParent: true
+        lifetime: 8
+        sizeFrom: 0
+        sizeTo: 15
+        colorFrom: ffffff
+        colorTo: feb380
+         }
+      }
+   }
+{
+name: hyperion-multigun
+x: 0
+y: 10
+mirror: false
 layerOffset: 0.01
 rotateSpeed: 1
 shoot: {
-type: ShootAlternate 
-spread: 5
-shots: 4
-shotDelay: 0
-}
+      barrels: [
+      -10, 19, 0,
+      -6, 19, 0 
+      0, 19, 0, 
+      6, 19, 0
+      10,19,0]
+      type: ShootBarrel
+      shots: 5
+      shotDelay: 15
+      }
 top: true
 rotate: true
-reload: 100
+reload: 50
 under: false
 top: true
 recoil: 1
 shootSound: shootConquer 
 ejectEffect: none
+recoils: 5
     parts: [
     {
       type: RegionPart
-      suffix: -barrel
+      suffix: -barrelA
       layerOffset: 0
       mirror: false
-      "under": false,
+      "under": true
       progress: recoil
       moveY: -2
+      recoilIndex: 0
+    }
+    {
+      type: RegionPart
+      suffix: -barrelB
+      layerOffset: 0
+      mirror: false
+      "under": true
+      progress: recoil
+      moveY: -2
+      recoilIndex: 1
+    }
+    {
+      type: RegionPart
+      suffix: -barrelC
+      layerOffset: 0
+      mirror: false
+      "under": true
+      progress: recoil
+      moveY: -2
+      recoilIndex: 2
+    }
+    {
+      type: RegionPart
+      suffix: -barrelD
+      layerOffset: 0
+      mirror: false
+      "under": true
+      progress: recoil
+      moveY: -2
+      recoilIndex: 3
+    }
+    {
+      type: RegionPart
+      suffix: -barrelE
+      layerOffset: 0
+      mirror: false
+      "under": true
+      progress: recoil
+      moveY: -2
+      recoilIndex: 4
     }
   ]
 bullet: {
     type: BasicBulletType,
     speed: 6
-    lifetime: 50
-    damage: 145
+    lifetime: 60
+    damage: 200
     width: 10
     height: 10
-    frontColor: 8989D3
-    backColor: 8989D3
-    trailLength: 10
-      trailWidth: 1
-      trailColor: 8989D3
+    frontColor: D3D8ED
+    backColor: D3D8ED
+    trailLength: 15
+      trailWidth: 2
+      trailColor: D3D8ED
     shootEffect: "shootSmall"
     smokeEffect: "shootSmallSmoke"
     ammoMultiplier: 5
     collidesTiles: true
     hitEffect: pointHit
-      trailChance: -1
-      trailInterval: 5
-      trailRotation: true
-      trailEffect: colorSpark
-      trailColor: 8989D3
 }
 }
 {
-name: wave-battlegun
-x: 15
-y: -20
-mirror: true
-layerOffset: 0.01
-rotateSpeed: 1
-shoot: {
-type: ShootAlternate 
-spread: 5
-shots: 2
-shotDelay: 0
-}
-top: true
-rotate: true
-reload: 100
-under: false
-top: true
-recoil: 1
-shootSound: shootConquer 
-ejectEffect: none
-    parts: [
-    {
-      type: RegionPart
-      suffix: -barrel
-      layerOffset: 0
-      mirror: false
-      "under": false,
-      progress: recoil
-      moveY: -2
-    }
-  ]
-bullet: {
-    type: BasicBulletType,
-    speed: 6
-    lifetime: 50
-    damage: 145
-    width: 10
-    height: 10
-    frontColor: 8989D3
-    backColor: 8989D3
-    trailLength: 10
-      trailWidth: 1
-      trailColor: 8989D3
-    shootEffect: "shootSmall"
-    smokeEffect: "shootSmallSmoke"
-    ammoMultiplier: 5
-    collidesTiles: true
-    hitEffect: pointHit
-      trailChance: -1
-      trailInterval: 5
-      trailRotation: true
-      trailEffect: colorSpark
-      trailColor: 8989D3
-}
-}
-{
-    x: 0
-    y: 10
-    name: upsurge-missile
-    reload: 500
-    mirror: false
+    x: 17
+    y: -3
+    name: arcus-missile-battery
+    reload: 1000
+    mirror: true
     rotate: true
     rotateSpeed: 1
     shootSound: shootMissileLarge
       "shoot": {
       type: shootSpread,
     spread: 15,
-      "shots": 1
-      "shotDelay": 10
+      "shots": 6
+      "shotDelay": 5
       },
     bullet: {
       instantDisappear: true
       damage: 0
-      spawnUnit: surge-heavy-missile
+      spawnUnit: riptide-missile
     }
   }
 ]
