@@ -7,7 +7,6 @@ fogRadius: 4
 attribute: heat
 displayEfficiencyScale: 0.11111111111
 displayEfficiency: false
-minEfficiency: 8
 shownPlanets: [napelus,Stella]
 powerProduction: 1
 squareSprite: false
