@@ -40,7 +40,7 @@ plans: [
     type: AssemblerUnitPlan
     unit: 03f-misery
     requirements: [
-      nap-02q-steel-wall/6
+      nap-02r-steel-wall/6
       nap-02o-large-carbide-wall/6
       nap-03c-pain/4
     ]
