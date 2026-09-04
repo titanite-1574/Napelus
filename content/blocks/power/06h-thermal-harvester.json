@@ -1,0 +1,54 @@
+type: ThermalGenerator
+description: Generates power from hot rocks or molten magma on the surface. Harvest infrared light during the generation
+size: 3
+name: Thermal Harvester
+health: 900
+fogRadius: 4
+attribute: heat
+displayEfficiencyScale: 0.11111111111
+displayEfficiency: false
+minEfficiency: 8
+shownPlanets: [napelus,Stella]
+powerProduction: 1
+squareSprite: false
+category: power
+buildCostMultiplier: 2
+outputLiquid: infrared-light/0.5
+requirements: [
+  silver/95
+  carbide/15
+  iron/45
+  kerenium/35
+]
+research: {
+    parent: "06g-menite-thermal-reactor",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "snow-storm-base"
+        }
+    ]
+},
+researchCost: [
+  silver/950
+  carbide/150
+  iron/450
+  kerenium/350
+]
+drawer: {
+  type: DrawMulti
+  drawers: [    
+    {
+      type: DrawDefault
+    }
+    {
+	  type: DrawGlowRegion
+	  alpha: 1
+	  glowIntensity: 0.6
+	  color: 97FFB3
+	  suffix: -glow
+	  glowScale: 12
+	}
+  ]
+}
+group: liquids
