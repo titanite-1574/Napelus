@@ -243,18 +243,41 @@ bullet: {
     rotate: true
     alternate: false
     rotateSpeed: 1
-    shootSound: shootMissileLarge
+    inaccuracy: 3
+    xRand: 5
       "shoot": {
       type: shootSpread,
     spread: 15,
-      "shots": 6
-      "shotDelay": 5
+      "shots": 12
+      "shotDelay": 2
       },
-    bullet: {
-      instantDisappear: true
-      damage: 0
-      spawnUnit: riptide-missile
-    }
+    "shootSound": "shootMissile",
+      "velocityRnd": 0.4,
+      "bullet": {
+        "keepVelocity": false,
+        "sprite": "missile-large",
+        "type": "MissileBulletType",
+        "hitEffect": "explosion",
+        "despawnEffect": "explosion",
+        "shootEffect": "shootBig",
+        "damage": 175,
+        "speed": 8,
+        "lifetime": 50,
+        "homingPower": 1,
+        "homingRange": 100,
+        "frontColor": "8AA3F4",
+        "backColor": "FFFFFF",
+        trailColor: 6697B0
+        "trailEffect": "none",
+        "trailLength": 10,
+        "trailWidth": 2.5,
+        "weaveScale": 2,
+        "weaveMag": 5,
+        "height": 22,
+        "width": 8,
+        "splashDamageRadius": 50,
+        "splashDamage": 90
+      }
   }
 ]
 research: 10q-naval-assem 
