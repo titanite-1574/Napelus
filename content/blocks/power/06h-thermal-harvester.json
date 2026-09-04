@@ -5,10 +5,11 @@ name: Thermal Harvester
 health: 900
 fogRadius: 4
 attribute: heat
-displayEfficiencyScale: 0.11111111111
-displayEfficiency: false
-shownPlanets: [napelus,Stella]
-powerProduction: 1
+displayEfficiencyScale: 1
+displayEfficiency: true
+placeableLiquid: true
+shownPlanets: [napelus]
+powerProduction: 3
 squareSprite: false
 category: power
 buildCostMultiplier: 2
