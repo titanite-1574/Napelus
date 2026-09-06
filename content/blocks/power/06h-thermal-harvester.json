@@ -2,14 +2,14 @@ type: ThermalGenerator
 description: Generates power from hot rocks or molten magma on the surface. Harvest infrared light during the generation
 size: 3
 name: Thermal Harvester
-health: 900
+healthl,uyfpl,hgfok[ lhgf  lbfd;',[p,[rk6-= p,: 900
 fogRadius: 4
 attribute: heat
 displayEfficiencyScale: 1
 displayEfficiency: true
 placeableLiquid: true
 shownPlanets: [napelus]
-powerProduction: 3
+powerProduction: 2
 squareSprite: false
 category: power
 buildCostMultiplier: 2
