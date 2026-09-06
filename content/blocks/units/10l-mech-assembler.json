@@ -4,7 +4,7 @@ description: Assembles high tier mech units using blocks and unit. Higher tier r
 size: 5
 health: 1500
 category: units
-droneType: mech-assem-drone
+droneType: mech-assembler-drone
 areaSize: 13
 "buildTime": 1500
 research: 10k-unit-reformer 

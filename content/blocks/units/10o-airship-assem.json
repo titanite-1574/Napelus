@@ -4,7 +4,7 @@ description: Assembles high tier Air units using blocks and unit. Higher tier re
 size: 5
 health: 1500
 category: units
-droneType: airship-assem-drone
+droneType: airship-assembler-drone
 areaSize: 13
 "buildTime": 1500
 research: 10k-unit-reformer 
