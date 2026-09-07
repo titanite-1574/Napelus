@@ -36,9 +36,16 @@ abilities: [
   }
   {
     type: UnitSpawnAbility
-    spawnTime: 1100
+    spawnTime: 500
     unit: unity
     spawnX: -23
+    spawnY: -27
+  }
+  {
+    type: UnitSpawnAbility
+    spawnTime: 500
+    unit: unity
+    spawnX: 23
     spawnY: -27
   }
 ]
@@ -68,11 +75,11 @@ weapons: [
       damage: 35
       speed: 5
       smokeEffect: colorSpark
-      trailColor: E3EBFB
+      trailColor:9A70C1
       trailWidth: 1.5
       trailLength: 5
-      backColor: E3EBFB
-      hitColor: E3EBFB
+      backColor: 9A70C1
+      hitColor: 9A70C1
       despawnEffect: {
         type: WaveEffect
         rotWithParent: true
@@ -81,7 +88,7 @@ weapons: [
         sizeFrom: 0
         sizeTo: 15
         colorFrom: ffffff
-        colorTo: feb380
+        colorTo: 9A70C1
          }
       }
    }
@@ -110,11 +117,11 @@ weapons: [
       damage: 35
       speed: 5
       smokeEffect: colorSpark
-      trailColor: E3EBFB
+      trailColor: 9A70C1
       trailWidth: 1.5
       trailLength: 5
-      backColor: E3EBFB
-      hitColor: E3EBFB
+      backColor: 9A70C1
+      hitColor: 9A70C1
       despawnEffect: {
         type: WaveEffect
         rotWithParent: true
@@ -123,7 +130,7 @@ weapons: [
         sizeFrom: 0
         sizeTo: 15
         colorFrom: ffffff
-        colorTo: feb380
+        colorTo: 9A70C1
          }
       }
    }
@@ -152,11 +159,11 @@ weapons: [
       damage: 35
       speed: 5
       smokeEffect: colorSpark
-      trailColor: E3EBFB
+      trailColor: 9A70C1
       trailWidth: 1.5
       trailLength: 5
-      backColor: E3EBFB
-      hitColor: E3EBFB
+      backColor: 9A70C1
+      hitColor: 9A70C1
       despawnEffect: {
         type: WaveEffect
         rotWithParent: true
@@ -165,7 +172,7 @@ weapons: [
         sizeFrom: 0
         sizeTo: 15
         colorFrom: ffffff
-        colorTo: feb380
+        colorTo: 9A70C1
          }
       }
    }
@@ -195,11 +202,11 @@ weapons: [
       damage: 35
       speed: 5
       smokeEffect: colorSpark
-      trailColor: E3EBFB
+      trailColor: 9A70C1
       trailWidth: 1.5
       trailLength: 5
-      backColor: E3EBFB
-      hitColor: E3EBFB
+      backColor: 9A70C1
+      hitColor: 9A70C1
       despawnEffect: {
         type: WaveEffect
         rotWithParent: true
@@ -208,7 +215,7 @@ weapons: [
         sizeFrom: 0
         sizeTo: 15
         colorFrom: ffffff
-        colorTo: feb380
+        colorTo: 9A70C1
          }
       }
    }

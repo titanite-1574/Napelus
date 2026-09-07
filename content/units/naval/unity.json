@@ -3,7 +3,6 @@
   name: Unity
   description: A attack drone that circles enemy structure,very fast and have high turning speed
   "controller": "AttackAI",
-  "targetFlags": [turret, core],
   "speed": 3,
   "rotateSpeed": 4
   "accel": 0.1,
@@ -11,7 +10,7 @@
   "flying": true,
   "health": 750,
   "hitSize": 13,
-  "isEnemy": false,
+  "isEnemy": true,
   "allowedInPayloads": false,
   "playerControllable": false,
   "physics": false,
@@ -22,8 +21,8 @@
   "itemCapacity": 0,
   "engineOffset": 2,
   "range": 500,
-  "engineColor": "AF83D5",
-  "trailColor": "AF83D5",
+  "engineColor": "9A70C1",
+  "trailColor": "9A70C1",
   "trailLength": 8,
   "circleTarget": true,
   "faceTarget": true,
@@ -35,10 +34,11 @@
       "alternate": false,
       "layerOffset": 0.001
       "recoil": 0.1
+       inaccuracy: 2
       "x": 0,
       "y": 0,
       "shootY": 3,
-      "reload": 15,
+      "reload": 45,
       "shoot": {
       shots: 5
       shotDelay: 5
@@ -56,7 +56,7 @@
           "cone": -360,
           "lenFrom": 5,
           "lenTo": 0,
-          "colorFrom": "7A8CDC",
+          "colorFrom": "9A70C1",
           "colorTo": "FFFFFF",
           "recoil": 0.5
         },
@@ -70,7 +70,7 @@
           "cone": -360,
           "lenFrom": 5,
           "lenTo": 0,
-          "colorFrom": "7A8CDC",
+          "colorFrom": "9A70C1",
           "colorTo": "FFFFFF"
         },
         "damage": 35,
