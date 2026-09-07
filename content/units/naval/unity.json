@@ -1,0 +1,86 @@
+{
+  "type": "flying",
+  name: Unity
+  description: A attack drone that circles enemy structure,very fast and have high turning speed
+  "controller": "AttackAI",
+  "targetFlags": [turret, core],
+  "speed": 3,
+  "rotateSpeed": 4
+  "accel": 0.1,
+  "drag": 0.02,
+  "flying": true,
+  "health": 750,
+  "hitSize": 13,
+  "isEnemy": false,
+  "allowedInPayloads": false,
+  "playerControllable": false,
+  "physics": false,
+  "useUnitCap": true,
+  "createWreck": false,
+  "createScorch": false,
+  "armor": 5,
+  "itemCapacity": 0,
+  "engineOffset": 2,
+  "range": 500,
+  "engineColor": "AF83D5",
+  "trailColor": "AF83D5",
+  "trailLength": 8,
+  "circleTarget": true,
+  "faceTarget": true,
+ "weapons": [
+    {
+      "name": "weapon",
+      "shootCone": 15,
+      "mirror": false,
+      "alternate": false,
+      "layerOffset": 0.001
+      "recoil": 0.1
+      "x": 0,
+      "y": 0,
+      "shootY": 3,
+      "reload": 15,
+      "shoot": {
+      shots: 5
+      shotDelay: 5
+      },
+      "shootSound": "shootAlt",
+      "bullet": {
+        "type": "basicBulletType",
+        "despawnEffect": {
+          "type": "ParticleEffect",
+          "line": true,
+          "particles": 5,
+          "lifetime": 20,
+          "offset": 10,
+          "length": 35,
+          "cone": -360,
+          "lenFrom": 5,
+          "lenTo": 0,
+          "colorFrom": "7A8CDC",
+          "colorTo": "FFFFFF",
+          "recoil": 0.5
+        },
+        "hitEffect": {
+          "type": "ParticleEffect",
+          "line": true,
+          "particles": 5,
+          "lifetime": 20,
+          "offset": 10,
+          "length": 35,
+          "cone": -360,
+          "lenFrom": 5,
+          "lenTo": 0,
+          "colorFrom": "7A8CDC",
+          "colorTo": "FFFFFF"
+        },
+        "damage": 35,
+        "height": 5,
+        "width": 5,
+        "speed": 4,
+        "frontColor": "7A8CDC",
+        "backColor": "FFFFFF",
+        "lifetime": 50
+      }
+    }
+  ]
+}

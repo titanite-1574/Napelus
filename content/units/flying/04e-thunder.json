@@ -22,7 +22,7 @@ healColor: 3CC773
 createWreck: true
 drag: 0.009
 faceTarget: true
-description: Armed with a large powerful railgun capable of reaching vast targets. Has 2 90° missile launcher and 2 backup guns
+description: The angel
 targetFlag: [ turret, core ]
  "engines": [
   {

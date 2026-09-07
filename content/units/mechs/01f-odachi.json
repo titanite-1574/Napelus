@@ -2,7 +2,7 @@ type: mech
 Name: Odachi
 speed: 0.35
 rotateSpeed: 1
-description: The greatest almighty creation of Aralus
+description: The HERO
 health: 45500
 armor: 35
 hitSize: 40
@@ -115,9 +115,9 @@ bullet: {
     type: BasicBulletType,
     speed: 5
       lifetime: 50
-      damage: 200
+      damage: 85
      splashDamageRadius: 20
-     splashDamage : 145
+     splashDamage : 55
       width: 6
       height: 6
         frontColor: EFC47F
@@ -156,7 +156,7 @@ bullet: {
         speed: 3
         lifetime: 6
         pierceCap: 2
-        damage: 35
+        damage: 25
         pierce: true
          }
    }
@@ -210,9 +210,9 @@ bullet: {
     type: BasicBulletType,
     speed: 5
       lifetime: 50
-      damage: 200
+      damage: 85
      splashDamageRadius: 20
-     splashDamage : 145
+     splashDamage : 55
       width: 6
       height: 6
         frontColor: EFC47F
@@ -251,7 +251,7 @@ bullet: {
         speed: 3
         lifetime: 6
         pierceCap: 2
-        damage: 35
+        damage: 25
         pierce: true
          }
    }
@@ -616,10 +616,11 @@ layer: 110
    }
     bullet: {
     type: LaserBulletType
-      color: [EFC47F,FFFFFF]
+      color: [ EFC47F,
+               FFFFFF ]
       length: 200
       width: 45
-      damage: 2000
+      damage: 1000
       knockback: 100
       impact: true
       unitDamageMultiplier: 2
@@ -641,6 +642,7 @@ shootSound: shootMissleLarge
  top: false
     recoil: 3
 recoils: 3
+randX: 5
 parts: [
     {
       type: RegionPart
@@ -677,7 +679,7 @@ shoot: {
 type: shootSpread 
 spread: 5
 shots: 6
-shotDelay: 45
+shotDelay: 15
 }
 bullet: {
       instantDisappear: true
