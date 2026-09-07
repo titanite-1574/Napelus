@@ -2,7 +2,7 @@ type: mech
 Name: Gladius
 speed: 0.35
 rotateSpeed: 1
-description: War
+description: The Warrior
 health: 25590
 armor: 25
 hitSize: 40

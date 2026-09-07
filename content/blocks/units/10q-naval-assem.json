@@ -1,10 +1,10 @@
 type: UnitAssembler
-name: Naval Assembler
-description: Assembles high tier Naval units using blocks and unit. Higher tier require components and needs Xenogen to function 
+name: Warship Assembler
+description: Assembles warship units using blocks and unit. Higher tier require components and needs Xenogen to function 
 size: 5
 health: 1500
 category: units
-droneType: airship-assem-drone
+droneType: naval-assembler-drone
 areaSize: 18
 "buildTime": 1500
 research: 10k-unit-reformer 

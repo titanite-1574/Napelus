@@ -1,10 +1,10 @@
 type: UnitAssembler
-name: Spider Assembler
-description: Assembles high tier Spider units using blocks and unit. Higher tier require components and needs Xenogen to function 
+name: Arachnid Assembler
+description: Assembles strong arachnid units using blocks and unit. Higher tier require components and needs Xenogen to function 
 size: 5
 health: 1500
 category: units
-droneType: airship-assem-drone
+droneType: spider-assembler-drone
 areaSize: 18
 "buildTime": 1500
 research: 10k-unit-reformer 

@@ -1,0 +1,46 @@
+type: tether
+name: Archid
+flying: true
+drag: 0.06
+accel: 0.11
+speed: 1.1
+health: 660
+engineSize: 0
+engineOffset: 5
+engineColor: 8989D3
+payloadCapacity: 0
+targetable: false
+bounded: false
+drawCell: false
+outlineColor: 26262F
+isEnemy: false
+hidden: true
+useUnitCap: false
+parts: [
+{
+    type: HoverPart
+    sides: 8
+    mirror: false
+    radius: 12.75
+    phase: 90
+    stroke: 2
+    layerOffset: -0.01
+    color: A4E3E8
+  }
+{
+suffix: -rotator
+moveRot: 360
+layerOffset: -0.01
+top: true
+progress: {
+type: time
+op: loop
+time: 100
+}
+}
+]
+logicControllable: false
+playerControllable: false
+allowedInPayloads: false
+createWreck: false
+controller: AssemblerAI

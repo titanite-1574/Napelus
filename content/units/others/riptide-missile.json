@@ -22,7 +22,7 @@ trailLength: 12
 trailScl: 1.1
 trailColor: D09FFF
 loopSound: missileTrail
-missileAccelTime: 50
+missileAccelTime: 95
 abilities: [
   {
   type: MoveEffectAbility
@@ -78,7 +78,7 @@ despawnEffect: [
 weapons: [{
     name: missile-explode
       shootCone: 360
-      shake: 50
+      shake: 15
       shootOnDeath: true
       controllable: true
       shootSound: none

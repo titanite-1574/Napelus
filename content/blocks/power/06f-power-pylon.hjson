@@ -7,10 +7,10 @@ size: 3
 squareSprite: false
 researchCostMultiplier: 0.5
 category: power
-research: 06b-advance-laser-node
+research: amalgam-node
 requirements: [
   iron/125
-  teralite/25
+  carbide/25
   amalgam/25
 ]
 laserScale: 1

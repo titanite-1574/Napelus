@@ -1,10 +1,10 @@
 type: UnitAssembler
-name: Tank Assembler
-description: Assembles heavy assualt tank units using blocks and unit. Higher tier require components and needs Xenogen to function 
+name: Siege Assembler
+description: Assembles siege units using blocks and unit. Higher tier require components and needs Xenogen to function 
 size: 5
 health: 1500
 category: units
-droneType: airship-assem-drone
+droneType: tank-assembler-drone
 areaSize: 18
 "buildTime": 1500
 research: 10k-unit-reformer 
