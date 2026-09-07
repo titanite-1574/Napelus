@@ -104,7 +104,7 @@ weapons: [
     inaccuracy: 5
     shootSound: shootScatter
     shoot: {
-    shots: 5
+    shots: 15
     shotDelay: 2
     }
     bullet: {
@@ -115,8 +115,8 @@ weapons: [
       splashDamage: 15
       pierceCap: 1
       lifetime: 30
-      damage: 65
-      speed: 5
+      damage: 125
+      speed: 9
       smokeEffect: colorSpark
       trailColor: 9A70C1
       trailWidth: 1.5
@@ -149,7 +149,7 @@ weapons: [
     inaccuracy: 5
     shootSound: shootScatter
     shoot: {
-    shots: 5
+    shots: 15
     shotDelay: 2
     }
     bullet: {
@@ -160,8 +160,8 @@ weapons: [
       splashDamage: 15
       pierceCap: 1
       lifetime: 30
-      damage: 65
-      speed: 5
+      damage: 125
+      speed: 9
       smokeEffect: colorSpark
       trailColor: 9A70C1
       trailWidth: 1.5
