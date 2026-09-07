@@ -5,7 +5,7 @@ engineSize: 0
 controller: AttackAI
 lowAltitude: false
 name: "Landfall"
-description: "One of the greatest technology of helicopter developed by Aralus.Armed with chainguns and destructive missiles."
+description: "One of the greatest technology of helicopter developed by Aralus.Armed with chainguns and destructive missiles.COMPLETELY INVISIBLE TO MINIMAPS"
 health: 9500
 hitSize: 20
 pickupUnits: true
@@ -13,6 +13,25 @@ drag: 0.05
 range: 135
 speed: 2
 strafePenalty: 1
+loopSound: heli
+loopSoundVolume: 0.05
+deathShake: 4
+fallSpeed: 3
+crashDamageMultiplier: 3
+drawMinimap: false
+deathSound: 
+"abilities": [
+    {
+      "type": "SpawnDeathAbility",
+       unit: nap-01b-estoc
+       randAmount: 5
+    }
+    {
+      "type": "SpawnDeathAbility",
+       unit: nap-03a-hurt
+       randAmount: 2
+    }
+]
 parts: [
 {
 suffix: -rotor2
