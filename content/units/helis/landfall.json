@@ -16,7 +16,7 @@ strafePenalty: 1
 loopSound: heli
 loopSoundVolume: 0.05
 deathShake: 4
-fallSpeed: 3
+fallSpeed: 0.3
 crashDamageMultiplier: 3
 drawMinimap: false
 deathSound: unitExplode3
@@ -24,12 +24,12 @@ deathSound: unitExplode3
     {
       "type": "SpawnDeathAbility",
        unit: nap-01b-estoc
-       randAmount: 2
+       randAmount: 0.5
     }
     {
       "type": "SpawnDeathAbility",
        unit: nap-03a-hurt
-       randAmount: 2
+       randAmount: 1
     }
 ]
 parts: [
