@@ -16,8 +16,8 @@ strafePenalty: 1
 loopSound: heli
 loopSoundVolume: 0.05
 deathShake: 4
-fallSpeed: 0.3
-crashDamageMultiplier: 3
+"fallSpeed": 0.001
+crashDamageMultiplier: 5
 drawMinimap: false
 deathSound: unitExplode3
 "abilities": [
