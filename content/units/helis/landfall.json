@@ -24,7 +24,7 @@ deathSound: unitExplode3
     {
       "type": "SpawnDeathAbility",
        unit: nap-01b-estoc
-       randAmount: 5
+       randAmount: 2
     }
     {
       "type": "SpawnDeathAbility",
@@ -41,6 +41,7 @@ x: 0
 y: 7.5
 layer: -20
 layerOffset: -0.01
+outline: false
 progress: {
 type: time
 op: loop
@@ -55,6 +56,7 @@ x: 8.4
 y: -7
 layer: -20
 layerOffset: -0.01
+outline: false
 progress: {
 type: time
 op: loop
@@ -68,6 +70,7 @@ moveRot: 360
 y: -7
 x: -8.4
 layer: -20
+outline: false
 layerOffset: -0.01
 progress: {
 type: time
