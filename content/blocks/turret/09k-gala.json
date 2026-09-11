@@ -5,7 +5,7 @@
   "researchCostMultiplier": 0.2,
   "size": 5,
   "health": 6450,
-  "reload": 75,
+  "reload": 25,
   "range": 500,
   "inaccuracy": 5
   "targetAir": true,
@@ -15,6 +15,7 @@
   "rotateSpeed": 0.8,
   "shootSound": "shootSmite",
   "shootWarmupSpeed": 0.01,
+    coolantMultiplier: 2
   minWarmup: 0.4
 moveWhileCharging: false
     "shoot": {
@@ -41,7 +42,7 @@ moveWhileCharging: false
       suffix: -barrels
       progress: recoil
       heatProgress: recoil
-      moveY: -5
+      moveY: -3
       under: true
       heatColor: 8DF9D1
     }
