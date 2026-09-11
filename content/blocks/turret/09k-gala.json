@@ -18,8 +18,7 @@
   minWarmup: 0.4
 moveWhileCharging: false
     "shoot": {
-        "type": "ShootMulti",
-          "type": "ShootAlternate",
+          "type": "ShootMulti",
           "barrels": 5,
           "shots": 5,
           "spread": 7

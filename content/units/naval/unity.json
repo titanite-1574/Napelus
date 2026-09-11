@@ -44,7 +44,7 @@
       shots: 5
       shotDelay: 5
       },
-      "shootSound": "shootAlt",
+      "shootSound": "shootBreach",
       "bullet": {
         "type": "basicBulletType",
         "despawnEffect": {
