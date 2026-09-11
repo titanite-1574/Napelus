@@ -19,10 +19,12 @@
 moveWhileCharging: false
     "shoot": {
           "type": "ShootMulti",
+          source: {
           "barrels": 5,
           "shots": 5,
           "spread": 7
           "shotDelay": 0
+        }
       },
   drawer: {
   type: DrawTurret
