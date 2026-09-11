@@ -18,13 +18,19 @@
   minWarmup: 0.4
 moveWhileCharging: false
     "shoot": {
-          "type": "ShootMulti",
-          source: {
+        "type": "ShootMulti",
+        "source": {
+          "type": "ShootAlternate",
           "barrels": 5,
-          "shots": 5,
+          "shots": 1,
           "spread": 7
-          "shotDelay": 0
-        }
+        },
+        "dest": [
+          {
+            "type": "ShootPattern",
+            "shots": 1
+          }
+        ]
       },
   drawer: {
   type: DrawTurret
