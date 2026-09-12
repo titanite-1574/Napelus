@@ -271,7 +271,7 @@ weapons: [
       splashDamage: 900
       width: 10
       height: 10
-      sprite: missileLarge
+      sprite: missile-large
         frontColor: E04545
      trailLength: 10
       trailWidth: 1
@@ -313,22 +313,6 @@ weapons: [
               "sizeFrom": 5,
               "sizeTo": 0
             },
-            {
-              "type": "ParticleEffect",
-              "particles": 35,
-              "line": false
-              "length": 75,
-              "baseLength": 50
-              "lifetime": 120,
-              "lightColor": "CFA3C8",
-              "interp": "circleOut",
-              "sizeInterp": "pow5In",
-              "cone": 360,
-              "colorFrom": "CFA3C8",
-              "colorTo": "cfa2c84e",
-              "sizeFrom": 2,
-              "sizeTo": 0
-            },
       ]
       }
       "hitEffect": {
@@ -364,22 +348,6 @@ weapons: [
               "colorFrom": "CFA3C8",
               "colorTo": "cfa2c84e",
               "sizeFrom": 5,
-              "sizeTo": 0
-            },
-            {
-              "type": "ParticleEffect",
-              "particles": 35,
-              "line": false
-              "length": 75,
-              "baseLength": 50
-              "lifetime": 120,
-              "lightColor": "CFA3C8",
-              "interp": "circleOut",
-              "sizeInterp": "pow5In",
-              "cone": 360,
-              "colorFrom": "CFA3C8",
-              "colorTo": "cfa2c84e",
-              "sizeFrom": 2,
               "sizeTo": 0
             },
       ]
