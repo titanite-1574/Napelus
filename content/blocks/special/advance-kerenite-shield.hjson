@@ -1,0 +1,34 @@
+type: ForceProjector
+size: 4
+health: 2550
+sides: 8
+radius: 250
+shieldRotation: 0
+shieldHealth: 1850
+cooldownNormal: 0.3
+cooldownLiquid: 2
+cooldownBrokenBase: 1.8
+category: effect
+squareSprite: false
+research: {
+  parent: kerenite-shield
+  objectives: [
+    {
+      type: OnSector
+      preset: snow-storm-base
+    }
+  ]
+}
+requirements: [
+  carbide/100
+  amalgam/110
+  kerenium/55
+]
+consumes: {
+  power: 6
+  liquids: [
+  xenogen/1
+  ]
+}
+armor: 10
+researchCostMultiplier: 0.5
