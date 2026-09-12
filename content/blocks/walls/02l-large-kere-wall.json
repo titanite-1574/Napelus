@@ -1,12 +1,14 @@
 {
   "name": "Large Kerenium Wall"
   "type": "Wall",
-  "description": A wall made of kerenium. Has no special purpose other than protecting structures
+  "description": A wall made of kerenium. Capable of abosrbing lasers and block lightnings
    "buildCostMultiplier": 0.1,
   "buildTime": 750
   "health": 3000,
   "size": 2,
   "armor": 15,
+  insulated: true
+  absorbLasers: true
   shownPlanets: [napelus]
   "requirements": [
     "kerenium/25",
