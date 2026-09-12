@@ -330,6 +330,7 @@ weapons: [
               "sizeTo": 0
             },
       ]
+      }
       "hitEffect": {
           "type": "multiEffect",
           "effects": [
