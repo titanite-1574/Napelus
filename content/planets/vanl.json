@@ -17,7 +17,7 @@ atmosphereRadOut: 0
 atmosphereColor: 000000 
 iconColor: bad5cd     
 icon: planet
-orbitRadius: 1
+orbitRadius: 3
 orbitTime: 2000
 bloom: false
 alwaysUnlocked: false
