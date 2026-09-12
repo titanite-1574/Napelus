@@ -74,6 +74,8 @@ weapons: [
       lifetime: 30
       damage: 35
       speed: 5
+      collidesGround: true
+      collidesAir: false
       smokeEffect: colorSpark
       trailColor: 9A70C1
       trailWidth: 1.5
@@ -99,7 +101,7 @@ weapons: [
     rotateSpeed: 1
     x: -30
     y: -15
-    reload: 15
+    reload: 45
     recoil: 1.25
     inaccuracy: 5
     shootSound: shootScatter
@@ -257,6 +259,8 @@ weapons: [
       trailLength: 5
       backColor: 9A70C1
       hitColor: 9A70C1
+      collidesGround: true
+      collidesAir: false
       despawnEffect: {
         type: WaveEffect
         rotWithParent: true
@@ -300,6 +304,8 @@ weapons: [
       trailLength: 5
       backColor: 9A70C1
       hitColor: 9A70C1
+      collidesGround: true
+      collidesAir: false
       despawnEffect: {
         type: WaveEffect
         rotWithParent: true
@@ -359,7 +365,3 @@ weapons: [
   }
 ]
 research: 10q-naval-assem 
-researchCost: [
-    titanium/100
-    graphite/50
-  ]

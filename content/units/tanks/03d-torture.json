@@ -232,6 +232,8 @@ weapons: [
       damage: 255
       width: 8
       height: 15
+      weaveMag: 2
+      weaveScale: 2
       sprite: missile-large
         frontColor: E04545
      trailLength: 8

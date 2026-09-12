@@ -54,209 +54,95 @@ treadRects: [
 researchCostMultiplier: 1
 weapons: [
 {
-    "name": "torture-machine-gun",
-    "reload": 55,
-    "mirror": true,
-    "x": 14,
-    "y": 14,
-    "shootY": 2,
-    "recoil": 1,
-    inaccuracy: 10
-    "rotate": true,
-    "rotateSpeed": 2.5
-    shootSound: shootStell
+    name: ares-flak-gun
+    mirror: true
+    rotate: true
+    rotateSpeed: 1
+    x: 14
+    y: 14
+    reload: 45
+    recoil: 1.25
+    inaccuracy: 5
+    shootSound: shootScatter
     shoot: {
-  type: shootPattern
-  shots: 5
-  shotDelay: 5
-}
+    shots: 10
+    shotDelay: 2
+    }
     bullet: {
-    type: BasicBulletType
-      speed: 4
-      lifetime: 45
-      damage: 35
-      width: 6
-      height: 6
-        frontColor: E04545
-     trailLength: 10
-      trailWidth: 1
-      trailColor: F58B8B
-        backColor: F58B8B
-      despawnHit: true
-      despawnEffect: none
-      bulletInterval: 15
-      intervalRandomSpread: 0
-      intervalBullets: 1
-      intervalSpread: 45
-      intervalBullet: {
-        type: BasicBulletType
-        frontColor: F58B8B
-        backColor: F58B8B
-        speed: 2.5
-        drag: 0.01
-        lifetime: 35
-        damage: 25
-        splashDamage: 20
-        splashDamageRadius: 16
-        width: 6
-        height: 6
-        trailChance: -1
-        trailColor: F58B8B
-        trailLength: 7
-        trailWidth: 2
-        weaveScale: 2
-        weaveMag: 3
-        pierceArmor: false
-        pierceBuilding: true
-        despawnSound: explosion
-        "homingRange": 200
-        "homingPower": 0.07
-        despawnEffect: {
-          type: ExplosionEffect
-          lifetime: 15
-          waveStroke: 2.5
-          waveColor: F58B8B
-          sparkColor: F58B8B
-          smokeColor: F58B8B
-          waveRad: 8
-          smokeSize: 3
-          smokes: 2
-          smokeSizeBase: 0
-          sparks: 2
-          sparkRad: 10
-          sparkLen: 2
-          sparkStroke: 1
-        }
+      type: FlakBulletType
+      sprite: missile-large
+      width: 5
+      splashDamageRadius: 20
+      splashDamage: 15
+      pierceCap: 1
+      lifetime: 30
+      damage: 125
+      speed: 9
+      smokeEffect: colorSpark
+      trailColor: 9A70C1
+      trailWidth: 1.5
+      trailLength: 5
+      backColor: ffffff
+      hitColor: ffffff
+      collidesGround: false
+      collidesAir: true
+      despawnEffect: {
+        type: WaveEffect
+        rotWithParent: true
+        followParent: true
+        lifetime: 8
+        sizeFrom: 0
+        sizeTo: 15
+        colorFrom: ffffff
+        colorTo: ffffff
+         }
       }
-      hitEffect: [
-        {
-          type: ParticleEffect
-          particles: 6
-          line: true
-          lifetime: 25
-          length: 20
-          lenFrom: 5
-          lenTo: 0
-          strokeFrom: 2
-          strokeTo: 0
-          colorFrom: E04545
-          colorTo: ffffff
-        }
-        {
-          type: WaveEffect
-          sizeFrom: 0
-          sizeTo: 15
-          lifetime: 20
-          strokeFrom: 3.5
-          strokeTo: 0
-          colorFrom: E04545
-          colorTo: ffffff
-        }
-      ]
-    }
-    }
+   }
   {
-    "name": "torture-machine-gun",
-    "reload": 55,
-    "mirror": true,
-    "x": 14,
-    "y": -14,
-    "shootY": 2,
-    "recoil": 1,
-    inaccuracy: 10
-    "rotate": true,
-    "rotateSpeed": 2.5
-    shootSound: shootStell
+    name: vega-flak-gun
+    mirror: true
+    rotate: true
+    rotateSpeed: 1
+    x: 14
+    y: -14
+    reload: 45
+    recoil: 1.25
+    inaccuracy: 5
+    shootSound: shootScatter
     shoot: {
-  type: shootPattern
-  shots: 5
-  shotDelay: 5
-}
+    shots: 15
+    shotDelay: 2
+    }
     bullet: {
-    type: BasicBulletType
-      speed: 4
-      lifetime: 45
-      damage: 35
-      width: 6
-      height: 6
-        frontColor: E04545
-     trailLength: 10
-      trailWidth: 1
-      trailColor: F58B8B
-        backColor: F58B8B
-      despawnHit: true
-      despawnEffect: none
-      bulletInterval: 15
-      intervalRandomSpread: 0
-      intervalBullets: 1
-      intervalSpread: 45
-      intervalBullet: {
-        type: BasicBulletType
-        frontColor: F58B8B
-        backColor: F58B8B
-        speed: 2.5
-        drag: 0.01
-        lifetime: 35
-        damage: 25
-        splashDamage: 20
-        splashDamageRadius: 16
-        width: 6
-        height: 6
-        trailChance: -1
-        trailColor: F58B8B
-        trailLength: 7
-        trailWidth: 2
-        weaveScale: 2
-        weaveMag: 3
-        pierceArmor: false
-        pierceBuilding: true
-        despawnSound: explosion
-        "homingRange": 200
-        "homingPower": 0.07
-        despawnEffect: {
-          type: ExplosionEffect
-          lifetime: 15
-          waveStroke: 2.5
-          waveColor: F58B8B
-          sparkColor: F58B8B
-          smokeColor: F58B8B
-          waveRad: 8
-          smokeSize: 3
-          smokes: 2
-          smokeSizeBase: 0
-          sparks: 2
-          sparkRad: 10
-          sparkLen: 2
-          sparkStroke: 1
-        }
+      type: BasicBulletType
+      sprite: missile-large
+      width: 5
+      splashDamageRadius: 20
+      splashDamage: 15
+      pierceCap: 1
+      lifetime: 30
+      damage: 125
+      speed: 9
+      smokeEffect: colorSpark
+      trailColor: 9A70C1
+      trailWidth: 1.5
+      trailLength: 5
+      backColor: ffffff
+      hitColor: ffffff
+      collidesGround: false
+      collidesAir: true
+      despawnEffect: {
+        type: WaveEffect
+        rotWithParent: true
+        followParent: true
+        lifetime: 8
+        sizeFrom: 0
+        sizeTo: 15
+        colorFrom: ffffff
+        colorTo: ffffff
+         }
       }
-      hitEffect: [
-        {
-          type: ParticleEffect
-          particles: 6
-          line: true
-          lifetime: 25
-          length: 20
-          lenFrom: 5
-          lenTo: 0
-          strokeFrom: 2
-          strokeTo: 0
-          colorFrom: E04545
-          colorTo: ffffff
-        }
-        {
-          type: WaveEffect
-          sizeFrom: 0
-          sizeTo: 15
-          lifetime: 20
-          strokeFrom: 3.5
-          strokeTo: 0
-          colorFrom: E04545
-          colorTo: ffffff
-        }
-      ]
-    }
-    }
+   }
   {
     "name": "torture-machine-gun",
     "reload": 55,
@@ -360,160 +246,142 @@ weapons: [
     }
     }
   {
-      "name": "cannon-ball",
-      "mirror": false,
-      "alternate": true,
-      "top": false,
-      "layerOffset": 1
-      "shake": 35
-      "x": 0,
-      "y": 0,
-      "shootY": 0,
-      "reload": 550,
-      "recoil": 1
-      "cooldownTime": 190,
-       shootSound: shootAfflict
-      "shootStatusDuration": 100,
-      "shootStatus": unmoving,
-      "chargeSound": chargeup
-      "rotate": true
-      "rotateSpeed": 1
-      parts: [
-      {
-type: ShapePart
-circle: true
-y: 0
-radius: 0
-radiusTo: 15
-colorFrom: F58B8B
-colorTo: F58B8B
-progress: charge
-under: true
-layer: 110
-  }
-]
-      "shoot": {
-      "firstShotDelay": 100,
-      "shots": 3
-      "shotDelay": 10
-      },
-        bullet: {
-    type: BasicBulletType
-      speed: 8
-      lifetime: 65
-      damage: 789
-      splashDamage: 355
-        splashDamageRadius: 85
-      hitSize: 25
-      width: 0
-      height: 0
-      sprite: large-orb
+    "name": "warhammer",
+    "reload": 850,
+    "mirror": false,
+    "x": 0,
+    "y": 2,
+    "shootY": 2,
+    "recoil": 3,
+    "rotate": true,
+    "rotateSpeed": 3
+     inaccuarcy: 5
+"shoot": {
+"type": "shootPattern",
+ "shots": 5,
+    "shotDelay": 5
+}
+    shootSound: shootTank
+    bullet: {
+    type: ArtilleryBulletType 
+      speed: 6
+      lifetime: 45
+      damage: 900
+      splashDamageRadius: 45
+      splashDamage: 900
+      width: 10
+      height: 10
+      sprite: missileLarge
         frontColor: E04545
      trailLength: 10
-      trailWidth: 50
+      trailWidth: 1
       trailColor: F58B8B
         backColor: F58B8B
       despawnHit: true
-      despawnEffect: none
-      weaveScale: 5
-        weaveMag: 4
-      bulletInterval: 25
-      intervalRandomSpread: 5
-      intervalBullets: 6
-      intervalSpread: 45
-      intervalBullet: {
-        type: BasicBulletType
-        frontColor: F58B8B
-        backColor: F58B8B
-        speed: 2.5
-        drag: 0.01
-        lifetime: 75
-        damage: 125
-        splashDamage: 45
-        splashDamageRadius: 16
-        width: 10
-        height: 10
-        trailChance: -1
-        trailColor: F58B8B
-        trailLength: 7
-        trailWidth: 2
-        weaveScale: 2
-        weaveMag: 3
-        pierceArmor: false
-        pierceBuilding: true
-        despawnSound: explosion
-        despawnEffect: {
-          type: ExplosionEffect
-          lifetime: 15
-          waveStroke: 2.5
-          waveColor: F58B8B
-          sparkColor: F58B8B
-          smokeColor: F58B8B
-          waveRad: 8
-          smokeSize: 3
-          smokes: 2
-          smokeSizeBase: 0
-          sparks: 2
-          sparkRad: 10
-          sparkLen: 2
-          sparkStroke: 1
-        }
-      }
-      hitEffect: [
-        {
-              type: WaveEffect
-          length: 70
-              baseLength: -80
-          strokeFrom: 3
-          strokeTo: 3
-          sizeTo: 65
-          sizeFrom: 0
-          colorFrom: F58B8B
-          colorTo: F58B8B
-          "lifetime": 45,
+      "despawnEffect": {
+          "type": "multiEffect",
+          "effects": [
+           {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "line": false
+              "length": 35,
+              "baseLength": 35,
+              "lifetime": 120,
+              "lightColor": "aae7d78b",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "CFA3C8",
+              "colorTo": "cfa2c84e",
+              "sizeFrom": 5,
+              "sizeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "line": false
+              "length": 35,
+              "baseLength": 50
+              "lifetime": 120,
+              "lightColor": "CFA3C8",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "CFA3C8",
+              "colorTo": "cfa2c84e",
+              "sizeFrom": 5,
+              "sizeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 35,
+              "line": false
+              "length": 75,
+              "baseLength": 50
+              "lifetime": 120,
+              "lightColor": "CFA3C8",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "CFA3C8",
+              "colorTo": "cfa2c84e",
+              "sizeFrom": 2,
+              "sizeTo": 0
             },
       ]
-      "chargeEffect": {
+      "hitEffect": {
           "type": "multiEffect",
-          "lifetime": 100,
           "effects": [
-            {
-              type: WaveEffect
-          length: 70
-              baseLength: -80
-          strokeFrom: 3
-          strokeTo: 3
-          sizeTo: 0
-          sizeFrom: 200
-          colorFrom: F58B8B
-          colorTo: F58B8B
-          "lifetime": 45,
+           {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "line": false
+              "length": 35,
+              "baseLength": 35,
+              "lifetime": 120,
+              "lightColor": "aae7d78b",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "CFA3C8",
+              "colorTo": "cfa2c84e",
+              "sizeFrom": 5,
+              "sizeTo": 0
             },
             {
-             type: WaveEffect
-          length: 70
-              baseLength: -80
-          strokeFrom: 3
-          strokeTo: 3
-          sizeTo: 0
-          sizeFrom: 350
-          colorFrom: a4e2e895
-          colorTo: F58B8B
-          "lifetime": 100,
+              "type": "ParticleEffect",
+              "particles": 20,
+              "line": false
+              "length": 35,
+              "baseLength": 50
+              "lifetime": 120,
+              "lightColor": "CFA3C8",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "CFA3C8",
+              "colorTo": "cfa2c84e",
+              "sizeFrom": 5,
+              "sizeTo": 0
             },
             {
-              type: WaveEffect
-          strokeFrom: 3
-          strokeTo: 3
-          sizeTo: 0
-          sizeFrom: 500
-          colorFrom: a4e2e895
-          colorTo: F58B8B
-          "lifetime": 100,
+              "type": "ParticleEffect",
+              "particles": 35,
+              "line": false
+              "length": 75,
+              "baseLength": 50
+              "lifetime": 120,
+              "lightColor": "CFA3C8",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "CFA3C8",
+              "colorTo": "cfa2c84e",
+              "sizeFrom": 2,
+              "sizeTo": 0
             },
-          ]
-        },
-        "shootEffect": "hitEmpSpark"
+      ]
     }
   }
 ]
