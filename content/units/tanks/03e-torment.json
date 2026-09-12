@@ -65,7 +65,7 @@ weapons: [
     inaccuracy: 5
     shootSound: shootScatter
     shoot: {
-    shots: 10
+    shots: 5
     shotDelay: 2
     }
     bullet: {
@@ -99,7 +99,7 @@ weapons: [
       }
    }
   {
-    name: vega-flak-gun
+    name: ares-flak-gun
     mirror: true
     rotate: true
     rotateSpeed: 1
@@ -110,11 +110,11 @@ weapons: [
     inaccuracy: 5
     shootSound: shootScatter
     shoot: {
-    shots: 15
+    shots: 5
     shotDelay: 2
     }
     bullet: {
-      type: BasicBulletType
+      type: FlakBulletType
       sprite: missile-large
       width: 5
       splashDamageRadius: 20
@@ -274,7 +274,7 @@ weapons: [
       sprite: missile-large
         frontColor: E04545
      trailLength: 10
-      trailWidth: 1
+      trailWidth: 5
       trailColor: F58B8B
         backColor: F58B8B
       despawnHit: true
@@ -292,7 +292,7 @@ weapons: [
               "interp": "circleOut",
               "sizeInterp": "pow5In",
               "cone": 360,
-              "colorFrom": "CFA3C8",
+              "colorFrom": "E04545",
               "colorTo": "cfa2c84e",
               "sizeFrom": 5,
               "sizeTo": 0
@@ -308,7 +308,7 @@ weapons: [
               "interp": "circleOut",
               "sizeInterp": "pow5In",
               "cone": 360,
-              "colorFrom": "CFA3C8",
+              "colorFrom": "E04545",
               "colorTo": "cfa2c84e",
               "sizeFrom": 5,
               "sizeTo": 0
@@ -329,7 +329,7 @@ weapons: [
               "interp": "circleOut",
               "sizeInterp": "pow5In",
               "cone": 360,
-              "colorFrom": "CFA3C8",
+              "colorFrom": "E04545",
               "colorTo": "cfa2c84e",
               "sizeFrom": 5,
               "sizeTo": 0
@@ -345,7 +345,7 @@ weapons: [
               "interp": "circleOut",
               "sizeInterp": "pow5In",
               "cone": 360,
-              "colorFrom": "CFA3C8",
+              "colorFrom": "E04545",
               "colorTo": "cfa2c84e",
               "sizeFrom": 5,
               "sizeTo": 0
