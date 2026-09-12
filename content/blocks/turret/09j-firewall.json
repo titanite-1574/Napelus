@@ -1,7 +1,7 @@
 {
   "type": "ItemTurret",
   "name": Firewall,
-  "description": Shoots out a wall of fire at enemy targets. Great crowd control but have a low damage. Uses infrared lights to melt menite
+  "description": Shoots out a wall of fire at enemy targets. Great crowd control but have a low damage. Uses converted infrared lights to melt menite
   "researchCostMultiplier": 0.2,
   "size": 5,
   "health": 5500,
@@ -100,7 +100,7 @@ consumes: {
     lifetime: 10
     drawFlare: false
     hitColor: ffc9a2
-    damage: 55
+    damage: 250
     drag: 0.05
     speed: 10
     knockback: 0

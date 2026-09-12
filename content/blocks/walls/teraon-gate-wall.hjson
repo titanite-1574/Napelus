@@ -1,0 +1,11 @@
+type: AutoDoor
+size: 2
+armor: 10
+health: 2000
+requirements: [
+  iron/30
+  teralite/20
+]
+research: 02f-large-tera-wall
+researchCostMultiplier: 0.5
+category: defense

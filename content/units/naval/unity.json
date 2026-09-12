@@ -1,31 +1,32 @@
 {
   "type": "flying",
   name: Unity
-  description: A attack drone that circles enemy structure,very fast and have high turning speed
+  description: A repurposed blueprint of a attack drone from somewhere,dangerous in groups. Fast and destructive but can be destroyed easily
   "controller": "AttackAI",
-  "speed": 3,
+  "speed": 6,
   "rotateSpeed": 4
   "accel": 0.1,
   "drag": 0.02,
   "flying": true,
-  "health": 750,
+  "health": 350,
   "hitSize": 13,
   "isEnemy": true,
   "allowedInPayloads": false,
   "playerControllable": false,
   "physics": false,
   "useUnitCap": true,
-  "createWreck": false,
-  "createScorch": false,
-  "armor": 5,
+  "createWreck": true,
+  "createScorch": true,
+  "armor": 2,
   "itemCapacity": 0,
   "engineOffset": 2,
   "range": 500,
-  "engineColor": "9A70C1",
-  "trailColor": "9A70C1",
+  "engineColor": "6590D0",
+  "trailColor": "6590D0",
   "trailLength": 8,
   "circleTarget": true,
   "faceTarget": true,
+  "fallSpeed": 0.01
  "weapons": [
     {
       "name": "weapon",
@@ -43,7 +44,7 @@
       shots: 5
       shotDelay: 5
       },
-      "shootSound": "shootAlt",
+      "shootSound": "shootBreach",
       "bullet": {
         "type": "basicBulletType",
         "despawnEffect": {
@@ -56,7 +57,7 @@
           "cone": -360,
           "lenFrom": 5,
           "lenTo": 0,
-          "colorFrom": "9A70C1",
+          "colorFrom": "6590D0",
           "colorTo": "FFFFFF",
           "recoil": 0.5
         },
@@ -70,14 +71,14 @@
           "cone": -360,
           "lenFrom": 5,
           "lenTo": 0,
-          "colorFrom": "9A70C1",
+          "colorFrom": "6590D0",
           "colorTo": "FFFFFF"
         },
         "damage": 35,
         "height": 5,
         "width": 5,
         "speed": 4,
-        "frontColor": "7A8CDC",
+        "frontColor": "6590D0",
         "backColor": "FFFFFF",
         "lifetime": 50
       }

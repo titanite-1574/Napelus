@@ -74,8 +74,10 @@ weapons: [
       lifetime: 30
       damage: 35
       speed: 5
+      collidesGround: true
+      collidesAir: false
       smokeEffect: colorSpark
-      trailColor:9A70C1
+      trailColor: 9A70C1
       trailWidth: 1.5
       trailLength: 5
       backColor: 9A70C1
@@ -97,14 +99,14 @@ weapons: [
     mirror: true
     rotate: true
     rotateSpeed: 1
-    x: -20
-    y: 10
-    reload: 15
+    x: -30
+    y: -15
+    reload: 45
     recoil: 1.25
     inaccuracy: 5
     shootSound: shootScatter
     shoot: {
-    shots: 5
+    shots: 15
     shotDelay: 2
     }
     bullet: {
@@ -115,8 +117,8 @@ weapons: [
       splashDamage: 15
       pierceCap: 1
       lifetime: 30
-      damage: 65
-      speed: 5
+      damage: 125
+      speed: 9
       smokeEffect: colorSpark
       trailColor: 9A70C1
       trailWidth: 1.5
@@ -142,14 +144,14 @@ weapons: [
     mirror: true
     rotate: true
     rotateSpeed: 1
-    x: -20
-    y: -10
+    x: -22
+    y: 23
     reload: 15
     recoil: 1.25
     inaccuracy: 5
-    shootSound: shootScatter
+    shootSound: shootDisperse
     shoot: {
-    shots: 5
+    shots: 15
     shotDelay: 2
     }
     bullet: {
@@ -160,8 +162,53 @@ weapons: [
       splashDamage: 15
       pierceCap: 1
       lifetime: 30
-      damage: 65
-      speed: 5
+      damage: 125
+      speed: 9
+      smokeEffect: colorSpark
+      trailColor: 9A70C1
+      trailWidth: 1.5
+      trailLength: 5
+      backColor: ffffff
+      hitColor: ffffff
+      collidesGround: false
+      collidesAir: true
+      despawnEffect: {
+        type: WaveEffect
+        rotWithParent: true
+        followParent: true
+        lifetime: 8
+        sizeFrom: 0
+        sizeTo: 15
+        colorFrom: ffffff
+        colorTo: ffffff
+         }
+      }
+   }
+{
+    name: vega-flak-gun
+    mirror: false
+    rotate: true
+    rotateSpeed: 1
+    x: 0
+    y: 37
+    reload: 15
+    recoil: 1.25
+    inaccuracy: 5
+    shootSound: shootDisperse
+    shoot: {
+    shots: 15
+    shotDelay: 2
+    }
+    bullet: {
+      type: BasicBulletType
+      sprite: missile-large
+      width: 5
+      splashDamageRadius: 20
+      splashDamage: 15
+      pierceCap: 1
+      lifetime: 30
+      damage: 125
+      speed: 9
       smokeEffect: colorSpark
       trailColor: 9A70C1
       trailWidth: 1.5
@@ -212,48 +259,8 @@ weapons: [
       trailLength: 5
       backColor: 9A70C1
       hitColor: 9A70C1
-      despawnEffect: {
-        type: WaveEffect
-        rotWithParent: true
-        followParent: true
-        lifetime: 8
-        sizeFrom: 0
-        sizeTo: 15
-        colorFrom: ffffff
-        colorTo: 9A70C1
-         }
-      }
-   }
-{
-    name: neptune-chaingun
-    mirror: true
-    rotate: true
-    rotateSpeed: 1
-    x: -30
-    y: -15
-    reload: 55
-    recoil: 1.25
-    shootSound: shootMerui
-    shoot: {
-    shots: 5
-    shotDelay: 10
-    }
-    bullet: {
-      type: BasicBulletType
-      sprite: missile-large
-      width: 5
-      splashDamageRadius: 20
-      splashDamage: 15
-      pierceCap: 1
-      lifetime: 30
-      damage: 35
-      speed: 5
-      smokeEffect: colorSpark
-      trailColor: 9A70C1
-      trailWidth: 1.5
-      trailLength: 5
-      backColor: 9A70C1
-      hitColor: 9A70C1
+      collidesGround: true
+      collidesAir: false
       despawnEffect: {
         type: WaveEffect
         rotWithParent: true
@@ -297,6 +304,8 @@ weapons: [
       trailLength: 5
       backColor: 9A70C1
       hitColor: 9A70C1
+      collidesGround: true
+      collidesAir: false
       despawnEffect: {
         type: WaveEffect
         rotWithParent: true
@@ -356,7 +365,3 @@ weapons: [
   }
 ]
 research: 10q-naval-assem 
-researchCost: [
-    titanium/100
-    graphite/50
-  ]

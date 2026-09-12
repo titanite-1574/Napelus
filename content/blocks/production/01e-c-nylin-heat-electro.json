@@ -1,8 +1,8 @@
 type: HeatCrafter 
 size: 4
-name: Nylin Electrolyzer
+name: Nylin Heat Electrolyzer
 liquidOutputDirections: [0,2]
-description: Same as the electrolyzer, nothing interesting
+description: Same as the electrolyzer,but uses heat for more efficient seperation
 health: 450
 craftTime: 60
 liquidCapacity: 60
