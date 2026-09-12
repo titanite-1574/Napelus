@@ -17,7 +17,7 @@ mesh: [
     octaves: 4.4
     persistence: 0.9
     scale: 0.42
-    mag: 3.1
+    mag: 1.5
     coct: 4.5
     cper: 4
     cscl: 6.6
@@ -34,7 +34,7 @@ mesh: [
     octaves: 4.4
     persistence: 0.9
     scale: 0.42
-    mag: 3
+    mag: 1
     coct: 4.5
     cper: 4
     cscl: 6.6
@@ -84,7 +84,7 @@ campaignRuleDefaults.showSpawns: true
 
 startSector: 0
 sectorSize: 1
-parent: Stella
+parent: napelus
 solarSystem: 1-staria
 tidalLock: true
 orbitRadius: 12
