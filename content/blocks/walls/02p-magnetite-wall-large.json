@@ -10,7 +10,6 @@
   hasPower: true
 conductivePower: true
 shieldHealth: 550
-insulated: true
   shownPlanets: [napelus]
   "requirements": [
      "magnetite/45"
