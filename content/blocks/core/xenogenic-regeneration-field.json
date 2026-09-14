@@ -45,7 +45,7 @@ drawer: {
   }
     {
     type: DrawLiquidTile
-    padding: 3
+    padding: 1
     drawLiquid: nitrogen
   }
   {
