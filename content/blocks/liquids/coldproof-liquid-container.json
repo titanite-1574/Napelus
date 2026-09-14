@@ -1,12 +1,22 @@
 type: LiquidRouter
-name: Liquid Container
+name: Coldproof Liquid Container
 description: Stores liquid. Works as a liquid router
 size: 3
 health: 650
-liquidCapacity: 2550
+liquidCapacity: 2000
 category: liquid
 squareSprite: false
 research: 06a-liquid-pipe 
+"drawers": [
+      {
+        "type": "DrawRegion"
+         suffix: -bottom
+      }
+      {
+    type: DrawLiquidTile
+    padding: 3
+  }
+]
 requirements: [
   iron/45
   teralite/45

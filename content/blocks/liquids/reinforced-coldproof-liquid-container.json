@@ -1,0 +1,33 @@
+type: LiquidRouter
+name: Reinforced Coldproof Liquid Container
+description: Stores large amount of liquid. Works as a liquid router
+size: 4
+solid: true
+underBullets: false
+health: 2500
+liquidCapacity: 4500
+category: liquid
+squareSprite: false
+research: coldproof-liquid-container 
+"drawers": [
+      {
+        "type": "DrawRegion"
+         suffix: -bottom
+      }
+      {
+    type: DrawLiquidTile
+    padding: 3
+  }
+]
+requirements: [
+  iron/45
+  amalgam/45
+  kerenium/55
+]
+researchCostMultiplier: 0.1
+researchCost: [
+  iron/1450
+  amalgam/1050
+  kerenium/2500
+]
+shownPlanets: [napelus]

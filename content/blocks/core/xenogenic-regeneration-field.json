@@ -40,6 +40,20 @@ drawer: {
   type: DrawMulti
   drawers: [
     {
+    type: DrawRegion
+    suffix: -bottom
+  }
+    {
+    type: DrawLiquidTile
+    padding: 3
+    drawLiquid: nitrogen
+  }
+  {
+    type: DrawLiquidTile
+    padding: 5
+    drawLiquid: xenogen
+  }
+  {
       type: DrawDefault
     }
     {
