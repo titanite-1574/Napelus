@@ -1,0 +1,7 @@
+type: OreBlock
+name: Teralite Ore (wall)
+itemDrop: teralite
+variants: 2
+mapColor: 91DDED
+tier: 3
+wallOre: true
