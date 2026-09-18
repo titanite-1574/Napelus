@@ -254,14 +254,13 @@ bullet: {
     "recoil": 3,
     "rotate": true,
     "rotateSpeed": 0.5
-     layerOffset: 0.02
      inaccuarcy: 5
      parts: [
     {
       type: RegionPart
       suffix: -barrel
-      layerOffset: 0.01
       mirror: false
+      top: false
       "under": false,
       progress: recoil
       moveY: -2
@@ -304,8 +303,8 @@ bullet: {
               "interp": "circleOut",
               "sizeInterp": "pow5In",
               "cone": 360,
-              "colorFrom": "6B5F56",
-              "colorTo": "cfa2c84e",
+              "colorFrom": "616161",
+              "colorTo": "61616194",
               "sizeFrom": 10,
               "sizeTo": 0
             },
@@ -321,7 +320,7 @@ bullet: {
               "sizeInterp": "pow5In",
               "cone": 360,
               "colorFrom": "3E3A46",
-              "colorTo": "cfa2c84e",
+              "colorTo": "61616194",
               "sizeFrom": 10,
               "sizeTo": 0
             },
@@ -332,23 +331,23 @@ bullet: {
           "effects": [
            {
               "type": "ParticleEffect",
-              "particles": 20,
+              "particles": 25,
               "line": false
               "length": 35,
-              "baseLength": 35,
+              "baseLength": 55,
               "lifetime": 120,
               "lightColor": "aae7d78b",
               "interp": "circleOut",
               "sizeInterp": "pow5In",
               "cone": 360,
               "colorFrom": "6B5F56",
-              "colorTo": "cfa2c84e",
+              "colorTo": "61616194",
               "sizeFrom": 13,
               "sizeTo": 0
             },
             {
               "type": "ParticleEffect",
-              "particles": 20,
+              "particles": 30,
               "line": false
               "length": 35,
               "baseLength": 65,
@@ -358,13 +357,13 @@ bullet: {
               "sizeInterp": "pow5In",
               "cone": 360,
               "colorFrom": "3E3A46",
-              "colorTo": "cfa2c84e",
+              "colorTo": "61616194",
               "sizeFrom": 10,
               "sizeTo": 0
             },
             {
               "type": "ParticleEffect",
-              "particles": 20,
+              "particles": 35,
               "line": false
               "length": 35,
               "baseLength": 95
@@ -374,7 +373,7 @@ bullet: {
               "sizeInterp": "pow5In",
               "cone": 360,
               "colorFrom": "3E3A46",
-              "colorTo": "cfa2c84e",
+              "colorTo": "61616194",
               "sizeFrom": 8,
               "sizeTo": 0
             },
