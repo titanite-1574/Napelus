@@ -254,12 +254,13 @@ bullet: {
     "recoil": 3,
     "rotate": true,
     "rotateSpeed": 0.5
+     layerOffset: 0.02
      inaccuarcy: 5
      parts: [
     {
       type: RegionPart
       suffix: -barrel
-      layerOffset: -0.01
+      layerOffset: 0.01
       mirror: false
       "under": false,
       progress: recoil
@@ -269,7 +270,7 @@ bullet: {
   ]
 "shoot": {
 "type": "shootPattern",
- "shots": 2,
+ "shots": 5,
     "shotDelay": 35
 }
     shootSound: shootTank
