@@ -305,7 +305,7 @@ bullet: {
               "cone": 360,
               "colorFrom": "6B5F56",
               "colorTo": "cfa2c84e",
-              "sizeFrom": 5,
+              "sizeFrom": 10,
               "sizeTo": 0
             },
             {
@@ -321,7 +321,7 @@ bullet: {
               "cone": 360,
               "colorFrom": "3E3A46",
               "colorTo": "cfa2c84e",
-              "sizeFrom": 5,
+              "sizeFrom": 10,
               "sizeTo": 0
             },
       ]
@@ -342,7 +342,7 @@ bullet: {
               "cone": 360,
               "colorFrom": "6B5F56",
               "colorTo": "cfa2c84e",
-              "sizeFrom": 2,
+              "sizeFrom": 13,
               "sizeTo": 0
             },
             {
@@ -350,7 +350,7 @@ bullet: {
               "particles": 20,
               "line": false
               "length": 35,
-              "baseLength": 35,
+              "baseLength": 65,
               "lifetime": 120,
               "lightColor": "aae7d78b",
               "interp": "circleOut",
@@ -358,7 +358,7 @@ bullet: {
               "cone": 360,
               "colorFrom": "3E3A46",
               "colorTo": "cfa2c84e",
-              "sizeFrom": 2,
+              "sizeFrom": 10,
               "sizeTo": 0
             },
             {
@@ -366,7 +366,7 @@ bullet: {
               "particles": 20,
               "line": false
               "length": 35,
-              "baseLength": 50
+              "baseLength": 95
               "lifetime": 120,
               "lightColor": "CFA3C8",
               "interp": "circleOut",
@@ -374,7 +374,7 @@ bullet: {
               "cone": 360,
               "colorFrom": "3E3A46",
               "colorTo": "cfa2c84e",
-              "sizeFrom": 3,
+              "sizeFrom": 8,
               "sizeTo": 0
             },
       ]
