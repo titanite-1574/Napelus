@@ -319,7 +319,7 @@ bullet: {
               "interp": "circleOut",
               "sizeInterp": "pow5In",
               "cone": 360,
-              "colorFrom": "3E3A46",
+              "colorFrom": "F58B8B",
               "colorTo": "61616194",
               "sizeFrom": 10,
               "sizeTo": 0
@@ -340,7 +340,7 @@ bullet: {
               "interp": "circleOut",
               "sizeInterp": "pow5In",
               "cone": 360,
-              "colorFrom": "6B5F56",
+              "colorFrom": "F58B8B",
               "colorTo": "61616194",
               "sizeFrom": 13,
               "sizeTo": 0
