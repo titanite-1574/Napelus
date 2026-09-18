@@ -250,7 +250,7 @@ bullet: {
     "mirror": false,
     "x": 0,
     "y": -2,
-    "shootY": 6,
+    "shootY": 8,
     "recoil": 3,
     "rotate": true,
     "rotateSpeed": 0.5
