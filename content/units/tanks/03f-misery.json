@@ -291,7 +291,8 @@ bullet: {
         backColor: F58B8B
       despawnSound: explosionReactor2
       hitSound: explosionReactorNeoplasm
-      shake: 35
+      hitShake: 75
+      despawnShake: 35
       despawnHit: true
       "despawnEffect": {
           "type": "multiEffect",
