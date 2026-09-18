@@ -254,6 +254,7 @@ bullet: {
     "recoil": 3,
     "rotate": true,
     "rotateSpeed": 0.5
+     shake: 35
      inaccuarcy: 5
      parts: [
     {
@@ -276,7 +277,7 @@ bullet: {
     bullet: {
     type: ArtilleryBulletType 
       speed: 6
-      lifetime: 90
+      lifetime: 145
       damage: 1850
       splashDamageRadius: 75
       splashDamage: 3500
@@ -290,6 +291,7 @@ bullet: {
         backColor: F58B8B
       despawnSound: explosionReactor2
       hitSound: explosionReactorNeoplasm
+      shake: 35
       despawnHit: true
       "despawnEffect": {
           "type": "multiEffect",
