@@ -2,7 +2,7 @@ type: tank
 hitSize: 55
 name: Misery
 databaseTag: tank
-description: Supper misery forever
+description: Suffer misery forever
 singleTarget: false
 omniMovement: false
 faceTarget: false
@@ -53,204 +53,332 @@ treadRects: [
 ]
 researchCostMultiplier: 1
 weapons: [
-  {
-      "name": "misery-la-burst",
-      "mirror": false,
-      "alternate": true,
-      "top": false,
-      "layerOffset": 1
-      "shake": 5
-      "x": 0,
-      "y": 0,
-      "shootY": 0,
-      "reload": 550,
-      "recoil": 1
-      "cooldownTime": 190,
-       shootSound: shootConquer
-      "shootStatusDuration": 100,
-      "shootStatus": unmoving,
-      "chargeSound": chargeup
-      "rotate": true
-      "rotateSpeed": 1
-      parts: [
-     {
+{
+name: aegies-kinetic
+x: -24
+y: 18
+mirror: true
+layerOffset: 0.01
+rotateSpeed: 2
+inaccuracy: 0
+shoot: {
+type: ShootAlternate 
+spread: 5
+shots: 6
+shotDelay: 10
+}
+top: true
+rotate: true
+reload: 100
+under: false
+top: true
+recoil: 1
+recoils: 2
+shootSound: shootConquer 
+ejectEffect: none
+    parts: [
+    {
       type: RegionPart
-      suffix: -partL
+      suffix: -barrelL
+      layerOffset: 0
       mirror: false
-      progress: warmup
-      heatProgress: warmup
-      moveX: -2
-      under: true
-      heatColor: 8DF9D1
+      "under": false,
+      progress: recoil
+      moveY: -2
+      recoilIndex: 0
     }
     {
       type: RegionPart
-      suffix: -partR
+      suffix: -barrelR
+      layerOffset: 0
       mirror: false
-      progress: warmup
-      heatProgress: warmup
-      moveX: 2
-      under: true
-      heatColor: 8DF9D1
+      "under": false,
+      progress: recoil
+      moveY: -2
+      recoilIndex: 1
     }
+  ]
+bullet: {
+    type: BasicBulletType,
+    speed: 5
+      lifetime: 50
+      damage: 100
+     splashDamageRadius: 20
+     splashDamage : 95
+      width: 6
+      height: 6
+        frontColor: EFC47F
+        backColor: EFC47F
+      trailLength: 10
+      trailWidth: 1
+      trailColor: EFC47F
+    shootEffect: "shootSmall"
+    smokeEffect: "shootSmallSmoke"
+    ammoMultiplier: 5
+    collidesTiles: true
+    hitEffect: pointHit
+   fragOnHit: true
+      fragBullets: 15
+      fragRandomSpread: 360
+      fragLifeMin: 1
+      fragLifeMax: 1
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragSpread: 90
+      fragAngle: 0
+      fragOnAbsorb: true
+      fragBullet: {
+        type: BasicBulletType
+        width: 10
+        height: 10
+        sprite: missile-large
+        frontColor: EFC47F
+        backColor: EFC47F
+        trailColor: EFC47F
+        trailWidth: 3
+        trailLength: 26
+        trailRotation: true
+        trailEffect: shootSmokeSquareSparse
+        trailInterval: 4
+        speed: 3
+        lifetime: 6
+        pierceCap: 2
+        damage: 25
+        pierce: true
+         }
+   }
+}
 {
-type: ShapePart
-circle: true
-y: 0
-radius: 0
-radiusTo: 15
-colorFrom: F58B8B
-colorTo: F58B8B
-progress: charge
-under: true
-layer: 110
-  }
-]
-      "shoot": {
-      "firstShotDelay": 100,
-      "shots": 3
-      "shotDelay": 10
-      },
-        bullet: {
-    type: BasicBulletType
-      speed: 5
-      lifetime: 135
-      damage: 3500
-      width: 15
-      drag: 0.02
-      height: 20
-      canCollide: false
+name: aegies-kinetic
+x: -26
+y: -8
+mirror: true
+layerOffset: 0.01
+rotateSpeed: 2
+inaccuracy: 0
+baseRotation: -180
+shoot: {
+type: ShootAlternate 
+spread: 5
+shots: 6
+shotDelay: 10
+}
+top: true
+rotate: true
+reload: 100
+under: false
+top: true
+recoil: 1
+recoils: 2
+shootSound: shootConquer 
+ejectEffect: none
+    parts: [
+    {
+      type: RegionPart
+      suffix: -barrelL
+      layerOffset: 0
+      mirror: false
+      "under": false,
+      progress: recoil
+      moveY: -2
+      recoilIndex: 0
+    }
+    {
+      type: RegionPart
+      suffix: -barrelR
+      layerOffset: 0
+      mirror: false
+      "under": false,
+      progress: recoil
+      moveY: -2
+      recoilIndex: 1
+    }
+  ]
+bullet: {
+    type: BasicBulletType,
+    speed: 5
+      lifetime: 50
+      damage: 100
+     splashDamageRadius: 20
+     splashDamage : 95
+      width: 6
+      height: 6
+        frontColor: EFC47F
+        backColor: EFC47F
+      trailLength: 10
+      trailWidth: 1
+      trailColor: EFC47F
+    shootEffect: "shootSmall"
+    smokeEffect: "shootSmallSmoke"
+    ammoMultiplier: 5
+    collidesTiles: true
+    hitEffect: pointHit
+   fragOnHit: true
+      fragBullets: 15
+      fragRandomSpread: 360
+      fragLifeMin: 1
+      fragLifeMax: 1
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragSpread: 90
+      fragAngle: 0
+      fragOnAbsorb: true
+      fragBullet: {
+        type: BasicBulletType
+        width: 10
+        height: 10
+        sprite: missile-large
+        frontColor: EFC47F
+        backColor: EFC47F
+        trailColor: EFC47F
+        trailWidth: 3
+        trailLength: 26
+        trailRotation: true
+        trailEffect: shootSmokeSquareSparse
+        trailInterval: 4
+        speed: 3
+        lifetime: 6
+        pierceCap: 2
+        damage: 25
+        pierce: true
+         }
+   }
+}
+  {
+    "name": "collosal-artillery",
+    "reload": 1250,
+    "mirror": false,
+    "x": 0,
+    "y": -2,
+    "shootY": 2,
+    "recoil": 3,
+    "rotate": true,
+    "rotateSpeed": 4
+     inaccuarcy: 5
+     parts: [
+    {
+      type: RegionPart
+      suffix: -barrel
+      layerOffset: 0
+      mirror: false
+      "under": false,
+      progress: recoil
+      moveY: -2
+      mirror: false
+    }
+  ]
+"shoot": {
+"type": "shootPattern",
+ "shots": 2,
+    "shotDelay": 35
+}
+    shootSound: shootTank
+    bullet: {
+    type: ArtilleryBulletType 
+      speed: 6
+      lifetime: 90
+      damage: 1850
+      splashDamageRadius: 75
+      splashDamage: 3500
+      width: 10
+      height: 10
       sprite: missile-large
         frontColor: E04545
-     trailLength: 8
-      trailWidth: 2
+     trailLength: 10
+      trailWidth: 5
       trailColor: F58B8B
         backColor: F58B8B
       despawnHit: true
-      despawnEffect: none
-      pierceCap: 10
-      pierce: true
-      weaveScale: 2
-      weaveMag: 2
-      "homingRange": 200
-        "homingPower": 0.02
-      bulletInterval: 10
-      intervalRandomSpread: 0
-      intervalBullets: 1
-      intervalSpread: 45
-      intervalBullet: {
-        type: ArtilleryBulletType
-        frontColor: F58B8B
-        backColor: F58B8B
-        speed: 0
-        drag: 0.01
-        lifetime: 135
-        damage: 95
-        splashDamage: 20
-        splashDamageRadius: 16
-        width: 6
-        height: 6
-        trailChance: -1
-        trailColor: F58B8B
-        trailLength: 7
-        trailWidth: 2
-        weaveScale: 2
-        weaveMag: 3
-        pierceArmor: false
-        pierceBuilding: true
-        despawnSound: explosion
-        "homingRange": 200
-        "homingPower": 0.07
-        despawnEffect: {
-          type: ExplosionEffect
-          lifetime: 15
-          waveStroke: 2.5
-          waveColor: F58B8B
-          sparkColor: F58B8B
-          smokeColor: F58B8B
-          waveRad: 8
-          smokeSize: 3
-          smokes: 2
-          smokeSizeBase: 0
-          sparks: 2
-          sparkRad: 10
-          sparkLen: 2
-          sparkStroke: 1
-        }
-        fragBullet: {
-        type: ShrapnelBulletType
-        fromColor: F58B8B
-        toColor: F58B8B
-        speed: 0
-        drag: 0.01
-        lifetime: 65
-        damage: 100
-        length: 5
-        width: 5
-        trailChance: -1
-        trailColor: F58B8B
-        trailLength: 7
-        trailWidth: 2
-        weaveScale: 2
-        weaveMag: 3
-        pierceArmor: false
-        pierceBuilding: true
-        despawnSound: explosion
-        }
-        parts: [
-      {
-type: ShapePart
-circle: true
-y: 0
-radius: 3
-colorFrom: F58B8B
-colorTo: F58B8B
-under: true
-layer: 110
-  }
-]
-        despawnEffect: {
-          type: ExplosionEffect
-          lifetime: 15
-          waveStroke: 2.5
-          waveColor: F58B8B
-          sparkColor: F58B8B
-          smokeColor: F58B8B
-          waveRad: 8
-          smokeSize: 3
-          smokes: 2
-          smokeSizeBase: 0
-          sparks: 2
-          sparkRad: 10
-          sparkLen: 2
-          sparkStroke: 1
-        }
-      }
-      hitEffect: [
-        {
-          type: ParticleEffect
-          particles: 6
-          line: true
-          lifetime: 25
-          length: 20
-          lenFrom: 5
-          lenTo: 0
-          strokeFrom: 2
-          strokeTo: 0
-          colorFrom: E04545
-          colorTo: ffffff
-        }
-        {
-          type: WaveEffect
-          sizeFrom: 0
-          sizeTo: 15
-          lifetime: 20
-          strokeFrom: 3.5
-          strokeTo: 0
-          colorFrom: E04545
-          colorTo: ffffff
-        }
+      "despawnEffect": {
+          "type": "multiEffect",
+          "effects": [
+           {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "line": false
+              "length": 35,
+              "baseLength": 35,
+              "lifetime": 120,
+              "lightColor": "aae7d78b",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "6B5F56",
+              "colorTo": "cfa2c84e",
+              "sizeFrom": 5,
+              "sizeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "line": false
+              "length": 35,
+              "baseLength": 50
+              "lifetime": 120,
+              "lightColor": "CFA3C8",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "3E3A46",
+              "colorTo": "cfa2c84e",
+              "sizeFrom": 5,
+              "sizeTo": 0
+            },
       ]
+      }
+      "hitEffect": {
+          "type": "multiEffect",
+          "effects": [
+           {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "line": false
+              "length": 35,
+              "baseLength": 35,
+              "lifetime": 120,
+              "lightColor": "aae7d78b",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "6B5F56",
+              "colorTo": "cfa2c84e",
+              "sizeFrom": 2,
+              "sizeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "line": false
+              "length": 35,
+              "baseLength": 35,
+              "lifetime": 120,
+              "lightColor": "aae7d78b",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "3E3A46",
+              "colorTo": "cfa2c84e",
+              "sizeFrom": 2,
+              "sizeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "line": false
+              "length": 35,
+              "baseLength": 50
+              "lifetime": 120,
+              "lightColor": "CFA3C8",
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "3E3A46",
+              "colorTo": "cfa2c84e",
+              "sizeFrom": 3,
+              "sizeTo": 0
+            },
+      ]
+      }
     }
   }
 ]
