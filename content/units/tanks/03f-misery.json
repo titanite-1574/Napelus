@@ -272,7 +272,7 @@ bullet: {
  "shots": 5,
     "shotDelay": 35
 }
-    shootSound: shootTank
+    shootSound: railgun
     bullet: {
     type: ArtilleryBulletType 
       speed: 6
@@ -288,6 +288,8 @@ bullet: {
       trailWidth: 5
       trailColor: F58B8B
         backColor: F58B8B
+      despawnSound: explosionReactor2
+      hitSound: explosionReactorNeoplasm
       despawnHit: true
       "despawnEffect": {
           "type": "multiEffect",
