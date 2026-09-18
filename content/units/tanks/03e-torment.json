@@ -362,7 +362,7 @@ weapons: [
     {
       type: RegionPart
       suffix: -barrel
-      layerOffset: 0
+      layerOffset: -0.01
       mirror: false
       "under": false,
       progress: recoil

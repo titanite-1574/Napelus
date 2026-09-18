@@ -253,13 +253,13 @@ bullet: {
     "shootY": 2,
     "recoil": 3,
     "rotate": true,
-    "rotateSpeed": 4
+    "rotateSpeed": 0.5
      inaccuarcy: 5
      parts: [
     {
       type: RegionPart
       suffix: -barrel
-      layerOffset: 0
+      layerOffset: -0.01
       mirror: false
       "under": false,
       progress: recoil
@@ -280,8 +280,8 @@ bullet: {
       damage: 1850
       splashDamageRadius: 75
       splashDamage: 3500
-      width: 10
-      height: 10
+      width: 15
+      height: 15
       sprite: missile-large
         frontColor: E04545
      trailLength: 10
