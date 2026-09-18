@@ -358,11 +358,12 @@ weapons: [
     "rotate": true,
     "rotateSpeed": 3
      inaccuarcy: 5
+     layerOffset: 0.01
      parts: [
     {
       type: RegionPart
       suffix: -barrel
-      layerOffset: -0.01
+      layerOffset: 0
       mirror: false
       "under": false,
       progress: recoil
