@@ -300,7 +300,7 @@ bullet: {
               "baseLength": 35,
               "lifetime": 120,
               "lightColor": "aae7d78b",
-              "interp": "circleOut",
+              "interp": "sineOut",
               "sizeInterp": "pow5In",
               "cone": 360,
               "colorFrom": "616161",
@@ -313,17 +313,33 @@ bullet: {
               "particles": 20,
               "line": false
               "length": 35,
+              "baseLength": 75
+              "lifetime": 120,
+              "lightColor": "CFA3C8",
+              "interp": "sineOut",
+              "sizeInterp": "pow5In",
+              "cone": 360,
+              "colorFrom": "F58B8B",
+              "colorTo": "61616194",
+              "sizeFrom": 15,
+              "sizeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "line": false
+              "length": 35,
               "baseLength": 50
               "lifetime": 120,
               "lightColor": "CFA3C8",
-              "interp": "circleOut",
+              "interp": "sineOut",
               "sizeInterp": "pow5In",
               "cone": 360,
               "colorFrom": "F58B8B",
               "colorTo": "61616194",
               "sizeFrom": 10,
               "sizeTo": 0
-            },
+            },          
       ]
       }
       "hitEffect": {
@@ -337,7 +353,7 @@ bullet: {
               "baseLength": 55,
               "lifetime": 120,
               "lightColor": "aae7d78b",
-              "interp": "circleOut",
+              "interp": "sineOut",
               "sizeInterp": "pow5In",
               "cone": 360,
               "colorFrom": "F58B8B",
@@ -352,8 +368,8 @@ bullet: {
               "length": 35,
               "baseLength": 65,
               "lifetime": 120,
-              "lightColor": "aae7d78b",
-              "interp": "circleOut",
+              "lightColor": "F58B8B",
+              "interp": "sineOut",
               "sizeInterp": "pow5In",
               "cone": 360,
               "colorFrom": "3E3A46",
@@ -369,7 +385,7 @@ bullet: {
               "baseLength": 95
               "lifetime": 120,
               "lightColor": "CFA3C8",
-              "interp": "circleOut",
+              "interp": "sineOut",
               "sizeInterp": "pow5In",
               "cone": 360,
               "colorFrom": "3E3A46",
