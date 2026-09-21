@@ -1,6 +1,6 @@
 type: Battery
 name: Megatera Battery
-description: The mother of all battery
+description: An upgrade to the tera battery capable of storing large amount of power for later use
 size: 3
 health: 2450
 squareSprite: false

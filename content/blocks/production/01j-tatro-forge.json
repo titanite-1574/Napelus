@@ -16,6 +16,11 @@
       suffix: -heat
     } 
     {
+    type: DrawLiquidTile
+    padding: 3
+    drawLiquid: liquid-nitalite
+  }
+    {
       type: DrawCrucibleFlame
       flameRad: 4
       circleSpace: 5

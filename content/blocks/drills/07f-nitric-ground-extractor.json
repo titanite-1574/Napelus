@@ -1,6 +1,6 @@
 type: AttributeCrafter
-name: Nitric Extractor
-description: Extracts nitrogen trapped inside nitric fissures
+name: Nitrogenic Extractor
+description: Extracts gaseous nitrogen trapped inside nitric fissures by using a drill and a vacuum pump
 attribute: nitric
 size: 3
 hasLiquids: true
@@ -46,14 +46,13 @@ drawer: {
     }
     {
       type: DrawLiquidTile
-      drawLiquid: exlium
+      drawLiquid: nitrogen
       padding: 2
     }
     {
-      type: DrawRegion
-      suffix: -rotator
-      spinSprite: true
-      rotateSpeed: 5
+      type: DrawBlurSpin
+      suffix: -pump
+      rotateSpeed: 10
     }
     {
       type: DrawDefault

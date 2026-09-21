@@ -7,6 +7,9 @@ range: 11
 size: 1
 squareSprite: false
 shownPlanets: [napelus,Stella]
+consumes: {
+  powerBuffered: 250
+}
 researchCost: [
   silver/50
   teralite/50

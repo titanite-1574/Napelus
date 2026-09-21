@@ -2,7 +2,7 @@ type: tank
 hitSize: 55
 name: Misery
 databaseTag: tank
-description: Suffer misery forever
+description: The land fortress,capable of firing its artillery over vast distances dealing devastating damage
 singleTarget: false
 omniMovement: false
 faceTarget: false
@@ -262,7 +262,7 @@ bullet: {
       suffix: -barrel
       mirror: false
       top: false
-      "under": false,
+      "under": true,
       progress: recoil
       moveY: -5
       mirror: false
@@ -291,8 +291,8 @@ bullet: {
         backColor: F58B8B
       despawnSound: explosionReactor2
       hitSound: explosionReactorNeoplasm
-      hitShake: 75
-      despawnShake: 35
+      hitShake: 60
+      despawnShake: 30
       despawnHit: true
       "despawnEffect": {
           "type": "multiEffect",
