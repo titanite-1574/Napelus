@@ -1,15 +1,13 @@
 type: BeamNode
 name: Laser Beam Node
-description: Distribute power in the form of laser. Doesn't deal damage.Capable of storing small amount of energy 
+description: Distribute power in the form of laser. Doesn't deal damage. 
 health: 65
 fogRadius: 2
 range: 8
 size: 1
 squareSprite: false
 shownPlanets: [napelus,Stella]
-consumes: {
-  powerBuffered: 100
-}
+powerBuffered: 100
 researchCost: [
   silver/5
 ]
