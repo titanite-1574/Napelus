@@ -2,7 +2,7 @@
     outlineRadius: 3
   "type": "legs",
   "name": Shatter
-  "description": Equipped with a two autocannon and a artillery. Doesn't slow down when on water
+  "description": Equipped with a two autocannon and a artillery. Doesn't slow down when on water due to it being elevated
 	"speed": 0.5
   shownPlanets: [napelus]
 	"hitSize": 7,
@@ -28,7 +28,7 @@ hovering: true
 groundLayer: 60
 "weapons": [
 {
-    "name": "break-weapon",
+    "name": "shatter-artillery",
     "reload": 100,
     "mirror": false
     "x": 0
