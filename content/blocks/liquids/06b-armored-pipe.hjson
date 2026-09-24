@@ -13,3 +13,5 @@ researchCost: [
   kerenium/25
 ]
 leaks: false
+liquidPressure: 2
+liquidCapacity: 35
