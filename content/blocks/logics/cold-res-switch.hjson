@@ -1,4 +1,5 @@
 type: SwitchBlock
+name: Cold Resistant Switch
 size: 1
 health: 65
 category: logic

@@ -1,4 +1,5 @@
 type: LogicBlock
+name: Cold Resistant Terminal
 category: logic
 research: cold-res-pros
 requirements: [

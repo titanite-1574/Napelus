@@ -1,5 +1,6 @@
 type: MemoryBlock
 memoryCapacity: 2048
+name: Cold Resistant Data Terminal
 category: logic
 research: cold-res-data-cell
 requirements: [

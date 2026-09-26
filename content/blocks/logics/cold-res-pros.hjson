@@ -1,4 +1,5 @@
 type: LogicBlock
+name: Cold Resistant Processor
 category: logic
 requirements: [
   iron/15
