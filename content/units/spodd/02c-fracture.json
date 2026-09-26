@@ -103,7 +103,7 @@ groundLayer: 60
     "recoil": 1,
     "alternate": false
     "rotationLimit": 90
-    "baseRotation": -90
+    "baseRotation": 90
     "inaccuracy": 3,
     "targetGround": true
     "targetAir": false
