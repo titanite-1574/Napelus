@@ -208,7 +208,8 @@ ejectEffect: none
       suffix: -barrelL
       layerOffset: 0
       mirror: false
-      "under": false,
+      "under": false, 
+      top: false
       progress: recoil
       moveY: -2
       recoilIndex: 0
@@ -219,6 +220,7 @@ ejectEffect: none
       layerOffset: 0
       mirror: false
       "under": false,
+      top: false
       progress: recoil
       moveY: -2
       recoilIndex: 1
