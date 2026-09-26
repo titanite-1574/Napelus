@@ -39,7 +39,7 @@ groundLayer: 60
     "alternate": false
     "rotationLimit": 90
     "baseRotation": 0
-    "inaccuracy ": 3,
+    "inaccuracy": 3,
     "targetGround": true
     "targetAir": false
     "layerOffset": -0.00001
@@ -104,7 +104,7 @@ groundLayer: 60
     "alternate": false
     "rotationLimit": 90
     "baseRotation": -90
-    "inaccuracy ": 3,
+    "inaccuracy": 3,
     "targetGround": true
     "targetAir": false
     "layerOffset": -0.00001
