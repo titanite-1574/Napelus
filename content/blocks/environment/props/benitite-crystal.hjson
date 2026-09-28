@@ -1,7 +1,7 @@
 type: TallBlock
-name: Titanic Ice Crystal
-variants: 2
+name: Titanic Benitite Crystal
+variants: 1
 clipSize: 96
 emitLight: true
-lightColor: A6C1D3
+lightColor: 8BCEEA
 costumShadow: true
