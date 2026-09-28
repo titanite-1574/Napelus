@@ -1,4 +1,6 @@
 type: AutoDoor
+name: Teraon Gate
+description: A gate from made from Teralite and Iron, which explains its name.Opens up when there are nearby allied units
 size: 2
 armor: 10
 health: 2000

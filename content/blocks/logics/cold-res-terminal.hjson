@@ -13,3 +13,7 @@ size: 3
 health: 1750
 researchCostMultiplier: 1
 range: 425
+consumes: {
+  power: 1
+  liquid: xenogen/0.3
+}

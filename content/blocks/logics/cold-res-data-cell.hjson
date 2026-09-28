@@ -1,4 +1,5 @@
 type: MemoryBlock
+name: Cold Resistant Data Cell
 memoryCapacity: 64
 category: logic
 research: cold-res-log
