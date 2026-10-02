@@ -1,0 +1,88 @@
+type: ItemTurret
+name: Betrayal
+description: The fast reload railgun. Capable of piercing both air and ground units,inflicting afterburn which makes most of its damage.
+size: 5
+reload: 450
+shootSound: railgun
+outlineColor: 42413e
+shake: 15
+recoil: 5
+rotateSpeed: 0.3
+coolantMultiplier: 0.7
+shootCone: 10
+category: turret
+research: 09l-skyhook
+squareSprite: false
+researchCostMultiplier: 0.5
+range: 1250
+drawer: {
+  type: DrawTurret
+  basePrefix: hammer-
+    parts: [
+    {
+      type: RegionPart
+      suffix: -barrel
+      progress: recoil
+      heatProgress: recoil
+      moveY: -20
+      under: true
+      heatColor: 8DF9D1
+    }
+  ]
+}
+requirements: [
+  steel/90
+    magnetite/90
+    carbide/155
+    amalgam/350
+    iron/500
+]
+consumes: {
+  liquids: [
+  nitrogen/1
+  xenogen/0.5
+  ]
+  power: 15
+}
+coolant: {
+  liquid: ilum
+  type: ConsumeLiquid
+  allowGas: false
+  allowLiquid: true
+  amount: 1
+}
+cooldownTime: 800
+chargeSound: energy-charge
+shoot: {
+  firstShotDelay: 150
+  type: shootPattern
+  shots: 1
+  shotDelay: 5
+}
+shootEffect: shootTitan
+smokeEffect: shootSmokeTitan
+"ammoTypes": {
+    "amalgam": {
+       type: RailBulletType
+      damage: 950
+      recoil: 5
+      lenght: 125
+      hitSize: 10
+      shake: 20
+      speed: 20
+      shootEffect: shootTitan
+      smokeEffect: shootSmokeTitan
+      lifetime: 75
+      status: nap-benite-radiated
+      statusDuration: 120
+      pierce: true
+      pierceCap: 15
+      hitColor: B5B9FF
+      trailColor: B5B9FF
+      backColor: B5B9FF
+      frontColor: B5B9FF
+      trailLength: 10
+      trailWidth: 3
+    }
+}
+rotate: true
