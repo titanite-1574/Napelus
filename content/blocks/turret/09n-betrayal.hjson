@@ -81,7 +81,7 @@ shoot: {
             }
        ]
    }
-"CchargeEffect": {
+"chargeEffect": {
         "type": "MultiEffect",
         "effects": [
             {
