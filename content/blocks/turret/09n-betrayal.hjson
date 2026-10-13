@@ -63,7 +63,7 @@ shootEffect: shootTitan
 smokeEffect: shootSmokeTitan
 "ammoTypes": {
     "amalgam": {
-       type: RailBulletType
+       type: BasicBulletType
       damage: 950
       recoil: 5
       lenght: 125
@@ -73,7 +73,7 @@ smokeEffect: shootSmokeTitan
       shootEffect: shootTitan
       smokeEffect: shootSmokeTitan
       lifetime: 75
-      status: nap-benite-radiated
+      status: nap-afterburn
       statusDuration: 120
       pierce: true
       pierceCap: 15
