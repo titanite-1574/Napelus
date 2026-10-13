@@ -81,7 +81,17 @@ shoot: {
             }
        ]
    }
-"chargeEffect": {
+smokeEffect: shootSmokeTitan
+"ammoTypes": {
+    "amalgam": {
+       type: BasicBulletType
+      damage: 350
+      recoil: 5
+      lenght: 125
+      hitSize: 10
+      shake: 20
+      speed: 20
+      "chargeEffect": {
         "type": "MultiEffect",
         "effects": [
             {
@@ -103,16 +113,6 @@ shoot: {
             }
        ]
    }
-smokeEffect: shootSmokeTitan
-"ammoTypes": {
-    "amalgam": {
-       type: BasicBulletType
-      damage: 350
-      recoil: 5
-      lenght: 125
-      hitSize: 10
-      shake: 20
-      speed: 20
       shootEffect: shootTitan
       smokeEffect: shootSmokeTitan
       lifetime: 55
