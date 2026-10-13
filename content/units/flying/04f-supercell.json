@@ -1,0 +1,536 @@
+name: Supercell
+description: WIP
+type: flying
+useEngineElevation: false
+databaseTag: hover
+shadowElevation: 0.3
+lowAltitude: true
+engineOffset: 15
+engineSize: 6
+shownPlanets: [napelus]
+flying: true
+outlineColor: 251b21
+outlineRadius: 3
+engineColor: BFBFEF
+alwaysUnlocked: false
+armor: 25
+accel: 0.5
+health: 45150
+rotateSpeed: 0.8
+speed: 0.50
+hitSize: 35
+healColor: 3CC773
+createWreck: true
+drag: 0.009
+faceTarget: true
+description: The angel
+targetFlag: [ turret, core ]
+ "engines": [
+  {
+    x: -19
+    y: -12
+    radius: 4
+    rotation: -135
+  }
+  {
+    x: 19
+    y: -12
+    radius: 4
+    rotation: -45
+  }
+]
+"abilities": [
+    {
+      "type": "EnergyFieldAbility",
+      "healEffect": {
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 7,
+        "lifetime": 20,
+        "offset": 50,
+        "length": 55,
+        "cone": -360,
+        "lenFrom": 6,
+        "lenTo": 0,
+        "colorFrom": "A4E3E8",
+        "colorTo": "D0F0F3"
+      },
+      "statusDuration": 300,
+      "status": "shocked",
+      "color": "A4E3E8",
+      "maxTargets": 15,
+      "damage": 900,
+      "healPercent": 0.0,
+      "range": 50,
+      "y": 0,
+      "sectors": 8,
+      "rotateSpeed": 1,
+      "hitBuildings": true,
+      "sectorRad": 0.11,
+      "effectRadius": 5,
+      "reload": 155
+      buildingDamageMultiplier: 0.1
+    }
+    {
+    type: SuppressionFieldAbility
+    reload: 600
+    range: 300
+    orbRadius: 6
+    orbSinScl: 7
+    y: 5
+    x: 0
+    color: 8989D3
+    particleColor: 8989D3
+    effectColor: 8989D3
+  }
+    {
+    type: ShieldArcAbility
+    radius: 100
+    angle: 45
+    width: 4
+    y: 0
+    cooldown: 200
+    regen: 1
+    max: 1500
+   whenShooting: false
+   angleOffset: 29
+  }
+  {
+    type: ShieldArcAbility
+    radius: 100
+    angle: 45
+    width: 4
+    y: 0
+    cooldown: 200
+    regen: 1
+    max: 1500
+   whenShooting: false
+   angleOffset: 150
+  }
+  {
+    type: ShieldArcAbility
+    radius: 100
+    angle: 45
+    width: 4
+    y: 0
+    cooldown: 200
+    regen: 1
+    max: 1500
+   whenShooting: false
+   angleOffset: 90
+  }
+  {
+    effect: {
+      type: ParticleEffect
+      y: 0
+      colorFrom: 8989D3
+      colorTo: 8989D3
+      lifetime: 25
+      particles: 1
+      cone: 360
+      length: 0
+      baseLength: 0
+      lightScl: 2.5
+      lightOpacity: 2
+      spin: 0
+      sizeFrom: 1.6
+      sizeTo: 0
+      offset: 0
+    }
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 0.00000001
+    y: 0
+    x: -18
+  }
+  {
+  effect: {
+      type: ParticleEffect
+      y: 0
+      colorFrom: 8989D3
+      colorTo: 8989D3
+      lifetime: 25
+      particles: 1
+      cone: 360
+      length: 0
+      baseLength: 0
+      lightScl: 2.5
+      lightOpacity: 2
+      spin: 0
+      sizeFrom: 1.6
+      sizeTo: 0
+      offset: 0
+    }
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 0.00000001
+    y: 0
+    x: 18
+  }
+]
+weapons: [
+{
+    x: 12
+    y: 0 
+    name: bolt-cannon
+    reload: 150
+    rotate: true
+    mirror: true
+    minWarmup: 0.55
+    inaccuracy: 0
+    shootY: -1
+    shoot: {
+      type: ShootPattern
+      shots: 5
+      shotDelay: 3
+    }
+    shootSound: explosionObviate
+    bullet: {
+    type: BasicBulletType
+      damage: 155
+      recoil: 0.4
+      width: 10
+      height: 15
+      hitSize: 6
+      shake: 20
+      speed: 7
+      shootEffect: shootTitan
+      smokeEffect: shootSmokeTitan
+      lifetime: 40
+      pierce: false
+      pierceCap: 2
+      pierceBuilding: false
+      despawnSound: explosionArtilleryShock
+      hitColor: 8989D3
+      trailColor: 8989D3
+      backColor: 8989D3
+      frontColor: 8989D3
+      trailLength: 10
+      trailWidth: 3
+      fragBullets: 5
+      fragOnHit: true
+      fragBullet: {
+        type: BasicBulletType
+      damage: 35
+      recoil: 0.4
+      width: 10
+      height: 15
+      hitSize: 6
+      shake: 1
+      speed: 1
+      "homingRange": 200
+        "homingPower": 0.07
+      shootEffect: shootTitan
+      smokeEffect: shootSmokeTitan
+      lifetime: 10
+      pierce: false
+      pierceCap: 10
+      pierceBuilding: false
+      despawnSound: explosionArtilleryShock
+      hitColor: 8989D3
+      trailColor: 8989D3
+      backColor: 8989D3
+      frontColor: 8989D3
+      trailLength: 10
+      trailWidth: 3
+      }
+    }
+  }
+{
+name: thunderstrike-cruise-missile
+x: 23
+y: 7
+mirror: true
+rotationLimit: 90
+baseRotation: -45
+layerOffset: -1
+parts: [
+    {
+    type: RegionPart,
+    suffix: -mandible
+    top: false
+    under: true
+    mirror: true,
+    moveRot: 10,
+    moveX: -2
+    moves: [
+   {
+    type: PartMove,
+    progress: recoil,
+    rot: 15
+   }
+   ]
+ }
+]
+shoot: {
+type: ShootSpread
+spread: 3
+shots: 15
+shotDelay: 0
+}
+top: false
+rotate: true
+alternate: false
+rotateSpeed: 2
+reload: 200
+recoil: 1
+shootSound: shootMissileLarge
+ejectEffect: none
+bullet: {
+      instantDisappear: true
+      damage: 0
+      spawnUnit: storm-smol-missile
+    }
+}
+{
+shootY: 10
+name: thunderorb
+x: 0
+y: 0
+recoil: 10
+mirror: false
+reload: 1350
+parts: [
+{
+type: ShapePart
+circle: true
+y: 10
+radius: 0
+radiusTo: 15
+colorFrom: 8AA3F3
+colorTo: B4C2ED
+progress: charge
+under: true
+layer: 110
+  }
+    {
+    type: RegionPart,
+    suffix: -mandible
+    top: false
+    under: true
+    mirror: true,
+    moveRot: 10,
+    moveX: -2
+    moves: [
+   {
+    type: PartMove,
+    progress: recoil,
+    rot: 15
+   }
+   ]
+ }
+]
+shootSound: holostarImpact 
+shoot: {
+  firstShotDelay: 200
+    }
+shootStatusDuration: 200
+shootStatus: slow
+bullet: {
+  type: EmpBulletType
+  damage: 900
+  splashDamage: 2500
+  splashDamageRadius: 85
+  drag: 0.001
+  speed: 1
+  lifetime: 145
+  trailWidth: 10
+  trailLenght: 13 
+  hitSound: explosionNavanax
+  despawnSound: explosionNavanax
+  shootEffect: {
+    type: MultiEffect
+    effects: [
+{
+type: WaveEffect
+sizeTo: 150
+strokeFrom: 6
+colorTo: b2afb3
+lifetime: 25
+layer: 110
+  }
+      {
+type: ParticleEffect
+particles: 12
+sizeFrom: 10
+length: 120
+layer: 110
+cone: 5
+offsetX: 0
+colorTo: b2afb3
+colorFrom: b2afb3
+  }
+      {
+type: ParticleEffect
+particles: 12
+sizeFrom: 10
+length: 120
+layer: 110
+cone: 5
+offsetX: 5
+colorTo: b2afb3
+colorFrom: b2afb3
+  }
+      {
+type: ParticleEffect
+particles: 12
+sizeFrom: 10
+length: 120
+cone: 5
+layer: 110
+offsetX: -5
+colorTo: b2afb3
+colorFrom: b2afb3
+  }
+      {
+type: ParticleEffect
+particles: 12
+layer: 110
+sizeFrom: 10
+length: 120
+cone: 5
+offsetX: 10
+colorTo: b2afb3
+colorFrom: b2afb3
+  }
+      {
+type: ParticleEffect
+particles: 12
+sizeFrom: 10
+layer: 110
+length: 120
+cone: 5
+offsetX: -10
+colorTo: b2afb3
+colorFrom: b2afb3
+  }
+      {
+type: ParticleEffect
+particles: 12
+sizeFrom: 10
+layer: 110
+length: 120
+cone: 5
+offsetX: 15
+colorTo: b2afb3
+colorFrom: b2afb3
+  }
+      {
+type: ParticleEffect
+particles: 12
+sizeFrom: 10
+length: 120
+cone: 5
+offsetX: -15
+colorTo: b2afb3
+layer: 110
+colorFrom: b2afb3
+  }
+      {
+type: ParticleEffect
+particles: 12
+sizeFrom: 10
+length: 120
+cone: 5
+offsetX: 20
+layer: 110
+colorTo: 8AA3F3
+colorFrom: B4C2ED
+  }
+      {
+type: ParticleEffect
+particles: 12
+layer: 110
+sizeFrom: 10
+length: 120
+cone: 5
+offsetX: -20
+colorTo: b2afb3
+colorFrom: b2afb3
+  }
+]
+  }
+  hitEffect: none
+  despawnEffect: {
+    type: WaveEffect
+    lifetime: 150
+    interp: pow10Out
+    colorFrom: b2afb3
+    colorTo: b2afb3
+    layer: 110
+    strokeFrom: 8
+    strokeTo: 0
+      }
+  bulletInterval: 0.5
+  intervalBullets: 10
+  smokeEffect: none
+  intervalBullet: {
+    type: LightningBulletType
+    damage: 15
+    lightningLength: 20
+    lightningColor: b2afb3
+    length: 8
+    stroke: 5
+    status: unmoving
+    statusDuration: 240
+    lightColor: 8AA3F3
+    hitEffect: hitLancer
+    lifetime: 15
+    lightningType: {
+        type: LightningBulletType
+        status: electrified
+        lightningLength: 5
+        damage: 15
+        lightningColor: f890ff
+        hitEffect: hitLancer
+        despawnSound: spark
+          }
+  }
+    pierceCap: 5
+    pierce: true
+    pierceBuilding: false
+    collidesAir: true
+    hitSize: 55
+    sprite: none
+    parts: [{
+type: ShapePart
+circle: true
+y: 0
+radius: 15
+colorFrom: B4C2ED
+colorTo: 8AA3F3
+  }
+      ]
+      }
+      }
+  ]
+research: {
+  parent: 10o-airship-assem
+  objectives: [
+    {
+      type: SectorComplete
+      preset: frozen-field
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
