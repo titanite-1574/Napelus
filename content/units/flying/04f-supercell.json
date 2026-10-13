@@ -237,12 +237,125 @@ weapons: [
     }
   }
 {
+    x: 26
+    y: -26
+    name: bolt-cannon
+    reload: 150
+    rotate: true
+    mirror: true
+    minWarmup: 0.55
+    inaccuracy: 0
+    shootY: -1
+    shoot: {
+      type: ShootPattern
+      shots: 5
+      shotDelay: 3
+    }
+    shootSound: explosionObviate
+    bullet: {
+    type: BasicBulletType
+      damage: 155
+      recoil: 0.4
+      width: 10
+      height: 15
+      hitSize: 6
+      shake: 20
+      speed: 7
+      shootEffect: shootTitan
+      smokeEffect: shootSmokeTitan
+      lifetime: 40
+      pierce: false
+      pierceCap: 2
+      pierceBuilding: false
+      despawnSound: explosionArtilleryShock
+      hitColor: 8989D3
+      trailColor: 8989D3
+      backColor: 8989D3
+      frontColor: 8989D3
+      trailLength: 10
+      trailWidth: 3
+      fragBullets: 5
+      fragOnHit: true
+      fragBullet: {
+        type: BasicBulletType
+      damage: 35
+      recoil: 0.4
+      width: 10
+      height: 15
+      hitSize: 6
+      shake: 1
+      speed: 1
+      "homingRange": 200
+        "homingPower": 0.07
+      shootEffect: shootTitan
+      smokeEffect: shootSmokeTitan
+      lifetime: 10
+      pierce: false
+      pierceCap: 10
+      pierceBuilding: false
+      despawnSound: explosionArtilleryShock
+      hitColor: 8989D3
+      trailColor: 8989D3
+      backColor: 8989D3
+      frontColor: 8989D3
+      trailLength: 10
+      trailWidth: 3
+      }
+    }
+  }
+{
 name: thunderstrike-cruise-missile
 x: 23
-y: 7
+y: 15
 mirror: true
 rotationLimit: 90
 baseRotation: -45
+layerOffset: -1
+parts: [
+    {
+    type: RegionPart,
+    suffix: -mandible
+    top: false
+    under: true
+    mirror: true,
+    moveRot: 10,
+    moveX: -2
+    moves: [
+   {
+    type: PartMove,
+    progress: recoil,
+    rot: 15
+   }
+   ]
+ }
+]
+shoot: {
+type: ShootSpread
+spread: 3
+shots: 15
+shotDelay: 0
+}
+top: false
+rotate: true
+alternate: false
+rotateSpeed: 2
+reload: 200
+recoil: 1
+shootSound: shootMissileLarge
+ejectEffect: none
+bullet: {
+      instantDisappear: true
+      damage: 0
+      spawnUnit: storm-smol-missile
+    }
+}
+{
+name: thunderstrike-cruise-missile
+x: 27
+y: -8
+mirror: true
+rotationLimit: 90
+baseRotation: -90
 layerOffset: -1
 parts: [
     {
