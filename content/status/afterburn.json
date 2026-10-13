@@ -15,7 +15,21 @@ dragMultiplier: 0.2
         "interp": "pow3In",
         "sizeInterp": "pow5Out",
         "length": 70,
-        "lifetime": 20,
+        "lifetime": 75,
+        "colorFrom": "FFA221",
+        "colorTo": "FFDDAD",
+        "cone": 360
+      },
+      {
+        "type": "ParticleEffect",
+        "particles": 10,
+        "offset": 30,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "interp": "pow3In",
+        "sizeInterp": "pow5Out",
+        "length": 70,
+        "lifetime": 55,
         "colorFrom": "FFA221",
         "colorTo": "FFDDAD",
         "cone": 360
