@@ -68,7 +68,7 @@ shoot: {
                 "colorTo": "000000",
                 "sizeFrom": 1,
                 "sizeTo": 355,
-                "lifetime": 300
+                "lifetime": 100
             }
              
 {
@@ -77,7 +77,7 @@ shoot: {
                 "colorTo": "000000",
                 "sizeFrom": 1,
                 "sizeTo": 255,
-                "lifetime": 250
+                "lifetime": 50
             }
        ]
    }
@@ -90,6 +90,7 @@ smokeEffect: shootSmokeTitan
       lenght: 125
       hitSize: 10
       shake: 20
+      hitSize: 25
       speed: 20
       "chargeEffect": {
         "type": "MultiEffect",
