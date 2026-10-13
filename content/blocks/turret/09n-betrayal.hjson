@@ -3,7 +3,7 @@ name: Betrayal
 description: The fast reload railgun. Capable of piercing both air and ground units,inflicting afterburn which makes most of its damage.
 size: 5
 reload: 450
-shootSound: railgun
+shootSound: explosionReactor2
 outlineColor: 42413e
 shake: 15
 recoil: 5
@@ -67,7 +67,7 @@ shoot: {
                 "colorFrom": "FFE4BF",
                 "colorTo": "000000",
                 "sizeFrom": 1,
-                "sizeTo": 1000,
+                "sizeTo": 355,
                 "lifetime": 300
             }
              
@@ -76,7 +76,29 @@ shoot: {
                 "colorFrom": "FFE4BF",
                 "colorTo": "000000",
                 "sizeFrom": 1,
-                "sizeTo": 1000,
+                "sizeTo": 255,
+                "lifetime": 250
+            }
+       ]
+   }
+"CchargeEffect": {
+        "type": "MultiEffect",
+        "effects": [
+            {
+                "type": "WaveEffect",
+                "colorFrom": "FFE4BF",
+                "colorTo": "000000",
+                "sizeFrom": 355,
+                "sizeTo": 0,
+                "lifetime": 300
+            }
+             
+{
+                "type": "WaveEffect",
+                "colorFrom": "FFE4BF",
+                "colorTo": "000000",
+                "sizeFrom": 255,
+                "sizeTo": 0,
                 "lifetime": 250
             }
        ]
@@ -85,7 +107,7 @@ smokeEffect: shootSmokeTitan
 "ammoTypes": {
     "amalgam": {
        type: BasicBulletType
-      damage: 950
+      damage: 350
       recoil: 5
       lenght: 125
       hitSize: 10
@@ -93,7 +115,7 @@ smokeEffect: shootSmokeTitan
       speed: 20
       shootEffect: shootTitan
       smokeEffect: shootSmokeTitan
-      lifetime: 75
+      lifetime: 55
       status: nap-afterburn
       statusDuration: 120
       pierce: true
