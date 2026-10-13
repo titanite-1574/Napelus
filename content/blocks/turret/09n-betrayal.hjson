@@ -59,7 +59,28 @@ shoot: {
   shots: 1
   shotDelay: 5
 }
-shootEffect: shootTitan
+"shootEffect": {
+        "type": "MultiEffect",
+        "effects": [
+            {
+                "type": "WaveEffect",
+                "colorFrom": "FFE4BF",
+                "colorTo": "000000",
+                "sizeFrom": 1,
+                "sizeTo": 1000,
+                "lifetime": 300
+            }
+             
+{
+                "type": "WaveEffect",
+                "colorFrom": "FFE4BF",
+                "colorTo": "000000",
+                "sizeFrom": 1,
+                "sizeTo": 1000,
+                "lifetime": 250
+            }
+       ]
+   }
 smokeEffect: shootSmokeTitan
 "ammoTypes": {
     "amalgam": {
