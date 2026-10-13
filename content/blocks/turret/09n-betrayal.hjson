@@ -100,7 +100,7 @@ smokeEffect: shootSmokeTitan
                 "colorTo": "000000",
                 "sizeFrom": 355,
                 "sizeTo": 0,
-                "lifetime": 300
+                "lifetime": 150
             }
              
 {
@@ -109,7 +109,7 @@ smokeEffect: shootSmokeTitan
                 "colorTo": "000000",
                 "sizeFrom": 255,
                 "sizeTo": 0,
-                "lifetime": 250
+                "lifetime": 80
             }
        ]
    }
