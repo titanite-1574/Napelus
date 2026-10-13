@@ -98,18 +98,18 @@ smokeEffect: shootSmokeTitan
                 "type": "WaveEffect",
                 "colorFrom": "FFE4BF",
                 "colorTo": "000000",
-                "sizeFrom": 355,
+                "sizeFrom": 150,
                 "sizeTo": 0,
-                "lifetime": 150
+                "lifetime": 100
             }
              
 {
                 "type": "WaveEffect",
                 "colorFrom": "FFE4BF",
                 "colorTo": "000000",
-                "sizeFrom": 255,
+                "sizeFrom": 80,
                 "sizeTo": 0,
-                "lifetime": 80
+                "lifetime": 50
             }
        ]
    }
