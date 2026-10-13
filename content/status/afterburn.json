@@ -1,4 +1,24 @@
-name: Slashed
+name: Afterburn
 speedMultiplier: 0.35
-damage: 100
+"damage": 15,
+  "transitionDamage": 66,
 dragMultiplier: 0.2
+"effect": {
+    "type": "MultiEffect",
+    "effects": [
+      {
+        "type": "ParticleEffect",
+        "particles": 5,
+        "offset": 30,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "interp": "pow3In",
+        "sizeInterp": "pow5Out",
+        "length": 70,
+        "lifetime": 20,
+        "colorFrom": "FFA221",
+        "colorTo": "FFDDAD",
+        "cone": 360
+      },
+   ]
+ }

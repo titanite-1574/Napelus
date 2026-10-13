@@ -77,10 +77,10 @@ smokeEffect: shootSmokeTitan
       statusDuration: 120
       pierce: true
       pierceCap: 15
-      hitColor: B5B9FF
-      trailColor: B5B9FF
-      backColor: B5B9FF
-      frontColor: B5B9FF
+      hitColor: FFA221
+      trailColor: FFA221
+      backColor: FFA221
+      frontColor: FFA221
       trailLength: 10
       trailWidth: 3
     }
