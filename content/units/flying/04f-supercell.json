@@ -188,7 +188,7 @@ weapons: [
     bullet: {
     type: BasicBulletType
       damage: 155
-      recoil: 0.4
+      recoil: 0
       width: 10
       height: 15
       hitSize: 6
@@ -212,7 +212,7 @@ weapons: [
       fragBullet: {
         type: BasicBulletType
       damage: 35
-      recoil: 0.4
+      recoil: 0
       width: 10
       height: 15
       hitSize: 6
@@ -238,7 +238,7 @@ weapons: [
   }
 {
     x: 26
-    y: -26
+    y: -20
     name: bolt-cannon
     reload: 150
     rotate: true
@@ -255,7 +255,7 @@ weapons: [
     bullet: {
     type: BasicBulletType
       damage: 155
-      recoil: 0.4
+      recoil: 0
       width: 10
       height: 15
       hitSize: 6
@@ -279,7 +279,7 @@ weapons: [
       fragBullet: {
         type: BasicBulletType
       damage: 35
-      recoil: 0.4
+      recoil: 0
       width: 10
       height: 15
       hitSize: 6
@@ -354,7 +354,7 @@ name: thunderstrike-cruise-missile
 x: 27
 y: -8
 mirror: true
-rotationLimit: 90
+rotationLimit: 45
 baseRotation: -90
 layerOffset: -1
 parts: [
@@ -422,13 +422,13 @@ layer: 110
     top: false
     under: true
     mirror: true,
-    moveRot: 10,
-    moveX: -2
+    moveRot: -10,
+    moveX: 2
     moves: [
    {
     type: PartMove,
     progress: recoil,
-    rot: 15
+    rot: -15
    }
    ]
  }
@@ -445,7 +445,7 @@ bullet: {
   splashDamage: 2500
   splashDamageRadius: 85
   drag: 0.001
-  speed: 1
+  speed: 5
   lifetime: 145
   trailWidth: 10
   trailLenght: 13 
@@ -580,7 +580,7 @@ colorFrom: b2afb3
   intervalBullet: {
     type: LightningBulletType
     damage: 15
-    lightningLength: 20
+    lightningLength: 5
     lightningColor: b2afb3
     length: 8
     stroke: 5
