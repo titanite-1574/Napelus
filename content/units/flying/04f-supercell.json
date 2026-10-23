@@ -343,7 +343,7 @@ parts: [
 shoot: {
 type: ShootSpread
 spread: 3
-shots: 15
+shots: 3
 shotDelay: 0
 }
 top: false
@@ -357,7 +357,7 @@ ejectEffect: none
 bullet: {
       instantDisappear: true
       damage: 0
-      spawnUnit: storm-smol-missile
+      spawnUnit: supercell-squall
     }
 }
 {
@@ -389,7 +389,7 @@ parts: [
 shoot: {
 type: ShootSpread
 spread: 3
-shots: 15
+shots: 3
 shotDelay: 0
 }
 top: false
@@ -403,7 +403,7 @@ ejectEffect: none
 bullet: {
       instantDisappear: true
       damage: 0
-      spawnUnit: storm-smol-missile
+      spawnUnit: supercell-squall
     }
 }
 {
