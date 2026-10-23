@@ -23,7 +23,6 @@ healColor: 3CC773
 createWreck: true
 drag: 0.009
 faceTarget: true
-description: The angel
 targetFlag: [ turret, core ]
  "engines": [
   {
@@ -85,39 +84,51 @@ targetFlag: [ turret, core ]
   }
     {
     type: ShieldArcAbility
-    radius: 100
-    angle: 45
+    radius: 50
+    angle: 80
     width: 4
-    y: 0
-    cooldown: 200
+    y: 5
+    cooldown: 555
     regen: 1
-    max: 1500
-   whenShooting: false
-   angleOffset: 29
+    max: 555
+    whenShooting: false
+    angleOffset: 270
   }
   {
     type: ShieldArcAbility
-    radius: 100
-    angle: 45
+    radius: 50
+    angle: 80
     width: 4
-    y: 0
-    cooldown: 200
+    y: 5
+    cooldown: 555
     regen: 1
-    max: 1500
-   whenShooting: false
-   angleOffset: 150
+    max: 1200
+    whenShooting: false
+    angleOffset: 180
   }
   {
     type: ShieldArcAbility
-    radius: 100
-    angle: 45
+    radius: 50
+    angle: 80
     width: 4
-    y: 0
-    cooldown: 200
+    y: 5
+    cooldown: 555
     regen: 1
-    max: 1500
-   whenShooting: false
-   angleOffset: 90
+    max: 1200
+    whenShooting: false
+    angleOffset: 90
+  }
+  {
+    type: ShieldArcAbility
+    radius: 50
+    angle: 80
+    width: 4
+    y: 5
+    cooldown: 555
+    regen: 1
+    max: 1200
+    whenShooting: false
+    angleOffset: 0
   }
   {
     effect: {
