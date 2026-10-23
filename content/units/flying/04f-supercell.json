@@ -15,7 +15,7 @@ engineColor: BFBFEF
 alwaysUnlocked: false
 armor: 25
 accel: 0.5
-health: 45150
+health: 39500
 rotateSpeed: 0.8
 speed: 0.50
 hitSize: 35
@@ -190,6 +190,7 @@ weapons: [
     minWarmup: 0.55
     inaccuracy: 0
     shootY: -1
+rotateSpeed: 1
     shoot: {
       type: ShootPattern
       shots: 5
@@ -257,6 +258,7 @@ weapons: [
     minWarmup: 0.55
     inaccuracy: 0
     shootY: -1
+    rotateSpeed: 1
     shoot: {
       type: ShootPattern
       shots: 5
@@ -344,7 +346,7 @@ shoot: {
 type: ShootSpread
 spread: 3
 shots: 3
-shotDelay: 0
+shotDelay: 5
 }
 top: false
 rotate: true
@@ -390,7 +392,7 @@ shoot: {
 type: ShootSpread
 spread: 3
 shots: 3
-shotDelay: 0
+shotDelay: 5
 }
 top: false
 rotate: true

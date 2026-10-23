@@ -36,6 +36,18 @@ plans: [
     ]
     time: 10000
   }
+  {
+    type: AssemblerUnitPlan
+    unit: 04f-supercell
+    requirements: [
+      nap-02p-magnetite-wall-large/4
+      nap-02m-large-amalgam-wall/5
+      nap-02r-steel-wall/2
+      nap-04b-wind/6
+      nap-hyperion-engine/4
+    ]
+    time: 15500
+  }
 ]
 squareSprite: false
 consumes: {
